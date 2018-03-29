@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:71:"D:\xampp\htdocs\hns\public/../application/index\view\user\register.html";i:1521958382;s:59:"D:\xampp\htdocs\hns\application\index\view\public\head.html";i:1521958267;s:61:"D:\xampp\htdocs\hns\application\index\view\public\header.html";i:1521877610;s:61:"D:\xampp\htdocs\hns\application\index\view\public\footer.html";i:1521878099;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:71:"D:\xampp\htdocs\hns\public/../application/index\view\user\register.html";i:1522327798;s:59:"D:\xampp\htdocs\hns\application\index\view\public\head.html";i:1521958267;s:61:"D:\xampp\htdocs\hns\application\index\view\public\header.html";i:1521877610;s:61:"D:\xampp\htdocs\hns\application\index\view\public\footer.html";i:1521878099;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -199,6 +199,7 @@
       <h1 class="page-title">注册</h1>
       <div class="fieldset">
               <h2 class="legend">用户信息</h2>
+        <form action="<?php echo url('user/registercheck'); ?>" method="post">
         <ul class="form-list">
           <li class="fields">
             <div class="customer-name">
@@ -230,6 +231,7 @@
                 <label for="lastname">确认密码<em>*</em></label>
                 <input type="password" class="required-entry input-text" title="Last Name" value="" name="lastname" id="lastname">
               </div>
+              </form>
               <div class="clear"></div>
             </div>
           </li>
@@ -237,7 +239,7 @@
         <div class="buttons-set">
           <p class="required">* 为必须填写</p>
           <a href="account_login.html" title="Back" class="f-left">&laquo; 返回</a>
-          <a title="Submit" class="colors-btn"><span><span>注册</span></span></a>
+          <button title="Submit" class="colors-btn"><span><span>注册</span></span></button>
           <div class="clear"></div>
         </div>
         </div>

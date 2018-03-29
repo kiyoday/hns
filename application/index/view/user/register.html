@@ -17,6 +17,7 @@
       <h1 class="page-title">注册</h1>
       <div class="fieldset">
               <h2 class="legend">用户信息</h2>
+        <form action="{:url('user/registercheck')}" method="post">
         <ul class="form-list">
           <li class="fields">
             <div class="customer-name">
@@ -25,10 +26,9 @@
                 <input type="text" class="required-entry input-text" title="First Name" value="" name="firstname" id="firstname">
               </div>
               <div class="clear"></div>
-  
-  </div>                </li>
-          <li>
-            
+            </div>                
+            </li>
+            <li>
             <div class="input-box">
               <label class="required" for="email_address">邮箱<em>*</em></label>
               <input type="text" class="input-text validate-email required-entry" title="Email Address" value="" id="email_address" name="email">
@@ -42,20 +42,21 @@
             <div class="customer-name">
               <div class="input-box name-firstname">
                 <label for="firstname">密码<em>*</em></label>
-                <input type="password" class="required-entry input-text" title="First Name" value="" name="firstname" id="firstname">
+                <input type="password" class="required-entry input-text" title="First pwd" value="" name="firstpwd" id="firstpwd">
               </div>
               <div class="input-box name-lastname">
                 <label for="lastname">确认密码<em>*</em></label>
-                <input type="password" class="required-entry input-text" title="Last Name" value="" name="lastname" id="lastname">
+                <input type="password" class="required-entry input-text" title="Last pwd" value="" name="lastpwd" id="lastpwd">
               </div>
-              <div class="clear"></div>
+            <div class="clear"></div>
             </div>
           </li>
         </ul>
         <div class="buttons-set">
           <p class="required">* 为必须填写</p>
           <a href="account_login.html" title="Back" class="f-left">&laquo; 返回</a>
-          <a title="Submit" class="colors-btn"><span><span>注册</span></span></a>
+          <button title="Submit" class="colors-btn"><span><span>注册</span></span></button>
+          </form>
           <div class="clear"></div>
         </div>
         </div>

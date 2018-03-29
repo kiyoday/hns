@@ -13,4 +13,16 @@ class User extends Controller
     {
         return $this->fetch();
     }
+
+    public function logincheck()
+    {
+        
+        return $this->fetch();
+    }
+
+    public function registercheck()
+    {
+        
+        return $this->fetch();
+    }
 }
