@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\user\login.html";i:1521958382;s:59:"D:\xampp\htdocs\hns\application\index\view\public\head.html";i:1521958267;s:61:"D:\xampp\htdocs\hns\application\index\view\public\header.html";i:1521877610;s:61:"D:\xampp\htdocs\hns\application\index\view\public\footer.html";i:1521878099;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\user\login.html";i:1522324834;s:59:"D:\xampp\htdocs\hns\application\index\view\public\head.html";i:1521958267;s:61:"D:\xampp\htdocs\hns\application\index\view\public\header.html";i:1521877610;s:61:"D:\xampp\htdocs\hns\application\index\view\public\footer.html";i:1521878099;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -49,7 +49,7 @@
 <body>
   <div class="mainContainer sixteen container">
             <!--Header Block-->
-                        <div class="header-wrapper">
+            <div class="header-wrapper">
               <header class="container">
                 <div class="head-right">
                       <ul class="top-nav">
@@ -204,7 +204,7 @@
             <p>通过创建一个开心果帐户，你将能够购买开心果平台的商品，存储多个送货地址，查看并跟踪您的订单在您的帐户以及使用更多功能。</p>
           </div>
           <div class="buttons-set">
-            <a class="colors-btn" title="Create an Account" href="account_create.html"><span><span>创建帐号</span></span></a>
+            <a class="colors-btn" title="Create an Account" href="<?php echo url('user/register'); ?>"><span><span>创建帐号</span></span></a>
             <div class="clear"></div>
           </div>
         </div>
@@ -232,7 +232,7 @@
           </div>
           <div class="buttons-set">
             <a class="f-left" href="#">忘记密码?</a>
-            <a class="colors-btn"  title="登录"><span><span>登录</span></span></a>
+            <a class="colors-btn"  title="登录" href="<?php echo url('user/register'); ?>"><span><span>登录</span></span></a>
             <div class="clear"></div>
           </div>
               </div>

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:71:"D:\xampp\htdocs\hns\public/../application/index\view\user\register.html";i:1521956122;s:61:"D:\xampp\htdocs\hns\application\index\view\public\header.html";i:1521877610;s:61:"D:\xampp\htdocs\hns\application\index\view\public\footer.html";i:1521878099;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:71:"D:\xampp\htdocs\hns\public/../application/index\view\user\register.html";i:1521958382;s:59:"D:\xampp\htdocs\hns\application\index\view\public\head.html";i:1521958267;s:61:"D:\xampp\htdocs\hns\application\index\view\public\header.html";i:1521877610;s:61:"D:\xampp\htdocs\hns\application\index\view\public\footer.html";i:1521878099;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -36,7 +36,7 @@
 <link rel="stylesheet" href="/hns/public/static/index/css/elastislide.css"/>
 <link rel="stylesheet" href="/hns/public/static/index/css/home_flexslider.css"/>
 
-<link rel="stylesheet" href="_/hns/public/static/index/css/light_box.css"/>
+<link rel="stylesheet" href="/hns/public/static/index/css/light_box.css"/>
 <script src="/hns/public/static/index/js/html5.js"></script>
 
 <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->

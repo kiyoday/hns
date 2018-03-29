@@ -9,7 +9,7 @@
 <body>
   <div class="mainContainer sixteen container">
             <!--Header Block-->
-            {include file="public/header"}
+{include file="public/header"}
 <!--Content Block-->
 <section class="content-wrapper">
   <div class="content-container container">
@@ -22,7 +22,7 @@
             <p>通过创建一个开心果帐户，你将能够购买开心果平台的商品，存储多个送货地址，查看并跟踪您的订单在您的帐户以及使用更多功能。</p>
           </div>
           <div class="buttons-set">
-            <a class="colors-btn" title="Create an Account" href="account_create.html"><span><span>创建帐号</span></span></a>
+            <a class="colors-btn" title="Create an Account" href="{:url('user/register')}"><span><span>创建帐号</span></span></a>
             <div class="clear"></div>
           </div>
         </div>
@@ -50,7 +50,7 @@
           </div>
           <div class="buttons-set">
             <a class="f-left" href="#">忘记密码?</a>
-            <a class="colors-btn"  title="登录"><span><span>登录</span></span></a>
+            <a class="colors-btn"  title="登录" href="{:url('user/register')}"><span><span>登录</span></span></a>
             <div class="clear"></div>
           </div>
               </div>
