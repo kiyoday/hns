@@ -21,4 +21,9 @@ class Admin extends Model
 		}
 		return $this->save($data);
 	}
+
+		public function getadmin()
+    {
+        return $this->paginate(10);
+    }
 }

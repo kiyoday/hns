@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:69:"D:\xampp\htdocs\hns\public/../application/admin\view\index\index.html";i:1521972679;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\header.html";i:1522073436;s:59:"D:\xampp\htdocs\hns\application\admin\view\public\menu.html";i:1522064931;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\footer.html";i:1521971807;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:69:"D:\xampp\htdocs\hns\public/../application/admin\view\index\index.html";i:1521972679;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\header.html";i:1522073436;s:59:"D:\xampp\htdocs\hns\application\admin\view\public\menu.html";i:1522321161;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\footer.html";i:1521971807;}*/ ?>
 ﻿<!--包含头部文件-->
 <!DOCTYPE HTML>
 <html>
@@ -66,18 +66,18 @@
 	<input runat="server" id="divScrollValue" type="hidden" value="" />
 	<div class="menu_dropdown bk_2">
 		<dl id="menu-article">
-			<dt><i class="Hui-iconfont">&#xe616;</i> 分类管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
-			<dd>
-				<ul>
-					<li><a _href="<?php echo url('category/index'); ?>" data-title="书籍分类" href="javascript:void(0)">书籍分类</a></li>
-				</ul>
-			</dd>
-		</dl>
-		<dl id="menu-article">
 			<dt><i class="Hui-iconfont">&#xe616;</i> 评论管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
 					<li><a _href="" data-title="评论列表" href="javascript:void(0)">评论列表</a></li>
+				</ul>
+			</dd>
+		</dl>
+		<dl id="menu-article">
+			<dt><i class="Hui-iconfont">&#xe616;</i> 分类管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a _href="<?php echo url('category/index'); ?>" data-title="书籍分类" href="javascript:void(0)">书籍分类</a></li>
 				</ul>
 			</dd>
 		</dl>
@@ -122,7 +122,6 @@
 			<dd>
 				<ul>
 					<li><a _href="<?php echo url('admin/index'); ?>" data-title="会员列表" href="javascript:;">管理员列表</a></li>
-					<li><a _href="" data-title="删除的会员" href="javascript:;">删除的会员</a></li>
 				</ul>
 			</dd>
 		</dl>
