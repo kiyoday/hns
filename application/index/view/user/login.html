@@ -1,0 +1,78 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+{include file="public/head"}
+<body>
+  <div class="mainContainer sixteen container">
+            <!--Header Block-->
+            {include file="public/header"}
+<!--Content Block-->
+<section class="content-wrapper">
+  <div class="content-container container">
+    <div class="main">
+      <h1 class="page-title">用户登陆</h1>
+      <div class="account-login">
+        <div class="col-1 new-users">
+          <div class="content">
+            <h2>新用户</h2>
+            <p>通过创建一个开心果帐户，你将能够购买开心果平台的商品，存储多个送货地址，查看并跟踪您的订单在您的帐户以及使用更多功能。</p>
+          </div>
+          <div class="buttons-set">
+            <a class="colors-btn" title="Create an Account" href="account_create.html"><span><span>创建帐号</span></span></a>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="col-2 registered-users">
+          <div class="content">
+            <h2>登录</h2>
+            <p>如果您拥有开心果网帐号，请登录.</p>
+            <ul class="form-list">
+              <li>
+                <label class="required" for="email">邮箱<em>*</em></label>
+                <div class="input-box">
+                  <input type="text" title="Email Address" class="input-text required-entry validate-email" value="" />
+                </div>
+                <div class="clear"></div>
+              </li>
+              <li>
+                <label class="required" for="pass">密码<em>*</em></label>
+                <div class="input-box">
+                  <input type="password" title="Password" class="input-text required-entry validate-password" />
+                </div>
+                <div class="clear"></div>
+              </li>
+            </ul>
+            <p class="required">* 为必须填写</p>
+          </div>
+          <div class="buttons-set">
+            <a class="f-left" href="#">忘记密码?</a>
+            <a class="colors-btn"  title="登录"><span><span>登录</span></span></a>
+            <div class="clear"></div>
+          </div>
+              </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="news-letter-container">
+      <div class="free-shipping-block">
+        <h1>ENJOY FREE SHIPPING</h1>
+        <p>on all orders as our holiday gift for you!</p>
+      </div>
+      <div class="news-letter-block">
+        <h2>SIGN UP FOR OUR NEWSLETTER</h2>
+        <input type="text" value="Enter email address" title="" />
+        <input type="submit" value="Submit" title="Submit" />
+      </div>
+    </div>  
+  </div>
+</section>
+</div>
+      <!--Footer Block-->
+      {include file="public/footer"}
+</body>
+</html>
