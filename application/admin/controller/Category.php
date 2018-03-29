@@ -44,9 +44,10 @@ class Category extends Controller
     }
 
     public function del($tid)
-    {
+    {   
         if(request()->ispost())
-        {
+        {   
+            $data=input('post.');
             $delres=db('category')->where('type_id',$tid)->delete();
             if($delres)
             {
@@ -59,6 +60,7 @@ class Category extends Controller
         }
         $type=db('category')->find($tid);
         $this->assign('category',$type);
+        return $this->fetch();
     }
 
     public function save()
