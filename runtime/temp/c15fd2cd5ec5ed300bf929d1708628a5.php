@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:69:"D:\xampp\htdocs\hns\public/../application/admin\view\index\index.html";i:1521972679;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\header.html";i:1522073436;s:59:"D:\xampp\htdocs\hns\application\admin\view\public\menu.html";i:1522582700;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\footer.html";i:1521971807;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:69:"D:\xampp\htdocs\hns\public/../application/admin\view\index\index.html";i:1521972679;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\header.html";i:1522073436;s:59:"D:\xampp\htdocs\hns\application\admin\view\public\menu.html";i:1522585558;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\footer.html";i:1521971807;}*/ ?>
 ﻿<!--包含头部文件-->
 <!DOCTYPE HTML>
 <html>

@@ -86,7 +86,7 @@ class User extends Controller
         	$this->error($validate->getError());
         }
         $result1=$validate->scene('add')->check($data);
-         $data1=[
+        $data1=[
             'name'=>$data['name'],
             'email'=>$data['email'],
             'password'=>$data['password'],
