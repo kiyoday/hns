@@ -17,7 +17,7 @@
       <h1 class="page-title">注册</h1>
       <div class="fieldset">
               <h2 class="legend">用户信息</h2>
-        <form action="{:url('user/save')}" method="post">
+        <form name="form1" action="{:url('user/save')}" method="post">
         <ul class="form-list">
           <li class="fields">
             <div class="customer-name">
@@ -45,7 +45,7 @@
               </div>
               <div class="input-box name-lastname">
                 <label for="lastname">确认密码<em>*</em></label>
-                <input type="password" class="required-entry input-text" title="Last pwd" value="" name="lastpwd" id="lastpwd">
+                <input type="password" class="required-entry input-text" title="Last pwd" value="" name="lastpwd" id="lastpwd" >
               </div>
             <div class="clear"></div>
             </div>

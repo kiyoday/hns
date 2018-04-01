@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:71:"D:\xampp\htdocs\hns\public/../application/index\view\user\register.html";i:1522554477;s:59:"D:\xampp\htdocs\hns\application\index\view\public\head.html";i:1521958267;s:61:"D:\xampp\htdocs\hns\application\index\view\public\header.html";i:1521877610;s:61:"D:\xampp\htdocs\hns\application\index\view\public\footer.html";i:1521878099;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:71:"D:\xampp\htdocs\hns\public/../application/index\view\user\register.html";i:1522578908;s:59:"D:\xampp\htdocs\hns\application\index\view\public\head.html";i:1521958267;s:61:"D:\xampp\htdocs\hns\application\index\view\public\header.html";i:1521877610;s:61:"D:\xampp\htdocs\hns\application\index\view\public\footer.html";i:1521878099;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -199,7 +199,7 @@
       <h1 class="page-title">注册</h1>
       <div class="fieldset">
               <h2 class="legend">用户信息</h2>
-        <form action="<?php echo url('user/save'); ?>" method="post">
+        <form name="form1" action="<?php echo url('user/save'); ?>" method="post">
         <ul class="form-list">
           <li class="fields">
             <div class="customer-name">
@@ -227,7 +227,7 @@
               </div>
               <div class="input-box name-lastname">
                 <label for="lastname">确认密码<em>*</em></label>
-                <input type="password" class="required-entry input-text" title="Last pwd" value="" name="lastpwd" id="lastpwd">
+                <input type="password" class="required-entry input-text" title="Last pwd" value="" name="lastpwd" id="lastpwd" >
               </div>
             <div class="clear"></div>
             </div>

@@ -33,7 +33,7 @@ class User extends Controller
         if(request()->ispost())
         {
             $data=input('post.');
-            $editres=db('user')->where('type_id',$tid)->update($data);
+            $editres=db('user')->where('id',$tid)->update($data);
             if($editres)
             {
                 $this->success('修改成功');
@@ -53,7 +53,7 @@ class User extends Controller
         if(request()->ispost())
         {   
             $data=input('post.');
-            $delres=db('user')->where('type_id',$tid)->delete();
+            $delres=db('user')->where('id',$tid)->delete();
             if($delres)
             {
                 $this->success('删除成功');
@@ -70,19 +70,30 @@ class User extends Controller
 
     public function save()
     {
+        //dump(input('password'));die;
         //print_r(input('post.'));
         //print_r(request()->post());
         $data = input('post.');
+        //dump($data['email']);die;
         $validate = validate('user');
-        if (!password==lastpwd) {
-             $this->error('输入的密码必须一致');
+        $emailck=db('user')->where('email','=',$data['email'])->select();
+        if($emailck){
+            $this->error('邮箱已被注册');
+        }
+        if ($data['password']!=$data['lastpwd']) {
+            $this->error('输入的密码必须一致');
         }
         if(!$validate->scene('add')->check($data)){
         	$this->error($validate->getError());
         }
-
+        $result1=$validate->scene('add')->check($data);
+         $data1=[
+            'name'=>$data['name'],
+            'email'=>$data['email'],
+            'password'=>$data['password'],
+        ];
         //$data 提交给model层
-        $res = $this->obj->add($data);
+        $res = $this->obj->add($data1);
         if($res){
             $this->success('添加成功');
         }
