@@ -75,11 +75,11 @@ class Category extends Controller
         //$data 提交给model层
         $res = $this->obj->add($data);
         if($res){
-            $this->success('成功');
+            $this->success('添加成功');
         }
         else 
         {
-            $this->error('失败');
+            $this->error('添加失败');
         }
     }
 

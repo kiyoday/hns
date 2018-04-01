@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\user\login.html";i:1522325445;s:59:"D:\xampp\htdocs\hns\application\index\view\public\head.html";i:1521958267;s:61:"D:\xampp\htdocs\hns\application\index\view\public\header.html";i:1521877610;s:61:"D:\xampp\htdocs\hns\application\index\view\public\footer.html";i:1521878099;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\user\login.html";i:1522327507;s:59:"D:\xampp\htdocs\hns\application\index\view\public\head.html";i:1521958267;s:61:"D:\xampp\htdocs\hns\application\index\view\public\header.html";i:1521877610;s:61:"D:\xampp\htdocs\hns\application\index\view\public\footer.html";i:1521878099;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -212,7 +212,7 @@
           <div class="content">
             <h2>登录</h2>
             <p>如果您拥有开心果网帐号，请登录.</p>
-            <form action="<?php echo url('user/register'); ?>" method="post">
+            <form action="<?php echo url('user/logincheck'); ?>" method="post">
             <ul class="form-list">
               <li>
                 <label class="required" for="email">邮箱<em>*</em></label>

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:71:"D:\xampp\htdocs\hns\public/../application/index\view\user\register.html";i:1522327798;s:59:"D:\xampp\htdocs\hns\application\index\view\public\head.html";i:1521958267;s:61:"D:\xampp\htdocs\hns\application\index\view\public\header.html";i:1521877610;s:61:"D:\xampp\htdocs\hns\application\index\view\public\footer.html";i:1521878099;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:71:"D:\xampp\htdocs\hns\public/../application/index\view\user\register.html";i:1522554477;s:59:"D:\xampp\htdocs\hns\application\index\view\public\head.html";i:1521958267;s:61:"D:\xampp\htdocs\hns\application\index\view\public\header.html";i:1521877610;s:61:"D:\xampp\htdocs\hns\application\index\view\public\footer.html";i:1521878099;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -199,25 +199,23 @@
       <h1 class="page-title">注册</h1>
       <div class="fieldset">
               <h2 class="legend">用户信息</h2>
-        <form action="<?php echo url('user/registercheck'); ?>" method="post">
+        <form action="<?php echo url('user/save'); ?>" method="post">
         <ul class="form-list">
           <li class="fields">
             <div class="customer-name">
               <div class="input-box name-firstname">
                 <label for="firstname">用户名<em>*</em></label>
-                <input type="text" class="required-entry input-text" title="First Name" value="" name="firstname" id="firstname">
+                <input type="text" class="required-entry input-text" title="Name" value="" name="name" id="name">
               </div>
               <div class="clear"></div>
-  
-  </div>                </li>
-          <li>
-            
+            </div>                
+            </li>
+            <li>
             <div class="input-box">
               <label class="required" for="email_address">邮箱<em>*</em></label>
-              <input type="text" class="input-text validate-email required-entry" title="Email Address" value="" id="email_address" name="email">
+              <input type="text" class="input-text validate-email required-entry" title="Email" value="" id="email" name="email">
             </div>
             <div class="clear"></div>
-
         </ul>
         <h2 class="legend">登录信息</h2>
         <ul class="form-list">
@@ -225,14 +223,13 @@
             <div class="customer-name">
               <div class="input-box name-firstname">
                 <label for="firstname">密码<em>*</em></label>
-                <input type="password" class="required-entry input-text" title="First Name" value="" name="firstname" id="firstname">
+                <input type="password" class="required-entry input-text" title="First pwd" value="" name="password" id="password">
               </div>
               <div class="input-box name-lastname">
                 <label for="lastname">确认密码<em>*</em></label>
-                <input type="password" class="required-entry input-text" title="Last Name" value="" name="lastname" id="lastname">
+                <input type="password" class="required-entry input-text" title="Last pwd" value="" name="lastpwd" id="lastpwd">
               </div>
-              </form>
-              <div class="clear"></div>
+            <div class="clear"></div>
             </div>
           </li>
         </ul>
@@ -240,6 +237,7 @@
           <p class="required">* 为必须填写</p>
           <a href="account_login.html" title="Back" class="f-left">&laquo; 返回</a>
           <button title="Submit" class="colors-btn"><span><span>注册</span></span></button>
+          </form>
           <div class="clear"></div>
         </div>
         </div>
