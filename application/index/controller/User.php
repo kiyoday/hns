@@ -74,7 +74,6 @@ class User extends Controller
         //print_r(input('post.'));
         //print_r(request()->post());
         $data = input('post.');
-        //dump($data['email']);die;
         $validate = validate('user');
         $emailck=db('user')->where('email','=',$data['email'])->select();
         if($emailck){
@@ -95,12 +94,13 @@ class User extends Controller
         //$data 提交给model层
         $res = $this->obj->add($data1);
         if($res){
-            $this->success('添加成功');
+            $this->success('注册成功','user/login');
         }
         else 
         {
-            $this->error('添加失败');
+            $this->error('注册失败');
         }
+        return $this->fetch('index');
     }
 
     public function update($data) {
