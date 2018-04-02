@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:70:"D:\xampp\htdocs\hns\public/../application/index\view\advice\index.html";i:1522684152;s:59:"D:\xampp\htdocs\hns\application\index\view\public\head.html";i:1522667923;s:61:"D:\xampp\htdocs\hns\application\index\view\public\header.html";i:1522668048;s:61:"D:\xampp\htdocs\hns\application\index\view\public\footer.html";i:1521878099;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\book\index.html";i:1522685069;s:59:"D:\xampp\htdocs\hns\application\index\view\public\head.html";i:1522667923;s:61:"D:\xampp\htdocs\hns\application\index\view\public\header.html";i:1522668048;s:61:"D:\xampp\htdocs\hns\application\index\view\public\footer.html";i:1521878099;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -194,40 +194,52 @@
                 <!--Content Block-->
                 <section class="content-wrapper">
                 	<div class="content-container container">
-                        <form action="" method="post">
+                      <form action="" method="post">
                 		<div class="col-left">
                 			<div class="block community-block">
-                				<div class="block-title">请选择</div>
-                				<ul>
-                					<li class="question-row">建议类型</li>
-                					<li><input type="radio"><a href="#" title="Green">Green</a></li>
-                					<li><input type="radio"><a href="#" title="Red">Red</a></li>
-                					<li><input type="radio"><a href="#" title="Black">Black</a></li>
-                					<li><input type="radio"><a href="#" title="Magenta">Magenta</a></li>
-                				</ul>
+                              <div class="block-title">建议您填写</div>
+                                <ul>
+                                    <li class="question-row">
+                                    1.二手书的目录</br>
+                                    1.二手书的目录</br>
+                                    1.二手书的目录</br>
+                                    1.二手书的目录</br>
+                                    1.二手书的目录</br>
+                                    1.二手书的目录</br>
+                                    </li>
+                                </ul>
                 			</div>
                 		</div>
                 		<div  class="col-main">
-                			<h1 class="page-title">给我们的建议</h1>
+                			<h1 class="page-title">书籍信息</h1>
                 			<div class="contact-form-container">
                 				<div  class="form-title">请填写下列信息</div>
                 				<ul class="form-fields">
                 					<li class="left">
-                						<label>您的名字<em>*</em></label>
+                						<label>书名<em>*</em></label>
                 						<input type="text" />
                 					</li>
                 					<li class="left">
-                						<label>邮箱<em>*</em></label>
-                						<input type="text" />
-                					</li>
-                					<li class="left">
-                						<label>手机号</label>
-                						<input type="text" />
-                					</li>
+                						<label>类型<em>*</em></label>
+                						<select name="type" />
+                                        <option value="volvo">Volvo</option>
+                                        <option value="saab">Saab</option>
+                                        <option value="fiat">Fiat</option>
+                                        <option value="audi">Audi</option>
+                                        </select>
+                					</li></br></br></br></br>
+                                    <li class="left">
+                                        <label>图片<em>*</em></label>
+                                        <input id="pic" placeholder="" name="pic"  type="file">
+                                    </li>
                 					<li class="full-row">
-                						<label>建议<em>*</em></label>
+                						<label>描述<em>*</em></label>
                 						<textarea></textarea>
                 					</li>
+                                    <li class="left">
+                                        <label>价格<em>*</em></label>
+                                        <input type="text" />
+                                </li>
                 				</ul>
                 				<div class="button-set">
                 					<p class="required">* 为必须填写</p>
