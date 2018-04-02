@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:70:"D:\xampp\htdocs\hns\public/../application/index\view\advice\index.html";i:1521958382;s:59:"D:\xampp\htdocs\hns\application\index\view\public\head.html";i:1522667923;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:70:"D:\xampp\htdocs\hns\public/../application/index\view\advice\index.html";i:1522677788;s:59:"D:\xampp\htdocs\hns\application\index\view\public\head.html";i:1522667923;s:61:"D:\xampp\htdocs\hns\application\index\view\public\header.html";i:1522668048;s:61:"D:\xampp\htdocs\hns\application\index\view\public\footer.html";i:1521878099;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -48,70 +48,72 @@
 <body>
 	<div class="mainContainer sixteen container">
             <!--Header Block-->
-            <div class="header-wrapper">
+                        <div class="header-wrapper">
               <header class="container">
                 <div class="head-right">
                       <ul class="top-nav">
-                            <li class=""><a href="404_error.html" title="My Account">My Account</a></li>
-                            <li class="my-wishlist"><a href="404_error.html" title="My Wishlist">My Wishlist</a></li>
-                            <li class="contact-us"><a href="contact_us.html" title="Contact Us">Contact Us</a></li>
-                            <li class="checkout"><a href="404_error.html" title="Checkout">Checkout</a></li>
-                            <li class="log-in"><a href="account_login.html" title="Log In">Log In</a></li>
-                      </ul>
-                    <ul class="currencyBox">
-                        <li id="header_currancy" class="currency"> <a class="mainCurrency" href="#">Currency: USD</a>
-                          <div id="currancyBox" class="currency_detial"> <a href="#">£</a> <a href="#">€</a> <a href="#">$</a> </div>
-                        </li>
-                    </ul>
+                            <li class=""><a href="404_error.html" title="My Account">我的账户</a></li>
+                            <li class="my-wishlist"><a href="404_error.html" title="My Wishlist">手机客户端</a></li>
+                            <li class="contact-us"><a href="<?php echo url('advice/index'); ?>" title="Contact Us">关于我们</a></li>
+                            <li class="checkout"><a href="404_error.html" title="Checkout">我的订单</a></li>
+                            <li class="log-in"><a href="account_login.html" title="Log In">登录</a></li>
+                            <li class="checkout"><a href="account_create.html" title="Checkout">注册</a></li>
+                            </ul>
+                            <ul class="currencyBox">
+                                  <li id="header_currancy" class="currency"> <a class="mainCurrency" href="#">我要卖书</a>
+                                <div id="currancyBox" class="currency_detial"> <a href="#">卖书登记</a> <a href="#">卖书信息</a> <a href="#">提现</a> 
+                                </div>
+                              </li>
+                            </ul>
                   <section class="header-bottom">
                     <div class="cart-block">
-					<ul>
-						<li>(2)</li>
-						<li><a href="cart.html" title="Cart"><img title="Item" alt="Item" src="images/item_icon.png" /></a></li>
-						<li>Item</li>
-					</ul>
-					<div id="minicart" class="remain_cart" style="display: none;">
-						 <p class="empty">You have 2 items in your shopping cart.</p>
-						 <ol>
-						 	<li>
-								<div class="img-block"><img src="images/small_img.png" title="" alt="" /></div>
-								<div class="detail-block">
-									<h4><a href="#" title="Htc Mobile 1120">Htc Mobile 1120</a></h4>
-									<p>
-										<strong>1</strong> x $900.00
-									</p>
-									<a href="#" title="Details">Details</a>
-								</div>
-								<div class="edit-delete-block">
-									<a href="#" title="Edit"><img src="images/edit_icon.png" alt="Edit" title="Edit" /></a>
-									<a href="#" title="Remove"><img src="images/delete_item_btn.png" alt="Remove" title="Remove" /></a>
-								</div>
-							</li>
-							<li>
-								<div class="img-block"><img src="images/small_img.png" title="" alt="" /></div>
-								<div class="detail-block">
-									<h4><a href="#" title="Htc Mobile 1120">Htc Mobile 1120</a></h4>
-									<p>
-										<strong>1</strong> x $900.00
-									</p>
-									<a href="#" title="Details">Details</a>
-								</div>
-								<div class="edit-delete-block">
-									<a href="#" title="Edit"><img src="images/edit_icon.png" alt="Edit" title="Edit" /></a>
-									<a href="#" title="Remove"><img src="images/delete_item_btn.png" alt="Remove" title="Remove" /></a>
-								</div>
-							</li>
-							<li>
-								<div class="total-block">Total:<span>$1,900.00</span></div>
-								<a href="cart.html" title="Checkout" class="colors-btn">Checkout</a>
-								<div class="clear"></div>
-							</li>
-						 </ol>
-					</div>
-				</div>
-                    <div class="search-block">
-                      <input type="text" value="Search" />
-                      <input type="submit" value="Search" title="Search" />
+                     <ul>
+                      <li>( )</li>
+                      <li><a href="cart.html" title="Cart"><img title="Item" alt="Item" src="images/item_icon.png" /></a></li>
+                      <li>购物车</li>
+                     </ul>
+                   <div id="minicart" class="remain_cart" style="display: none;">
+                    <p class="empty">You have 2 items in your shopping cart.</p>
+                    <ol>
+                    <li>
+                    <div class="img-block"><img src="images/small_img.png" title="" alt="" /></div>
+                    <div class="detail-block">
+                       <h4><a href="#" title="Htc Mobile 1120">Htc Mobile 1120</a></h4>
+                       <p>
+                      <strong>1</strong> x $900.00
+                       </p>
+                       <a href="#" title="Details">Details</a>
+                      </div>
+                      <div class="edit-delete-block">
+                            <a href="#" title="Edit"><img src="images/edit_icon.png" alt="Edit" title="Edit" /></a>
+                            <a href="#" title="Remove"><img src="images/delete_item_btn.png" alt="Remove" title="Remove" /></a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="img-block"><img src="images/small_img.png" title="" alt="" /></div>
+                          <div class="detail-block">
+                            <h4><a href="#" title="Htc Mobile 1120">Htc Mobile 1120</a></h4>
+                            <p>
+                              <strong>1</strong> x $900.00
+                            </p>
+                            <a href="#" title="Details">Details</a>
+                          </div>
+                          <div class="edit-delete-block">
+                            <a href="#" title="Edit"><img src="images/edit_icon.png" alt="Edit" title="Edit" /></a>
+                            <a href="#" title="Remove"><img src="images/delete_item_btn.png" alt="Remove" title="Remove" /></a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="total-block">Total:<span>$1,900.00</span></div>
+                          <a href="cart.html" title="Checkout" class="colors-btn">Checkout</a>
+                          <div class="clear"></div>
+                        </li>
+                       </ol>
+                    </div>
+                  </div>
+                  <div class="search-block">
+                      <input type="text" value="" />
+                      <input type="submit" value="Search" title="搜索" />
                     </div>
                   </section>
                 </div>
@@ -120,14 +122,14 @@
                   </a></h1>
                 <nav id="smoothmenu1" class="ddsmoothmenu mainMenu">
                   <ul id="nav">
-                    <li class=""><a href="index-2.html" title="Home">Home</a></li>
-                    <li class=""><a href="category.html" title="Shop by">Shop by</a>
+                    <li class="active"><a href="index.html" title="Home">首页</a></li>
+                    <li class=""><a href="category.html" title="Shop by">分类</a>
                       <ul>
                         <li><a href="category.html">Woman Collection</a></li>
                         <li><a href="category.html">Men Collection</a></li>
                         <li><a href="category.html">Accessories</a></li>
                         <li><a href="category.html">Mobile</a>
-                        	<ul>
+                          <ul>
                                 <li><a href="category.html">Second level</a></li>
                                 <li><a href="category.html">Second level</a></li>
                                 <li><a href="category.html">Second level</a></li>
@@ -144,7 +146,7 @@
                     <li class=""><a href="faq.html" title="Faq">Faq</a></li>
                     <li class=""><a href="about_us.html" title="About us">About us</a></li>
                     <li class=""><a href="404_error.html" title="Pages">Pages</a></li>
-                    <li class="active"><a href="contact_us.html" title="Footwear">Contact us</a></li>
+                    <li class=""><a href="contact_us.html" title="Footwear">Contact us</a></li>
                   </ul>
                 </nav>
                 
@@ -156,14 +158,14 @@
             </h1>
             <div id="menuInnner" style="display:none;">
                    <ul class="accordion">
-                       <li class=""><a href="index-2.html" title="Home">Home</a></li>
+                       <li class="active"><a href="index-2.html" title="Home">Home</a></li>
                     <li class="parent"><a href="category.html" title="Shop by">Shop by</a>
                       <ul>
                         <li><a href="category.html">Woman Collection</a></li>
                         <li><a href="category.html">Men Collection</a></li>
                         <li><a href="category.html">Accessories</a></li>
                         <li><a href="category.html">Mobile</a>
-                        	<ul>
+                          <ul>
                                 <li><a href="category.html">Second level</a></li>
                                 <li><a href="category.html">Second level</a></li>
                                 <li><a href="category.html">Second level</a></li>
@@ -189,73 +191,59 @@
                 
               </header>
             </div>
-<!--Content Block-->
-<section class="content-wrapper">
-	<div class="content-container container">
-		<div class="col-left">
-			<div class="block compare-block">
-				<div class="block-title">COMPARE PRODUCTS</div>
-				<ul>
-					<li>You have no items to compare</li>
-				</ul>
-			</div>
-			<div class="block community-block">
-				<div class="block-title">COMMUNITY POLL</div>
-				<ul>
-					<li class="question-row">WHAT IS YOUR FAVORITE COLOR</li>
-					<li><input type="radio"><a href="#" title="Green">Green</a></li>
-					<li><input type="radio"><a href="#" title="Red">Red</a></li>
-					<li><input type="radio"><a href="#" title="Black">Black</a></li>
-					<li><input type="radio"><a href="#" title="Magenta">Magenta</a></li>
-					<li class="vote-row"><button title="Vote">Vote</button></li>
-				</ul>
-			</div>
-		</div>
-		<div  class="col-main">
-			<h1 class="page-title">Contact Us</h1>
-			<div class="contact-form-container">
-				<div  class="form-title">Contact Information</div>
-				<ul class="form-fields">
-					<li class="left">
-						<label>Name<em>*</em></label>
-						<input type="text" />
-					</li>
-					<li class="left">
-						<label>Email<em>*</em></label>
-						<input type="text" />
-					</li>
-					<li class="left">
-						<label>Telephone</label>
-						<input type="text" />
-					</li>
-					<li class="full-row">
-						<label>Comment<em>*</em></label>
-						<textarea></textarea>
-					</li>
-				</ul>
-				<div class="button-set">
-					<p class="required">* Required Fields</p>
-					<button type="submit" class="form-button"><span>Submit</span></button>
-				</div>
-			</div>
-		</div>
-		<div class="clearfix"></div>
-		<div class="news-letter-container">
-			<div class="free-shipping-block">
-				<h1>ENJOY FREE SHIPPING</h1>
-				<p>on all orders as our holiday gift for you!</p>
-			</div>
-			<div class="news-letter-block">
-				<h2>SIGN UP FOR OUR NEWSLETTER</h2>
-				<input type="text" value="Enter email address" title="" />
-				<input class="submit-btn" type="submit" value="Submit" title="Submit" />
-			</div>
-		</div>	
-	</div>
-</section>
-</div>
-<!--Footer Block-->
-<section class="footer-wrapper">
+                <!--Content Block-->
+                <section class="content-wrapper">
+                	<div class="content-container container">
+                		<div class="col-left">
+                			<div class="block community-block">
+                        <form action="" method="post">
+                				<div class="block-title">请选择</div>
+                				<ul>
+                					<li class="question-row">建议类型</li>
+                					<li><input type="radio"><a href="#" title="Green">Green</a></li>
+                					<li><input type="radio"><a href="#" title="Red">Red</a></li>
+                					<li><input type="radio"><a href="#" title="Black">Black</a></li>
+                					<li><input type="radio"><a href="#" title="Magenta">Magenta</a></li>
+                				</ul>
+                			</div>
+                		</div>
+                		<div  class="col-main">
+                			<h1 class="page-title">给我们的建议</h1>
+                			<div class="contact-form-container">
+                				<div  class="form-title">请填写下列信息</div>
+                				<ul class="form-fields">
+                					<li class="left">
+                						<label>您的名字<em>*</em></label>
+                						<input type="text" />
+                					</li>
+                					<li class="left">
+                						<label>邮箱<em>*</em></label>
+                						<input type="text" />
+                					</li>
+                					<li class="left">
+                						<label>手机号</label>
+                						<input type="text" />
+                					</li>
+                					<li class="full-row">
+                						<label>建议<em>*</em></label>
+                						<textarea></textarea>
+                					</li>
+                				</ul>
+                				<div class="button-set">
+                					<p class="required">* 为必须填写</p>
+                					<button type="submit" class="form-button"><span>提交</span></button>
+                				</div>
+                			</div>
+                		</div>
+                		<div class="clearfix"></div>
+                		<div class="news-letter-container">
+                		</div>	
+                	</div>
+                </section>
+                </div>
+            <!--Footer Block-->
+           <!--Footer Block-->
+            <section class="footer-wrapper">
               <footer class="container">
                 <div class="link-block">
                   <ul>
@@ -305,7 +293,7 @@
                     <li><a href="about_us.html" title="About">ABOUT</a></li>
                     <li><a href="contact_us.html" title="Contact">CONTACT</a></li>
                   </ul>
-                  <p class="copyright-block">© 2012 Magento Demo Store, All Rights Reserved.Collect from <a href="http://www.cssmoban.com/" title="网站模板" target="_blank">网站模板</a></p>
+                  <p class="copyright-block">© 2012 Magento Demo Store, All Rights Reserved.Collect from <a href="http://www.cssmoban.com/" title="网站模板" target="_blank">开心果</a></p>
                 </div>
               </footer>
             </section>
