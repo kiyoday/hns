@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:69:"D:\xampp\htdocs\hns\public/../application/index\view\index\index.html";i:1521958318;s:59:"D:\xampp\htdocs\hns\application\index\view\public\head.html";i:1521958267;s:61:"D:\xampp\htdocs\hns\application\index\view\public\header.html";i:1521877610;s:61:"D:\xampp\htdocs\hns\application\index\view\public\footer.html";i:1521878099;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:69:"D:\xampp\htdocs\hns\public/../application/index\view\index\index.html";i:1521958318;s:59:"D:\xampp\htdocs\hns\application\index\view\public\head.html";i:1522667923;s:61:"D:\xampp\htdocs\hns\application\index\view\public\header.html";i:1522668048;s:61:"D:\xampp\htdocs\hns\application\index\view\public\footer.html";i:1521878099;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -35,7 +35,6 @@
 <link rel="stylesheet" href="/hns/public/static/index/css/ddsmoothmenu.css"/>
 <link rel="stylesheet" href="/hns/public/static/index/css/elastislide.css"/>
 <link rel="stylesheet" href="/hns/public/static/index/css/home_flexslider.css"/>
-
 <link rel="stylesheet" href="/hns/public/static/index/css/light_box.css"/>
 <script src="/hns/public/static/index/js/html5.js"></script>
 
@@ -53,19 +52,19 @@
               <header class="container">
                 <div class="head-right">
                       <ul class="top-nav">
-                           <li class="checkout"><a href="account_create.html" title="Checkout">注册</a></li>
                             <li class=""><a href="404_error.html" title="My Account">我的账户</a></li>
                             <li class="my-wishlist"><a href="404_error.html" title="My Wishlist">手机客户端</a></li>
-                            <li class="contact-us"><a href="contact_us.html" title="Contact Us">联系客服</a></li>
+                            <li class="contact-us"><a href="<?php echo url('advice/index'); ?>" title="Contact Us">关于我们</a></li>
                             <li class="checkout"><a href="404_error.html" title="Checkout">我的订单</a></li>
                             <li class="log-in"><a href="account_login.html" title="Log In">登录</a></li>
+                            <li class="checkout"><a href="account_create.html" title="Checkout">注册</a></li>
                             </ul>
-                      <ul class="currencyBox">
-                            <li id="header_currancy" class="currency"> <a class="mainCurrency" href="#">我要卖书</a>
-                          <div id="currancyBox" class="currency_detial"> <a href="#">卖书登记</a> <a href="#">卖书信息</a> <a href="#">提现</a> 
-                          </div>
-                        </li>
-                      </ul>
+                            <ul class="currencyBox">
+                                  <li id="header_currancy" class="currency"> <a class="mainCurrency" href="#">我要卖书</a>
+                                <div id="currancyBox" class="currency_detial"> <a href="#">卖书登记</a> <a href="#">卖书信息</a> <a href="#">提现</a> 
+                                </div>
+                              </li>
+                            </ul>
                   <section class="header-bottom">
                     <div class="cart-block">
                      <ul>
