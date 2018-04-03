@@ -4,7 +4,7 @@ use think\Controller;
 
 class User extends Controller
 {
-     public function _initialize()
+    public function _initialize()
     {
         $this->obj = model('User');
     }

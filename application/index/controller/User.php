@@ -3,7 +3,12 @@ namespace app\index\controller;
 use think\Controller;
 
 class User extends Controller
-{
+{   
+    public function login()
+    {   
+        return $this->fetch(); 
+    }
+
      public function _initialize()
     {
         $this->obj = model('User');
@@ -15,6 +20,26 @@ class User extends Controller
         return $this->fetch('',[
             'users'=>$users,
             ]);
+    }
+
+    public function logincheck()
+    {   
+        if(request()->isPost()){
+            $data = input('post.');
+            if(request()->ispost())
+            {
+            $admin=db('User')->where('email','=',$data['email'])->find();
+            }
+            if(!$admin){
+                $this->error('帐号或密码错误');
+            }else{
+                if($admin['password']!=$data['password']){
+                    $this->error('帐号或密码错误');
+                }else{
+                    $this->success('欢迎进入前台','index/index');
+                }
+            }
+        }
     }
 
     public function register()

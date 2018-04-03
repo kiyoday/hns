@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\book\index.html";i:1522685069;s:59:"D:\xampp\htdocs\hns\application\index\view\public\head.html";i:1522667923;s:61:"D:\xampp\htdocs\hns\application\index\view\public\header.html";i:1522668048;s:61:"D:\xampp\htdocs\hns\application\index\view\public\footer.html";i:1521878099;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\book\index.html";i:1522685112;s:59:"D:\xampp\htdocs\hns\application\index\view\public\head.html";i:1522667923;s:61:"D:\xampp\htdocs\hns\application\index\view\public\header.html";i:1522739560;s:61:"D:\xampp\htdocs\hns\application\index\view\public\footer.html";i:1521878099;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -53,15 +53,15 @@
                 <div class="head-right">
                       <ul class="top-nav">
                             <li class=""><a href="404_error.html" title="My Account">我的账户</a></li>
-                            <li class="my-wishlist"><a href="404_error.html" title="My Wishlist">手机客户端</a></li>
-                            <li class="contact-us"><a href="<?php echo url('advice/index'); ?>" title="Contact Us">关于我们</a></li>
+                            <li class="my-wishlist"><a href="404_error.html" title="My Wishlist">购物车</a></li>
                             <li class="checkout"><a href="404_error.html" title="Checkout">我的订单</a></li>
-                            <li class="log-in"><a href="account_login.html" title="Log In">登录</a></li>
-                            <li class="checkout"><a href="account_create.html" title="Checkout">注册</a></li>
+                            <li class="contact-us"><a href="<?php echo url('advice/index'); ?>" title="Contact Us">关于我们</a></li>
+                            <li class="log-in"><a href="<?php echo url('login/index'); ?>" title="Log In">登录</a></li>
+                            <li class="checkout"><a href="<?php echo url('register/index'); ?>" title="Checkout">注册</a></li>
                             </ul>
                             <ul class="currencyBox">
                                   <li id="header_currancy" class="currency"> <a class="mainCurrency" href="#">我要卖书</a>
-                                <div id="currancyBox" class="currency_detial"> <a href="#">卖书登记</a> <a href="#">卖书信息</a> <a href="#">提现</a> 
+                                <div id="currancyBox" class="currency_detial"> <a href="<?php echo url('book/index'); ?>">卖书登记</a> <a href="#">卖书信息</a> <a href="#">提现</a> 
                                 </div>
                               </li>
                             </ul>

@@ -11,6 +11,7 @@ class Login extends Controller
 
     public function logincheck()
     {
+        dump(input('post.'));die;
     	if(request()->isPost()){
     		$data = input('post.');
     		$validate = validate('Admin');

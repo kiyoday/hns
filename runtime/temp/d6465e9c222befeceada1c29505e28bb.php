@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:70:"D:\xampp\htdocs\hns\public/../application/index\view\advice\index.html";i:1522684152;s:59:"D:\xampp\htdocs\hns\application\index\view\public\head.html";i:1522667923;s:61:"D:\xampp\htdocs\hns\application\index\view\public\header.html";i:1522668048;s:61:"D:\xampp\htdocs\hns\application\index\view\public\footer.html";i:1521878099;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:70:"D:\xampp\htdocs\hns\public/../application/index\view\advice\index.html";i:1522738826;s:59:"D:\xampp\htdocs\hns\application\index\view\public\head.html";i:1522667923;s:61:"D:\xampp\htdocs\hns\application\index\view\public\header.html";i:1522739877;s:61:"D:\xampp\htdocs\hns\application\index\view\public\footer.html";i:1521878099;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -53,15 +53,15 @@
                 <div class="head-right">
                       <ul class="top-nav">
                             <li class=""><a href="404_error.html" title="My Account">我的账户</a></li>
-                            <li class="my-wishlist"><a href="404_error.html" title="My Wishlist">手机客户端</a></li>
-                            <li class="contact-us"><a href="<?php echo url('advice/index'); ?>" title="Contact Us">关于我们</a></li>
+                            <li class="my-wishlist"><a href="404_error.html" title="My Wishlist">购物车</a></li>
                             <li class="checkout"><a href="404_error.html" title="Checkout">我的订单</a></li>
-                            <li class="log-in"><a href="account_login.html" title="Log In">登录</a></li>
-                            <li class="checkout"><a href="account_create.html" title="Checkout">注册</a></li>
+                            <li class="contact-us"><a href="<?php echo url('advice/index'); ?>" title="Contact Us">关于我们</a></li>
+                            <li class="log-in"><a href="<?php echo url('user/login'); ?>" title="Log In">登录</a></li>
+                            <li class="checkout"><a href="<?php echo url('register/index'); ?>" title="Checkout">注册</a></li>
                             </ul>
                             <ul class="currencyBox">
                                   <li id="header_currancy" class="currency"> <a class="mainCurrency" href="#">我要卖书</a>
-                                <div id="currancyBox" class="currency_detial"> <a href="#">卖书登记</a> <a href="#">卖书信息</a> <a href="#">提现</a> 
+                                <div id="currancyBox" class="currency_detial"> <a href="<?php echo url('book/index'); ?>">卖书登记</a> <a href="#">卖书信息</a> <a href="#">提现</a> 
                                 </div>
                               </li>
                             </ul>
@@ -193,20 +193,16 @@
             </div>
                 <!--Content Block-->
                 <section class="content-wrapper">
-                	<div class="content-container container">
-                        <form action="" method="post">
+                	<div class="content-container container">                        
                 		<div class="col-left">
                 			<div class="block community-block">
                 				<div class="block-title">请选择</div>
                 				<ul>
-                					<li class="question-row">建议类型</li>
-                					<li><input type="radio"><a href="#" title="Green">Green</a></li>
-                					<li><input type="radio"><a href="#" title="Red">Red</a></li>
-                					<li><input type="radio"><a href="#" title="Black">Black</a></li>
-                					<li><input type="radio"><a href="#" title="Magenta">Magenta</a></li>
+                					<li class="question-row">您的宝贵建议是我们前进的动力</li>
                 				</ul>
                 			</div>
                 		</div>
+                        <form action="<?php echo url('advice/save'); ?>" method="post">
                 		<div  class="col-main">
                 			<h1 class="page-title">给我们的建议</h1>
                 			<div class="contact-form-container">
@@ -214,19 +210,19 @@
                 				<ul class="form-fields">
                 					<li class="left">
                 						<label>您的名字<em>*</em></label>
-                						<input type="text" />
+                						<input id="name" name="name" type="text">
                 					</li>
                 					<li class="left">
                 						<label>邮箱<em>*</em></label>
-                						<input type="text" />
+                						<input id="email" name="email" type="text">
                 					</li>
                 					<li class="left">
                 						<label>手机号</label>
-                						<input type="text" />
+                						<input id="phone" name="phone" type="text">
                 					</li>
                 					<li class="full-row">
                 						<label>建议<em>*</em></label>
-                						<textarea></textarea>
+                						<textarea name="advicetext"></textarea>
                 					</li>
                 				</ul>
                 				<div class="button-set">
@@ -235,6 +231,7 @@
                 				</div>
                 			</div>
                 		</div>
+                        </form>
                 		<div class="clearfix"></div>
                 		<div class="news-letter-container">
                 		</div>	
