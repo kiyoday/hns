@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:70:"D:\xampp\htdocs\hns\public/../application/admin\view\advice\index.html";i:1522905548;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\header.html";i:1522073436;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\footer.html";i:1521971807;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:70:"D:\xampp\htdocs\hns\public/../application/admin\view\advice\index.html";i:1522935629;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\header.html";i:1522073436;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\footer.html";i:1521971807;}*/ ?>
 <!--包含头部文件-->
 <!DOCTYPE HTML>
 <html>
@@ -66,7 +66,7 @@
 		</table>
 	</div>
 </div>
-<div class="cl pd-5 bg-1 bk-gray mt-20 pagn-1"></div>
+<div class="cl pd-5 bg-1 bk-gray mt-20 pagn-1"><?php echo $advices->render(); ?></div>
 <!--包含头部文件-->
 <script type="text/javascript" src="/hns/public/static/admin/hui/lib/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="/hns/public/static/admin/js/common.js"></script>

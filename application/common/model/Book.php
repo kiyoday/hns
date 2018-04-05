@@ -2,7 +2,7 @@
 namespace app\common\model;
 use think\Model;
 
-class Advice extends Model
+class book extends Model
 {	
 	protected $autoWriteTimestamp = true;
 	protected $updateTime = false;
@@ -22,5 +22,10 @@ class Advice extends Model
 	public function getadvice()
     {
         return $this->paginate(5);
+    }
+
+    public function getcategory()
+    {
+        return $this->paginate(10);
     }
 }

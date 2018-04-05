@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\book\index.html";i:1522685112;s:59:"D:\xampp\htdocs\hns\application\index\view\public\head.html";i:1522667923;s:61:"D:\xampp\htdocs\hns\application\index\view\public\header.html";i:1522739940;s:61:"D:\xampp\htdocs\hns\application\index\view\public\footer.html";i:1521878099;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\book\index.html";i:1522936114;s:59:"D:\xampp\htdocs\hns\application\index\view\public\head.html";i:1522667923;s:61:"D:\xampp\htdocs\hns\application\index\view\public\header.html";i:1522739940;s:61:"D:\xampp\htdocs\hns\application\index\view\public\footer.html";i:1521878099;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -194,7 +194,6 @@
                 <!--Content Block-->
                 <section class="content-wrapper">
                 	<div class="content-container container">
-                      <form action="" method="post">
                 		<div class="col-left">
                 			<div class="block community-block">
                               <div class="block-title">建议您填写</div>
@@ -210,43 +209,43 @@
                                 </ul>
                 			</div>
                 		</div>
+                        <form action="<?php echo url('book/save'); ?>" method="post">
                 		<div  class="col-main">
                 			<h1 class="page-title">书籍信息</h1>
                 			<div class="contact-form-container">
                 				<div  class="form-title">请填写下列信息</div>
                 				<ul class="form-fields">
-                					<li class="left">
-                						<label>书名<em>*</em></label>
-                						<input type="text" />
-                					</li>
-                					<li class="left">
-                						<label>类型<em>*</em></label>
-                						<select name="type" />
-                                        <option value="volvo">Volvo</option>
-                                        <option value="saab">Saab</option>
-                                        <option value="fiat">Fiat</option>
-                                        <option value="audi">Audi</option>
-                                        </select>
-                					</li></br></br></br></br>
                                     <li class="left">
-                                        <label>图片<em>*</em></label>
-                                        <input id="pic" placeholder="" name="pic"  type="file">
+                                        <label>书名<em>*</em></label>
+                                        <input type="text" name="name">
                                     </li>
-                					<li class="full-row">
-                						<label>描述<em>*</em></label>
-                						<textarea></textarea>
-                					</li>
+                                    <li class="left">
+                                        <label>类型<em>*</em></label>
+                                        <select name="type">
+                                        <?php if(is_array($categorys) || $categorys instanceof \think\Collection || $categorys instanceof \think\Paginator): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                                        <option value="volvo"><?php echo $vo['type_name']; ?></option>
+                                        <?php endforeach; endif; else: echo "" ;endif; ?>   
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <label>图片<em>*</em></label>
+                                        <input id="photo" placeholder="" name="photo"  type="file">
+                                    </li>
+                                    <li class="full-row">
+                                        <label>描述<em>*</em></label>
+                                        <textarea name="introduce"></textarea>
+                                    </li>
                                     <li class="left">
                                         <label>价格<em>*</em></label>
-                                        <input type="text" />
-                                </li>
+                                        <input id="price" type="text" name="price">
+                                    </li>
                 				</ul>
                 				<div class="button-set">
                 					<p class="required">* 为必须填写</p>
                 					<button type="submit" class="form-button"><span>提交</span></button>
                 				</div>
                 			</div>
-                		</div>
+                		</div></form>
                 		<div class="clearfix"></div>
                 		<div class="news-letter-container">
                 		</div>	
