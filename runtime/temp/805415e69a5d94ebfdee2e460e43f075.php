@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\book\index.html";i:1522685112;s:59:"D:\xampp\htdocs\hns\application\index\view\public\head.html";i:1522667923;s:61:"D:\xampp\htdocs\hns\application\index\view\public\header.html";i:1522739560;s:61:"D:\xampp\htdocs\hns\application\index\view\public\footer.html";i:1521878099;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\book\index.html";i:1522685112;s:59:"D:\xampp\htdocs\hns\application\index\view\public\head.html";i:1522667923;s:61:"D:\xampp\htdocs\hns\application\index\view\public\header.html";i:1522739940;s:61:"D:\xampp\htdocs\hns\application\index\view\public\footer.html";i:1521878099;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -56,8 +56,8 @@
                             <li class="my-wishlist"><a href="404_error.html" title="My Wishlist">购物车</a></li>
                             <li class="checkout"><a href="404_error.html" title="Checkout">我的订单</a></li>
                             <li class="contact-us"><a href="<?php echo url('advice/index'); ?>" title="Contact Us">关于我们</a></li>
-                            <li class="log-in"><a href="<?php echo url('login/index'); ?>" title="Log In">登录</a></li>
-                            <li class="checkout"><a href="<?php echo url('register/index'); ?>" title="Checkout">注册</a></li>
+                            <li class="log-in"><a href="<?php echo url('user/login'); ?>" title="Log In">登录</a></li>
+                            <li class="checkout"><a href="<?php echo url('user/register'); ?>" title="Checkout">注册</a></li>
                             </ul>
                             <ul class="currencyBox">
                                   <li id="header_currancy" class="currency"> <a class="mainCurrency" href="#">我要卖书</a>

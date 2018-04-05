@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:72:"D:\xampp\htdocs\hns\public/../application/admin\view\category\index.html";i:1522904608;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\header.html";i:1522073436;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\footer.html";i:1521971807;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:70:"D:\xampp\htdocs\hns\public/../application/admin\view\advice\index.html";i:1522905548;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\header.html";i:1522073436;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\footer.html";i:1521971807;}*/ ?>
 <!--包含头部文件-->
 <!DOCTYPE HTML>
 <html>
@@ -33,38 +33,40 @@
 <body>
 <nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 分类管理 <span class="c-gray en">&gt;</span> 分类列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
 <div class="page-container">
-	
-	<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"> <a class="btn btn-primary radius" onClick="o2o_s_edit('添加书籍分类','<?php echo url('category/add'); ?>','','300')" href="javascript:;"><i class="Hui-iconfont">&#xe600;</i> 添加分类</a></span> <span class="r"></span> </div>
 	<div class="mt-20">
 		<table class="table table-border table-bordered table-bg table-hover table-sort">
 			<thead>
 				<tr class="text-c">
-					<th width="40"><input name="" type="checkbox" value=""></th>
-					<th width="80">ID</th>
-					<th width="100">分类</th>
-					<th width="30"></th>
-					<th width="150">新增时间</th>
-					<th width="60"></th>
-					<th width="100">操作</th>
+					<th width="3%"><input name="" type="checkbox" value=""></th>
+					<th width="5%">ID</th>
+					<th width="8%">名字</th>
+					<th width="8%">手机号</th>
+					<th width="10%">邮箱</th>
+					<th width="40%">留言</th>
+					<th width="10%">新增时间</th>
+					<th width="5%">状态</th>
+					<th width="5%">操作</th>
 				</tr>
 			</thead>
 			<tbody>
-			<?php if(is_array($categorys) || $categorys instanceof \think\Collection || $categorys instanceof \think\Paginator): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+				<?php if(is_array($advices) || $advices instanceof \think\Collection || $advices instanceof \think\Paginator): $i = 0; $__LIST__ = $advices;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
 				<tr class="text-c">
 					<td><input name="" type="checkbox" value=""></td>
-					<td><?php echo $vo['type_id']; ?></td>
-					<td><?php echo $vo['type_name']; ?></td>
-					<td class="text-c"></td>
+					<td><?php echo $vo['id']; ?></td>
+					<td><?php echo $vo['name']; ?></td>
+					<td><?php echo $vo['phone']; ?></td>
+					<td><?php echo $vo['email']; ?></td>
+					<td class="text-c"><?php echo $vo['advicetext']; ?></td>
 					<td><?php echo $vo['create_time']; ?></td>
 					<td class="td-status"><a href="" title="点击修改状态"></a></td>
-					<td class="td-manage"><a style="text-decoration:none" class="ml-5" onClick="o2o_s_edit('编辑','<?php echo url('category/edit',['tid'=>$vo['type_id']]); ?>','',300)"  href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5" onClick="o2o_s_edit('删除','<?php echo url('category/del',['tid'=>$vo['type_id']]); ?>','',300)" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+					<td class="td-manage"><a style="text-decoration:none" class="ml-5" onClick="o2o_s_edit('审核','<?php echo url('advice/del',['tid'=>$vo['id']]); ?>','',300)" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
 				</tr>
-			<?php endforeach; endif; else: echo "" ;endif; ?>	
+				<?php endforeach; endif; else: echo "" ;endif; ?>
 			</tbody>
 		</table>
 	</div>
 </div>
-<div class="cl pd-5 bg-1 bk-gray mt-20 pagn-1"><?php echo $categorys->render(); ?></div>
+<div class="cl pd-5 bg-1 bk-gray mt-20 pagn-1"></div>
 <!--包含头部文件-->
 <script type="text/javascript" src="/hns/public/static/admin/hui/lib/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="/hns/public/static/admin/js/common.js"></script>

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:72:"D:\xampp\htdocs\hns\public/../application/admin\view\category\index.html";i:1522904608;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\header.html";i:1522073436;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\footer.html";i:1521971807;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:68:"D:\xampp\htdocs\hns\public/../application/admin\view\advice\del.html";i:1522905496;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\header.html";i:1522073436;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\footer.html";i:1521971807;}*/ ?>
 <!--包含头部文件-->
 <!DOCTYPE HTML>
 <html>
@@ -31,40 +31,30 @@
 <meta name="description" content="开心果">
 </head>
 <body>
-<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 分类管理 <span class="c-gray en">&gt;</span> 分类列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
 <div class="page-container">
-	
-	<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"> <a class="btn btn-primary radius" onClick="o2o_s_edit('添加书籍分类','<?php echo url('category/add'); ?>','','300')" href="javascript:;"><i class="Hui-iconfont">&#xe600;</i> 添加分类</a></span> <span class="r"></span> </div>
-	<div class="mt-20">
-		<table class="table table-border table-bordered table-bg table-hover table-sort">
-			<thead>
-				<tr class="text-c">
-					<th width="40"><input name="" type="checkbox" value=""></th>
-					<th width="80">ID</th>
-					<th width="100">分类</th>
-					<th width="30"></th>
-					<th width="150">新增时间</th>
-					<th width="60"></th>
-					<th width="100">操作</th>
-				</tr>
-			</thead>
-			<tbody>
-			<?php if(is_array($categorys) || $categorys instanceof \think\Collection || $categorys instanceof \think\Paginator): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-				<tr class="text-c">
-					<td><input name="" type="checkbox" value=""></td>
-					<td><?php echo $vo['type_id']; ?></td>
-					<td><?php echo $vo['type_name']; ?></td>
-					<td class="text-c"></td>
-					<td><?php echo $vo['create_time']; ?></td>
-					<td class="td-status"><a href="" title="点击修改状态"></a></td>
-					<td class="td-manage"><a style="text-decoration:none" class="ml-5" onClick="o2o_s_edit('编辑','<?php echo url('category/edit',['tid'=>$vo['type_id']]); ?>','',300)"  href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5" onClick="o2o_s_edit('删除','<?php echo url('category/del',['tid'=>$vo['type_id']]); ?>','',300)" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
-				</tr>
-			<?php endforeach; endif; else: echo "" ;endif; ?>	
-			</tbody>
-		</table>
-	</div>
+	<form class="form form-horizontal form-o2o-add" id="form-o2o-add" method="post" action="">
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>邮箱：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="<?php echo $advice['email']; ?>" placeholder="" id="name" name="email">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>内容：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<textarea rows="7" cols="90"><?php echo $advice['advicetext']; ?></textarea>
+			</div>
+		</div>
+	<div class="row cl">
+			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+				<button  type="submit" class="btn btn-primary radius" ><i class="Hui-iconfont">&#xe632;</i> 审核完成</button>
+				
+				<button onClick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+			</div>
+		</div>
+	</form>
 </div>
-<div class="cl pd-5 bg-1 bk-gray mt-20 pagn-1"><?php echo $categorys->render(); ?></div>
+</div>
 <!--包含头部文件-->
 <script type="text/javascript" src="/hns/public/static/admin/hui/lib/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="/hns/public/static/admin/js/common.js"></script>
@@ -75,5 +65,4 @@
 <script type="text/javascript" src="/hns/public/static/admin/hui/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>  
 <script type="text/javascript" src="/hns/public/static/admin/hui/static/h-ui/js/H-ui.js"></script> 
 <script type="text/javascript" src="/hns/public/static/admin/hui/static/h-ui.admin/js/H-ui.admin.js"></script>
-
 

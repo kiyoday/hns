@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:68:"D:\xampp\htdocs\hns\public/../application/admin\view\user\index.html";i:1522583529;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\header.html";i:1522073436;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\footer.html";i:1521971807;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:68:"D:\xampp\htdocs\hns\public/../application/admin\view\user\index.html";i:1522901553;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\header.html";i:1522073436;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\footer.html";i:1521971807;}*/ ?>
 <!--包含头部文件-->
 <!DOCTYPE HTML>
 <html>
@@ -47,12 +47,13 @@
 		<thead>
 			<tr class="text-c">
 				<th width="25"><input type="checkbox" name="" value=""></th>
-				<th width="80">ID</th>
-				<th width="200">用户名</th>
-				<th width="190">邮箱</th>
-				<th width="150">性别</th>
-				<th width="230">注册时间</th>
+				<th width="3%">ID</th>
+				<th width="5%">用户名</th>
+				<th width="15%">邮箱</th>
+				<th width="3%">性别</th>
+				<th width="15%">注册时间</th>
 				<th width="130">信用等级</th>
+				<th width="130"></th>
 				<th width="170">状态</th>
 				<th width="100">操作</th>
 			</tr>
