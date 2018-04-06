@@ -21,18 +21,29 @@ class Book extends Controller
 
     public function save(){
     	//dump(input('post.'));die;
-    	$data = input('post.');
-    	$validate = validate('Book');
-        if(!$validate->scene('add')->check($data)){
-        	$this->error($validate->getError());
-        }
-        $res = $this->obj1->add($data);
-        if($res){
-            $this->success('上传成功','index/index');
-        }
-        else 
+        if(request()->isPost())
         {
-            $this->error('上传失败');
+        $data = input('post.');
+        dump($data);die;
+        if($_FILES['photo']['tmp_name']){
+            $file = request()->file('photo');
+            $info = $file->validate(['size'=>15678,'ext'=>'jpg,png,gif'])->move(ROOT_PATH . 'public' . DS . 'uploads');
+            if($info){
+                $info->getExtension();
+            }
+        }
+            $validate = validate('Book');
+            if(!$validate->scene('add')->check($data)){
+                $this->error($validate->getError());
+            }
+            $res = $this->obj1->add($data);
+            if($res){
+                $this->success('上传成功','index/index');
+            }
+            else 
+            {
+                $this->error('上传失败');
+            }
         }
     	return $this->fetch();
     }
