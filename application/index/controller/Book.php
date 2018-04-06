@@ -24,12 +24,12 @@ class Book extends Controller
         if(request()->isPost())
         {
         $data = input('post.');
-        dump($data);die;
         if($_FILES['photo']['tmp_name']){
             $file = request()->file('photo');
-            $info = $file->validate(['size'=>15678,'ext'=>'jpg,png,gif'])->move(ROOT_PATH . 'public' . DS . 'uploads');
+            $info = $file->validate(['ext'=>'jpg,png,gif,jpeg'])->move(ROOT_PATH . 'public' . DS . 'uploads');
             if($info){
                 $info->getExtension();
+                dump($info);die;
             }
         }
             $validate = validate('Book');
@@ -48,3 +48,5 @@ class Book extends Controller
     	return $this->fetch();
     }
 }
+
+//->validate(['ext'=>'jpg,png,gif,jpeg'])
