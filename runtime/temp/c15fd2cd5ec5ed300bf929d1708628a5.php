@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:69:"D:\xampp\htdocs\hns\public/../application/admin\view\index\index.html";i:1522589969;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\header.html";i:1522073436;s:59:"D:\xampp\htdocs\hns\application\admin\view\public\menu.html";i:1522897311;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\footer.html";i:1521971807;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:69:"D:\xampp\htdocs\hns\public/../application/admin\view\index\index.html";i:1522589969;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\header.html";i:1522073436;s:59:"D:\xampp\htdocs\hns\application\admin\view\public\menu.html";i:1523112435;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\footer.html";i:1521971807;}*/ ?>
 ﻿<!--包含头部文件-->
 <!DOCTYPE HTML>
 <html>
@@ -85,7 +85,7 @@
 			<dt><i class="Hui-iconfont">&#xe620;</i> 书籍管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a _href="" data-title="书籍列表" href="javascript:void(0)">书籍列表</a></li>
+					<li><a _href="<?php echo url('book/index'); ?>" data-title="书籍列表" href="javascript:void(0)">书籍列表</a></li>
 				</ul>
 			</dd>
 		</dl>

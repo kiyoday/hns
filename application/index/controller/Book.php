@@ -11,8 +11,11 @@ class Book extends Controller
     public function index()
     {
         $categorys = $this->obj->getcategory();
+        $books = $this->obj->getbook();
         return $this->fetch('',[
             'categorys'=>$categorys,
+            'books'=>$books,
+
         ]);
     }
     public function save(){

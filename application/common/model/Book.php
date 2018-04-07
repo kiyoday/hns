@@ -19,7 +19,7 @@ class book extends Model
 		return $this->save($data);
 	}
 
-	public function getadvice()
+	public function getbook()
     {
         return $this->paginate(5);
     }
