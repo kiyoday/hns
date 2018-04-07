@@ -1,26 +1,22 @@
 <?php
 namespace app\index\controller;
 use think\Controller;
-
 class Book extends Controller
 {
-	public function _initialize()
+    public function _initialize()
     {
         $this->obj = model('category');
         $this->obj1 = model('book');
-
     }
-
     public function index()
     {
-    	$categorys = $this->obj->getcategory();
+        $categorys = $this->obj->getcategory();
         return $this->fetch('',[
             'categorys'=>$categorys,
         ]);
     }
-
     public function save(){
-    	//dump(input('post.'));die;
+        //dump(input('post.'));die;
         if(request()->isPost())
         {
             $data = input('post.');
@@ -45,8 +41,7 @@ class Book extends Controller
                 $this->error('上传失败');
             }
         }
-    	return $this->fetch();
+        return $this->fetch();
     }
 }
-
 //->validate(['ext'=>'jpg,png,gif,jpeg'])
