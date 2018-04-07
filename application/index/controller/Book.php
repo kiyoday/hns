@@ -23,13 +23,13 @@ class Book extends Controller
     	//dump(input('post.'));die;
         if(request()->isPost())
         {
-        $data = input('post.');
-        if($_FILES['photo']['tmp_name']){
+            $data = input('post.');
+            if($_FILES['photo']['tmp_name']){
             $file = request()->file('photo');
             $info = $file->validate(['ext'=>'jpg,png,gif,jpeg'])->move(ROOT_PATH . 'public' . DS . 'uploads');
             if($info){
-                $info->getExtension();
-                dump($info);die;
+            $photo1 = 'http://127.0.0.1/hns/' . 'public' . DS . 'uploads'.'/'.$info->getSaveName();
+            $data['photo']= $photo1;  
             }
         }
             $validate = validate('Book');
