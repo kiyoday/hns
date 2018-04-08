@@ -13,7 +13,7 @@ class Index extends Controller
     public function index()
     {
         $categorys = $this->obj->getcategory();
-        $books = $this->obj1->getbook();
+        $books = $this->obj1->indexgetbook();
         return $this->fetch('',[
             'categorys'=>$categorys,
             'books'=>$books,

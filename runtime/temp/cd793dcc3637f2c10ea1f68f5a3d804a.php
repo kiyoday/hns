@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:69:"D:\xampp\htdocs\hns\public/../application/index\view\index\index.html";i:1521958318;s:59:"D:\xampp\htdocs\hns\application\index\view\public\head.html";i:1522667923;s:61:"D:\xampp\htdocs\hns\application\index\view\public\header.html";i:1523183789;s:61:"D:\xampp\htdocs\hns\application\index\view\public\footer.html";i:1521878099;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:69:"D:\xampp\htdocs\hns\public/../application/index\view\index\index.html";i:1523189775;s:59:"D:\xampp\htdocs\hns\application\index\view\public\head.html";i:1522667923;s:61:"D:\xampp\htdocs\hns\application\index\view\public\header.html";i:1523184165;s:61:"D:\xampp\htdocs\hns\application\index\view\public\footer.html";i:1521878099;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -153,7 +153,7 @@
             <section class="content-wrapper">
               <div class="content-container container">
                 <div class="heading-block">
-                  <h1>Freatured Products</h1>
+                  <h1>推荐书籍</h1>
                   <ul class="pagination">
                     <li class="grid"><a href="#" title="Grid">Grid</a></li>
                   </ul>
@@ -253,7 +253,7 @@
                   </ul>
                 </div>
                 <div class="heading-block">
-                  <h1>New Product</h1>
+                  <h1>当前类别</h1>
                 </div>
                 <div class="new-product-block">
                   <ul class="product-grid">
@@ -366,17 +366,6 @@
                       </div>
                     </li>
                   </ul>
-                </div>
-                <div class="news-letter-container">
-                  <div class="free-shipping-block">
-                    <h1>ENJOY FREE SHIPPING</h1>
-                    <p>on all orders as our holiday gift for you!</p>
-                  </div>
-                  <div class="news-letter-block">
-                    <h2>SIGN UP FOR OUR NEWSLETTER</h2>
-                    <input type="text" value="Enter email address" title="" />
-                    <input type="submit" value="Submit" title="Submit" />
-                  </div>
                 </div>
               </div>
             </section>
