@@ -35,8 +35,13 @@
 				<td>{$vo.book_id}</td>
 				<td>{$vo.name}<u style="cursor:pointer" class="text-primary" onclick="member_show('张三','member-show.html','10001','360','400')"></u></td>
 				<td>{$vo.type}</td>
-				<td>{$vo.photo}</td>
-				<td>{$vo.price}</td>
+				<td>
+				{if condition="$vo['photo'] neq ''"}
+						<img src="{$vo.photo}" height='110' ">
+						{else /}
+						暂无缩略图
+						{/if}</td>
+				<td>￥{$vo.price}</td>
 				<td class="text-l">{$vo.introduce}</td>
 				<td>{$vo.create_time}</td>
 				<td class="td-status"><span class="label label-success radius">已启用</span></td>
@@ -47,7 +52,7 @@
 	</table>
 	</div>
 </div>
-<div class="cl pd-5 bg-1 bk-gray mt-20 pagn-1">{$advices->render()}</div>
+<div class="cl pd-5 bg-1 bk-gray mt-20 pagn-1">{$books->render()}</div>
 <!--包含头部文件-->
 {include file="public/footer" /}
 <script type="text/javascript">

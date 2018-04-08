@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\book\index.html";i:1523016773;s:59:"D:\xampp\htdocs\hns\application\index\view\public\head.html";i:1522667923;s:61:"D:\xampp\htdocs\hns\application\index\view\public\header.html";i:1522739940;s:61:"D:\xampp\htdocs\hns\application\index\view\public\footer.html";i:1521878099;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\book\index.html";i:1523166702;s:59:"D:\xampp\htdocs\hns\application\index\view\public\head.html";i:1522667923;s:61:"D:\xampp\htdocs\hns\application\index\view\public\header.html";i:1522739940;s:61:"D:\xampp\htdocs\hns\application\index\view\public\footer.html";i:1521878099;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -228,7 +228,7 @@
                                         </select>
                                     </li>
                                     <li>
-                                        <label>图片<em>*</em></label>
+                                        <label>图片<em></em></label>
                                         <input id="photo" placeholder="" name="photo"  type="file">
                                     </li>
                                     <li class="full-row">
@@ -236,7 +236,7 @@
                                         <textarea name="introduce"></textarea>
                                     </li>
                                     <li class="left">
-                                        <label>价格<em>*</em></label>
+                                        <label>价格 人民币（元）<em>*</em></label>
                                         <input id="price" type="text" name="price">
                                     </li>
                 				</ul>

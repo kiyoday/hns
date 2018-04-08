@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:68:"D:\xampp\htdocs\hns\public/../application/admin\view\book\index.html";i:1523162730;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\header.html";i:1522073436;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\footer.html";i:1521971807;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:68:"D:\xampp\htdocs\hns\public/../application/admin\view\book\index.html";i:1523166499;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\header.html";i:1522073436;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\footer.html";i:1521971807;}*/ ?>
 <!--包含头部文件-->
 <!DOCTYPE HTML>
 <html>
@@ -65,8 +65,13 @@
 				<td><?php echo $vo['book_id']; ?></td>
 				<td><?php echo $vo['name']; ?><u style="cursor:pointer" class="text-primary" onclick="member_show('张三','member-show.html','10001','360','400')"></u></td>
 				<td><?php echo $vo['type']; ?></td>
-				<td><?php echo $vo['photo']; ?></td>
-				<td><?php echo $vo['price']; ?></td>
+				<td>
+				<?php if($vo['photo'] != ''): ?>
+						<img src="<?php echo $vo['photo']; ?>" height='110' ">
+						<?php else: ?>
+						暂无缩略图
+						<?php endif; ?></td>
+				<td>￥<?php echo $vo['price']; ?></td>
 				<td class="text-l"><?php echo $vo['introduce']; ?></td>
 				<td><?php echo $vo['create_time']; ?></td>
 				<td class="td-status"><span class="label label-success radius">已启用</span></td>
@@ -77,6 +82,7 @@
 	</table>
 	</div>
 </div>
+<div class="cl pd-5 bg-1 bk-gray mt-20 pagn-1"><?php echo $books->render(); ?></div>
 <!--包含头部文件-->
 <script type="text/javascript" src="/hns/public/static/admin/hui/lib/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="/hns/public/static/admin/js/common.js"></script>

@@ -2,7 +2,7 @@
 namespace app\common\model;
 use think\Model;
 
-class book extends Model
+class Book extends Model
 {	
 	protected $autoWriteTimestamp = true;
 	protected $updateTime = false;
