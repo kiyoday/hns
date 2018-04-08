@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:68:"D:\xampp\htdocs\hns\public/../application/admin\view\book\index.html";i:1523112940;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\header.html";i:1522073436;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\footer.html";i:1521971807;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:68:"D:\xampp\htdocs\hns\public/../application/admin\view\book\index.html";i:1523162730;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\header.html";i:1522073436;s:61:"D:\xampp\htdocs\hns\application\admin\view\public\footer.html";i:1521971807;}*/ ?>
 <!--包含头部文件-->
 <!DOCTYPE HTML>
 <html>
@@ -51,6 +51,7 @@
 				<th width="5%">书名</th>
 				<th width="7%">类别</th>
 				<th width="15%">缩略图</th>
+				<th width="7%">价格</th>
 				<th width="250">描述</th>
 				<th width="130">上传时间</th>
 				<th width="70">状态</th>
@@ -58,17 +59,20 @@
 			</tr>
 		</thead>
 		<tbody>
+			<?php if(is_array($books) || $books instanceof \think\Collection || $books instanceof \think\Paginator): $i = 0; $__LIST__ = $books;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
 			<tr class="text-c">
 				<td><input type="checkbox" value="1" name=""></td>
-				<td></td>
-				<td><u style="cursor:pointer" class="text-primary" onclick="member_show('张三','member-show.html','10001','360','400')"></u></td>
-				<td></td>
-				<td></td>
-				<td class="text-l"></td>
-				<td></td>
+				<td><?php echo $vo['book_id']; ?></td>
+				<td><?php echo $vo['name']; ?><u style="cursor:pointer" class="text-primary" onclick="member_show('张三','member-show.html','10001','360','400')"></u></td>
+				<td><?php echo $vo['type']; ?></td>
+				<td><?php echo $vo['photo']; ?></td>
+				<td><?php echo $vo['price']; ?></td>
+				<td class="text-l"><?php echo $vo['introduce']; ?></td>
+				<td><?php echo $vo['create_time']; ?></td>
 				<td class="td-status"><span class="label label-success radius">已启用</span></td>
 				<td class="td-manage"><a style="text-decoration:none" onClick="member_stop(this,'10001')" href="javascript:;" title="停用"><i class="Hui-iconfont">&#xe631;</i></a> <a title="编辑" href="javascript:;" onclick="member_edit('编辑','member-add.html','4','','510')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5" onClick="change_password('修改密码','change-password.html','10001','600','270')" href="javascript:;" title="修改密码"><i class="Hui-iconfont">&#xe63f;</i></a> <a title="删除" href="javascript:;" onclick="member_del(this,'1')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
 			</tr>
+			<?php endforeach; endif; else: echo "" ;endif; ?>
 		</tbody>
 	</table>
 	</div>
