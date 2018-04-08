@@ -4,8 +4,20 @@ use think\Controller;
 
 class Index extends Controller
 {
+	 public function _initialize()
+    {
+        $this->obj = model('category');
+        $this->obj1 = model('book');
+    }
+	
     public function index()
     {
-        return $this->fetch();
+        $categorys = $this->obj->getcategory();
+        $books = $this->obj1->getbook();
+        return $this->fetch('',[
+            'categorys'=>$categorys,
+            'books'=>$books,
+
+        ]);
     }
 }

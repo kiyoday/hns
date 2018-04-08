@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:69:"D:\xampp\htdocs\hns\public/../application/index\view\index\index.html";i:1521958318;s:59:"D:\xampp\htdocs\hns\application\index\view\public\head.html";i:1522667923;s:61:"D:\xampp\htdocs\hns\application\index\view\public\header.html";i:1522739940;s:61:"D:\xampp\htdocs\hns\application\index\view\public\footer.html";i:1521878099;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:69:"D:\xampp\htdocs\hns\public/../application/index\view\index\index.html";i:1521958318;s:59:"D:\xampp\htdocs\hns\application\index\view\public\head.html";i:1522667923;s:61:"D:\xampp\htdocs\hns\application\index\view\public\header.html";i:1523183789;s:61:"D:\xampp\htdocs\hns\application\index\view\public\footer.html";i:1521878099;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -69,7 +69,7 @@
                     <div class="cart-block">
                      <ul>
                       <li>( )</li>
-                      <li><a href="cart.html" title="Cart"><img title="Item" alt="Item" src="images/item_icon.png" /></a></li>
+                      <li><a href="cart.html" title="Cart"><img title="Item" alt="Item" src="/hns/public/static/index/images/item_icon.png" /></a></li>
                       <li>购物车</li>
                      </ul>
                    <div id="minicart" class="remain_cart" style="display: none;">
@@ -118,76 +118,17 @@
                   </section>
                 </div>
                 <h1 class="logo"><a href="index-2.html" title="Logo">
-                  <img title="Logo" alt="Logo" src="images/logo.png" />
+                  <img title="Logo" alt="Logo" src="/hns/public/static/index/images/logo.png" />
                   </a></h1>
                 <nav id="smoothmenu1" class="ddsmoothmenu mainMenu">
                   <ul id="nav">
                     <li class="active"><a href="index.html" title="Home">首页</a></li>
-                    <li class=""><a href="category.html" title="Shop by">分类</a>
-                      <ul>
-                        <li><a href="category.html">Woman Collection</a></li>
-                        <li><a href="category.html">Men Collection</a></li>
-                        <li><a href="category.html">Accessories</a></li>
-                        <li><a href="category.html">Mobile</a>
-                          <ul>
-                                <li><a href="category.html">Second level</a></li>
-                                <li><a href="category.html">Second level</a></li>
-                                <li><a href="category.html">Second level</a></li>
-                                <li><a href="category.html">Second level</a></li>
-                                <li><a href="category.html">Second level</a></li>
-                                <li><a href="category.html">Second level</a></li>
-                              </ul>
-                        </li>
-                        <li><a href="category.html">Shoes</a></li>
-                        <li><a href="category.html">Others</a></li>
-                      </ul>
-                    </li>
-                    <li class=""><a href="blog.html" title="Blog">Blog</a></li>
-                    <li class=""><a href="faq.html" title="Faq">Faq</a></li>
-                    <li class=""><a href="about_us.html" title="About us">About us</a></li>
-                    <li class=""><a href="404_error.html" title="Pages">Pages</a></li>
-                    <li class=""><a href="contact_us.html" title="Footwear">Contact us</a></li>
+                    <?php if(is_array($categorys) || $categorys instanceof \think\Collection || $categorys instanceof \think\Paginator): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                    <li class=""><a href="blog.html" title="<?php echo $vo['type_name']; ?>"><?php echo $vo['type_name']; ?></a></li>
+                    <?php endforeach; endif; else: echo "" ;endif; ?>
                   </ul>
                 </nav>
-                
-                <div class="mobMenu">
-            <h1>
-            <span>Menu</span>
-            <a class="menuBox highlight" href="javascript:void(0);">ccc</a>
-            <span class="clearfix"></span>
-            </h1>
-            <div id="menuInnner" style="display:none;">
-                   <ul class="accordion">
-                       <li class="active"><a href="index-2.html" title="Home">Home</a></li>
-                    <li class="parent"><a href="category.html" title="Shop by">Shop by</a>
-                      <ul>
-                        <li><a href="category.html">Woman Collection</a></li>
-                        <li><a href="category.html">Men Collection</a></li>
-                        <li><a href="category.html">Accessories</a></li>
-                        <li><a href="category.html">Mobile</a>
-                          <ul>
-                                <li><a href="category.html">Second level</a></li>
-                                <li><a href="category.html">Second level</a></li>
-                                <li><a href="category.html">Second level</a></li>
-                                <li><a href="category.html">Second level</a></li>
-                                <li><a href="category.html">Second level</a></li>
-                                <li><a href="category.html">Second level</a></li>
-                              </ul>
-                        </li>
-                        <li><a href="category.html">Shoes</a></li>
-                        <li><a href="category.html">Others</a></li>
-                      </ul>
-                    </li>
-                    <li class=""><a href="blog.html" title="Blog">Blog</a></li>
-                    <li class=""><a href="faq.html" title="Faq">Faq</a></li>
-                    <li class=""><a href="about_us.html" title="About us">About us</a></li>
-                    <li class=""><a href="404_error.html" title="Pages">Pages</a></li>
-                    <li class=""><a href="contact_us.html" title="Footwear">Contact us</a></li>
-                      <span class="clearfix"></span>
-                   </ul>
-                  
-             </div>      
-            </div>
+              
                 
               </header>
             </div>
