@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"D:\xampp\htdocs\hns\public/../application/admin\view\login\index.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"D:\xampp\htdocs\hns\public/../application/admin\view\login\index.html";i:1523274642;}*/ ?>
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
@@ -40,6 +40,13 @@
         </div>
       </div>
       <div class="row cl">
+      </div>
+      <div class="row cl">
+        <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60e;</i></label>
+        <div class="formControls col-xs-8">
+          <input style="width:45%;float:left;" id="" name="code" type="" placeholder="验证码" class="input-text size-L">
+          <img style="height:40px;cursor:pointer;"  src="<?php echo captcha_src(); ?>" onclick="this.src='<?php echo captcha_src(); ?>?'+Math.random" alt="captcha">
+        </div>
       </div>
       <div class="row cl">
         <div class="formControls col-xs-8 col-xs-offset-3">

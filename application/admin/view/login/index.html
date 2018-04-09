@@ -41,6 +41,13 @@
       <div class="row cl">
       </div>
       <div class="row cl">
+        <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60e;</i></label>
+        <div class="formControls col-xs-8">
+          <input style="width:45%;float:left;" id="" name="code" type="" placeholder="验证码" class="input-text size-L">
+          <img style="height:40px;cursor:pointer;"  src="{:captcha_src()}" onclick="this.src='{:captcha_src()}?'+Math.random" alt="captcha">
+        </div>
+      </div>
+      <div class="row cl">
         <div class="formControls col-xs-8 col-xs-offset-3">
           <input name="" type="submit" class="btn btn-success radius size-L" value="&nbsp;登&nbsp;&nbsp;&nbsp;&nbsp;录&nbsp;">
           <input name="" type="reset" class="btn btn-default radius size-L" value="&nbsp;取&nbsp;&nbsp;&nbsp;&nbsp;消&nbsp;">

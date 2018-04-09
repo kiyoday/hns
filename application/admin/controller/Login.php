@@ -10,8 +10,9 @@ class Login extends Controller
     }
 
     public function logincheck()
-    {
+    {   
     	if(request()->isPost()){
+            $this->check(input('code'));
     		$data = input('post.');
     		$validate = validate('Admin');
         	if(!$validate->scene('add')->check($data)){
@@ -28,7 +29,17 @@ class Login extends Controller
     				$this->success('欢迎进入后台管理系统','index/index');
     			}
     		}
-    	}
-    	
+    	}	
+    }
+
+    //验证码检验
+    public function check($code='')
+    {
+        $captcha = new \think\captcha\Captcha();
+        if (!$captcha->check($code)) {
+            $this->error('验证码错误');
+        } else {
+           return true;
+        }
     }
 }
