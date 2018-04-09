@@ -7,6 +7,7 @@ class Advice extends Controller
 	public function _initialize()
     {
         $this->obj = model('Advice');
+        $this->objc = model('category');
     }
 
     public function add()
@@ -16,7 +17,10 @@ class Advice extends Controller
 
     public function index()
     {
-        return $this->fetch();
+        $categorys = $this->objc->getcategory();
+        return $this->fetch('',[
+            'categorys'=>$categorys,
+        ]);
     }
 
     public function save()

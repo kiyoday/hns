@@ -4,27 +4,41 @@ use think\Controller;
 
 class User extends Controller
 {   
-    public function login()
-    {   
-        return $this->fetch(); 
-    }
-
-     public function _initialize()
+    public function _initialize()
     {
         $this->obj = model('User');
+        $this->objc = model('category');
+        $this->obj1 = model('book');
     }
+
+    public function login()
+    {   
+        $users = $this->obj->getuser();
+        $categorys = $this->objc->getcategory();
+        $books = $this->obj1->indexgetbook();
+        return $this->fetch('',[
+            'users'=>$users,
+            'categorys'=>$categorys,
+            'books'=>$books,
+            ]); 
+    }  
 
     public function index()
     {   
         $users = $this->obj->getuser();
+        $categorys = $this->objc->getcategory();
+        $books = $this->obj1->indexgetbook();
         return $this->fetch('',[
             'users'=>$users,
+            'categorys'=>$categorys,
+            'books'=>$books,
             ]);
     }
 
     public function logincheck()
     {   
         if(request()->isPost()){
+            $this->check(input('code'));
             $data = input('post.');
             if(request()->ispost())
             {
@@ -44,7 +58,14 @@ class User extends Controller
 
     public function register()
     {   
-        return $this->fetch(); 
+        $users = $this->obj->getuser();
+        $categorys = $this->objc->getcategory();
+        $books = $this->obj1->indexgetbook();
+        return $this->fetch('',[
+            'users'=>$users,
+            'categorys'=>$categorys,
+            'books'=>$books,
+            ]); 
     }
     
     public function add()
@@ -137,6 +158,16 @@ class User extends Controller
         }
     }
 
+    //验证码检验
+    public function check($code='')
+    {
+        $captcha = new \think\captcha\Captcha();
+        if (!$captcha->check($code)) {
+            $this->error('验证码错误');
+        } else {
+           return true;
+        }
+    }
     
 
 }

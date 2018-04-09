@@ -46,8 +46,15 @@
                 </div>
                 <div class="clear"></div>
               </li>
+              <li>
+                <div class="input-box">
+                  <input style="width:45%;float:left; name="code" type="text" placeholder="验证码" name="code" class="input-text required-entry validate-password" />
+                   <img style="height:30px;float:right;cursor:pointer;"  src="{:captcha_src()}" onclick="this.src='{:captcha_src()}?'+Math.random" alt="captcha">
+                </div>
+                <div class="clear"></div>
+              </li>
             </ul>
-            <p class="required">* 为必须填写</p>
+            <p class="required">* 必须填写</p>
           </div>
           <div class="buttons-set">
             <a class="f-left" href="#">忘记密码?</a>
@@ -60,17 +67,6 @@
       </div>
     </div>
     <div class="clearfix"></div>
-    <div class="news-letter-container">
-      <div class="free-shipping-block">
-        <h1>ENJOY FREE SHIPPING</h1>
-        <p>on all orders as our holiday gift for you!</p>
-      </div>
-      <div class="news-letter-block">
-        <h2>SIGN UP FOR OUR NEWSLETTER</h2>
-        <input type="text" value="Enter email address" title="" />
-        <input type="submit" value="Submit" title="Submit" />
-      </div>
-    </div>  
   </div>
 </section>
 </div>

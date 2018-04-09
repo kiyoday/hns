@@ -5,12 +5,12 @@ class Book extends Controller
 {
     public function _initialize()
     {
-        $this->obj = model('category');
+        $this->objc = model('category');
         $this->obj1 = model('book');
     }
     public function index()
     {
-        $categorys = $this->obj->getcategory();
+        $categorys = $this->objc->getcategory();
         $books = $this->obj1->getbook();
         return $this->fetch('',[
             'categorys'=>$categorys,
