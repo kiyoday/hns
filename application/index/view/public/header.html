@@ -62,8 +62,10 @@
                     </div>
                   </div>
                   <div class="search-block">
-                      <input type="text" value="" />
+                    <form action="{:url('search/index')}" method="post">
+                      <input name="keywords" type="text" value="" />
                       <input type="submit" value="Search" title="搜索" />
+                    </form>
                     </div>
                   </section>
                 </div>
@@ -72,7 +74,7 @@
                   </a></h1>
                 <nav id="smoothmenu1" class="ddsmoothmenu mainMenu">
                   <ul id="nav">
-                    <li class="active"><a href="index.html" title="Home">首页</a></li>
+                    <li class="active"><a href="{:url('index/index')}" title="Home">首页</a></li>
                     {volist name="categorys" id="vo"}
                     <li class=""><a href="blog.html" title="{$vo.type_name}">{$vo.type_name}</a></li>
                     {/volist}

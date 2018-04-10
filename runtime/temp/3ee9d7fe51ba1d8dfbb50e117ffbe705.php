@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:71:"D:\xampp\htdocs\hns\public/../application/index\view\user\register.html";i:1523271222;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1523271222;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1523340912;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:70:"D:\xampp\htdocs\hns\public/../application/index\view\search\index.html";i:1523341075;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1523271222;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1523340912;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -46,7 +46,7 @@
 
 </head>
 <body>
-<div class="mainContainer sixteen container">
+	<div class="mainContainer sixteen container">
             <!--Header Block-->
                         <div class="header-wrapper">
               <header class="container">
@@ -134,73 +134,125 @@
                 
               </header>
             </div>
+            <!--Banner Block-->
+            <section class="banner-wrapper">
+              <div class="banner-block container">
+                <div class="flexslider">
+                  <ul class="slides">
+                    <li><img title="Banner" alt="Banner" src="images/banner1.jpg" /></li>
+                    <li><img title="Banner" alt="Banner" src="images/banner2.jpg"></li>
+                    <li><img title="Banner" alt="Banner" src="images/banner3.jpg" /></li>
+                    <li><img title="Banner" alt="Banner" src="images/banner4.jpg" /></li>
+                  </ul>
+                </div>
+                <ul class="banner-add">
+                  <li class="add1"><a href="#" title=""><img title="add1" alt="add1" src="images__STATIC__1.jpg" /></a></li>
+                  <li class="add2"><a href="#" title=""><img title="add2" alt="add2" src="images__STATIC__2.jpg" /></a></li>
+                </ul>
+              </div>
+            </section>
             <!--Content Block-->
-<section class="content-wrapper">
-  <div class="content-container container">
-    <div class="main">
-      <h1 class="page-title">注册</h1>
-      <div class="fieldset">
-              <h2 class="legend">用户信息</h2>
-        <form name="form1" action="<?php echo url('user/save'); ?>" method="post">
-        <ul class="form-list">
-          <li class="fields">
-            <div class="customer-name">
-              <div class="input-box name-firstname">
-                <label for="firstname">用户名<em>*</em></label>
-                <input type="text" class="required-entry input-text" title="Name" value="" name="name" id="name">
+            <section class="content-wrapper">
+              <div class="content-container container">
+                <div class="heading-block">
+                  <h1>搜索结果：</h1>
+                </div>
+                <div class="new-product-block">
+                  <ul class="product-grid">
+                    <?php if(is_array($books) || $books instanceof \think\Collection || $books instanceof \think\Paginator): $i = 0; $__LIST__ = $books;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                    <li>
+                      <div class="pro-img" >
+                        <img alt="Freature Product" src="<?php echo $vo['photo']; ?>" style="height:180px;width:180px;">
+                      </div>
+                      <div class="pro-content">
+                        <p><?php echo $vo['name']; ?></p>
+                      </div>
+                      <div class="pro-price">￥<?php echo $vo['price']; ?></div>
+                      <div class="pro-btn-block"> 
+                      <a class="add-cart left" href="#" title="Add to Cart">加入购物车</a> 
+                      <a class="add-cart right quickCart inline" href="#quick-view-container" title="Quick View">预览</a> </div>
+                      <div class="pro-link-block"> <a class="add-wishlist left" href="#" title="Add to wishlist"></a> <a class="add-compare right" href="#" title="Add to Compare"></a>
+                        <div class="clearfix"></div>
+                      </div>
+                    </li>
+                     <?php endforeach; endif; else: echo "" ;endif; ?>
+                  </ul>
+                </div>
               </div>
-              <div class="clear"></div>
-            </div>                
-            </li>
-            <li>
-            <div class="input-box">
-              <label class="required" for="email_address">邮箱<em>*</em></label>
-              <input type="text" class="input-text validate-email required-entry" title="Email" value="" id="email" name="email">
+            </section>
+    </div> 
+    <!--Quick view Block-->
+<script type="text/javascript">
+jQuery (function(){
+	var tabContainers=jQuery('div.tabs > div');
+	tabContainers.hide().filter(':first').show();
+	jQuery('div.tabs ul.tabNavigation a').click(function(){
+		tabContainers.hide();
+		tabContainers.filter(this.hash).show();
+		jQuery('div.tabs ul.tabNavigation a').removeClass('selected');
+		jQuery(this).addClass('selected');
+		return false;
+		}).filter(':first').click();
+	});
+</script>
+<article style="display:none;">
+	<section id="quick-view-container" class="quick-view-wrapper">
+	<div class="quick-view-container">
+		<div class="quick-view-left">
+			<h2>Sunglass RB3184</h2>
+			<div class="product-img-box">
+				<p class="product-image">
+					<img src="images/sale_icon_img.png" title="Sale" alt="Sale" class="sale-img" />
+					<a href="view.html" title="Image"><img src="images/quick_view_img.png" title="Image" alt="Image" /></a>				</p>
+				<ul class="thum-img">
+					<li><img  src="images/quick_thum_img.png" title="" alt="" /></li>
+					<li><img  src="images/quick_thum_img.png" title="" alt="" /></li>
+				</ul>
+			</div>
+		</div>
+		<div class="quick-view-right tabs">
+			<ul class="tab-block tabNavigation">
+				<li><a class="selected" title="Overview" href="#tabDetail">Overview</a></li>
+				<li><a title="Description" href="#tabDes">Description</a></li>
+			</ul>
+			<div id="tabDetail" class="tabDetail">
+            	<div class="first-review">Be the first to review this product</div>
+			<div class="price-box">
+				<span class="price">$600.00</span>			</div>
+			<div class="availability">In stock</div>
+			<div class="color-size-block">
+				<div class="label-row">
+					<label><em>*</em> color</label>
+					<span class="required">* Required Fields</span>				</div>
+				<div class="select-row">
+					<select><option>-- Please Select --</option></select>
+				</div>
+				<div class="label-row">
+					<label><em>*</em> size</label>
+				</div>
+				<div class="select-row">
+					<select><option>-- Please Select --</option></select>
+				</div>
+			</div>
+			<div class="add-to-cart-box">
+				<span class="qty-box">
+					<label for="qty">Qty:</label>
+					<a class="prev" title="" href="#"><img alt="" title="" src="images/qty_prev.png"></a>
+					<input type="text" name="qty" class="input-text qty" id="qty" maxlength="12" value="1">
+					<a class="next" title="" href="#"><img alt="" title="" src="images/qty_next.png"></a>				</span>
+				<button title="Add to Cart" class="form-button"><span>Add to Cart</span></button>
+			</div>
             </div>
-            <div class="clear"></div>
-        </ul>
-        <h2 class="legend">登录信息</h2>
-        <ul class="form-list">
-          <li class="fields">
-            <div class="customer-name">
-              <div class="input-box name-firstname">
-                <label for="firstname">密码<em>*</em></label>
-                <input type="password" class="required-entry input-text" title="First pwd" value="" name="password" id="password">
-              </div>
-              <div class="input-box name-lastname">
-                <label for="lastname">确认密码<em>*</em></label>
-                <input type="password" class="required-entry input-text" title="Last pwd" value="" name="lastpwd" id="lastpwd" >
-              </div>
-            <div class="clear"></div>
+            <div id="tabDes" class="tabDes">
+            	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas erat odio, suscipit eu porta et, ultricies id sapien. Quisque posuere odio eget lectus suscipit sodales. Sed consequat, leo ut varius scelerisque, augue massa tincidunt est, et tincidunt enim tortor a metus. In sit amet diam in tellus tincidunt mollis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi hendrerit eleifend tortor, a dapibus tellus suscipit porta. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In mollis adipiscing mi et volutpat. Aliquam vitae dui nunc. Nulla ac ante eu massa dictum volutpat. Sed mauris sem, posuere sit amet pretium consectetur, ullamcorper vel orci. Aenean feugiat luctus lectus ac hendrerit. Fusce pulvinar, mauris eget sodales suscipit, diam neque condimentum lectus, id imperdiet felis turpis egestas neque. In aliquet orci eget nisl sollicitudin sed gravida tortor commodo</p>
             </div>
-          </li>
-        </ul>
-        <div class="buttons-set">
-          <p class="required">* 为必须填写</p>
-          <a href="account_login.html" title="Back" class="f-left">&laquo; 返回</a>
-          <button title="Submit" class="colors-btn"><span><span>注册</span></span></button>
-          </form>
-          <div class="clear"></div>
-        </div>
-        </div>
-    </div>
-    <div class="clearfix"></div>
-    <div class="news-letter-container">
-      <div class="free-shipping-block">
-        <h1>ENJOY FREE SHIPPING</h1>
-        <p>on all orders as our holiday gift for you!</p>
-      </div>
-      <div class="news-letter-block">
-        <h2>SIGN UP FOR OUR NEWSLETTER</h2>
-        <input type="text" value="Enter email address" title="" />
-        <input type="submit" value="Submit" title="Submit" />
-      </div>
-    </div>  
-  </div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
 </section>
-</div>
-<!--Footer Block-->
-       <!--Footer Block-->
+</article>     
+           <!--Footer Block-->  
+            <!--Footer Block-->
             <section class="footer-wrapper">
               <footer class="container">
                 <div class="link-block">
