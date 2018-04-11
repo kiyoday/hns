@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:69:"D:\xampp\htdocs\hns\public/../application/index\view\index\index.html";i:1523277647;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1523271222;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1523341894;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:69:"D:\xampp\htdocs\hns\public/../application/index\view\index\index.html";i:1523456540;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1523271222;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1523341894;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -276,7 +276,9 @@
                       </div>
                     </li>
                      <?php endforeach; endif; else: echo "" ;endif; ?>
+                     
                   </ul>
+                  <div><?php echo $books->render(); ?></div>
                 </div>
               </div>
             </section>
