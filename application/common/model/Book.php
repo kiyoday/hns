@@ -31,7 +31,12 @@ class Book extends Model
 
     public function indexgetbook()
     {
-        return $this->paginate(12);
+        return $this->paginate(4);
+    }
+
+    public function searchgetbook()
+    {
+        return $this->paginate(4);
     }
 
     public function indexgetcategory()
