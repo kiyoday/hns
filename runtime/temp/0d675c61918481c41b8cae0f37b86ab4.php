@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:69:"D:\xampp\htdocs\hns\public/../application/index\view\index\index.html";i:1523457358;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1523271222;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1523341894;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:69:"D:\xampp\htdocs\hns\public/../application/index\view\index\index.html";i:1523516827;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1523271222;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1523341894;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -270,7 +270,7 @@
                       <div class="pro-price">￥<?php echo $vo['price']; ?></div>
                       <div class="pro-btn-block"> 
                       <a class="add-cart left" href="#" title="Add to Cart">加入购物车</a> 
-                      <a class="add-cart right quickCart inline" href="#quick-view-container" title="Quick View">预览</a> </div>
+                      <a class="add-cart right quickCart inline" href="#quick-view-container" id="<?php echo $vo['book_id']; ?>" title="预览">预览</a> </div>
                       <div class="pro-link-block"> <a class="add-wishlist left" href="#" title="Add to wishlist"></a> <a class="add-compare right" href="#" title="Add to Compare"></a>
                         <div class="clearfix"></div>
                       </div>
@@ -301,7 +301,7 @@ jQuery (function(){
 	<section id="quick-view-container" class="quick-view-wrapper">
 	<div class="quick-view-container">
 		<div class="quick-view-left">
-			<h2>Sunglass RB3184</h2>
+			<h2><?php echo "book_id"; ?></h2>
 			<div class="product-img-box">
 				<p class="product-image">
 					<img src="images/sale_icon_img.png" title="Sale" alt="Sale" class="sale-img" />
@@ -342,7 +342,7 @@ jQuery (function(){
 					<a class="prev" title="" href="#"><img alt="" title="" src="images/qty_prev.png"></a>
 					<input type="text" name="qty" class="input-text qty" id="qty" maxlength="12" value="1">
 					<a class="next" title="" href="#"><img alt="" title="" src="images/qty_next.png"></a>				</span>
-				<button title="Add to Cart" class="form-button"><span>Add to Cart</span></button>
+				<button title="Add to Cart" class="form-button"><span>加入购物车</span></button>
 			</div>
             </div>
             <div id="tabDes" class="tabDes">
