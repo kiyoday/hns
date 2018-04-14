@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:69:"D:\xampp\htdocs\hns\public/../application/index\view\index\index.html";i:1523538445;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1523271222;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1523341894;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:69:"D:\xampp\htdocs\hns\public/../application/index\view\index\index.html";i:1523711450;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1523271222;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1523341894;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -182,7 +182,7 @@
                     <?php if(is_array($books) || $books instanceof \think\Collection || $books instanceof \think\Paginator): $i = 0; $__LIST__ = $books;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                     <li>
                       <div class="pro-img" >
-                        <img alt="Freature Product" src="<?php echo $vo['photo']; ?>" style="height:180px;width:180px;">
+                        <img alt="Freature Product" src="<?php if($mod == '0'): ?><?php echo $vo['photo']; endif; ?>" style="height:180px;width:180px;">
                       </div>
                       <div class="pro-content">
                         <p style="max-width:225px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;" title="<?php echo $vo['name']; ?>"><?php echo $vo['name']; ?></p>
@@ -195,6 +195,22 @@
                         <div class="clearfix"></div>
                       </div>
                     </li>
+                    <li>
+                      <div class="pro-img" >
+                        <img alt="Freature Product" src="<?php if($mod == '1'): ?><?php echo $vo['photo']; endif; ?>" style="height:180px;width:180px;">
+                      </div>
+                      <div class="pro-content">
+                        <p style="max-width:225px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;" title="<?php echo $vo['name']; ?>"><?php echo $vo['name']; ?></p>
+                      </div>
+                      <div class="pro-price">￥<?php echo $vo['price']; ?></div>
+                      <div class="pro-btn-block"> 
+                      <a class="add-cart left" href="#" title="Add to Cart">加入购物车</a> 
+                      <a class="add-cart right quickCart inline" href="#quick-view-container&id=<?php echo $vo['book_id']; ?>" id="<?php echo $vo['book_id']; ?>" title="预览">预览</a> </div>
+                      <div class="pro-link-block"> <a class="add-wishlist left" href="#" title="Add to wishlist"></a> <a class="add-compare right" href="#" title="Add to Compare"></a>
+                        <div class="clearfix"></div>
+                      </div>
+                    </li>
+
                      <?php endforeach; endif; else: echo "" ;endif; ?>
                      
                   </ul>
@@ -203,76 +219,7 @@
               </div>
             </section>
     </div> 
-    <!--Quick view Block-->
-<script type="text/javascript">
-jQuery (function(){
-	var tabContainers=jQuery('div.tabs > div');//tabs下的子标签
-	tabContainers.hide().filter(':first').show();
-	jQuery('div.tabs ul.tabNavigation a').click(function(){
-		tabContainers.hide();
-		tabContainers.filter(this.hash).show();
-		jQuery('div.tabs ul.tabNavigation a').removeClass('selected');
-		jQuery(this).addClass('selected');
-		return false;
-		}).filter(':first').click();
-	});
-</script>
-<article style="display:none;">
-	<section id="quick-view-container" class="quick-view-wrapper">
-	<div class="quick-view-container">
-		<div class="quick-view-left">
-			<h2><?php echo "book_id"; ?></h2>
-			<div class="product-img-box">
-				<p class="product-image">
-					<img src="images/sale_icon_img.png" title="Sale" alt="Sale" class="sale-img" />
-					<a href="view.html" title="Image"><img src="images/quick_view_img.png" title="Image" alt="Image" /></a>				</p>
-				<ul class="thum-img">
-					<li><img  src="images/quick_thum_img.png" title="" alt="" /></li>
-					<li><img  src="images/quick_thum_img.png" title="" alt="" /></li>
-				</ul>
-			</div>
-		</div>
-		<div class="quick-view-right tabs">
-			<ul class="tab-block tabNavigation">
-				<li><a class="selected" title="Overview" href="#tabDetail">Overview</a></li>
-				<li><a title="Description" href="#tabDes">Description</a></li>
-			</ul>
-			<div id="tabDetail" class="tabDetail">
-            	<div class="first-review">Be the first to review this product</div>
-			<div class="price-box">
-				<span class="price">$600.00</span>			</div>
-			<div class="availability">In stock</div>
-			<div class="color-size-block">
-				<div class="label-row">
-					<label><em>*</em> color</label>
-					<span class="required">* Required Fields</span>				</div>
-				<div class="select-row">
-					<select><option>-- Please Select --</option></select>
-				</div>
-				<div class="label-row">
-					<label><em>*</em> size</label>
-				</div>
-				<div class="select-row">
-					<select><option>-- Please Select --</option></select>
-				</div>
-			</div>
-			<div class="add-to-cart-box">
-				<span class="qty-box">
-					<label for="qty">Qty:</label>
-					<a class="prev" title="" href="#"><img alt="" title="" src="images/qty_prev.png"></a>
-					<input type="text" name="qty" class="input-text qty" id="qty" maxlength="12" value="1">
-					<a class="next" title="" href="#"><img alt="" title="" src="images/qty_next.png"></a>				</span>
-				<button title="Add to Cart" class="form-button"><span>加入购物车</span></button>
-			</div>
-            </div>
-            <div id="tabDes" class="tabDes">
-            	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas erat odio, suscipit eu porta et, ultricies id sapien. Quisque posuere odio eget lectus suscipit sodales. Sed consequat, leo ut varius scelerisque, augue massa tincidunt est, et tincidunt enim tortor a metus. In sit amet diam in tellus tincidunt mollis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi hendrerit eleifend tortor, a dapibus tellus suscipit porta. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In mollis adipiscing mi et volutpat. Aliquam vitae dui nunc. Nulla ac ante eu massa dictum volutpat. Sed mauris sem, posuere sit amet pretium consectetur, ullamcorper vel orci. Aenean feugiat luctus lectus ac hendrerit. Fusce pulvinar, mauris eget sodales suscipit, diam neque condimentum lectus, id imperdiet felis turpis egestas neque. In aliquet orci eget nisl sollicitudin sed gravida tortor commodo</p>
-            </div>
-		</div>
-		<div class="clearfix"></div>
-	</div>
-</section>
-</article>     
+    <!--Quick view Block-->    
            <!--Footer Block-->  
             <!--Footer Block-->
             <section class="footer-wrapper">
