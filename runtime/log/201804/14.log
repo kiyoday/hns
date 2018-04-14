@@ -1,0 +1,2297 @@
+[ 2018-04-14T18:52:16+08:00 ] ::1 ::1 GET /hns/public/index.php/index
+[ log ] localhost/hns/public/index.php/index [运行时间：0.283705s][吞吐率：3.52req/s] [内存消耗：2,199.96kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\xampp\htdocs\hns\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/index\view\index\index.html [ array (
+  0 => 'categorys',
+  1 => 'books',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001741s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_category` [ RunTime:0.026307s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_category` LIMIT 1 [ RunTime:0.000573s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_category` LIMIT 0,10 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_book` [ RunTime:0.022365s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_book` LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_book` LIMIT 0,4 [ RunTime:0.000492s ]
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:16+08:00 ] ::1 ::1 GET /hns/public/index.php/images/small_img.png
+[ log ] localhost/hns/public/index.php/images/small_img.png [运行时间：0.035330s][吞吐率：28.30req/s] [内存消耗：977.68kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'small_img.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:16+08:00 ] ::1 ::1 GET /hns/public/index.php/images/edit_icon.png
+[ log ] localhost/hns/public/index.php/images/edit_icon.png [运行时间：0.019676s][吞吐率：50.82req/s] [内存消耗：977.68kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'edit_icon.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:16+08:00 ] ::1 ::1 GET /hns/public/index.php/images/banner2.jpg
+[ log ] localhost/hns/public/index.php/images/banner2.jpg [运行时间：0.021642s][吞吐率：46.21req/s] [内存消耗：977.68kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'banner2.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:16+08:00 ] ::1 ::1 GET /hns/public/index.php/images/delete_item_btn.png
+[ log ] localhost/hns/public/index.php/images/delete_item_btn.png [运行时间：0.027789s][吞吐率：35.99req/s] [内存消耗：977.79kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'delete_item_btn.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:16+08:00 ] ::1 ::1 GET /hns/public/index.php/images/banner1.jpg
+[ log ] localhost/hns/public/index.php/images/banner1.jpg [运行时间：0.030895s][吞吐率：32.37req/s] [内存消耗：977.68kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'banner1.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:16+08:00 ] ::1 ::1 GET /hns/public/index.php/images/banner3.jpg
+[ log ] localhost/hns/public/index.php/images/banner3.jpg [运行时间：0.032346s][吞吐率：30.92req/s] [内存消耗：977.68kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'banner3.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:16+08:00 ] ::1 ::1 GET /hns/public/index.php/images/banner4.jpg
+[ log ] localhost/hns/public/index.php/images/banner4.jpg [运行时间：0.020384s][吞吐率：49.06req/s] [内存消耗：977.68kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'banner4.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:16+08:00 ] ::1 ::1 GET /hns/public/index.php/images/hns/public/static1.jpg
+[ log ] localhost/hns/public/index.php/images/hns/public/static1.jpg [运行时间：0.028517s][吞吐率：35.07req/s] [内存消耗：977.80kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'hns',
+    2 => 'public',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:16+08:00 ] ::1 ::1 GET /hns/public/index.php/images/hns/public/static2.jpg
+[ log ] localhost/hns/public/index.php/images/hns/public/static2.jpg [运行时间：0.024311s][吞吐率：41.13req/s] [内存消耗：977.80kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'hns',
+    2 => 'public',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:16+08:00 ] ::1 ::1 GET /hns/public/index.php/images/sale_icon_img.png
+[ log ] localhost/hns/public/index.php/images/sale_icon_img.png [运行时间：0.027313s][吞吐率：36.61req/s] [内存消耗：977.73kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'sale_icon_img.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:16+08:00 ] ::1 ::1 GET /hns/public/index.php/images/default_img.png
+[ log ] localhost/hns/public/index.php/images/default_img.png [运行时间：0.034389s][吞吐率：29.08req/s] [内存消耗：977.68kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'default_img.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:16+08:00 ] ::1 ::1 GET /hns/public/index.php/images/quick_view_img.png
+[ log ] localhost/hns/public/index.php/images/quick_view_img.png [运行时间：0.022350s][吞吐率：44.74req/s] [内存消耗：977.73kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'quick_view_img.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:16+08:00 ] ::1 ::1 GET /hns/public/index.php/images/quick_thum_img.png
+[ log ] localhost/hns/public/index.php/images/quick_thum_img.png [运行时间：0.022060s][吞吐率：45.33req/s] [内存消耗：977.73kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'quick_thum_img.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:17+08:00 ] ::1 ::1 GET /hns/public/index.php/images/qty_prev.png
+[ log ] localhost/hns/public/index.php/images/qty_prev.png [运行时间：0.029244s][吞吐率：34.20req/s] [内存消耗：977.68kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'qty_prev.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:17+08:00 ] ::1 ::1 GET /hns/public/index.php/images/qty_next.png
+[ log ] localhost/hns/public/index.php/images/qty_next.png [运行时间：0.024855s][吞吐率：40.23req/s] [内存消耗：977.68kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'qty_next.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:17+08:00 ] ::1 ::1 GET /hns/public/index.php/images/rss.png
+[ log ] localhost/hns/public/index.php/images/rss.png [运行时间：0.020195s][吞吐率：49.52req/s] [内存消耗：977.59kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'rss.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:17+08:00 ] ::1 ::1 GET /hns/public/index.php/images/twitter.png
+[ log ] localhost/hns/public/index.php/images/twitter.png [运行时间：0.020604s][吞吐率：48.53req/s] [内存消耗：977.68kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'twitter.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:17+08:00 ] ::1 ::1 GET /hns/public/index.php/images/dribbble.png
+[ log ] localhost/hns/public/index.php/images/dribbble.png [运行时间：0.020665s][吞吐率：48.39req/s] [内存消耗：977.68kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'dribbble.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:17+08:00 ] ::1 ::1 GET /hns/public/index.php/images/facebook.png
+[ log ] localhost/hns/public/index.php/images/facebook.png [运行时间：0.037074s][吞吐率：26.97req/s] [内存消耗：977.68kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'facebook.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:17+08:00 ] ::1 ::1 GET /hns/public/index.php/images/youtube.png
+[ log ] localhost/hns/public/index.php/images/youtube.png [运行时间：0.029890s][吞吐率：33.46req/s] [内存消耗：977.68kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'youtube.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:17+08:00 ] ::1 ::1 GET /hns/public/index.php/images/skype.png
+[ log ] localhost/hns/public/index.php/images/skype.png [运行时间：0.024330s][吞吐率：41.10req/s] [内存消耗：977.63kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'skype.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:17+08:00 ] ::1 ::1 GET /hns/public/index.php/images/payment.png
+[ log ] localhost/hns/public/index.php/images/payment.png [运行时间：0.024840s][吞吐率：40.26req/s] [内存消耗：977.68kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'payment.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:44+08:00 ] ::1 ::1 GET /hns/public/index.php/index?page=2
+[ log ] localhost/hns/public/index.php/index?page=2 [运行时间：0.055965s][吞吐率：17.87req/s] [内存消耗：2,186.24kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\xampp\htdocs\hns\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/index\view\index\index.html [ array (
+  0 => 'categorys',
+  1 => 'books',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001137s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_category` [ RunTime:0.006908s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_category` LIMIT 1 [ RunTime:0.000823s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_category` LIMIT 10,10 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_book` [ RunTime:0.004086s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_book` LIMIT 1 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_book` LIMIT 4,4 [ RunTime:0.000435s ]
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:44+08:00 ] ::1 ::1 GET /hns/public/index.php/images/small_img.png
+[ log ] localhost/hns/public/index.php/images/small_img.png [运行时间：0.015896s][吞吐率：62.91req/s] [内存消耗：977.73kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'small_img.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:44+08:00 ] ::1 ::1 GET /hns/public/index.php/images/edit_icon.png
+[ log ] localhost/hns/public/index.php/images/edit_icon.png [运行时间：0.017623s][吞吐率：56.74req/s] [内存消耗：977.73kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'edit_icon.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:44+08:00 ] ::1 ::1 GET /hns/public/index.php/images/banner2.jpg
+[ log ] localhost/hns/public/index.php/images/banner2.jpg [运行时间：0.020491s][吞吐率：48.80req/s] [内存消耗：977.73kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'banner2.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:44+08:00 ] ::1 ::1 GET /hns/public/index.php/images/delete_item_btn.png
+[ log ] localhost/hns/public/index.php/images/delete_item_btn.png [运行时间：0.030615s][吞吐率：32.66req/s] [内存消耗：977.84kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'delete_item_btn.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:44+08:00 ] ::1 ::1 GET /hns/public/index.php/images/banner3.jpg
+[ log ] localhost/hns/public/index.php/images/banner3.jpg [运行时间：0.023357s][吞吐率：42.81req/s] [内存消耗：977.73kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'banner3.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:44+08:00 ] ::1 ::1 GET /hns/public/index.php/images/banner4.jpg
+[ log ] localhost/hns/public/index.php/images/banner4.jpg [运行时间：0.024040s][吞吐率：41.60req/s] [内存消耗：977.73kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'banner4.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:44+08:00 ] ::1 ::1 GET /hns/public/index.php/images/hns/public/static1.jpg
+[ log ] localhost/hns/public/index.php/images/hns/public/static1.jpg [运行时间：0.042126s][吞吐率：23.74req/s] [内存消耗：977.84kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'hns',
+    2 => 'public',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:44+08:00 ] ::1 ::1 GET /hns/public/index.php/images/hns/public/static2.jpg
+[ log ] localhost/hns/public/index.php/images/hns/public/static2.jpg [运行时间：0.024476s][吞吐率：40.86req/s] [内存消耗：977.84kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'hns',
+    2 => 'public',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:44+08:00 ] ::1 ::1 GET /hns/public/index.php/images/default_img.png
+[ log ] localhost/hns/public/index.php/images/default_img.png [运行时间：0.032370s][吞吐率：30.89req/s] [内存消耗：977.73kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'default_img.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:44+08:00 ] ::1 ::1 GET /hns/public/index.php/images/quick_thum_img.png
+[ log ] localhost/hns/public/index.php/images/quick_thum_img.png [运行时间：0.024961s][吞吐率：40.06req/s] [内存消耗：977.77kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'quick_thum_img.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:44+08:00 ] ::1 ::1 GET /hns/public/index.php/images/quick_view_img.png
+[ log ] localhost/hns/public/index.php/images/quick_view_img.png [运行时间：0.036497s][吞吐率：27.40req/s] [内存消耗：977.77kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'quick_view_img.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:44+08:00 ] ::1 ::1 GET /hns/public/index.php/images/sale_icon_img.png
+[ log ] localhost/hns/public/index.php/images/sale_icon_img.png [运行时间：0.049403s][吞吐率：20.24req/s] [内存消耗：977.77kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'sale_icon_img.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:44+08:00 ] ::1 ::1 GET /hns/public/index.php/images/qty_next.png
+[ log ] localhost/hns/public/index.php/images/qty_next.png [运行时间：0.027487s][吞吐率：36.38req/s] [内存消耗：977.73kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'qty_next.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:44+08:00 ] ::1 ::1 GET /hns/public/index.php/images/qty_prev.png
+[ log ] localhost/hns/public/index.php/images/qty_prev.png [运行时间：0.039486s][吞吐率：25.33req/s] [内存消耗：977.73kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'qty_prev.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:44+08:00 ] ::1 ::1 GET /hns/public/index.php/images/facebook.png
+[ log ] localhost/hns/public/index.php/images/facebook.png [运行时间：0.027479s][吞吐率：36.39req/s] [内存消耗：977.73kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'facebook.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:44+08:00 ] ::1 ::1 GET /hns/public/index.php/images/rss.png
+[ log ] localhost/hns/public/index.php/images/rss.png [运行时间：0.024562s][吞吐率：40.71req/s] [内存消耗：977.63kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'rss.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:44+08:00 ] ::1 ::1 GET /hns/public/index.php/images/twitter.png
+[ log ] localhost/hns/public/index.php/images/twitter.png [运行时间：0.037197s][吞吐率：26.88req/s] [内存消耗：977.73kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'twitter.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:44+08:00 ] ::1 ::1 GET /hns/public/index.php/images/dribbble.png
+[ log ] localhost/hns/public/index.php/images/dribbble.png [运行时间：0.030567s][吞吐率：32.72req/s] [内存消耗：977.73kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'dribbble.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:44+08:00 ] ::1 ::1 GET /hns/public/index.php/images/youtube.png
+[ log ] localhost/hns/public/index.php/images/youtube.png [运行时间：0.030216s][吞吐率：33.10req/s] [内存消耗：977.73kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'youtube.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:44+08:00 ] ::1 ::1 GET /hns/public/index.php/images/payment.png
+[ log ] localhost/hns/public/index.php/images/payment.png [运行时间：0.024187s][吞吐率：41.34req/s] [内存消耗：977.73kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'payment.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:44+08:00 ] ::1 ::1 GET /hns/public/index.php/images/small_img.png
+[ log ] localhost/hns/public/index.php/images/small_img.png [运行时间：0.022274s][吞吐率：44.90req/s] [内存消耗：977.73kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'small_img.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:44+08:00 ] ::1 ::1 GET /hns/public/index.php/images/skype.png
+[ log ] localhost/hns/public/index.php/images/skype.png [运行时间：0.027348s][吞吐率：36.57req/s] [内存消耗：977.68kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'skype.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:46+08:00 ] ::1 ::1 GET /hns/public/index.php/view.html
+[ log ] localhost/hns/public/index.php/view.html [运行时间：0.017166s][吞吐率：58.26req/s] [内存消耗：978.30kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'view',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:53+08:00 ] ::1 ::1 GET /hns/public/index.php/index?page=1
+[ log ] localhost/hns/public/index.php/index?page=1 [运行时间：0.055230s][吞吐率：18.11req/s] [内存消耗：2,201.18kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\xampp\htdocs\hns\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/index\view\index\index.html [ array (
+  0 => 'categorys',
+  1 => 'books',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012258s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_category` [ RunTime:0.004832s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_category` LIMIT 1 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_category` LIMIT 0,10 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_book` [ RunTime:0.004643s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_book` LIMIT 1 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_book` LIMIT 0,4 [ RunTime:0.000344s ]
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:53+08:00 ] ::1 ::1 GET /hns/public/index.php/images/small_img.png
+[ log ] localhost/hns/public/index.php/images/small_img.png [运行时间：0.016542s][吞吐率：60.45req/s] [内存消耗：977.73kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'small_img.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:53+08:00 ] ::1 ::1 GET /hns/public/index.php/images/edit_icon.png
+[ log ] localhost/hns/public/index.php/images/edit_icon.png [运行时间：0.018233s][吞吐率：54.85req/s] [内存消耗：977.73kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'edit_icon.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:53+08:00 ] ::1 ::1 GET /hns/public/index.php/images/delete_item_btn.png
+[ log ] localhost/hns/public/index.php/images/delete_item_btn.png [运行时间：0.023216s][吞吐率：43.07req/s] [内存消耗：977.84kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'delete_item_btn.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:53+08:00 ] ::1 ::1 GET /hns/public/index.php/images/banner2.jpg
+[ log ] localhost/hns/public/index.php/images/banner2.jpg [运行时间：0.026269s][吞吐率：38.07req/s] [内存消耗：977.73kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'banner2.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:53+08:00 ] ::1 ::1 GET /hns/public/index.php/images/banner1.jpg
+[ log ] localhost/hns/public/index.php/images/banner1.jpg [运行时间：0.037283s][吞吐率：26.82req/s] [内存消耗：977.73kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'banner1.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:53+08:00 ] ::1 ::1 GET /hns/public/index.php/images/banner3.jpg
+[ log ] localhost/hns/public/index.php/images/banner3.jpg [运行时间：0.033730s][吞吐率：29.65req/s] [内存消耗：977.73kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'banner3.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:54+08:00 ] ::1 ::1 GET /hns/public/index.php/images/hns/public/static2.jpg
+[ log ] localhost/hns/public/index.php/images/hns/public/static2.jpg [运行时间：0.028519s][吞吐率：35.06req/s] [内存消耗：977.84kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'hns',
+    2 => 'public',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:54+08:00 ] ::1 ::1 GET /hns/public/index.php/images/banner4.jpg
+[ log ] localhost/hns/public/index.php/images/banner4.jpg [运行时间：0.028877s][吞吐率：34.63req/s] [内存消耗：977.73kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'banner4.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:54+08:00 ] ::1 ::1 GET /hns/public/index.php/images/hns/public/static1.jpg
+[ log ] localhost/hns/public/index.php/images/hns/public/static1.jpg [运行时间：0.030384s][吞吐率：32.91req/s] [内存消耗：977.84kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'hns',
+    2 => 'public',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:54+08:00 ] ::1 ::1 GET /hns/public/index.php/images/sale_icon_img.png
+[ log ] localhost/hns/public/index.php/images/sale_icon_img.png [运行时间：0.032559s][吞吐率：30.71req/s] [内存消耗：977.77kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'sale_icon_img.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:54+08:00 ] ::1 ::1 GET /hns/public/index.php/images/default_img.png
+[ log ] localhost/hns/public/index.php/images/default_img.png [运行时间：0.049719s][吞吐率：20.11req/s] [内存消耗：977.73kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'default_img.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:54+08:00 ] ::1 ::1 GET /hns/public/index.php/images/quick_view_img.png
+[ log ] localhost/hns/public/index.php/images/quick_view_img.png [运行时间：0.032745s][吞吐率：30.54req/s] [内存消耗：977.77kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'quick_view_img.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:54+08:00 ] ::1 ::1 GET /hns/public/index.php/images/quick_thum_img.png
+[ log ] localhost/hns/public/index.php/images/quick_thum_img.png [运行时间：0.028558s][吞吐率：35.02req/s] [内存消耗：977.77kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'quick_thum_img.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:54+08:00 ] ::1 ::1 GET /hns/public/index.php/images/qty_next.png
+[ log ] localhost/hns/public/index.php/images/qty_next.png [运行时间：0.024906s][吞吐率：40.15req/s] [内存消耗：977.73kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'qty_next.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:54+08:00 ] ::1 ::1 GET /hns/public/index.php/images/qty_prev.png
+[ log ] localhost/hns/public/index.php/images/qty_prev.png [运行时间：0.044147s][吞吐率：22.65req/s] [内存消耗：977.73kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'qty_prev.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:54+08:00 ] ::1 ::1 GET /hns/public/index.php/images/facebook.png
+[ log ] localhost/hns/public/index.php/images/facebook.png [运行时间：0.030446s][吞吐率：32.84req/s] [内存消耗：977.73kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'facebook.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:54+08:00 ] ::1 ::1 GET /hns/public/index.php/images/rss.png
+[ log ] localhost/hns/public/index.php/images/rss.png [运行时间：0.031913s][吞吐率：31.34req/s] [内存消耗：977.63kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'rss.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:54+08:00 ] ::1 ::1 GET /hns/public/index.php/images/twitter.png
+[ log ] localhost/hns/public/index.php/images/twitter.png [运行时间：0.032664s][吞吐率：30.61req/s] [内存消耗：977.73kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'twitter.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:54+08:00 ] ::1 ::1 GET /hns/public/index.php/images/dribbble.png
+[ log ] localhost/hns/public/index.php/images/dribbble.png [运行时间：0.022236s][吞吐率：44.97req/s] [内存消耗：977.73kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'dribbble.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:54+08:00 ] ::1 ::1 GET /hns/public/index.php/images/youtube.png
+[ log ] localhost/hns/public/index.php/images/youtube.png [运行时间：0.025925s][吞吐率：38.57req/s] [内存消耗：977.73kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'youtube.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:54+08:00 ] ::1 ::1 GET /hns/public/index.php/images/skype.png
+[ log ] localhost/hns/public/index.php/images/skype.png [运行时间：0.024802s][吞吐率：40.32req/s] [内存消耗：977.68kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'skype.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:54+08:00 ] ::1 ::1 GET /hns/public/index.php/images/payment.png
+[ log ] localhost/hns/public/index.php/images/payment.png [运行时间：0.022579s][吞吐率：44.29req/s] [内存消耗：977.73kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'payment.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T18:52:54+08:00 ] ::1 ::1 GET /hns/public/index.php/images/small_img.png
+[ log ] localhost/hns/public/index.php/images/small_img.png [运行时间：0.022036s][吞吐率：45.38req/s] [内存消耗：977.73kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'small_img.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index?page=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T19:07:37+08:00 ] ::1 ::1 GET /hns/public/index.php/admin
+[ log ] localhost/hns/public/index.php/admin [运行时间：0.335330s][吞吐率：2.98req/s] [内存消耗：1,206.19kb] [文件加载：39]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\xampp\htdocs\hns\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T19:07:55+08:00 ] ::1 ::1 GET /hns/public/index.php/admin/category/index.html
+[ log ] localhost/hns/public/index.php/admin/category/index.html [运行时间：0.132355s][吞吐率：7.56req/s] [内存消耗：2,151.59kb] [文件加载：51]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377; PHPSESSID=kjq2bn79sdubctc9a5fn0p50dl',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Category->index[ D:\xampp\htdocs\hns\application\admin\controller\Category.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/admin\view\category\index.html [ array (
+  0 => 'categorys',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010613s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_category` [ RunTime:0.017628s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_category` LIMIT 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_category` LIMIT 0,10 [ RunTime:0.000378s ]
+
+---------------------------------------------------------------
+[ 2018-04-14T19:07:59+08:00 ] ::1 ::1 GET /hns/public/index.php/admin/advice/index.html
+[ log ] localhost/hns/public/index.php/admin/advice/index.html [运行时间：0.144499s][吞吐率：6.92req/s] [内存消耗：2,147.27kb] [文件加载：51]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'advice',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377; PHPSESSID=kjq2bn79sdubctc9a5fn0p50dl',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Advice->index[ D:\xampp\htdocs\hns\application\admin\controller\Advice.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/admin\view\advice\index.html [ array (
+  0 => 'advices',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011048s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_advice` [ RunTime:0.035246s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_advice` LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_advice` LIMIT 0,5 [ RunTime:0.000422s ]
+
+---------------------------------------------------------------
+[ 2018-04-14T19:08:01+08:00 ] ::1 ::1 GET /hns/public/index.php/admin/book/index.html
+[ log ] localhost/hns/public/index.php/admin/book/index.html [运行时间：0.085162s][吞吐率：11.74req/s] [内存消耗：2,114.42kb] [文件加载：50]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'book',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377; PHPSESSID=kjq2bn79sdubctc9a5fn0p50dl',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Book->index[ D:\xampp\htdocs\hns\application\admin\controller\Book.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/admin\view\book\index.html [ array (
+  0 => 'books',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010868s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_book` [ RunTime:0.024163s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_book` LIMIT 1 [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_book` LIMIT 0,5 [ RunTime:0.000476s ]
+
+---------------------------------------------------------------
+[ 2018-04-14T19:09:55+08:00 ] ::1 ::1 GET /hns/public/index.php/admin
+[ log ] localhost/hns/public/index.php/admin [运行时间：0.018536s][吞吐率：53.95req/s] [内存消耗：1,206.74kb] [文件加载：39]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377; PHPSESSID=kjq2bn79sdubctc9a5fn0p50dl',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\xampp\htdocs\hns\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T19:09:58+08:00 ] ::1 ::1 GET /hns/public/index.php/admin/book/index.html
+[ log ] localhost/hns/public/index.php/admin/book/index.html [运行时间：0.121646s][吞吐率：8.22req/s] [内存消耗：2,248.47kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'book',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377; PHPSESSID=kjq2bn79sdubctc9a5fn0p50dl',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Book->index[ D:\xampp\htdocs\hns\application\admin\controller\Book.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/admin\view\book\index.html [ array (
+  0 => 'books',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011074s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_book` [ RunTime:0.005744s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_book` LIMIT 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_book` LIMIT 0,5 [ RunTime:0.000445s ]
+
+---------------------------------------------------------------
+[ 2018-04-14T19:10:02+08:00 ] ::1 ::1 GET /hns/public/index.php/admin/book/index.html?page=2
+[ log ] localhost/hns/public/index.php/admin/book/index.html?page=2 [运行时间：0.039579s][吞吐率：25.27req/s] [内存消耗：2,108.46kb] [文件加载：50]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'book',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin/book/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377; PHPSESSID=kjq2bn79sdubctc9a5fn0p50dl',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Book->index[ D:\xampp\htdocs\hns\application\admin\controller\Book.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/admin\view\book\index.html [ array (
+  0 => 'books',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010285s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_book` [ RunTime:0.005710s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_book` LIMIT 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_book` LIMIT 5,5 [ RunTime:0.000335s ]
+
+---------------------------------------------------------------
+[ 2018-04-14T19:10:18+08:00 ] ::1 ::1 GET /hns/public/index.php/admin
+[ log ] localhost/hns/public/index.php/admin [运行时间：0.018861s][吞吐率：53.02req/s] [内存消耗：1,206.74kb] [文件加载：39]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377; PHPSESSID=kjq2bn79sdubctc9a5fn0p50dl',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\xampp\htdocs\hns\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-14T19:10:20+08:00 ] ::1 ::1 GET /hns/public/index.php/admin/book/index.html
+[ log ] localhost/hns/public/index.php/admin/book/index.html [运行时间：0.050122s][吞吐率：19.95req/s] [内存消耗：2,248.48kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'book',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377; PHPSESSID=kjq2bn79sdubctc9a5fn0p50dl',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Book->index[ D:\xampp\htdocs\hns\application\admin\controller\Book.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/admin\view\book\index.html [ array (
+  0 => 'books',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010337s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_book` [ RunTime:0.005685s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_book` LIMIT 1 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_book` LIMIT 0,5 [ RunTime:0.000435s ]
+
+---------------------------------------------------------------

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:69:"D:\xampp\htdocs\hns\public/../application/index\view\index\index.html";i:1523516827;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1523271222;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1523341894;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:69:"D:\xampp\htdocs\hns\public/../application/index\view\index\index.html";i:1523538445;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1523271222;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1523341894;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -162,86 +162,6 @@
                 </div>
                 <div class="feature-block">
                   <ul id="mix" class="product-grid">
-                    <li>
-                      <div class="pro-img"><img title="Freature Product" alt="Freature Product" src="images/default_img.png" /></div>
-                      <div class="pro-hover-block">
-                        <h4 class="pro-name">Htc One 1120</h4>
-                        <div class="link-block"> 
-                        <a href="#quick-view-container" class="quickllook inline" title="Quick View">Quick View</a> 
-                        <a href="view.html" class="quickproLink" title="Link">Product link</a></div>
-                        <div class="pro-price">$600.00</div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="pro-img"><img title="Freature Product" alt="Freature Product" src="images/default_img.png" /></div>
-                      <div class="pro-hover-block">
-                        <h4 class="pro-name">Htc One 1120</h4>
-                        <div class="link-block"> 
-                        <a href="#quick-view-container" class="quickllook inline" title="Quick View">Quick View</a> 
-                        <a href="view.html" class="quickproLink" title="Link">Product link</a></div>
-                        <div class="pro-price">$600.00</div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="pro-img"><img title="Freature Product" alt="Freature Product" src="images/default_img.png" /></div>
-                      <div class="pro-hover-block">
-                        <h4 class="pro-name">Htc One 1120</h4>
-                        <div class="link-block"> 
-                        <a href="#quick-view-container" class="quickllook inline" title="Quick View">Quick View</a> 
-                        <a href="view.html" class="quickproLink" title="Link">Product link</a></div>
-                        <div class="pro-price">$600.00</div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="pro-img"><img title="Freature Product" alt="Freature Product" src="images/default_img.png" /></div>
-                      <div class="pro-hover-block">
-                        <h4 class="pro-name">Htc One 1120</h4>
-                        <div class="link-block"> 
-                        <a href="#quick-view-container" class="quickllook inline" title="Quick View">Quick View</a> 
-                        <a href="view.html" class="quickproLink" title="Link">Product link</a></div>
-                        <div class="pro-price">$600.00</div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="pro-img"><img title="Freature Product" alt="Freature Product" src="images/default_img.png" /></div>
-                      <div class="pro-hover-block">
-                        <h4 class="pro-name">Htc One 1120</h4>
-                        <div class="link-block"> 
-                        <a href="#quick-view-container" class="quickllook inline" title="Quick View">Quick View</a> 
-                        <a href="view.html" class="quickproLink" title="Link">Product link</a></div>
-                        <div class="pro-price">$600.00</div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="pro-img"><img title="Freature Product" alt="Freature Product" src="images/default_img.png" /></div>
-                      <div class="pro-hover-block">
-                        <h4 class="pro-name">Htc One 1120</h4>
-                        <div class="link-block"> 
-                        <a href="#quick-view-container" class="quickllook inline" title="Quick View">Quick View</a> 
-                        <a href="view.html" class="quickproLink" title="Link">Product link</a></div>
-                        <div class="pro-price">$600.00</div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="pro-img"><img title="Freature Product" alt="Freature Product" src="images/default_img.png" /></div>
-                      <div class="pro-hover-block">
-                        <h4 class="pro-name">Htc One 1120</h4>
-                        <div class="link-block"> 
-                        <a href="#quick-view-container" class="quickllook inline" title="Quick View">Quick View</a> 
-                        <a href="view.html" class="quickproLink" title="Link">Product link</a></div>
-                        <div class="pro-price">$600.00</div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="pro-img"><img title="Freature Product" alt="Freature Product" src="images/default_img.png" /></div>
-                      <div class="pro-hover-block">
-                        <h4 class="pro-name">Htc One 1120</h4>
-                        <div class="link-block"> 
-                        <a href="#quick-view-container" class="quickllook inline" title="Quick View">Quick View</a> 
-                        <a href="view.html" class="quickproLink" title="Link">Product link</a></div>
-                        <div class="pro-price">$600.00</div>
-                      </div>
-                    </li>
       				      <li>
                       <div class="pro-img"><img title="Freature Product" alt="Freature Product" src="images/default_img.png" /></div>
                       <div class="pro-hover-block">
@@ -270,7 +190,7 @@
                       <div class="pro-price">￥<?php echo $vo['price']; ?></div>
                       <div class="pro-btn-block"> 
                       <a class="add-cart left" href="#" title="Add to Cart">加入购物车</a> 
-                      <a class="add-cart right quickCart inline" href="#quick-view-container" id="<?php echo $vo['book_id']; ?>" title="预览">预览</a> </div>
+                      <a class="add-cart right quickCart inline" href="#quick-view-container&id=<?php echo $vo['book_id']; ?>" id="<?php echo $vo['book_id']; ?>" title="预览">预览</a> </div>
                       <div class="pro-link-block"> <a class="add-wishlist left" href="#" title="Add to wishlist"></a> <a class="add-compare right" href="#" title="Add to Compare"></a>
                         <div class="clearfix"></div>
                       </div>
@@ -286,7 +206,7 @@
     <!--Quick view Block-->
 <script type="text/javascript">
 jQuery (function(){
-	var tabContainers=jQuery('div.tabs > div');
+	var tabContainers=jQuery('div.tabs > div');//tabs下的子标签
 	tabContainers.hide().filter(':first').show();
 	jQuery('div.tabs ul.tabNavigation a').click(function(){
 		tabContainers.hide();

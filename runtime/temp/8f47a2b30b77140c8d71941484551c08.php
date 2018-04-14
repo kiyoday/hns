@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\user\login.html";i:1523275931;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1523271222;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1523271222;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\user\login.html";i:1523275931;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1523271222;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1523341894;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -112,8 +112,10 @@
                     </div>
                   </div>
                   <div class="search-block">
-                      <input type="text" value="" />
+                    <form action="<?php echo url('search/index'); ?>" method="get">
+                      <input name="keywords" type="text" value="" />
                       <input type="submit" value="Search" title="搜索" />
+                    </form>
                     </div>
                   </section>
                 </div>
@@ -122,7 +124,7 @@
                   </a></h1>
                 <nav id="smoothmenu1" class="ddsmoothmenu mainMenu">
                   <ul id="nav">
-                    <li class="active"><a href="index.html" title="Home">首页</a></li>
+                    <li class="active"><a href="<?php echo url('index/index'); ?>" title="Home">首页</a></li>
                     <?php if(is_array($categorys) || $categorys instanceof \think\Collection || $categorys instanceof \think\Paginator): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                     <li class=""><a href="blog.html" title="<?php echo $vo['type_name']; ?>"><?php echo $vo['type_name']; ?></a></li>
                     <?php endforeach; endif; else: echo "" ;endif; ?>
