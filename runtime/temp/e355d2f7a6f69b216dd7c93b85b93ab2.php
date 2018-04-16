@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:69:"D:\xampp\htdocs\hns\public/../application/index\view\index\index.html";i:1523711489;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1523271222;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1523870579;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\view\index.html";i:1523872752;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1523271222;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1523870579;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -135,75 +135,50 @@
               </header>
             </div>
             <!--Banner Block-->
-            <section class="banner-wrapper">
-              <div class="banner-block container">
-                <div class="flexslider">
-                  <ul class="slides">
-                    <li><img title="Banner" alt="Banner" src="images/banner1.jpg" /></li>
-                    <li><img title="Banner" alt="Banner" src="images/banner2.jpg"></li>
-                    <li><img title="Banner" alt="Banner" src="images/banner3.jpg" /></li>
-                    <li><img title="Banner" alt="Banner" src="images/banner4.jpg" /></li>
-                  </ul>
-                </div>
-                <ul class="banner-add">
-                  <li class="add1"><a href="#" title=""><img title="add1" alt="add1" src="images__STATIC__1.jpg" /></a></li>
-                  <li class="add2"><a href="#" title=""><img title="add2" alt="add2" src="images__STATIC__2.jpg" /></a></li>
-                </ul>
-              </div>
-            </section>
-            <!--Content Block-->
-            <section class="content-wrapper">
-              <div class="content-container container">
-                <div class="heading-block">
-                  <h1>推荐书籍</h1>
-                  <ul class="pagination">
-                    <li class="grid"><a href="#" title="Grid">Grid</a></li>
-                  </ul>
-                </div>
-                <div class="feature-block">
-                  <ul id="mix" class="product-grid">
-      				      <li>
-                      <div class="pro-img"><img title="Freature Product" alt="Freature Product" src="images/default_img.png" /></div>
-                      <div class="pro-hover-block">
-                        <h4 class="pro-name">Htc One 1120</h4>
-                        <div class="link-block"> 
-                        <a href="#quick-view-container" class="quickllook inline" title="Quick View">Quick View</a> 
-                        <a href="view.html" class="quickproLink" title="Link">Product link</a></div>
-                        <div class="pro-price">$600.00</div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <div class="heading-block">
-                  <h1>当前类别</h1>
-                </div>
-                <div class="new-product-block">
-                  <ul class="product-grid">
-                    <?php if(is_array($books) || $books instanceof \think\Collection || $books instanceof \think\Paginator): $i = 0; $__LIST__ = $books;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                    <li>
-                      <div class="pro-img" >
-                        <img alt="Freature Product" src="<?php echo $vo['photo']; ?>" style="height:180px;width:180px;">
-                      </div>
-                      <div class="pro-content">
-                        <p style="max-width:225px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;" title="<?php echo $vo['name']; ?>"><?php echo $vo['name']; ?></p>
-                      </div>
-                      <div class="pro-price">￥<?php echo $vo['price']; ?></div>
-                      <div class="pro-btn-block"> 
-                      <a class="add-cart left" href="#" title="Add to Cart">加入购物车</a> 
-                      <a class="add-cart right quickCart inline" href="#quick-view-container&id=<?php echo $vo['book_id']; ?>" id="<?php echo $vo['book_id']; ?>" title="预览">预览</a> </div>
-                      <div class="pro-link-block"> <a class="add-wishlist left" href="#" title="Add to wishlist"></a> <a class="add-compare right" href="#" title="Add to Compare"></a>
-                        <div class="clearfix"></div>
-                      </div>
-                    </li>
-                     <?php endforeach; endif; else: echo "" ;endif; ?>
-                     
-                  </ul>
-                  <div><?php echo $books->render(); ?></div>
-                </div>
-              </div>
-            </section>
-    </div> 
-    <!--Quick view Block-->    
+          <section class="content-wrapper">
+	<div class="content-container container">
+		<div class="breadcrum-container">
+			<ul>
+				<li><a href="#" title="Home">Home</a></li>
+				<li>当前商品</li>
+			</ul>
+		</div>
+		<div class="main">
+			
+			<div class="product-info-box">
+				<div class="product-essential">
+					<div class="product-img-box">
+						<p class="product-image-zoom">
+							<img src="images/view_img.png"  alt="Image" title="Image" />
+					</div>
+					<div class="product-shop">
+						<h3 class="product-name">书籍名</h3>
+						<div class="price-box">
+                		    <span class="price">￥600.00</span>
+							<span class="availability">In stock</span>
+				        </div>
+				        <div class="first-review">
+							<h4>二手书介绍：</h4>
+						</div>
+						<div class="model-block">
+							<p>
+								<span>联系电话： </span>20
+							</p>
+							<p>
+								<span>卖家： </span>HTC
+							</p>
+						</div>
+						<div class="add-to-cart-box">
+							<button class="form-button" title="Add to Cart"><span>加入购物车</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</section>
+</div>
            <!--Footer Block-->  
             <!--Footer Block-->
             <section class="footer-wrapper">
