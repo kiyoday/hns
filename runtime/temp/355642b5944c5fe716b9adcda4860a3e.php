@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:70:"D:\xampp\htdocs\hns\public/../application/index\view\advice\index.html";i:1523455743;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1523938232;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1523870579;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:67:"D:\xampp\htdocs\hns\public/../application/index\view\buy\index.html";i:1523938230;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1523938232;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1523938655;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -52,12 +52,11 @@
               <header class="container">
                 <div class="head-right">
                       <ul class="top-nav">
-                            <li class=""><a href="404_error.html" title="My Account">我的账户</a></li>
-                            <li class="my-wishlist"><a href="404_error.html" title="My Wishlist">购物车</a></li>
+                            <li class=""><a href="404_error.html" title="My Account">个人中心</a></li>
+                            <li class="my-wishlist"><a href="<?php echo url('buy/index'); ?>" title="My Wishlist">购物车</a></li>
                             <li class="checkout"><a href="404_error.html" title="Checkout">我的订单</a></li>
                             <li class="contact-us"><a href="<?php echo url('advice/index'); ?>" title="Contact Us">关于我们</a></li>
                             <li class="log-in"><a href="<?php echo url('user/login'); ?>" title="Log In">登录/注册</a></li>
-                            <li class="checkout"><a href="<?php echo url('user/register'); ?>" title="Checkout">注册</a></li>
                             </ul>
                             <ul class="currencyBox">
                                   <li id="header_currancy" class="currency"> <a class="mainCurrency" href="#">我要卖书</a>
@@ -135,54 +134,114 @@
               </header>
             </div>
                 <!--Content Block-->
-                <section class="content-wrapper">
-                	<div class="content-container container">                        
-                		<div class="col-left">
-                			<div class="block community-block">
-                				<div class="block-title">请选择</div>
-                				<ul>
-                					<li class="question-row">您的宝贵建议是我们前进的动力</li>
-                                    <li class="question-row">客服电话：1390000008</li>
-                                    <li class="question-row">有问题请联系客服或反馈</li>
-                				</ul>
-                			</div>
-                		</div>
-                        <form action="<?php echo url('advice/save'); ?>" method="post">
-                		<div  class="col-main">
-                			<h1 class="page-title">给我们的建议</h1>
-                			<div class="contact-form-container">
-                				<div  class="form-title">请填写下列信息</div>
-                				<ul class="form-fields">
-                					<li class="left">
-                						<label>您的名字<em>*</em></label>
-                						<input id="name" name="name" type="text">
-                					</li>
-                					<li class="left">
-                						<label>邮箱<em>*</em></label>
-                						<input id="email" name="email" type="text">
-                					</li>
-                					<li class="left">
-                						<label>手机号</label>
-                						<input id="phone" name="phone" type="text">
-                					</li>
-                					<li class="full-row">
-                						<label>建议<em>*</em></label>
-                						<textarea name="advicetext"></textarea>
-                					</li>
-                				</ul>
-                				<div class="button-set">
-                					<p class="required">* 为必须填写</p>
-                					<button type="submit" class="form-button"><span>提交</span></button>
-                				</div>
-                			</div>
-                		</div>
-                        </form>
-                		<div class="clearfix"></div>
-                		<div class="news-letter-container">
-                		</div>	
-                	</div>
-                </section>
-                </div>
+                <div class="firstly">
+        <table class="table table-goods" cellpadding="0" cellspacing="0">
+            <tbody>
+                <tr>
+                    <th class="first">商品</th>
+                    <th width="100">单价</th>
+                    <th width="180">数量</th>
+                    <th width="140">优惠</th>
+                    <th width="140" class="last">小计</th>
+                </tr>
+                <tr class="j-row">
+                    <td class="vtop">
+                        <div class="title-area" title="【好伦哥】精选自助餐1位！免费WiFi！">
+                         <div class="img-wrap">
+                             <a href="" target="_blank"><img src="images/quick_thum_img.png" ></a>
+                         </div>
+                          <div class="title-wrap">
+                           <div class="title">
+                                    <a href="" class="link">【好伦哥】精选自助餐1位！免费WiFi！</a>
+                           </div>
+                           <div class="attrs"></div>
+                          </div>
+                         </div>
+                    </td>
+                    <td>￥<span class="font14">55.00</span></td>
+                    <td class="j-cell">
+                        <div class="buycount-ctrl" align="center">
+                            <a class="j-ctrl ctrl minus disabled"><span class="horizontal"></span></a>
+                            <input type="text" value="1" maxlength="10" size="5"  text-align="center">
+                            <a class="ctrl j-ctrl plus"><span class="horizontal"></span><span class="vertical"></span></a>
+                        </div>
+                        <span class="err-wrap j-err-wrap"></span>
+                    </td>
+                     <td class="j-cellActivity" align="center">-￥<span>1.40</span><br></td>
+                 <td class="price font14" align="center">¥<span class="j-sumPrice">53.60</span></td>
+                </tr>
+                <tr class="j-row">
+                    <td class="vtop">
+                        <div class="title-area" title="【好伦哥】精选自助餐1位！免费WiFi！">
+                         <div class="img-wrap">
+                          <a href="" target="_blank"><img src="images/quick_thum_img.png" ></a>
+                         </div>
+                          <div class="title-wrap">
+                           <div class="title">
+                            <a href="" class="link">【好伦哥】精选自助餐1位！免费WiFi！</a>
+                           </div>
+                           <div class="attrs"></div>
+                          </div>
+                        </div>
+                    </td>
+                    <td>￥<span class="font14">55.00</span></td>
+                    <td class="j-cell">
+                        <div class="buycount-ctrl" align="center">
+                            <a class="j-ctrl ctrl minus disabled"><span class="horizontal"></span></a>
+                            <input type="text" value="1" maxlength="10" size="5"  text-align="center">
+                            <a class="ctrl j-ctrl plus"><span class="horizontal"></span><span class="vertical"></span></a>
+                        </div>
+                            <span class="err-wrap j-err-wrap"></span>
+                    </td>
+                  <td class="j-cellActivity" align="center">-￥<span>1.40</span><br></td>
+                  <td class="price font14" align="center">¥<span class="j-sumPrice">53.60</span></td>
+                </tr>
+               </tbody>
+              </table>
+              <div class="final-price-area" style="text-align:right">应付总额：<span class="sum">￥<span class="price">53.60</span></span></div>
+              <div class="page-button-wrap" style="text-align:right" >
+              <a href="" class="btn btn-primary" >确认</a>
+              </div>
+              <div style="width: 100%;min-width: 1200px;height: 5px;background: #dbdbdb;margin: 50px 0 20px;"></div>
+    </div>
+    <script>
+        //校验正整数
+        function isNaN(number){
+            var reg = /^[1-9]\d*$/;
+            return reg.test(number);
+        }
+        function inputChange(num){
+            if(!isNaN(num)){
+                $(".buycount-ctrl input").val("1");
+            }
+            else{
+                $(".buycount-ctrl input").val(num);
+                $(".j-sumPrice").text($("td .font14").text() * num - $(".j-cellActivity span").text());
+                $(".sum .price").text($("td .font14").text() * num - $(".j-cellActivity span").text());
+                if(num == 1){
+                    $(".buycount-ctrl a").eq(0).addClass("disabled");
+                }
+                else{
+                    $(".buycount-ctrl a").eq(0).removeClass("disabled");
+                }
+            }
+        }
+
+        $(".buycount-ctrl input").keyup(function(){
+            var num = $(".buycount-ctrl input").val();
+            inputChange(num);
+        });
+        $(".minus").click(function(){
+            var num = $(".buycount-ctrl input").val();
+            num--;
+            inputChange(num);
+        });
+        $(".plus").click(function(){
+            var num = $(".buycount-ctrl input").val();
+            num++;
+            inputChange(num);
+        });
+    </script>
             <!--Footer Block-->
            <!--Footer Block-->
             <section class="footer-wrapper">

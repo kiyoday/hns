@@ -1,0 +1,125 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+{include file="public/head"}
+<body>
+	<div class="mainContainer sixteen container">
+            <!--Header Block-->
+            {include file="public/header"}
+                <!--Content Block-->
+                <div class="firstly">
+        <table class="table table-goods" cellpadding="0" cellspacing="0">
+            <tbody>
+                <tr>
+                    <th class="first">商品</th>
+                    <th width="100">单价</th>
+                    <th width="180">数量</th>
+                    <th width="140">优惠</th>
+                    <th width="140" class="last">小计</th>
+                </tr>
+                <tr class="j-row">
+                    <td class="vtop">
+                        <div class="title-area" title="【好伦哥】精选自助餐1位！免费WiFi！">
+                         <div class="img-wrap">
+                             <a href="" target="_blank"><img src="images/quick_thum_img.png" ></a>
+                         </div>
+                          <div class="title-wrap">
+                           <div class="title">
+                                    <a href="" class="link">【好伦哥】精选自助餐1位！免费WiFi！</a>
+                           </div>
+                           <div class="attrs"></div>
+                          </div>
+                         </div>
+                    </td>
+                    <td>￥<span class="font14">55.00</span></td>
+                    <td class="j-cell">
+                        <div class="buycount-ctrl" align="center">
+                            <a class="j-ctrl ctrl minus disabled"><span class="horizontal"></span></a>
+                            <input type="text" value="1" maxlength="10" size="5"  text-align="center">
+                            <a class="ctrl j-ctrl plus"><span class="horizontal"></span><span class="vertical"></span></a>
+                        </div>
+                        <span class="err-wrap j-err-wrap"></span>
+                    </td>
+                     <td class="j-cellActivity" align="center">-￥<span>1.40</span><br></td>
+                 <td class="price font14" align="center">¥<span class="j-sumPrice">53.60</span></td>
+                </tr>
+                <tr class="j-row">
+                    <td class="vtop">
+                        <div class="title-area" title="【好伦哥】精选自助餐1位！免费WiFi！">
+                         <div class="img-wrap">
+                          <a href="" target="_blank"><img src="images/quick_thum_img.png" ></a>
+                         </div>
+                          <div class="title-wrap">
+                           <div class="title">
+                            <a href="" class="link">【好伦哥】精选自助餐1位！免费WiFi！</a>
+                           </div>
+                           <div class="attrs"></div>
+                          </div>
+                        </div>
+                    </td>
+                    <td>￥<span class="font14">55.00</span></td>
+                    <td class="j-cell">
+                        <div class="buycount-ctrl" align="center">
+                            <a class="j-ctrl ctrl minus disabled"><span class="horizontal"></span></a>
+                            <input type="text" value="1" maxlength="10" size="5"  text-align="center">
+                            <a class="ctrl j-ctrl plus"><span class="horizontal"></span><span class="vertical"></span></a>
+                        </div>
+                            <span class="err-wrap j-err-wrap"></span>
+                    </td>
+                  <td class="j-cellActivity" align="center">-￥<span>1.40</span><br></td>
+                  <td class="price font14" align="center">¥<span class="j-sumPrice">53.60</span></td>
+                </tr>
+               </tbody>
+              </table>
+              <div class="final-price-area" style="text-align:right">应付总额：<span class="sum">￥<span class="price">53.60</span></span></div>
+              <div class="page-button-wrap" style="text-align:right" >
+              <a href="" class="btn btn-primary" >确认</a>
+              </div>
+              <div style="width: 100%;min-width: 1200px;height: 5px;background: #dbdbdb;margin: 50px 0 20px;"></div>
+    </div>
+    <script>
+        //校验正整数
+        function isNaN(number){
+            var reg = /^[1-9]\d*$/;
+            return reg.test(number);
+        }
+        function inputChange(num){
+            if(!isNaN(num)){
+                $(".buycount-ctrl input").val("1");
+            }
+            else{
+                $(".buycount-ctrl input").val(num);
+                $(".j-sumPrice").text($("td .font14").text() * num - $(".j-cellActivity span").text());
+                $(".sum .price").text($("td .font14").text() * num - $(".j-cellActivity span").text());
+                if(num == 1){
+                    $(".buycount-ctrl a").eq(0).addClass("disabled");
+                }
+                else{
+                    $(".buycount-ctrl a").eq(0).removeClass("disabled");
+                }
+            }
+        }
+
+        $(".buycount-ctrl input").keyup(function(){
+            var num = $(".buycount-ctrl input").val();
+            inputChange(num);
+        });
+        $(".minus").click(function(){
+            var num = $(".buycount-ctrl input").val();
+            num--;
+            inputChange(num);
+        });
+        $(".plus").click(function(){
+            var num = $(".buycount-ctrl input").val();
+            num++;
+            inputChange(num);
+        });
+    </script>
+            <!--Footer Block-->
+          {include file="public/footer"}
+</body>
+</html>
