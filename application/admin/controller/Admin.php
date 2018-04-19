@@ -14,7 +14,7 @@ class Admin extends Controller
         $admins = $this->obj->getadmin();
         return $this->fetch('',[
             'admins'=>$admins,
-            ]);
+        ]);
     }
 
     public function add()

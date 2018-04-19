@@ -42,15 +42,16 @@ class User extends Controller
             $data = input('post.');
             if(request()->ispost())
             {
-            $admin=db('User')->where('email','=',$data['email'])->find();
+            $userl=db('User')->where('email','=',$data['email'])->find();
             }
-            if(!$admin){
+            if(!$userl){
                 $this->error('帐号或密码错误');
             }else{
-                if($admin['password']!=$data['password']){
+                if($userl['password']!=$data['password']){
                     $this->error('帐号或密码错误');
                 }else{
-                    $this->success('欢迎进入前台','index/index');
+                    session('name', $userl['name']);
+                    $this->redirect('index/index');
                 }
             }
         }

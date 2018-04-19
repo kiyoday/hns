@@ -26,7 +26,7 @@ class Login extends Controller
     				$this->error('用户不存在或密码错误');
     			}else{
                     session('name', $data['name']);
-    				$this->success('欢迎进入后台管理系统','index/index');
+    				$this->redirect('index/index');
     			}
     		}
     	}	

@@ -6,7 +6,11 @@
                             <li class="my-wishlist"><a href="{:url('buy/index')}" title="My Wishlist">购物车</a></li>
                             <li class="checkout"><a href="404_error.html" title="Checkout">我的订单</a></li>
                             <li class="contact-us"><a href="{:url('advice/index')}" title="Contact Us">关于我们</a></li>
+                            {if condition="$Request.session.name neq ''"}
+                            <li class="log-in"><a href="{:url('user/register')}" title="Log In">{$Request.session.name}</a></li>
+                            {else /} 
                             <li class="log-in"><a href="{:url('user/login')}" title="Log In">登录/注册</a></li>
+                            {/if}
                             </ul>
                             <ul class="currencyBox">
                                   <li id="header_currancy" class="currency"> <a class="mainCurrency" href="#">我要卖书</a>

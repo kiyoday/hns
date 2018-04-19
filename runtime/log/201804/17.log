@@ -11045,3 +11045,1553 @@
 [ info ] [ LOG ] INIT File
 
 ---------------------------------------------------------------
+[ 2018-04-17T15:58:44+08:00 ] ::1 ::1 GET /hns/public/index.php/admin/login
+[ log ] localhost/hns/public/index.php/admin/login [运行时间：0.128123s][吞吐率：7.80req/s] [内存消耗：1,205.70kb] [文件加载：39]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\xampp\htdocs\hns\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/admin\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T15:58:44+08:00 ] ::1 ::1 GET /hns/public/index.php/admin/lib/jquery/1.9.1/jquery.min.js
+[ log ] localhost/hns/public/index.php/admin/lib/jquery/1.9.1/jquery.min.js [运行时间：0.043513s][吞吐率：22.98req/s] [内存消耗：979.67kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'lib',
+    2 => 'jquery',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D',
+)
+[ info ] [ PARAM ] array (
+  0 => 'jquery.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T15:58:44+08:00 ] ::1 ::1 GET /hns/public/index.php/admin/static/h-ui/js/H-ui.js
+[ log ] localhost/hns/public/index.php/admin/static/h-ui/js/H-ui.js [运行时间：0.028081s][吞吐率：35.61req/s] [内存消耗：979.62kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'h-ui',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D',
+)
+[ info ] [ PARAM ] array (
+  'js' => 'H-ui.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T15:58:44+08:00 ] ::1 ::1 GET /hns/public/index.php/captcha.html
+[ log ] localhost/hns/public/index.php/captcha.html [运行时间：0.037969s][吞吐率：26.34req/s] [内存消耗：1,000.49kb] [文件加载：32]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\hns\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T15:58:44+08:00 ] ::1 ::1 GET /hns/public/index.php/admin/static/h-ui/js/H-ui.js
+[ log ] localhost/hns/public/index.php/admin/static/h-ui/js/H-ui.js [运行时间：0.020131s][吞吐率：49.67req/s] [内存消耗：979.62kb] [文件加载：33]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'h-ui',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523251483,1523332661,1523456268,1523538377; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D',
+)
+[ info ] [ PARAM ] array (
+  'js' => 'H-ui.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T15:58:53+08:00 ] ::1 ::1 POST /hns/public/index.php/admin/login/logincheck.html
+[ log ] localhost/hns/public/index.php/admin/login/logincheck.html [运行时间：0.219958s][吞吐率：4.55req/s] [内存消耗：1,892.82kb] [文件加载：49]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'logincheck',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '34',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523951925',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'tzx',
+  'password' => '123456',
+  'code' => '8hbg',
+)
+[ info ] [ RUN ] app\admin\controller\Login->logincheck[ D:\xampp\htdocs\hns\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001046s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_admin` [ RunTime:0.101794s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_admin` WHERE  `name` = 'tzx' LIMIT 1 [ RunTime:0.000417s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T15:58:53+08:00 ] ::1 ::1 GET /hns/public/index.php/admin/login/%E6%AC%A2%E8%BF%8E%E8%BF%9B%E5%85%A5%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.html
+[ log ] localhost/hns/public/index.php/admin/login/%E6%AC%A2%E8%BF%8E%E8%BF%9B%E5%85%A5%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.html [运行时间：0.025323s][吞吐率：39.49req/s] [内存消耗：1,190.11kb] [文件加载：40]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => '欢迎进入后台管理系统',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523951925',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T15:59:16+08:00 ] ::1 ::1 GET /hns/public/index.php/admin/login/%E6%AC%A2%E8%BF%8E%E8%BF%9B%E5%85%A5%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.html
+[ log ] localhost/hns/public/index.php/admin/login/%E6%AC%A2%E8%BF%8E%E8%BF%9B%E5%85%A5%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.html [运行时间：0.026380s][吞吐率：37.91req/s] [内存消耗：1,189.94kb] [文件加载：40]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => '欢迎进入后台管理系统',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523951925',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T15:59:17+08:00 ] ::1 ::1 GET /hns/public/index.php/captcha.html
+[ log ] localhost/hns/public/index.php/captcha.html [运行时间：0.041414s][吞吐率：24.15req/s] [内存消耗：1,000.83kb] [文件加载：32]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523951925',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\hns\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T15:59:25+08:00 ] ::1 ::1 POST /hns/public/index.php/admin/login/logincheck.html
+[ log ] localhost/hns/public/index.php/admin/login/logincheck.html [运行时间：0.039296s][吞吐率：25.45req/s] [内存消耗：1,892.67kb] [文件加载：49]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'logincheck',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '34',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523951958',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'tzx',
+  'password' => '123456',
+  'code' => 'jepn',
+)
+[ info ] [ RUN ] app\admin\controller\Login->logincheck[ D:\xampp\htdocs\hns\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000649s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_admin` [ RunTime:0.005764s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_admin` WHERE  `name` = 'tzx' LIMIT 1 [ RunTime:0.000284s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T15:59:25+08:00 ] ::1 ::1 GET /hns/public/index.php/admin/index/index.html
+[ log ] localhost/hns/public/index.php/admin/index/index.html [运行时间：0.055305s][吞吐率：18.08req/s] [内存消耗：1,212.62kb] [文件加载：39]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523951958',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\xampp\htdocs\hns\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T16:01:28+08:00 ] ::1 ::1 GET /hns/public/index.php/admin/login/index.html
+[ log ] localhost/hns/public/index.php/admin/login/index.html [运行时间：0.020597s][吞吐率：48.55req/s] [内存消耗：1,206.36kb] [文件加载：39]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523951958',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\xampp\htdocs\hns\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/admin\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T16:01:28+08:00 ] ::1 ::1 GET /hns/public/index.php/admin/login/lib/jquery/1.9.1/jquery.min.js
+[ log ] localhost/hns/public/index.php/admin/login/lib/jquery/1.9.1/jquery.min.js [运行时间：0.024208s][吞吐率：41.31req/s] [内存消耗：1,189.03kb] [文件加载：40]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'lib',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523951958',
+)
+[ info ] [ PARAM ] array (
+  'jquery' => '1.9.1',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T16:01:28+08:00 ] ::1 ::1 GET /hns/public/index.php/admin/login/static/h-ui/js/H-ui.js
+[ log ] localhost/hns/public/index.php/admin/login/static/h-ui/js/H-ui.js [运行时间：0.017729s][吞吐率：56.40req/s] [内存消耗：1,188.94kb] [文件加载：40]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'static',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523951958',
+)
+[ info ] [ PARAM ] array (
+  'ui' => 'js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T16:01:28+08:00 ] ::1 ::1 GET /hns/public/index.php/admin/login/lib/jquery/1.9.1/jquery.min.js
+[ log ] localhost/hns/public/index.php/admin/login/lib/jquery/1.9.1/jquery.min.js [运行时间：0.024945s][吞吐率：40.09req/s] [内存消耗：1,189.03kb] [文件加载：40]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'lib',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523951958',
+)
+[ info ] [ PARAM ] array (
+  'jquery' => '1.9.1',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T16:01:28+08:00 ] ::1 ::1 GET /hns/public/index.php/captcha.html
+[ log ] localhost/hns/public/index.php/captcha.html [运行时间：0.074015s][吞吐率：13.51req/s] [内存消耗：1,000.83kb] [文件加载：32]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523951958',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\hns\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T16:01:28+08:00 ] ::1 ::1 GET /hns/public/index.php/admin/login/static/h-ui/js/H-ui.js
+[ log ] localhost/hns/public/index.php/admin/login/static/h-ui/js/H-ui.js [运行时间：0.032723s][吞吐率：30.56req/s] [内存消耗：1,188.94kb] [文件加载：40]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'static',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523951958',
+)
+[ info ] [ PARAM ] array (
+  'ui' => 'js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T16:01:34+08:00 ] ::1 ::1 POST /hns/public/index.php/admin/login/logincheck.html
+[ log ] localhost/hns/public/index.php/admin/login/logincheck.html [运行时间：0.075255s][吞吐率：13.29req/s] [内存消耗：1,216.29kb] [文件加载：40]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'logincheck',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '34',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523952089',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'tzx',
+  'password' => '123456',
+  'code' => '1234',
+)
+[ info ] [ RUN ] app\admin\controller\Login->logincheck[ D:\xampp\htdocs\hns\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T16:01:37+08:00 ] ::1 ::1 GET /hns/public/index.php/admin/login/lib/jquery/1.9.1/jquery.min.js
+[ log ] localhost/hns/public/index.php/admin/login/lib/jquery/1.9.1/jquery.min.js [运行时间：0.027843s][吞吐率：35.92req/s] [内存消耗：1,189.03kb] [文件加载：40]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'lib',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523952089',
+)
+[ info ] [ PARAM ] array (
+  'jquery' => '1.9.1',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T16:01:38+08:00 ] ::1 ::1 GET /hns/public/index.php/admin/login/static/h-ui/js/H-ui.js
+[ log ] localhost/hns/public/index.php/admin/login/static/h-ui/js/H-ui.js [运行时间：0.030234s][吞吐率：33.08req/s] [内存消耗：1,188.94kb] [文件加载：40]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'static',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523952089',
+)
+[ info ] [ PARAM ] array (
+  'ui' => 'js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T16:17:32+08:00 ] ::1 ::1 GET /hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20}
+[ log ] localhost/hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20} [运行时间：0.017221s][吞吐率：58.07req/s] [内存消耗：1,001.63kb] [文件加载：32]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523952098',
+)
+[ info ] [ PARAM ] array (
+  'function_random()_{_' => 
+  array (
+    'native code' => '',
+  ),
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\hns\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T16:17:33+08:00 ] ::1 ::1 GET /hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20}
+[ log ] localhost/hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20} [运行时间：0.056264s][吞吐率：17.77req/s] [内存消耗：1,001.63kb] [文件加载：32]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523952098',
+)
+[ info ] [ PARAM ] array (
+  'function_random()_{_' => 
+  array (
+    'native code' => '',
+  ),
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\hns\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T16:17:33+08:00 ] ::1 ::1 GET /hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20}
+[ log ] localhost/hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20} [运行时间：0.014425s][吞吐率：69.33req/s] [内存消耗：1,001.63kb] [文件加载：32]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523952098',
+)
+[ info ] [ PARAM ] array (
+  'function_random()_{_' => 
+  array (
+    'native code' => '',
+  ),
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\hns\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T16:17:33+08:00 ] ::1 ::1 GET /hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20}
+[ log ] localhost/hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20} [运行时间：0.013088s][吞吐率：76.41req/s] [内存消耗：1,001.63kb] [文件加载：32]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523952098',
+)
+[ info ] [ PARAM ] array (
+  'function_random()_{_' => 
+  array (
+    'native code' => '',
+  ),
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\hns\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T16:17:34+08:00 ] ::1 ::1 GET /hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20}
+[ log ] localhost/hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20} [运行时间：0.014018s][吞吐率：71.34req/s] [内存消耗：1,001.63kb] [文件加载：32]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523952098',
+)
+[ info ] [ PARAM ] array (
+  'function_random()_{_' => 
+  array (
+    'native code' => '',
+  ),
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\hns\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T16:17:34+08:00 ] ::1 ::1 GET /hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20}
+[ log ] localhost/hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20} [运行时间：0.014924s][吞吐率：67.01req/s] [内存消耗：1,001.63kb] [文件加载：32]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523952098',
+)
+[ info ] [ PARAM ] array (
+  'function_random()_{_' => 
+  array (
+    'native code' => '',
+  ),
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\hns\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T16:17:34+08:00 ] ::1 ::1 GET /hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20}
+[ log ] localhost/hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20} [运行时间：0.014334s][吞吐率：69.76req/s] [内存消耗：1,001.63kb] [文件加载：32]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523952098',
+)
+[ info ] [ PARAM ] array (
+  'function_random()_{_' => 
+  array (
+    'native code' => '',
+  ),
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\hns\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T16:17:34+08:00 ] ::1 ::1 GET /hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20}
+[ log ] localhost/hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20} [运行时间：0.014419s][吞吐率：69.35req/s] [内存消耗：1,001.63kb] [文件加载：32]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523952098',
+)
+[ info ] [ PARAM ] array (
+  'function_random()_{_' => 
+  array (
+    'native code' => '',
+  ),
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\hns\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T16:17:34+08:00 ] ::1 ::1 GET /hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20}
+[ log ] localhost/hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20} [运行时间：0.013174s][吞吐率：75.91req/s] [内存消耗：1,001.63kb] [文件加载：32]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523952098',
+)
+[ info ] [ PARAM ] array (
+  'function_random()_{_' => 
+  array (
+    'native code' => '',
+  ),
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\hns\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T16:17:35+08:00 ] ::1 ::1 GET /hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20}
+[ log ] localhost/hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20} [运行时间：0.056986s][吞吐率：17.55req/s] [内存消耗：1,001.63kb] [文件加载：32]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523952098',
+)
+[ info ] [ PARAM ] array (
+  'function_random()_{_' => 
+  array (
+    'native code' => '',
+  ),
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\hns\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T16:17:35+08:00 ] ::1 ::1 GET /hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20}
+[ log ] localhost/hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20} [运行时间：0.016033s][吞吐率：62.37req/s] [内存消耗：1,001.63kb] [文件加载：32]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523952098',
+)
+[ info ] [ PARAM ] array (
+  'function_random()_{_' => 
+  array (
+    'native code' => '',
+  ),
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\hns\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T16:17:35+08:00 ] ::1 ::1 GET /hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20}
+[ log ] localhost/hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20} [运行时间：0.014154s][吞吐率：70.65req/s] [内存消耗：1,001.63kb] [文件加载：32]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523952098',
+)
+[ info ] [ PARAM ] array (
+  'function_random()_{_' => 
+  array (
+    'native code' => '',
+  ),
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\hns\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T16:17:35+08:00 ] ::1 ::1 GET /hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20}
+[ log ] localhost/hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20} [运行时间：0.014022s][吞吐率：71.32req/s] [内存消耗：1,001.63kb] [文件加载：32]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523952098',
+)
+[ info ] [ PARAM ] array (
+  'function_random()_{_' => 
+  array (
+    'native code' => '',
+  ),
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\hns\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T16:17:35+08:00 ] ::1 ::1 GET /hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20}
+[ log ] localhost/hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20} [运行时间：0.013503s][吞吐率：74.06req/s] [内存消耗：1,001.63kb] [文件加载：32]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523952098',
+)
+[ info ] [ PARAM ] array (
+  'function_random()_{_' => 
+  array (
+    'native code' => '',
+  ),
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\hns\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T16:17:36+08:00 ] ::1 ::1 GET /hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20}
+[ log ] localhost/hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20} [运行时间：0.014608s][吞吐率：68.46req/s] [内存消耗：1,001.63kb] [文件加载：32]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523952098',
+)
+[ info ] [ PARAM ] array (
+  'function_random()_{_' => 
+  array (
+    'native code' => '',
+  ),
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\hns\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T16:17:36+08:00 ] ::1 ::1 GET /hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20}
+[ log ] localhost/hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20} [运行时间：0.014341s][吞吐率：69.73req/s] [内存消耗：1,001.63kb] [文件加载：32]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523952098',
+)
+[ info ] [ PARAM ] array (
+  'function_random()_{_' => 
+  array (
+    'native code' => '',
+  ),
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\hns\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T16:17:36+08:00 ] ::1 ::1 GET /hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20}
+[ log ] localhost/hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20} [运行时间：0.014157s][吞吐率：70.64req/s] [内存消耗：1,001.63kb] [文件加载：32]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523952098',
+)
+[ info ] [ PARAM ] array (
+  'function_random()_{_' => 
+  array (
+    'native code' => '',
+  ),
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\hns\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T16:17:36+08:00 ] ::1 ::1 GET /hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20}
+[ log ] localhost/hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20} [运行时间：0.013711s][吞吐率：72.93req/s] [内存消耗：1,001.63kb] [文件加载：32]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523952098',
+)
+[ info ] [ PARAM ] array (
+  'function_random()_{_' => 
+  array (
+    'native code' => '',
+  ),
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\hns\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T16:17:37+08:00 ] ::1 ::1 GET /hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20}
+[ log ] localhost/hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20} [运行时间：0.014054s][吞吐率：71.15req/s] [内存消耗：1,001.63kb] [文件加载：32]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523952098',
+)
+[ info ] [ PARAM ] array (
+  'function_random()_{_' => 
+  array (
+    'native code' => '',
+  ),
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\hns\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T16:17:37+08:00 ] ::1 ::1 GET /hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20}
+[ log ] localhost/hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20} [运行时间：0.013869s][吞吐率：72.10req/s] [内存消耗：1,001.63kb] [文件加载：32]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523952098',
+)
+[ info ] [ PARAM ] array (
+  'function_random()_{_' => 
+  array (
+    'native code' => '',
+  ),
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\hns\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T16:17:37+08:00 ] ::1 ::1 GET /hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20}
+[ log ] localhost/hns/public/index.php/captcha.html?function%20random()%20{%20[native%20code]%20} [运行时间：0.014151s][吞吐率：70.67req/s] [内存消耗：1,001.63kb] [文件加载：32]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; PHPSESSID=rfmocjq720vnf01m123onp5hhc; page_cookie=%7B%22page_index%22%3A1%2C%22show_number%22%3A%2214%22%2C%22url%22%3A%22http%3A%2F%2Flocalhost%2Fniushop%2Findex.php%3Fs%3D%2Fadmin%2Fgoods%2Fgoodslist%22%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523332661,1523456268,1523538377,1523951925; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523952098',
+)
+[ info ] [ PARAM ] array (
+  'function_random()_{_' => 
+  array (
+    'native code' => '',
+  ),
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\hns\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\user\login.html";i:1523275931;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1523938232;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1523870579;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\user\login.html";i:1523275931;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1523938232;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1524118933;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -52,12 +52,15 @@
               <header class="container">
                 <div class="head-right">
                       <ul class="top-nav">
-                            <li class=""><a href="404_error.html" title="My Account">我的账户</a></li>
-                            <li class="my-wishlist"><a href="404_error.html" title="My Wishlist">购物车</a></li>
+                            <li class=""><a href="404_error.html" title="My Account">个人中心</a></li>
+                            <li class="my-wishlist"><a href="<?php echo url('buy/index'); ?>" title="My Wishlist">购物车</a></li>
                             <li class="checkout"><a href="404_error.html" title="Checkout">我的订单</a></li>
                             <li class="contact-us"><a href="<?php echo url('advice/index'); ?>" title="Contact Us">关于我们</a></li>
+                            <?php if(\think\Request::instance()->session('name') != ''): ?>
+                            <li class="log-in"><a href="<?php echo url('user/register'); ?>" title="Log In"><?php echo \think\Request::instance()->session('name'); ?></a></li>
+                            <?php else: ?> 
                             <li class="log-in"><a href="<?php echo url('user/login'); ?>" title="Log In">登录/注册</a></li>
-                            <li class="checkout"><a href="<?php echo url('user/register'); ?>" title="Checkout">注册</a></li>
+                            <?php endif; ?>
                             </ul>
                             <ul class="currencyBox">
                                   <li id="header_currancy" class="currency"> <a class="mainCurrency" href="#">我要卖书</a>
