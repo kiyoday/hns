@@ -1,0 +1,1252 @@
+[ 2018-04-22T00:00:23+08:00 ] ::1 ::1 GET /hns/public/index.php/index/view/index/bid/20.html
+[ log ] localhost/hns/public/index.php/index/view/index/bid/20.html [运行时间：0.062517s][吞吐率：16.00req/s] [内存消耗：2,380.57kb] [文件加载：54]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'view',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index/index/index.html?page=3',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; Huiskin=default; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523538377,1523951925,1524118976,1524322114; PHPSESSID=jo834p6inn9750is3ma53cp813',
+)
+[ info ] [ PARAM ] array (
+  'bid' => '20',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\View->index[ D:\xampp\htdocs\hns\application\index\controller\View.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/index\view\view\index.html [ array (
+  0 => 'bid',
+  1 => 'categorys',
+  2 => 'books',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010783s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_category` [ RunTime:0.007576s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_category` LIMIT 1 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_category` LIMIT 0,10 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_book` [ RunTime:0.006833s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_book` LIMIT 1 [ RunTime:0.000697s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_book` LIMIT 0,4 [ RunTime:0.000295s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000661s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `hn_book` WHERE  `book_id` = 20 LIMIT 1 [ RunTime:0.000362s ]
+
+---------------------------------------------------------------
+[ 2018-04-22T00:00:23+08:00 ] ::1 ::1 GET /hns/public/index.php/index/view/index/bid/images/small_img.png
+[ log ] localhost/hns/public/index.php/index/view/index/bid/images/small_img.png [运行时间：0.063591s][吞吐率：15.73req/s] [内存消耗：2,249.62kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'view',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index/view/index/bid/20.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; Huiskin=default; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523538377,1523951925,1524118976,1524322114; PHPSESSID=jo834p6inn9750is3ma53cp813',
+)
+[ info ] [ PARAM ] array (
+  'bid' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\View->index[ D:\xampp\htdocs\hns\application\index\controller\View.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/index\view\view\index.html [ array (
+  0 => 'bid',
+  1 => 'categorys',
+  2 => 'books',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000703s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_category` [ RunTime:0.006053s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_category` LIMIT 1 [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_category` LIMIT 0,10 [ RunTime:0.000160s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_book` [ RunTime:0.007110s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_book` LIMIT 1 [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_book` LIMIT 0,4 [ RunTime:0.000194s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000439s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `hn_book` WHERE  `book_id` = 0 LIMIT 1 [ RunTime:0.000244s ]
+
+---------------------------------------------------------------
+[ 2018-04-22T00:00:23+08:00 ] ::1 ::1 GET /hns/public/index.php/index/view/index/bid/images/edit_icon.png
+[ log ] localhost/hns/public/index.php/index/view/index/bid/images/edit_icon.png [运行时间：0.069648s][吞吐率：14.36req/s] [内存消耗：2,249.62kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'view',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index/view/index/bid/20.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; Huiskin=default; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523538377,1523951925,1524118976,1524322114; PHPSESSID=jo834p6inn9750is3ma53cp813',
+)
+[ info ] [ PARAM ] array (
+  'bid' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\View->index[ D:\xampp\htdocs\hns\application\index\controller\View.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/index\view\view\index.html [ array (
+  0 => 'bid',
+  1 => 'categorys',
+  2 => 'books',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001127s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_category` [ RunTime:0.008081s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_category` LIMIT 1 [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_category` LIMIT 0,10 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_book` [ RunTime:0.010492s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_book` LIMIT 1 [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_book` LIMIT 0,4 [ RunTime:0.000503s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003858s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `hn_book` WHERE  `book_id` = 0 LIMIT 1 [ RunTime:0.000548s ]
+
+---------------------------------------------------------------
+[ 2018-04-22T00:00:23+08:00 ] ::1 ::1 GET /hns/public/index.php/index/view/index/bid/images/dribbble.png
+[ log ] localhost/hns/public/index.php/index/view/index/bid/images/dribbble.png [运行时间：0.075431s][吞吐率：13.26req/s] [内存消耗：2,249.62kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'view',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index/view/index/bid/20.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; Huiskin=default; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523538377,1523951925,1524118976,1524322114; PHPSESSID=jo834p6inn9750is3ma53cp813',
+)
+[ info ] [ PARAM ] array (
+  'bid' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\View->index[ D:\xampp\htdocs\hns\application\index\controller\View.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/index\view\view\index.html [ array (
+  0 => 'bid',
+  1 => 'categorys',
+  2 => 'books',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001122s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_category` [ RunTime:0.008094s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_category` LIMIT 1 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_category` LIMIT 0,10 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_book` [ RunTime:0.009755s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_book` LIMIT 1 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_book` LIMIT 0,4 [ RunTime:0.001186s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001570s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `hn_book` WHERE  `book_id` = 0 LIMIT 1 [ RunTime:0.000638s ]
+
+---------------------------------------------------------------
+[ 2018-04-22T00:00:23+08:00 ] ::1 ::1 GET /hns/public/index.php/index/view/index/bid/images/twitter.png
+[ log ] localhost/hns/public/index.php/index/view/index/bid/images/twitter.png [运行时间：0.080554s][吞吐率：12.41req/s] [内存消耗：2,249.61kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'view',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index/view/index/bid/20.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; Huiskin=default; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523538377,1523951925,1524118976,1524322114; PHPSESSID=jo834p6inn9750is3ma53cp813',
+)
+[ info ] [ PARAM ] array (
+  'bid' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\View->index[ D:\xampp\htdocs\hns\application\index\controller\View.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/index\view\view\index.html [ array (
+  0 => 'bid',
+  1 => 'categorys',
+  2 => 'books',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000884s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_category` [ RunTime:0.007815s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_category` LIMIT 1 [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_category` LIMIT 0,10 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_book` [ RunTime:0.010682s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_book` LIMIT 1 [ RunTime:0.000870s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_book` LIMIT 0,4 [ RunTime:0.002007s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000915s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `hn_book` WHERE  `book_id` = 0 LIMIT 1 [ RunTime:0.000597s ]
+
+---------------------------------------------------------------
+[ 2018-04-22T00:00:23+08:00 ] ::1 ::1 GET /hns/public/index.php/index/view/index/bid/images/facebook.png
+[ log ] localhost/hns/public/index.php/index/view/index/bid/images/facebook.png [运行时间：0.088351s][吞吐率：11.32req/s] [内存消耗：2,249.62kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'view',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index/view/index/bid/20.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; Huiskin=default; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523538377,1523951925,1524118976,1524322114; PHPSESSID=jo834p6inn9750is3ma53cp813',
+)
+[ info ] [ PARAM ] array (
+  'bid' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\View->index[ D:\xampp\htdocs\hns\application\index\controller\View.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/index\view\view\index.html [ array (
+  0 => 'bid',
+  1 => 'categorys',
+  2 => 'books',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000689s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_category` [ RunTime:0.008251s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_category` LIMIT 1 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_category` LIMIT 0,10 [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_book` [ RunTime:0.009271s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_book` LIMIT 1 [ RunTime:0.001207s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_book` LIMIT 0,4 [ RunTime:0.001855s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001062s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `hn_book` WHERE  `book_id` = 0 LIMIT 1 [ RunTime:0.001334s ]
+
+---------------------------------------------------------------
+[ 2018-04-22T00:00:23+08:00 ] ::1 ::1 GET /hns/public/index.php/index/view/index/bid/images/delete_item_btn.png
+[ log ] localhost/hns/public/index.php/index/view/index/bid/images/delete_item_btn.png [运行时间：0.102532s][吞吐率：9.75req/s] [内存消耗：2,249.71kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'view',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index/view/index/bid/20.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; Huiskin=default; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523538377,1523951925,1524118976,1524322114; PHPSESSID=jo834p6inn9750is3ma53cp813',
+)
+[ info ] [ PARAM ] array (
+  'bid' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\View->index[ D:\xampp\htdocs\hns\application\index\controller\View.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/index\view\view\index.html [ array (
+  0 => 'bid',
+  1 => 'categorys',
+  2 => 'books',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000568s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_category` [ RunTime:0.007181s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_category` LIMIT 1 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_category` LIMIT 0,10 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_book` [ RunTime:0.010543s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_book` LIMIT 1 [ RunTime:0.002498s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_book` LIMIT 0,4 [ RunTime:0.001917s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002784s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `hn_book` WHERE  `book_id` = 0 LIMIT 1 [ RunTime:0.000570s ]
+
+---------------------------------------------------------------
+[ 2018-04-22T00:00:23+08:00 ] ::1 ::1 GET /hns/public/index.php/index/view/index/bid/images/rss.png
+[ log ] localhost/hns/public/index.php/index/view/index/bid/images/rss.png [运行时间：0.092770s][吞吐率：10.78req/s] [内存消耗：2,249.59kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'view',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index/view/index/bid/20.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; Huiskin=default; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523538377,1523951925,1524118976,1524322114; PHPSESSID=jo834p6inn9750is3ma53cp813',
+)
+[ info ] [ PARAM ] array (
+  'bid' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\View->index[ D:\xampp\htdocs\hns\application\index\controller\View.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/index\view\view\index.html [ array (
+  0 => 'bid',
+  1 => 'categorys',
+  2 => 'books',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001161s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_category` [ RunTime:0.009524s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_category` LIMIT 1 [ RunTime:0.001809s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_category` LIMIT 0,10 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_book` [ RunTime:0.014995s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_book` LIMIT 1 [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_book` LIMIT 0,4 [ RunTime:0.000621s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001883s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `hn_book` WHERE  `book_id` = 0 LIMIT 1 [ RunTime:0.001160s ]
+
+---------------------------------------------------------------
+[ 2018-04-22T00:00:23+08:00 ] ::1 ::1 GET /hns/public/index.php/index/view/index/bid/images/youtube.png
+[ log ] localhost/hns/public/index.php/index/view/index/bid/images/youtube.png [运行时间：0.091580s][吞吐率：10.92req/s] [内存消耗：2,249.61kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'view',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index/view/index/bid/20.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; Huiskin=default; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523538377,1523951925,1524118976,1524322114; PHPSESSID=jo834p6inn9750is3ma53cp813',
+)
+[ info ] [ PARAM ] array (
+  'bid' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\View->index[ D:\xampp\htdocs\hns\application\index\controller\View.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/index\view\view\index.html [ array (
+  0 => 'bid',
+  1 => 'categorys',
+  2 => 'books',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001350s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_category` [ RunTime:0.008651s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_category` LIMIT 1 [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_category` LIMIT 0,10 [ RunTime:0.001762s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_book` [ RunTime:0.016194s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_book` LIMIT 1 [ RunTime:0.000751s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_book` LIMIT 0,4 [ RunTime:0.000775s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011137s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `hn_book` WHERE  `book_id` = 0 LIMIT 1 [ RunTime:0.002796s ]
+
+---------------------------------------------------------------
+[ 2018-04-22T00:00:23+08:00 ] ::1 ::1 GET /hns/public/index.php/index/view/index/bid/images/skype.png
+[ log ] localhost/hns/public/index.php/index/view/index/bid/images/skype.png [运行时间：0.073553s][吞吐率：13.60req/s] [内存消耗：2,249.59kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'view',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index/view/index/bid/20.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; Huiskin=default; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523538377,1523951925,1524118976,1524322114; PHPSESSID=jo834p6inn9750is3ma53cp813',
+)
+[ info ] [ PARAM ] array (
+  'bid' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\View->index[ D:\xampp\htdocs\hns\application\index\controller\View.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/index\view\view\index.html [ array (
+  0 => 'bid',
+  1 => 'categorys',
+  2 => 'books',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000540s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_category` [ RunTime:0.008953s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_category` LIMIT 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_category` LIMIT 0,10 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_book` [ RunTime:0.006866s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_book` LIMIT 1 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_book` LIMIT 0,4 [ RunTime:0.000277s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001343s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `hn_book` WHERE  `book_id` = 0 LIMIT 1 [ RunTime:0.001641s ]
+
+---------------------------------------------------------------
+[ 2018-04-22T00:00:23+08:00 ] ::1 ::1 GET /hns/public/index.php/index/view/index/bid/images/payment.png
+[ log ] localhost/hns/public/index.php/index/view/index/bid/images/payment.png [运行时间：0.069960s][吞吐率：14.29req/s] [内存消耗：2,249.61kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'view',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index/view/index/bid/20.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; Huiskin=default; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523538377,1523951925,1524118976,1524322114; PHPSESSID=jo834p6inn9750is3ma53cp813',
+)
+[ info ] [ PARAM ] array (
+  'bid' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\View->index[ D:\xampp\htdocs\hns\application\index\controller\View.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/index\view\view\index.html [ array (
+  0 => 'bid',
+  1 => 'categorys',
+  2 => 'books',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000609s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_category` [ RunTime:0.006582s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_category` LIMIT 1 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_category` LIMIT 0,10 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_book` [ RunTime:0.011352s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_book` LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_book` LIMIT 0,4 [ RunTime:0.000429s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000830s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `hn_book` WHERE  `book_id` = 0 LIMIT 1 [ RunTime:0.000378s ]
+
+---------------------------------------------------------------
+[ 2018-04-22T00:00:23+08:00 ] ::1 ::1 GET /hns/public/index.php/index/view/index/bid/images/small_img.png
+[ log ] localhost/hns/public/index.php/index/view/index/bid/images/small_img.png [运行时间：0.074176s][吞吐率：13.48req/s] [内存消耗：2,249.62kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'view',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index/view/index/bid/20.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; Huiskin=default; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523538377,1523951925,1524118976,1524322114; PHPSESSID=jo834p6inn9750is3ma53cp813',
+)
+[ info ] [ PARAM ] array (
+  'bid' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\View->index[ D:\xampp\htdocs\hns\application\index\controller\View.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/index\view\view\index.html [ array (
+  0 => 'bid',
+  1 => 'categorys',
+  2 => 'books',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000677s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_category` [ RunTime:0.006329s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_category` LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_category` LIMIT 0,10 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_book` [ RunTime:0.010451s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_book` LIMIT 1 [ RunTime:0.000937s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_book` LIMIT 0,4 [ RunTime:0.000380s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001131s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `hn_book` WHERE  `book_id` = 0 LIMIT 1 [ RunTime:0.000393s ]
+
+---------------------------------------------------------------
+[ 2018-04-22T00:00:39+08:00 ] ::1 ::1 GET /hns/public/index.php/index/view/index/bid/20.html
+[ log ] localhost/hns/public/index.php/index/view/index/bid/20.html [运行时间：0.058067s][吞吐率：17.22req/s] [内存消耗：2,380.39kb] [文件加载：54]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'view',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index/index/index.html?page=3',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; Huiskin=default; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523538377,1523951925,1524118976,1524322114; PHPSESSID=jo834p6inn9750is3ma53cp813',
+)
+[ info ] [ PARAM ] array (
+  'bid' => '20',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\View->index[ D:\xampp\htdocs\hns\application\index\controller\View.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/index\view\view\index.html [ array (
+  0 => 'bid',
+  1 => 'categorys',
+  2 => 'books',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002558s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_category` [ RunTime:0.007978s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_category` LIMIT 1 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_category` LIMIT 0,10 [ RunTime:0.000178s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_book` [ RunTime:0.006712s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_book` LIMIT 1 [ RunTime:0.000211s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_book` LIMIT 0,4 [ RunTime:0.000215s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000471s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `hn_book` WHERE  `book_id` = 20 LIMIT 1 [ RunTime:0.000279s ]
+
+---------------------------------------------------------------
+[ 2018-04-22T00:00:39+08:00 ] ::1 ::1 GET /hns/public/index.php/index/view/index/bid/images/small_img.png
+[ log ] localhost/hns/public/index.php/index/view/index/bid/images/small_img.png [运行时间：0.058107s][吞吐率：17.21req/s] [内存消耗：2,249.43kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'view',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index/view/index/bid/20.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; Huiskin=default; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523538377,1523951925,1524118976,1524322114; PHPSESSID=jo834p6inn9750is3ma53cp813',
+)
+[ info ] [ PARAM ] array (
+  'bid' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\View->index[ D:\xampp\htdocs\hns\application\index\controller\View.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/index\view\view\index.html [ array (
+  0 => 'bid',
+  1 => 'categorys',
+  2 => 'books',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000618s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_category` [ RunTime:0.005747s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_category` LIMIT 1 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_category` LIMIT 0,10 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_book` [ RunTime:0.006354s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_book` LIMIT 1 [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_book` LIMIT 0,4 [ RunTime:0.000193s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000525s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `hn_book` WHERE  `book_id` = 0 LIMIT 1 [ RunTime:0.000327s ]
+
+---------------------------------------------------------------
+[ 2018-04-22T00:00:39+08:00 ] ::1 ::1 GET /hns/public/index.php/index/view/index/bid/images/edit_icon.png
+[ log ] localhost/hns/public/index.php/index/view/index/bid/images/edit_icon.png [运行时间：0.068991s][吞吐率：14.49req/s] [内存消耗：2,249.43kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'view',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index/view/index/bid/20.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; Huiskin=default; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523538377,1523951925,1524118976,1524322114; PHPSESSID=jo834p6inn9750is3ma53cp813',
+)
+[ info ] [ PARAM ] array (
+  'bid' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\View->index[ D:\xampp\htdocs\hns\application\index\controller\View.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/index\view\view\index.html [ array (
+  0 => 'bid',
+  1 => 'categorys',
+  2 => 'books',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000605s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_category` [ RunTime:0.007670s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_category` LIMIT 1 [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_category` LIMIT 0,10 [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_book` [ RunTime:0.010620s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_book` LIMIT 1 [ RunTime:0.002092s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_book` LIMIT 0,4 [ RunTime:0.001209s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002660s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `hn_book` WHERE  `book_id` = 0 LIMIT 1 [ RunTime:0.000972s ]
+
+---------------------------------------------------------------
+[ 2018-04-22T00:00:40+08:00 ] ::1 ::1 GET /hns/public/index.php/index/view/index/bid/images/facebook.png
+[ log ] localhost/hns/public/index.php/index/view/index/bid/images/facebook.png [运行时间：0.069448s][吞吐率：14.40req/s] [内存消耗：2,249.43kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'view',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index/view/index/bid/20.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; Huiskin=default; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523538377,1523951925,1524118976,1524322114; PHPSESSID=jo834p6inn9750is3ma53cp813',
+)
+[ info ] [ PARAM ] array (
+  'bid' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\View->index[ D:\xampp\htdocs\hns\application\index\controller\View.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/index\view\view\index.html [ array (
+  0 => 'bid',
+  1 => 'categorys',
+  2 => 'books',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000940s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_category` [ RunTime:0.008828s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_category` LIMIT 1 [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_category` LIMIT 0,10 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_book` [ RunTime:0.007995s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_book` LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_book` LIMIT 0,4 [ RunTime:0.000672s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001028s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `hn_book` WHERE  `book_id` = 0 LIMIT 1 [ RunTime:0.000503s ]
+
+---------------------------------------------------------------
+[ 2018-04-22T00:00:40+08:00 ] ::1 ::1 GET /hns/public/index.php/index/view/index/bid/images/rss.png
+[ log ] localhost/hns/public/index.php/index/view/index/bid/images/rss.png [运行时间：0.068452s][吞吐率：14.61req/s] [内存消耗：2,249.41kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'view',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index/view/index/bid/20.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; Huiskin=default; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523538377,1523951925,1524118976,1524322114; PHPSESSID=jo834p6inn9750is3ma53cp813',
+)
+[ info ] [ PARAM ] array (
+  'bid' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\View->index[ D:\xampp\htdocs\hns\application\index\controller\View.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/index\view\view\index.html [ array (
+  0 => 'bid',
+  1 => 'categorys',
+  2 => 'books',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001021s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_category` [ RunTime:0.009425s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_category` LIMIT 1 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_category` LIMIT 0,10 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_book` [ RunTime:0.008452s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_book` LIMIT 1 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_book` LIMIT 0,4 [ RunTime:0.000430s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001149s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `hn_book` WHERE  `book_id` = 0 LIMIT 1 [ RunTime:0.000569s ]
+
+---------------------------------------------------------------
+[ 2018-04-22T00:00:40+08:00 ] ::1 ::1 GET /hns/public/index.php/index/view/index/bid/images/delete_item_btn.png
+[ log ] localhost/hns/public/index.php/index/view/index/bid/images/delete_item_btn.png [运行时间：0.079752s][吞吐率：12.54req/s] [内存消耗：2,249.52kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'view',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index/view/index/bid/20.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; Huiskin=default; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523538377,1523951925,1524118976,1524322114; PHPSESSID=jo834p6inn9750is3ma53cp813',
+)
+[ info ] [ PARAM ] array (
+  'bid' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\View->index[ D:\xampp\htdocs\hns\application\index\controller\View.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/index\view\view\index.html [ array (
+  0 => 'bid',
+  1 => 'categorys',
+  2 => 'books',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002595s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_category` [ RunTime:0.008847s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_category` LIMIT 1 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_category` LIMIT 0,10 [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_book` [ RunTime:0.009619s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_book` LIMIT 1 [ RunTime:0.001172s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_book` LIMIT 0,4 [ RunTime:0.000577s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000919s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `hn_book` WHERE  `book_id` = 0 LIMIT 1 [ RunTime:0.000712s ]
+
+---------------------------------------------------------------
+[ 2018-04-22T00:00:40+08:00 ] ::1 ::1 GET /hns/public/index.php/index/view/index/bid/images/dribbble.png
+[ log ] localhost/hns/public/index.php/index/view/index/bid/images/dribbble.png [运行时间：0.080755s][吞吐率：12.38req/s] [内存消耗：2,249.43kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'view',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index/view/index/bid/20.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; Huiskin=default; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523538377,1523951925,1524118976,1524322114; PHPSESSID=jo834p6inn9750is3ma53cp813',
+)
+[ info ] [ PARAM ] array (
+  'bid' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\View->index[ D:\xampp\htdocs\hns\application\index\controller\View.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/index\view\view\index.html [ array (
+  0 => 'bid',
+  1 => 'categorys',
+  2 => 'books',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001750s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_category` [ RunTime:0.007631s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_category` LIMIT 1 [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_category` LIMIT 0,10 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_book` [ RunTime:0.008095s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_book` LIMIT 1 [ RunTime:0.000981s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_book` LIMIT 0,4 [ RunTime:0.000421s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010626s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `hn_book` WHERE  `book_id` = 0 LIMIT 1 [ RunTime:0.000612s ]
+
+---------------------------------------------------------------
+[ 2018-04-22T00:00:40+08:00 ] ::1 ::1 GET /hns/public/index.php/index/view/index/bid/images/twitter.png
+[ log ] localhost/hns/public/index.php/index/view/index/bid/images/twitter.png [运行时间：0.099134s][吞吐率：10.09req/s] [内存消耗：2,249.42kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'view',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index/view/index/bid/20.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; Huiskin=default; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523538377,1523951925,1524118976,1524322114; PHPSESSID=jo834p6inn9750is3ma53cp813',
+)
+[ info ] [ PARAM ] array (
+  'bid' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\View->index[ D:\xampp\htdocs\hns\application\index\controller\View.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/index\view\view\index.html [ array (
+  0 => 'bid',
+  1 => 'categorys',
+  2 => 'books',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010439s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_category` [ RunTime:0.010523s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_category` LIMIT 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_category` LIMIT 0,10 [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_book` [ RunTime:0.008893s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_book` LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_book` LIMIT 0,4 [ RunTime:0.000421s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001312s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `hn_book` WHERE  `book_id` = 0 LIMIT 1 [ RunTime:0.000759s ]
+
+---------------------------------------------------------------
+[ 2018-04-22T00:00:40+08:00 ] ::1 ::1 GET /hns/public/index.php/index/view/index/bid/images/skype.png
+[ log ] localhost/hns/public/index.php/index/view/index/bid/images/skype.png [运行时间：0.091656s][吞吐率：10.91req/s] [内存消耗：2,249.41kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'view',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index/view/index/bid/20.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; Huiskin=default; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523538377,1523951925,1524118976,1524322114; PHPSESSID=jo834p6inn9750is3ma53cp813',
+)
+[ info ] [ PARAM ] array (
+  'bid' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\View->index[ D:\xampp\htdocs\hns\application\index\controller\View.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/index\view\view\index.html [ array (
+  0 => 'bid',
+  1 => 'categorys',
+  2 => 'books',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000972s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_category` [ RunTime:0.009437s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_category` LIMIT 1 [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_category` LIMIT 0,10 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_book` [ RunTime:0.009971s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_book` LIMIT 1 [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_book` LIMIT 0,4 [ RunTime:0.000419s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000925s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `hn_book` WHERE  `book_id` = 0 LIMIT 1 [ RunTime:0.000653s ]
+
+---------------------------------------------------------------
+[ 2018-04-22T00:00:40+08:00 ] ::1 ::1 GET /hns/public/index.php/index/view/index/bid/images/youtube.png
+[ log ] localhost/hns/public/index.php/index/view/index/bid/images/youtube.png [运行时间：0.088731s][吞吐率：11.27req/s] [内存消耗：2,249.42kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'view',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index/view/index/bid/20.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; Huiskin=default; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523538377,1523951925,1524118976,1524322114; PHPSESSID=jo834p6inn9750is3ma53cp813',
+)
+[ info ] [ PARAM ] array (
+  'bid' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\View->index[ D:\xampp\htdocs\hns\application\index\controller\View.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/index\view\view\index.html [ array (
+  0 => 'bid',
+  1 => 'categorys',
+  2 => 'books',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002667s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_category` [ RunTime:0.007663s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_category` LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_category` LIMIT 0,10 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_book` [ RunTime:0.009717s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_book` LIMIT 1 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_book` LIMIT 0,4 [ RunTime:0.000414s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000746s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `hn_book` WHERE  `book_id` = 0 LIMIT 1 [ RunTime:0.000366s ]
+
+---------------------------------------------------------------
+[ 2018-04-22T00:00:40+08:00 ] ::1 ::1 GET /hns/public/index.php/index/view/index/bid/images/payment.png
+[ log ] localhost/hns/public/index.php/index/view/index/bid/images/payment.png [运行时间：0.089424s][吞吐率：11.18req/s] [内存消耗：2,249.42kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'view',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index/view/index/bid/20.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; Huiskin=default; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523538377,1523951925,1524118976,1524322114; PHPSESSID=jo834p6inn9750is3ma53cp813',
+)
+[ info ] [ PARAM ] array (
+  'bid' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\View->index[ D:\xampp\htdocs\hns\application\index\controller\View.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/index\view\view\index.html [ array (
+  0 => 'bid',
+  1 => 'categorys',
+  2 => 'books',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002680s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_category` [ RunTime:0.007441s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_category` LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_category` LIMIT 0,10 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_book` [ RunTime:0.009751s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_book` LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_book` LIMIT 0,4 [ RunTime:0.000407s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000832s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `hn_book` WHERE  `book_id` = 0 LIMIT 1 [ RunTime:0.000375s ]
+
+---------------------------------------------------------------
+[ 2018-04-22T00:00:40+08:00 ] ::1 ::1 GET /hns/public/index.php/index/view/index/bid/images/small_img.png
+[ log ] localhost/hns/public/index.php/index/view/index/bid/images/small_img.png [运行时间：0.090521s][吞吐率：11.05req/s] [内存消耗：2,249.43kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\hns\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'view',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/hns/public/index.php/index/view/index/bid/20.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=878369792; Huiskin=default; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523538377,1523951925,1524118976,1524322114; PHPSESSID=jo834p6inn9750is3ma53cp813',
+)
+[ info ] [ PARAM ] array (
+  'bid' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\View->index[ D:\xampp\htdocs\hns\application\index\controller\View.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\hns\public/../application/index\view\view\index.html [ array (
+  0 => 'bid',
+  1 => 'categorys',
+  2 => 'books',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000734s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_category` [ RunTime:0.006367s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_category` LIMIT 1 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_category` LIMIT 0,10 [ RunTime:0.001234s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hn_book` [ RunTime:0.007730s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hn_book` LIMIT 1 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT * FROM `hn_book` LIMIT 0,4 [ RunTime:0.000328s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001304s ] mysql:dbname=hns;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `hn_book` WHERE  `book_id` = 0 LIMIT 1 [ RunTime:0.001583s ]
+
+---------------------------------------------------------------
