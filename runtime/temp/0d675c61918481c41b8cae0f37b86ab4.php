@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:69:"D:\xampp\htdocs\hns\public/../application/index\view\index\index.html";i:1524324604;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1523938232;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1524322056;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:69:"D:\xampp\htdocs\hns\public/../application/index\view\index\index.html";i:1524326803;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1523938232;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1524326741;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -80,7 +80,7 @@
         <p class="empty">You have 2 items in your shopping cart.</p>
         <ol>
         <li>
-        <div class="img-block"><img src="images/small_img.png" title="" alt="" /></div>
+        <div class="img-block"><img src="__STATIC__/index/images/small_img.png" title="" alt="" /></div>
         <div class="detail-block">
            <h4><a href="#" title="Htc Mobile 1120">Htc Mobile 1120</a></h4>
            <p>
@@ -89,22 +89,8 @@
            <a href="#" title="Details">Details</a>
           </div>
           <div class="edit-delete-block">
-                <a href="#" title="Edit"><img src="images/edit_icon.png" alt="Edit" title="Edit" /></a>
-                <a href="#" title="Remove"><img src="images/delete_item_btn.png" alt="Remove" title="Remove" /></a>
-              </div>
-            </li>
-            <li>
-              <div class="img-block"><img src="images/small_img.png" title="" alt="" /></div>
-              <div class="detail-block">
-                <h4><a href="#" title="Htc Mobile 1120">Htc Mobile 1120</a></h4>
-                <p>
-                  <strong>1</strong> x $900.00
-                </p>
-                <a href="#" title="Details">Details</a>
-              </div>
-              <div class="edit-delete-block">
-                <a href="#" title="Edit"><img src="images/edit_icon.png" alt="Edit" title="Edit" /></a>
-                <a href="#" title="Remove"><img src="images/delete_item_btn.png" alt="Remove" title="Remove" /></a>
+                <a href="#" title="Edit"><img src="__STATIC__/index/images/edit_icon.png" alt="Edit" title="Edit" /></a>
+                <a href="#" title="Remove"><img src="__STATIC__/index/images/delete_item_btn.png" alt="Remove" title="Remove" /></a>
               </div>
             </li>
             <li>
@@ -144,15 +130,15 @@
               <div class="banner-block container">
                 <div class="flexslider">
                   <ul class="slides">
-                    <li><img title="Banner" alt="Banner" src="images/banner1.jpg" /></li>
-                    <li><img title="Banner" alt="Banner" src="images/banner2.jpg"></li>
-                    <li><img title="Banner" alt="Banner" src="images/banner3.jpg" /></li>
-                    <li><img title="Banner" alt="Banner" src="images/banner4.jpg" /></li>
+                    <li><img title="Banner" alt="Banner" src="__STATIC__/index/images/banner1.jpg" /></li>
+                    <li><img title="Banner" alt="Banner" src="__STATIC__/index/images/banner2.jpg"></li>
+                    <li><img title="Banner" alt="Banner" src="__STATIC__/index/images/banner3.jpg" /></li>
+                    <li><img title="Banner" alt="Banner" src="__STATIC__/index/images/banner4.jpg" /></li>
                   </ul>
                 </div>
                 <ul class="banner-add">
-                  <li class="add1"><a href="#" title=""><img title="add1" alt="add1" src="images__STATIC__1.jpg" /></a></li>
-                  <li class="add2"><a href="#" title=""><img title="add2" alt="add2" src="images__STATIC__2.jpg" /></a></li>
+                  <li class="add1"><a href="#" title=""><img title="add1" alt="add1" src="__STATIC__/index/images__STATIC__1.jpg" /></a></li>
+                  <li class="add2"><a href="#" title=""><img title="add2" alt="add2" src="__STATIC__/index/images__STATIC__2.jpg" /></a></li>
                 </ul>
               </div>
             </section>
@@ -168,7 +154,7 @@
                 <div class="feature-block">
                   <ul id="mix" class="product-grid">
       				      <li>
-                      <div class="pro-img"><img title="Freature Product" alt="Freature Product" src="images/default_img.png" /></div>
+                      <div class="pro-img"><img title="Freature Product" alt="Freature Product" src="__STATIC__/index/images/default_img.png" /></div>
                       <div class="pro-hover-block">
                         <h4 class="pro-name">Htc One 1120</h4>
                         <div class="link-block"> 

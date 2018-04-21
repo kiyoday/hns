@@ -12,7 +12,6 @@ class Search extends Controller
 	
     public function index()
     {   
-        dump($_GET);die;
         $categorys = $this->objc->getcategory();
         $books = $this->obj1->indexgetbook();
         return $this->fetch('',[
