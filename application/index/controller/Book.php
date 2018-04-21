@@ -46,5 +46,6 @@ class Book extends Controller
         }
         return $this->fetch();
     }
+
 }
 //->validate(['ext'=>'jpg,png,gif,jpeg'])

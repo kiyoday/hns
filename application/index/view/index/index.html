@@ -66,7 +66,7 @@
                       <div class="pro-price">￥{$vo.price}</div>
                       <div class="pro-btn-block"> 
                       <a class="add-cart left" href="#" title="Add to Cart">加入购物车</a> 
-                      <a class="add-cart right quickCart inline" href="#quick-view-container&id={$vo.book_id}" id="{$vo.book_id}" title="预览">预览</a> </div>
+                      <a class="add-wishlist right" href="{:url('view/index',['bid'=>$vo.book_id])}" id="{$vo.book_id}" title="预览">预览</a> </div>
                       <div class="pro-link-block"> <a class="add-wishlist left" href="#" title="Add to wishlist"></a> <a class="add-compare right" href="#" title="Add to Compare"></a>
                         <div class="clearfix"></div>
                       </div>

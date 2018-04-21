@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\view\index.html";i:1523938358;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1523938232;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1523870579;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\view\index.html";i:1524325648;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1523938232;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1524322056;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -48,92 +48,97 @@
 <body>
 	<div class="mainContainer sixteen container">
             <!--Header Block-->
-                        <div class="header-wrapper">
-              <header class="container">
-                <div class="head-right">
-                      <ul class="top-nav">
-                            <li class=""><a href="404_error.html" title="My Account">我的账户</a></li>
-                            <li class="my-wishlist"><a href="404_error.html" title="My Wishlist">购物车</a></li>
-                            <li class="checkout"><a href="404_error.html" title="Checkout">我的订单</a></li>
-                            <li class="contact-us"><a href="<?php echo url('advice/index'); ?>" title="Contact Us">关于我们</a></li>
-                            <li class="log-in"><a href="<?php echo url('user/login'); ?>" title="Log In">登录/注册</a></li>
-                            <li class="checkout"><a href="<?php echo url('user/register'); ?>" title="Checkout">注册</a></li>
-                            </ul>
-                            <ul class="currencyBox">
-                                  <li id="header_currancy" class="currency"> <a class="mainCurrency" href="#">我要卖书</a>
-                                <div id="currancyBox" class="currency_detial"> <a href="<?php echo url('book/index'); ?>">卖书登记</a> <a href="#">卖书信息</a> <a href="#">提现</a> 
-                                </div>
-                              </li>
-                            </ul>
-                  <section class="header-bottom">
-                    <div class="cart-block">
-                     <ul>
-                      <li>( )</li>
-                      <li><a href="cart.html" title="Cart"><img title="Item" alt="Item" src="__STATIC__/index/images/item_icon.png" /></a></li>
-                      <li>购物车</li>
-                     </ul>
-                   <div id="minicart" class="remain_cart" style="display: none;">
-                    <p class="empty">You have 2 items in your shopping cart.</p>
-                    <ol>
-                    <li>
-                    <div class="img-block"><img src="images/small_img.png" title="" alt="" /></div>
-                    <div class="detail-block">
-                       <h4><a href="#" title="Htc Mobile 1120">Htc Mobile 1120</a></h4>
-                       <p>
-                      <strong>1</strong> x $900.00
-                       </p>
-                       <a href="#" title="Details">Details</a>
-                      </div>
-                      <div class="edit-delete-block">
-                            <a href="#" title="Edit"><img src="images/edit_icon.png" alt="Edit" title="Edit" /></a>
-                            <a href="#" title="Remove"><img src="images/delete_item_btn.png" alt="Remove" title="Remove" /></a>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="img-block"><img src="images/small_img.png" title="" alt="" /></div>
-                          <div class="detail-block">
-                            <h4><a href="#" title="Htc Mobile 1120">Htc Mobile 1120</a></h4>
-                            <p>
-                              <strong>1</strong> x $900.00
-                            </p>
-                            <a href="#" title="Details">Details</a>
-                          </div>
-                          <div class="edit-delete-block">
-                            <a href="#" title="Edit"><img src="images/edit_icon.png" alt="Edit" title="Edit" /></a>
-                            <a href="#" title="Remove"><img src="images/delete_item_btn.png" alt="Remove" title="Remove" /></a>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="total-block">Total:<span>$1,900.00</span></div>
-                          <a href="cart.html" title="Checkout" class="colors-btn">Checkout</a>
-                          <div class="clear"></div>
-                        </li>
-                       </ol>
-                    </div>
-                  </div>
-                  <div class="search-block">
-                    <form action="<?php echo url('search/index'); ?>" method="get">
-                      <input name="keywords" type="text" value="" />
-                      <input type="submit" value="Search" title="搜索" />
-                    </form>
-                    </div>
-                  </section>
-                </div>
-                <h1 class="logo"><a href="index-2.html" title="Logo">
-                  <img title="Logo" alt="Logo" src="__STATIC__/index/images/logo.png" />
-                  </a></h1>
-                <nav id="smoothmenu1" class="ddsmoothmenu mainMenu">
-                  <ul id="nav">
-                    <li class="active"><a href="<?php echo url('index/index'); ?>" title="Home">首页</a></li>
-                    <?php if(is_array($categorys) || $categorys instanceof \think\Collection || $categorys instanceof \think\Paginator): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                    <li class=""><a href="blog.html" title="<?php echo $vo['type_name']; ?>"><?php echo $vo['type_name']; ?></a></li>
-                    <?php endforeach; endif; else: echo "" ;endif; ?>
-                  </ul>
-                </nav>
-              
-                
-              </header>
-            </div>
+            <div class="header-wrapper">
+  <header class="container">
+    <div class="head-right">
+      <ul class="top-nav">
+          <li class=""><a href="404_error.html" title="My Account">个人中心</a></li>
+          <li class="my-wishlist"><a href="<?php echo url('buy/index'); ?>" title="My Wishlist">购物车</a></li>
+          <li class="checkout"><a href="404_error.html" title="Checkout">我的订单</a></li>
+          <li class="contact-us"><a href="<?php echo url('advice/index'); ?>" title="Contact Us">关于我们</a></li>
+          <?php if(\think\Request::instance()->session('name') != ''): ?>
+          <li class="log-in"><a href="<?php echo url('user/login'); ?>" title="Log In"><?php echo \think\Request::instance()->session('name'); ?></a></li>
+          <li class="log-in"><a href="<?php echo url('user/logout'); ?>" title="Log out">注销</a></li>
+          <?php else: ?> 
+          <li class="log-in"><a href="<?php echo url('user/login'); ?>" title="Log In">登录/注册</a></li>
+          <?php endif; ?>
+      </ul>
+      <ul class="currencyBox">
+            <li id="header_currancy" class="currency"> <a class="mainCurrency" href="#">我要卖书</a>
+          <div id="currancyBox" class="currency_detial"> <a href="<?php echo url('book/index'); ?>">卖书登记</a> <a href="#">卖书信息</a> <a href="#">提现</a> 
+          </div>
+        </li>
+      </ul>
+      <section class="header-bottom">
+        <div class="cart-block">
+         <ul>
+          <li>( )</li>
+          <li><a href="cart.html" title="Cart"><img title="Item" alt="Item" src="__STATIC__/index/images/item_icon.png" /></a></li>
+          <li>购物车</li>
+         </ul>
+        <div id="minicart" class="remain_cart" style="display: none;">
+        <p class="empty">You have 2 items in your shopping cart.</p>
+        <ol>
+        <li>
+        <div class="img-block"><img src="images/small_img.png" title="" alt="" /></div>
+        <div class="detail-block">
+           <h4><a href="#" title="Htc Mobile 1120">Htc Mobile 1120</a></h4>
+           <p>
+          <strong>1</strong> x $900.00
+           </p>
+           <a href="#" title="Details">Details</a>
+          </div>
+          <div class="edit-delete-block">
+                <a href="#" title="Edit"><img src="images/edit_icon.png" alt="Edit" title="Edit" /></a>
+                <a href="#" title="Remove"><img src="images/delete_item_btn.png" alt="Remove" title="Remove" /></a>
+              </div>
+            </li>
+            <li>
+              <div class="img-block"><img src="images/small_img.png" title="" alt="" /></div>
+              <div class="detail-block">
+                <h4><a href="#" title="Htc Mobile 1120">Htc Mobile 1120</a></h4>
+                <p>
+                  <strong>1</strong> x $900.00
+                </p>
+                <a href="#" title="Details">Details</a>
+              </div>
+              <div class="edit-delete-block">
+                <a href="#" title="Edit"><img src="images/edit_icon.png" alt="Edit" title="Edit" /></a>
+                <a href="#" title="Remove"><img src="images/delete_item_btn.png" alt="Remove" title="Remove" /></a>
+              </div>
+            </li>
+            <li>
+              <div class="total-block">Total:<span>$1,900.00</span></div>
+              <a href="cart.html" title="Checkout" class="colors-btn">Checkout</a>
+              <div class="clear"></div>
+            </li>
+           </ol>
+        </div>
+      </div>
+      <div class="search-block">
+        <form action="<?php echo url('search/index'); ?>" method="get">
+          <input name="keywords" type="text" value="" />
+          <input type="submit" value="Search" title="搜索" />
+        </form>
+        </div>
+      </section>
+    </div>
+    <h1 class="logo"><a href="<?php echo url('index/index'); ?>" title="Logo">
+      <img title="Logo" alt="Logo" src="__STATIC__/index/images/logo.png" />
+      </a></h1>
+    <nav id="smoothmenu1" class="ddsmoothmenu mainMenu">
+      <ul id="nav">
+        <li class="active"><a href="<?php echo url('index/index'); ?>" title="Home">首页</a></li>
+        <?php if(is_array($categorys) || $categorys instanceof \think\Collection || $categorys instanceof \think\Paginator): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+        <li class=""><a href="blog.html" title="<?php echo $vo['type_name']; ?>"><?php echo $vo['type_name']; ?></a></li>
+        <?php endforeach; endif; else: echo "" ;endif; ?>
+      </ul>
+    </nav> 
+  </header>
+</div>
+
+
+
             <!--Banner Block-->
           <section class="content-wrapper">
 	<div class="content-container container">
@@ -149,19 +154,22 @@
 				<div class="product-essential">
 					<div class="product-img-box">
 						<p class="product-image-zoom">
-							<img src="images/view_img.png"  alt="Image" title="Image" />
+							<img src="<?php echo $bid['photo']; ?>" style="height:300px;width:300px;" alt="Image" title="Image" />
 					</div>
 					<div class="product-shop">
-						<h3 class="product-name">书籍名</h3>
+						<h3 class="product-name"><?php echo $bid['name']; ?></h3>
 						<div class="price-box">
-                		    <span class="price">￥600.00</span>
-							<span class="availability">In stock</span>
+                		    <span class="price">￥<?php echo $bid['price']; ?></span>
+							<span class="availability">书籍分类：<?php echo $bid['type']; ?></span>
 				        </div>
 				        <div class="first-review">
-							<h4>二手书介绍：</h4>
-							<textarea style= "background:transparent;border-style:none; "> 透明 </textarea>
+							<h5>二手书介绍：</h5>
+							<textarea style= "background:transparent;border-style:none; " rows="10"> <?php echo $bid['introduce']; ?></textarea>
 						</div>
 						<div class="model-block">
+							<p>
+								<span>发布时间：<?php echo $bid['create_time']; ?> </span>20
+							</p>
 							<p>
 								<span>联系电话： </span>20
 							</p>
@@ -172,6 +180,7 @@
 						<div class="add-to-cart-box">
 							<button class="form-button" title="Add to Cart"><span>加入购物车</span></button>
 						</div>
+						<textarea style= "background:transparent;border-style:none; " rows="10"> 透明 </textarea>
 					</div>
 				</div>
 			</div>
