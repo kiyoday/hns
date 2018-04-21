@@ -48,7 +48,7 @@
               </li>
               <li>
                 <div class="input-box">
-                  <input style="width:45%;float:left; name="code" type="text" placeholder="验证码" name="code" class="input-text required-entry validate-password" />
+                  <input style="width:45%;float:left;" type="text" placeholder="验证码" name="code"  id="code" class="input-text required-entry validate-password" />
                    <img style="height:30px;float:right;cursor:pointer;"  src="{:captcha_src()}" onclick="this.src='{:captcha_src()}?'+Math.random" alt="captcha">
                 </div>
                 <div class="clear"></div>
@@ -74,3 +74,17 @@
       {include file="public/footer"}
 </body>
 </html>
+<script>
+/**验证码异步**/
+ $("#code").keyup(function() {
+     $.post("login/check_verify", {
+         code : $("#code").val()
+         }, function(data) {
+         if (data == true) {
+             alert(验证码输入正确);
+         } else {
+             alert(验证码输入错误);
+         }
+     });
+ });
+</script>

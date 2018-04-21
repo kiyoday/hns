@@ -9,6 +9,12 @@ class Login extends Controller
         return $this->fetch();
     }
 
+    public function logout()
+    {
+        session(null);
+        $this->redirect('user/login');
+    }
+
     public function logincheck()
     {   
     	if(request()->isPost()){
@@ -42,4 +48,12 @@ class Login extends Controller
            return true;
         }
     }
+
+    public function check_verify($code, $id = '')
+    {
+        $captcha = new \think\captcha\Captcha();
+        $res = $captcha->check($code); 
+        $this->ajaxReturn($res, 'json');
+    }
+
 }

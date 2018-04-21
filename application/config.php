@@ -242,8 +242,12 @@ return [
     //验证码配置
     'captcha' => [
         // 字体大小
-        'fontSize' => 35,
+        'fontSize' => 50,
         // 验证码长度（位数）
         'length' => 4,
+        // 验证码字符
+        'codeSet'=> '1234567890',
+        // 验证成功后是否重置
+         'reset'     =>  true,           
         ],
 ];

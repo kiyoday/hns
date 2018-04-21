@@ -57,6 +57,13 @@ class User extends Controller
         }
     }
 
+    public function logout()
+    {
+        session(null);
+        $this->redirect('user/login');
+    }
+
+
     public function register()
     {   
         $users = $this->obj->getuser();
@@ -170,5 +177,11 @@ class User extends Controller
         }
     }
     
+    public function check_verify($code, $id = '')
+    {
+        $captcha = new \think\captcha\Captcha();
+        $res = $captcha->check($code); 
+        $this->ajaxReturn($res, 'json');
+    }
 
 }
