@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\view\index.html";i:1524326450;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1523938232;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1524322056;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\view\index.html";i:1524489914;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1523938232;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1524326741;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -80,7 +80,7 @@
         <p class="empty">You have 2 items in your shopping cart.</p>
         <ol>
         <li>
-        <div class="img-block"><img src="images/small_img.png" title="" alt="" /></div>
+        <div class="img-block"><img src="__STATIC__/index/images/small_img.png" title="" alt="" /></div>
         <div class="detail-block">
            <h4><a href="#" title="Htc Mobile 1120">Htc Mobile 1120</a></h4>
            <p>
@@ -89,22 +89,8 @@
            <a href="#" title="Details">Details</a>
           </div>
           <div class="edit-delete-block">
-                <a href="#" title="Edit"><img src="images/edit_icon.png" alt="Edit" title="Edit" /></a>
-                <a href="#" title="Remove"><img src="images/delete_item_btn.png" alt="Remove" title="Remove" /></a>
-              </div>
-            </li>
-            <li>
-              <div class="img-block"><img src="images/small_img.png" title="" alt="" /></div>
-              <div class="detail-block">
-                <h4><a href="#" title="Htc Mobile 1120">Htc Mobile 1120</a></h4>
-                <p>
-                  <strong>1</strong> x $900.00
-                </p>
-                <a href="#" title="Details">Details</a>
-              </div>
-              <div class="edit-delete-block">
-                <a href="#" title="Edit"><img src="images/edit_icon.png" alt="Edit" title="Edit" /></a>
-                <a href="#" title="Remove"><img src="images/delete_item_btn.png" alt="Remove" title="Remove" /></a>
+                <a href="#" title="Edit"><img src="__STATIC__/index/images/edit_icon.png" alt="Edit" title="Edit" /></a>
+                <a href="#" title="Remove"><img src="__STATIC__/index/images/delete_item_btn.png" alt="Remove" title="Remove" /></a>
               </div>
             </li>
             <li>
@@ -180,12 +166,34 @@
 						<div class="add-to-cart-box">
 							<button class="form-button" title="Add to Cart"><span>加入购物车</span></button>
 						</div>
-						<textarea style= "background:transparent;border-style:none; " rows="10"> 透明 </textarea>
-
 					</div>
 				</div>
 			</div>
 		</div>
+		<section  class="product-collateral">
+			<h5>评论：</h5>
+			<ul class="tab-block">
+				<li><a href="#pro-review" title="Reviews">Reviews</a></li>
+				<li><a href="#pro-tags" title="Product Tags">Product Tags</a></li>
+				<li class="video-box"><a href="#pro-video" title="Video Box">Video Box</a></li>
+			</ul>
+            <div id="pro-review" class="pro-detail commonContent">
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
+				</p>
+			</div>
+            <div id="pro-tags" class="pro-detail commonContent">
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+				</p>
+			</div>
+            <div id="pro-video" class="pro-detail commonContent">
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
+				</p>
+			</div>
+		</section>
 		<div class="clearfix"></div>
 	</div>
 </section>
