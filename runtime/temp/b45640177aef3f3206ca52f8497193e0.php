@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:71:"D:\xampp\htdocs\hns\public/../application/index\view\user\register.html";i:1523271222;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1523938232;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1524321468;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:71:"D:\xampp\htdocs\hns\public/../application/index\view\user\register.html";i:1524555268;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1524553581;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1524326741;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -27,7 +27,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <!-- CSS ================================================== -->
-
+<link rel="stylesheet" type="text/css" href="__STATIC__/admin/css/common.css" />
 <link rel="stylesheet" href="__STATIC__/index/css/style.css">
 <link rel="stylesheet" href="__STATIC__/index/css/colors.css">
 <link rel="stylesheet" href="__STATIC__/index/css/skeleton.css">
@@ -58,7 +58,7 @@
           <li class="contact-us"><a href="<?php echo url('advice/index'); ?>" title="Contact Us">关于我们</a></li>
           <?php if(\think\Request::instance()->session('name') != ''): ?>
           <li class="log-in"><a href="<?php echo url('user/login'); ?>" title="Log In"><?php echo \think\Request::instance()->session('name'); ?></a></li>
-          <li class="log-in"><a href="<?php echo url('user/login/logout'); ?>" title="Log In">注销</a></li>
+          <li class="log-in"><a href="<?php echo url('user/logout'); ?>" title="Log out">注销</a></li>
           <?php else: ?> 
           <li class="log-in"><a href="<?php echo url('user/login'); ?>" title="Log In">登录/注册</a></li>
           <?php endif; ?>
@@ -80,7 +80,7 @@
         <p class="empty">You have 2 items in your shopping cart.</p>
         <ol>
         <li>
-        <div class="img-block"><img src="images/small_img.png" title="" alt="" /></div>
+        <div class="img-block"><img src="__STATIC__/index/images/small_img.png" title="" alt="" /></div>
         <div class="detail-block">
            <h4><a href="#" title="Htc Mobile 1120">Htc Mobile 1120</a></h4>
            <p>
@@ -89,22 +89,8 @@
            <a href="#" title="Details">Details</a>
           </div>
           <div class="edit-delete-block">
-                <a href="#" title="Edit"><img src="images/edit_icon.png" alt="Edit" title="Edit" /></a>
-                <a href="#" title="Remove"><img src="images/delete_item_btn.png" alt="Remove" title="Remove" /></a>
-              </div>
-            </li>
-            <li>
-              <div class="img-block"><img src="images/small_img.png" title="" alt="" /></div>
-              <div class="detail-block">
-                <h4><a href="#" title="Htc Mobile 1120">Htc Mobile 1120</a></h4>
-                <p>
-                  <strong>1</strong> x $900.00
-                </p>
-                <a href="#" title="Details">Details</a>
-              </div>
-              <div class="edit-delete-block">
-                <a href="#" title="Edit"><img src="images/edit_icon.png" alt="Edit" title="Edit" /></a>
-                <a href="#" title="Remove"><img src="images/delete_item_btn.png" alt="Remove" title="Remove" /></a>
+                <a href="#" title="Edit"><img src="__STATIC__/index/images/edit_icon.png" alt="Edit" title="Edit" /></a>
+                <a href="#" title="Remove"><img src="__STATIC__/index/images/delete_item_btn.png" alt="Remove" title="Remove" /></a>
               </div>
             </li>
             <li>
@@ -123,7 +109,7 @@
         </div>
       </section>
     </div>
-    <h1 class="logo"><a href="index-2.html" title="Logo">
+    <h1 class="logo"><a href="<?php echo url('index/index'); ?>" title="Logo">
       <img title="Logo" alt="Logo" src="__STATIC__/index/images/logo.png" />
       </a></h1>
     <nav id="smoothmenu1" class="ddsmoothmenu mainMenu">
@@ -176,6 +162,7 @@
                 <label for="lastname">确认密码<em>*</em></label>
                 <input type="password" class="required-entry input-text" title="Last pwd" value="" name="lastpwd" id="lastpwd" >
               </div>
+             <div id="yzpassword"></div>
             <div class="clear"></div>
             </div>
           </li>
@@ -262,3 +249,22 @@
             </section>
 </body>
 </html>
+<!--<script>
+$(document).ready(function(){
+
+  $("#password").keyup(function(){
+  var password = $("#password").val();
+  var lastpwd = $("#lastpwd").val();
+ if(!(lastpwd == password)){
+      $("#lastpwd").trigger("focus");
+      $('#lastpwd').css("border","1px solid red");
+      $("#qrrepass").css("color","red").text("两次密码输入不相同");
+      return false;
+    }else{
+      $('#lastpwd').css("border","1px solid #ccc");
+      $("#qrrepass").css("color","red").text("");
+    }
+  })
+
+});
+</script>-->

@@ -87,3 +87,19 @@
            {include file="public/footer"}
 </body>
 </html>
+<script>
+$(document).ready(function(){
+	$("#password").keyup(function(){
+		var password = $("#password").val();
+		if(password.length<5){
+			$("#password").trigger("focus");
+			$('#password').css("border","1px solid red");
+			$("#yzpassword").css("color","red").text("密码最小长度为5");
+			return false;
+		}else{
+			$('#password').css("border","1px solid #ccc");
+			$("#yzpassword").css("color","red").text("");
+		}
+	})
+}
+</script>

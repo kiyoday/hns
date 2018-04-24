@@ -130,6 +130,9 @@ class User extends Controller
         $data = input('post.');
         $validate = validate('user');
         $emailck=db('user')->where('email','=',$data['email'])->select();
+        if($data['email']==''||$data['name']==''||$data['password']==''){
+            $this->error('请填写必须字段');
+        }
         if($emailck){
             $this->error('邮箱已被注册');
         }

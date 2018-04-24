@@ -47,6 +47,7 @@
                 <label for="lastname">确认密码<em>*</em></label>
                 <input type="password" class="required-entry input-text" title="Last pwd" value="" name="lastpwd" id="lastpwd" >
               </div>
+             <div id="yzpassword"></div>
             <div class="clear"></div>
             </div>
           </li>
@@ -79,3 +80,22 @@
       {include file="public/footer"}
 </body>
 </html>
+<!--<script>
+$(document).ready(function(){
+
+  $("#password").keyup(function(){
+  var password = $("#password").val();
+  var lastpwd = $("#lastpwd").val();
+ if(!(lastpwd == password)){
+      $("#lastpwd").trigger("focus");
+      $('#lastpwd').css("border","1px solid red");
+      $("#qrrepass").css("color","red").text("两次密码输入不相同");
+      return false;
+    }else{
+      $('#lastpwd').css("border","1px solid #ccc");
+      $("#qrrepass").css("color","red").text("");
+    }
+  })
+
+});
+</script>-->
