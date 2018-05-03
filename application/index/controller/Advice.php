@@ -18,6 +18,8 @@ class Advice extends Controller
     public function index()
     {
         $categorys = $this->objc->getcategory();
+        $shop_cart = session('shop_cart');
+        $this->assign('shop_cart', $shop_cart);
         return $this->fetch('',[
             'categorys'=>$categorys,
         ]);

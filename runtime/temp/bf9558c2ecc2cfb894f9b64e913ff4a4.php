@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:70:"D:\xampp\htdocs\hns\public/../application/index\view\advice\index.html";i:1523455743;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1524553581;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525331945;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:70:"D:\xampp\htdocs\hns\public/../application/index\view\advice\index.html";i:1523455743;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525346003;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525344386;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -28,6 +28,8 @@
 
 <!-- CSS ================================================== -->
 <link rel="stylesheet" type="text/css" href="__STATIC__/admin/css/common.css" />
+<link rel="stylesheet" href="__STATIC__/index/css/common.css">
+<link rel="stylesheet" href="__STATIC__/index/css/pay.css">
 <link rel="stylesheet" href="__STATIC__/index/css/style.css">
 <link rel="stylesheet" href="__STATIC__/index/css/colors.css">
 <link rel="stylesheet" href="__STATIC__/index/css/skeleton.css">
@@ -53,7 +55,7 @@
     <div class="head-right">
       <ul class="top-nav">
           <li class=""><a href="404_error.html" title="My Account">个人中心</a></li>
-          <li class="my-wishlist"><a href="<?php echo url('buy/index'); ?>" title="My Wishlist">购物车</a></li>
+          <li class="my-wishlist"><a href="<?php echo url('cart/index'); ?>" title="购物车">购物车</a></li>
           <li class="checkout"><a href="404_error.html" title="Checkout">我的订单</a></li>
           <li class="contact-us"><a href="<?php echo url('advice/index'); ?>" title="Contact Us">关于我们</a></li>
           <?php if(\think\Request::instance()->session('name') != ''): ?>
@@ -72,27 +74,29 @@
       <section class="header-bottom">
         <div class="cart-block">
          <ul>
-          <li>( )</li>
           <li><a href="cart.html" title="Cart"><img title="Item" alt="Item" src="__STATIC__/index/images/item_icon.png" /></a></li>
           <li>购物车</li>
          </ul>
         <div id="minicart" class="remain_cart" style="display: none;">
         <p class="empty">购物车预览</p>
         <ol>
+          <?php if(is_array($shop_cart) || $shop_cart instanceof \think\Collection || $shop_cart instanceof \think\Paginator): $i = 0; $__LIST__ = $shop_cart;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
         <li>
-        <div class="img-block"><img src="<?php echo \think\Request::instance()->session('book1.photo'); ?>" title="" alt="" /></div>
+        <div class="img-block"><img src="<?php echo $vo['photo']; ?>" title="" alt="" /></div>
         <div class="detail-block">
-           <h4><a href="#" title="Htc Mobile 1120"><?php echo \think\Request::instance()->session('book1.name'); ?></a></h4>
+           <h4><a href="#" title="Htc Mobile 1120"><?php echo $vo['name']; ?></a></h4>
            <p>
-          <strong>￥<?php echo \think\Request::instance()->session('book1.price'); ?></strong>
+          <strong>￥<?php echo $vo['price']; ?></strong>
            </p>
           </div>
           <div class="edit-delete-block">
                 <a href="#" title="Remove"><img src="__STATIC__/index/images/delete_item_btn.png" alt="删除" title="删除" /></a>
               </div>
             </li>
+        <?php endforeach; endif; else: echo "" ;endif; ?>
             <li>
-              <a href="cart.html" title="Checkout" class="colors-btn">去结算</a>
+              <a href="<?php echo url('index/cleancart'); ?>" title="Checkout" class="colors-btn" style="float:left;">清空</a>
+              <a href="<?php echo url('cart/index'); ?>" title="Checkout" class="colors-btn">去结算</a>
               <div class="clear"></div>
             </li>
            </ol>

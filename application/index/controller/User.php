@@ -16,6 +16,8 @@ class User extends Controller
         $users = $this->obj->getuser();
         $categorys = $this->objc->getcategory();
         $books = $this->obj1->indexgetbook();
+        $shop_cart = session('shop_cart');
+        $this->assign('shop_cart', $shop_cart);
         return $this->fetch('',[
             'users'=>$users,
             'categorys'=>$categorys,
@@ -28,6 +30,8 @@ class User extends Controller
         $users = $this->obj->getuser();
         $categorys = $this->objc->getcategory();
         $books = $this->obj1->indexgetbook();
+        $shop_cart = session('shop_cart');
+        $this->assign('shop_cart', $shop_cart);
         return $this->fetch('',[
             'users'=>$users,
             'categorys'=>$categorys,
@@ -70,6 +74,8 @@ class User extends Controller
         $users = $this->obj->getuser();
         $categorys = $this->objc->getcategory();
         $books = $this->obj1->indexgetbook();
+        $shop_cart = session('shop_cart');
+        $this->assign('shop_cart', $shop_cart);
         return $this->fetch('',[
             'users'=>$users,
             'categorys'=>$categorys,

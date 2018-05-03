@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\book\index.html";i:1523271222;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525346003;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525344386;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\cart\index.html";i:1525349425;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525346003;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525344386;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -126,69 +126,60 @@
 
 
 
-                <!--Content Block-->
-                <section class="content-wrapper">
-                	<div class="content-container container">
-                		<div class="col-left">
-                			<div class="block community-block">
-                              <div class="block-title">建议您填写</div>
-                                <ul>
-                                    <li class="question-row">
-                                    1.二手书的目录</br>
-                                    1.二手书的目录</br>
-                                    1.二手书的目录</br>
-                                    1.二手书的目录</br>
-                                    1.二手书的目录</br>
-                                    1.二手书的目录</br>
-                                    </li>
-                                </ul>
-                			</div>
-                		</div>
-                        <form action="<?php echo url('book/save'); ?>" method="post" enctype="multipart/form-data">
-                		<div  class="col-main">
-                			<h1 class="page-title">书籍信息</h1>
-                			<div class="contact-form-container">
-                				<div  class="form-title">请填写下列信息</div>
-                				<ul class="form-fields">
-                                    <li class="left">
-                                        <label>书名<em>*</em></label>
-                                        <input type="text" name="name">
-                                    </li>
-                                    <li class="left">
-                                        <label>类型<em>*</em></label>
-                                        <select name="type">
-                                        <?php if(is_array($categorys) || $categorys instanceof \think\Collection || $categorys instanceof \think\Paginator): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                                        <option value="volvo"><?php echo $vo['type_name']; ?></option>
-                                        <?php endforeach; endif; else: echo "" ;endif; ?>   
-                                        </select>
-                                    </li>
-                                    <li>
-                                        <label>图片<em></em></label>
-                                        <input id="photo" placeholder="" name="photo"  type="file">
-                                    </li>
-                                    <li class="full-row">
-                                        <label>描述<em>*</em></label>
-                                        <textarea name="introduce"></textarea>
-                                    </li>
-                                    <li class="left">
-                                        <label>价格 人民币（元）<em>*</em></label>
-                                        <input id="price" type="text" name="price">
-                                    </li>
-                				</ul>
-                				<div class="button-set">
-                					<p class="required">* 为必须填写</p>
-                					<button type="submit" class="form-button"><span>提交</span></button>
-                				</div>
-                			</div>
-                		</div></form>
-                		<div class="clearfix"></div>
-                		<div class="news-letter-container">
-                		</div>	
-                	</div>
-                </section>
-                </div>
+            <!--Banner Block-->
+    <div class="firstly">
+        <table class="table table-goods" cellpadding="0" cellspacing="0">
+            <tbody>
+                <tr>
+                    <th class="first">您选择的二手书</th>
+                    <th width="140" >价格</th>
+                    <th class="last"></th>
+                </tr>
+                <?php if(is_array($shop_cart) || $shop_cart instanceof \think\Collection || $shop_cart instanceof \think\Paginator): $i = 0; $__LIST__ = $shop_cart;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                <tr class="j-row">
+                    <td class="vtop">
+                        <div class="title-area" title="<?php echo $vo['name']; ?>">
+                        <div class="img-wrap">
+                        <a href="<?php echo url('view/index',['bid'=>$vo['book_id']]); ?>" target="_blank"><img src="<?php echo $vo['photo']; ?>" style="height:70px;width:70px;"></a>
+                        </div>
+                        <div class="title-wrap">
+                        <div class="title">
+                        <a href="<?php echo url('view/index',['bid'=>$vo['book_id']]); ?>" class="link"><?php echo $vo['name']; ?></a>
+                        </div>
+                        <div class="attrs"></div>
+                        </div>
+                        </div>
+                    </td>
+                    <td class="price font14" ><span class="j-sumPrice" style="color:#35C2D8;">￥<?php echo $vo['price']; ?></span></td>
+                    <td class="price font14" style="text-align:right">
+                    <button href="" class="button1" style="width:90px;height:40px;border:none;padding:0px;line-height:37px;font-size:11px;overflow:visible;background:#35C2D8;color:#FFFFFF;margin: auto;cursor:pointer;" >结算</button>
+                    </td>
+                </tr>
+                <?php endforeach; endif; else: echo "" ;endif; ?>
+            </tbody>
+            </table>
+              <div style="width: 100%;min-width: 1200px;height: 5px;background: #dbdbdb;margin: 50px 0 20px;"></div>
+    </div>   
+<section class="content-wrapper">
+    <div class="content-container container">
+        
+        <div class="clearfix"></div>
+        <div class="news-letter-container">
+            <div class="free-shipping-block">
+                <h1>ENJOY FREE SHIPPING</h1>
+                <p>on all orders as our holiday gift for you!</p>
+            </div>
+            <div class="news-letter-block">
+                <h2>SIGN UP FOR OUR NEWSLETTER</h2>
+                <input type="text" value="Enter email address" title="" />
+                <input class="submit-btn" type="submit" value="Submit" title="Submit" />
+            </div>
+        </div>  
+    </div>
+</section>
+</div>
+           <!--Footer Block-->  
             <!--Footer Block-->
-           <!--Footer Block-->
             <section class="footer-wrapper">
               <footer class="container">
                 <div class="link-block">

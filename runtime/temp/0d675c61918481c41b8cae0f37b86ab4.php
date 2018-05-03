@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:69:"D:\xampp\htdocs\hns\public/../application/index\view\index\index.html";i:1525331457;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1524553581;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525343510;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:69:"D:\xampp\htdocs\hns\public/../application/index\view\index\index.html";i:1525344384;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525346003;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525344386;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -28,6 +28,8 @@
 
 <!-- CSS ================================================== -->
 <link rel="stylesheet" type="text/css" href="__STATIC__/admin/css/common.css" />
+<link rel="stylesheet" href="__STATIC__/index/css/common.css">
+<link rel="stylesheet" href="__STATIC__/index/css/pay.css">
 <link rel="stylesheet" href="__STATIC__/index/css/style.css">
 <link rel="stylesheet" href="__STATIC__/index/css/colors.css">
 <link rel="stylesheet" href="__STATIC__/index/css/skeleton.css">
@@ -53,7 +55,7 @@
     <div class="head-right">
       <ul class="top-nav">
           <li class=""><a href="404_error.html" title="My Account">个人中心</a></li>
-          <li class="my-wishlist"><a href="<?php echo url('buy/index'); ?>" title="My Wishlist">购物车</a></li>
+          <li class="my-wishlist"><a href="<?php echo url('cart/index'); ?>" title="购物车">购物车</a></li>
           <li class="checkout"><a href="404_error.html" title="Checkout">我的订单</a></li>
           <li class="contact-us"><a href="<?php echo url('advice/index'); ?>" title="Contact Us">关于我们</a></li>
           <?php if(\think\Request::instance()->session('name') != ''): ?>
@@ -155,7 +157,7 @@
       				      <li>
                       <div class="pro-img"><img title="Freature Product" alt="Freature Product" src="__STATIC__/index/images/default_img.png" /></div>
                       <div class="pro-hover-block">
-                        <h4 class="pro-name"><?php echo \think\Request::instance()->session('book1.name'); ?></h4>
+                        <h4 class="pro-name"></h4>
                         <div class="link-block"> 
                         <a href="#quick-view-container" class="quickllook inline" title="Quick View">Quick View</a> 
                         <a href="view.html" class="quickproLink" title="Link">Product link</a></div>

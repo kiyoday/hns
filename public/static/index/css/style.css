@@ -1328,6 +1328,18 @@ header {
 	-o-transition: all 400ms ease-in-out 0s;
 	transition: all 400ms ease-in-out 0s;
 }
+
+.button1
+{ 	width:90px;
+    height:40px;
+    border:none;
+    padding:0px;
+    line-height:37px;
+    font-size:11px;
+    overflow:visible;
+    background:#35C2D8;
+    color:#FFFFFF;
+}
 /*	Bredcrum Block	*/
 
 
