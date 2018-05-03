@@ -41,7 +41,7 @@
       				      <li>
                       <div class="pro-img"><img title="Freature Product" alt="Freature Product" src="__STATIC__/index/images/default_img.png" /></div>
                       <div class="pro-hover-block">
-                        <h4 class="pro-name">Htc One 1120</h4>
+                        <h4 class="pro-name">{$Request.session.book1.name}</h4>
                         <div class="link-block"> 
                         <a href="#quick-view-container" class="quickllook inline" title="Quick View">Quick View</a> 
                         <a href="view.html" class="quickproLink" title="Link">Product link</a></div>
@@ -65,7 +65,7 @@
                       </div>
                       <div class="pro-price">￥{$vo.price}</div>
                       <div class="pro-btn-block"> 
-                      <a class="add-cart left" href="#" title="Add to Cart">加入购物车</a> 
+                      <a class="add-cart left" href="{:url('index/addcart',['bid'=>$vo.book_id])}" title="Add to Cart">加入购物车</a> 
                       <a class="add-wishlist right" href="{:url('view/index',['bid'=>$vo.book_id])}" id="{$vo.book_id}" title="预览">预览</a> </div>
                       <div class="pro-link-block"> <a class="add-wishlist left" href="#" title="Add to wishlist"></a> <a class="add-compare right" href="#" title="Add to Compare"></a>
                         <div class="clearfix"></div>

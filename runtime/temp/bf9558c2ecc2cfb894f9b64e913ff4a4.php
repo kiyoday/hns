@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:70:"D:\xampp\htdocs\hns\public/../application/index\view\advice\index.html";i:1523455743;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1524553581;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1524326741;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:70:"D:\xampp\htdocs\hns\public/../application/index\view\advice\index.html";i:1523455743;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1524553581;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525331945;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -77,25 +77,22 @@
           <li>购物车</li>
          </ul>
         <div id="minicart" class="remain_cart" style="display: none;">
-        <p class="empty">You have 2 items in your shopping cart.</p>
+        <p class="empty">购物车预览</p>
         <ol>
         <li>
-        <div class="img-block"><img src="__STATIC__/index/images/small_img.png" title="" alt="" /></div>
+        <div class="img-block"><img src="<?php echo \think\Request::instance()->session('book1.photo'); ?>" title="" alt="" /></div>
         <div class="detail-block">
-           <h4><a href="#" title="Htc Mobile 1120">Htc Mobile 1120</a></h4>
+           <h4><a href="#" title="Htc Mobile 1120"><?php echo \think\Request::instance()->session('book1.name'); ?></a></h4>
            <p>
-          <strong>1</strong> x $900.00
+          <strong>￥<?php echo \think\Request::instance()->session('book1.price'); ?></strong>
            </p>
-           <a href="#" title="Details">Details</a>
           </div>
           <div class="edit-delete-block">
-                <a href="#" title="Edit"><img src="__STATIC__/index/images/edit_icon.png" alt="Edit" title="Edit" /></a>
-                <a href="#" title="Remove"><img src="__STATIC__/index/images/delete_item_btn.png" alt="Remove" title="Remove" /></a>
+                <a href="#" title="Remove"><img src="__STATIC__/index/images/delete_item_btn.png" alt="删除" title="删除" /></a>
               </div>
             </li>
             <li>
-              <div class="total-block">Total:<span>$1,900.00</span></div>
-              <a href="cart.html" title="Checkout" class="colors-btn">Checkout</a>
+              <a href="cart.html" title="Checkout" class="colors-btn">去结算</a>
               <div class="clear"></div>
             </li>
            </ol>
