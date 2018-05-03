@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:69:"D:\xampp\htdocs\hns\public/../application/index\view\order\index.html";i:1525356681;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525346003;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525358791;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:70:"D:\xampp\htdocs\hns\public/../application/index\view\center\index.html";i:1525360890;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525346003;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525358791;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -126,60 +126,80 @@
 
 
 
-            <!--Banner Block-->
-    <div class="firstly">
-        <table class="table table-goods" cellpadding="0" cellspacing="0">
-            <tbody>
-                <tr>
-                    <th class="first">订单</th>
-                    <th width="140" >订单日期</th>
-                    <th class="last"></th>
-                </tr>
-                <?php if(is_array($shop_cart) || $shop_cart instanceof \think\Collection || $shop_cart instanceof \think\Paginator): $i = 0; $__LIST__ = $shop_cart;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                <tr class="j-row">
-                    <td class="vtop">
-                        <div class="title-area" title="<?php echo $vo['name']; ?>">
-                        <div class="img-wrap">
-                        <a href="<?php echo url('view/index',['bid'=>$vo['book_id']]); ?>" target="_blank"><img src="<?php echo $vo['photo']; ?>" style="height:70px;width:70px;"></a>
-                        </div>
-                        <div class="title-wrap">
-                        <div class="title">
-                        <a href="<?php echo url('view/index',['bid'=>$vo['book_id']]); ?>" class="link"><?php echo $vo['name']; ?></a>
-                        </div>
-                        <div class="attrs"></div>
-                        </div>
-                        </div>
-                    </td>
-                    <td class="price font14" ><span class="j-sumPrice" style="color:#35C2D8;">￥<?php echo $vo['price']; ?></span></td>
-                    <td class="price font14" style="text-align:right">
-                    <a href="<?php echo url('buy/index',['bid'=>$vo['book_id']]); ?>" title="结算" class="colors-btn">确认收货</a>
-                    </td>
-                </tr>
-                <?php endforeach; endif; else: echo "" ;endif; ?>
-            </tbody>
-            </table>
-              <div style="width: 100%;min-width: 1200px;height: 5px;background: #dbdbdb;margin: 50px 0 20px;"></div>
-    </div>   
-<section class="content-wrapper">
-    <div class="content-container container">
-        
-        <div class="clearfix"></div>
-        <div class="news-letter-container">
-            <div class="free-shipping-block">
-                <h1>ENJOY FREE SHIPPING</h1>
-                <p>on all orders as our holiday gift for you!</p>
-            </div>
-            <div class="news-letter-block">
-                <h2>SIGN UP FOR OUR NEWSLETTER</h2>
-                <input type="text" value="Enter email address" title="" />
-                <input class="submit-btn" type="submit" value="Submit" title="Submit" />
-            </div>
-        </div>  
-    </div>
-</section>
-</div>
-           <!--Footer Block-->  
+                <!--Content Block-->
+                <section class="content-wrapper">
+                	<div class="content-container container">                        
+                		<div class="col-left">
+                			<div class="block community-block">
+                				<div class="block-title">请选择</div>
+                				<ul>
+                					<li class="question-row">
+                                        <strong>设置</strong></br>
+                                        <a href="<?php echo url('center/info'); ?>">个人信息</a></br>
+                                        <a href="<?php echo url('center/index'); ?>">修改个人信息</a></br>
+                                        <a href="<?php echo url('center/changepwd'); ?>">修改密码</a>
+                                    </li>
+                                    <li class="question-row">
+                                        <strong>购物</strong></br>
+                                        <a href="<?php echo url('order/index'); ?>">我的订单</a></br>
+                                        <a href="<?php echo url('cart/index'); ?>">购物车</a>
+                                    </li>
+                                    <li class="question-row">
+                                        <strong>卖书</strong></br>
+                                        <a href="<?php echo url('book/index'); ?>">我要卖书</a></br>
+                                        <a href="<?php echo url('book/sell'); ?>">我卖的书</a>
+                                    </li>
+                                    <li class="question-row">
+                                        <strong>客户服务</strong></br>
+                                        <a href="<?php echo url('advice/index'); ?>">意见建议</a></br>
+                                    </li>
+                				</ul>
+                			</div>
+                		</div>
+                        <form action="<?php echo url('advice/save'); ?>" method="post">
+                		<div  class="col-main">
+                			<h1 class="page-title">请完善您的个人信息</h1>
+                			<div class="contact-form-container">
+                				<div  class="form-title">请填写下列信息</div>
+                				<ul class="form-fields">
+                					<li class="left">
+                						<label>您的真实姓名<em>*</em></label>
+                						<input id="name" name="name" type="text"></br>
+                					</li>
+                                    <div class="clearfix"></div>
+                                    <li class="left">
+                                        <label>性别<em>*</em></label></br>
+                                        <select name="sex">
+                                        <option value="男">男</option>
+                                        <option value="女">女</option>
+                                    </select>
+                                    </li>
+                                    <div class="clearfix"></div>
+                					<li class="left">
+                						<label>手机号<em>*</em></label>
+                						<input id="phone" name="phone" type="text">
+                					</li>
+                                    <div class="clearfix"></div>
+                					<li class="full-row">
+                						<label>默认收货地址<em>*</em></label>
+                						<input id="phone" name="address" type="text" style="width:60%;">
+                					</li>
+                				</ul>
+                				<div class="button-set">
+                					<p class="required">* 为必须填写</p>
+                					<button type="submit" class="form-button"><span>提交</span></button>
+                				</div>
+                			</div>
+                		</div>
+                        </form>
+                		<div class="clearfix"></div>
+                		<div class="news-letter-container">
+                		</div>	
+                	</div>
+                </section>
+                </div>
             <!--Footer Block-->
+           <!--Footer Block-->
             <section class="footer-wrapper">
               <footer class="container">
                 <div class="link-block">

@@ -1,0 +1,88 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+{include file="public/head"}
+<body>
+	<div class="mainContainer sixteen container">
+            <!--Header Block-->
+            {include file="public/header"}
+                <!--Content Block-->
+                <section class="content-wrapper">
+                	<div class="content-container container">                        
+                		<div class="col-left">
+                			<div class="block community-block">
+                				<div class="block-title">请选择</div>
+                				<ul>
+                					<li class="question-row">
+                                        <strong>设置</strong></br>
+                                        <a href="{:url('center/info')}">个人信息</a></br>
+                                        <a href="{:url('center/index')}">修改个人信息</a></br>
+                                        <a href="{:url('center/changepwd')}">修改密码</a>
+                                    </li>
+                                    <li class="question-row">
+                                        <strong>购物</strong></br>
+                                        <a href="{:url('order/index')}">我的订单</a></br>
+                                        <a href="{:url('cart/index')}">购物车</a>
+                                    </li>
+                                    <li class="question-row">
+                                        <strong>卖书</strong></br>
+                                        <a href="{:url('book/index')}">我要卖书</a></br>
+                                        <a href="{:url('book/sell')}">我卖的书</a>
+                                    </li>
+                                    <li class="question-row">
+                                        <strong>客户服务</strong></br>
+                                        <a href="{:url('advice/index')}">意见建议</a></br>
+                                    </li>
+                				</ul>
+                			</div>
+                		</div>
+                        <form action="{:url('advice/save')}" method="post">
+                		<div  class="col-main">
+                			<h1 class="page-title">请完善您的个人信息</h1>
+                			<div class="contact-form-container">
+                				<div  class="form-title">请填写下列信息</div>
+                				<ul class="form-fields">
+                					<li class="left">
+                						<label>您的真实姓名<em>*</em></label>
+                						<input id="name" name="name" type="text"></br>
+                					</li>
+                                    <div class="clearfix"></div>
+                                    <li class="left">
+                                        <label>性别<em>*</em></label></br>
+                                        <select name="sex">
+                                        <option value="男">男</option>
+                                        <option value="女">女</option>
+                                    </select>
+                                    </li>
+                                    <div class="clearfix"></div>
+                					<li class="left">
+                						<label>手机号<em>*</em></label>
+                						<input id="phone" name="phone" type="text">
+                					</li>
+                                    <div class="clearfix"></div>
+                					<li class="full-row">
+                						<label>默认收货地址<em>*</em></label>
+                						<input id="phone" name="address" type="text" style="width:60%;">
+                					</li>
+                				</ul>
+                				<div class="button-set">
+                					<p class="required">* 为必须填写</p>
+                					<button type="submit" class="form-button"><span>提交</span></button>
+                				</div>
+                			</div>
+                		</div>
+                        </form>
+                		<div class="clearfix"></div>
+                		<div class="news-letter-container">
+                		</div>	
+                	</div>
+                </section>
+                </div>
+            <!--Footer Block-->
+          {include file="public/footer"}
+</body>
+</html>

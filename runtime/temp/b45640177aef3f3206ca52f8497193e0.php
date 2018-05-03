@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:71:"D:\xampp\htdocs\hns\public/../application/index\view\user\register.html";i:1524555268;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1524553581;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525344386;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:71:"D:\xampp\htdocs\hns\public/../application/index\view\user\register.html";i:1525360630;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525346003;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525358791;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -28,6 +28,8 @@
 
 <!-- CSS ================================================== -->
 <link rel="stylesheet" type="text/css" href="__STATIC__/admin/css/common.css" />
+<link rel="stylesheet" href="__STATIC__/index/css/common.css">
+<link rel="stylesheet" href="__STATIC__/index/css/pay.css">
 <link rel="stylesheet" href="__STATIC__/index/css/style.css">
 <link rel="stylesheet" href="__STATIC__/index/css/colors.css">
 <link rel="stylesheet" href="__STATIC__/index/css/skeleton.css">
@@ -52,9 +54,9 @@
   <header class="container">
     <div class="head-right">
       <ul class="top-nav">
-          <li class=""><a href="404_error.html" title="My Account">个人中心</a></li>
+          <li class=""><a href="<?php echo url('center/index'); ?>" title="My Account">个人中心</a></li>
           <li class="my-wishlist"><a href="<?php echo url('cart/index'); ?>" title="购物车">购物车</a></li>
-          <li class="checkout"><a href="404_error.html" title="Checkout">我的订单</a></li>
+          <li class="checkout"><a href="<?php echo url('order/index'); ?>" title="Checkout">我的订单</a></li>
           <li class="contact-us"><a href="<?php echo url('advice/index'); ?>" title="Contact Us">关于我们</a></li>
           <?php if(\think\Request::instance()->session('name') != ''): ?>
           <li class="log-in"><a href="<?php echo url('user/login'); ?>" title="Log In"><?php echo \think\Request::instance()->session('name'); ?></a></li>
@@ -136,7 +138,7 @@
           <li class="fields">
             <div class="customer-name">
               <div class="input-box name-firstname">
-                <label for="firstname">用户名<em>*</em></label>
+                <label for="firstname">用户名<em>*</em>（请填写真实姓名）</label>
                 <input type="text" class="required-entry input-text" title="Name" value="" name="name" id="name">
               </div>
               <div class="clear"></div>
@@ -144,7 +146,7 @@
             </li>
             <li>
             <div class="input-box">
-              <label class="required" for="email_address">邮箱<em>*</em></label>
+              <label class="required" for="email_address">邮箱<em>*</em>（作为登录时的帐号）</label>
               <input type="text" class="input-text validate-email required-entry" title="Email" value="" id="email" name="email">
             </div>
             <div class="clear"></div>
