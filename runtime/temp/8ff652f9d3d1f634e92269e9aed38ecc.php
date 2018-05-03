@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\cart\index.html";i:1525349425;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525346003;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525344386;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\cart\index.html";i:1525352001;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525346003;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525344386;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -152,7 +152,7 @@
                     </td>
                     <td class="price font14" ><span class="j-sumPrice" style="color:#35C2D8;">￥<?php echo $vo['price']; ?></span></td>
                     <td class="price font14" style="text-align:right">
-                    <button href="" class="button1" style="width:90px;height:40px;border:none;padding:0px;line-height:37px;font-size:11px;overflow:visible;background:#35C2D8;color:#FFFFFF;margin: auto;cursor:pointer;" >结算</button>
+                    <a href="<?php echo url('buy/index',['bid'=>$vo['book_id']]); ?>" title="结算" class="colors-btn">结算</a>
                     </td>
                 </tr>
                 <?php endforeach; endif; else: echo "" ;endif; ?>

@@ -15,6 +15,7 @@ class View extends Controller
         $categorys = $this->objc->getcategory();
         $books = $this->obj1->indexgetbook();
         $bres=db('book')->find($bid);
+        dump($bres);die;
         $this->assign('bid',$bres);
         $shop_cart = session('shop_cart');
         $this->assign('shop_cart', $shop_cart);

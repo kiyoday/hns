@@ -36,7 +36,7 @@
                     </td>
                     <td class="price font14" ><span class="j-sumPrice" style="color:#35C2D8;">￥{$vo.price}</span></td>
                     <td class="price font14" style="text-align:right">
-                    <button href="" class="button1" style="width:90px;height:40px;border:none;padding:0px;line-height:37px;font-size:11px;overflow:visible;background:#35C2D8;color:#FFFFFF;margin: auto;cursor:pointer;" >结算</button>
+                    <a href="{:url('buy/index',['bid'=>$vo.book_id])}" title="结算" class="colors-btn">结算</a>
                     </td>
                 </tr>
                 {/volist}

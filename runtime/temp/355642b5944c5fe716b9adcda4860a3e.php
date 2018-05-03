@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:67:"D:\xampp\htdocs\hns\public/../application/index\view\buy\index.html";i:1525351382;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525346003;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525344386;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:67:"D:\xampp\htdocs\hns\public/../application/index\view\buy\index.html";i:1525353975;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525346003;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525344386;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -128,21 +128,22 @@
 
                 <!--Content Block-->
                  <section class="content-wrapper">
+                  <form method="post" action="<?php echo url('buy/save',['bid'=>$bid['book_id']]); ?>">
                   <div class="content-container container"> 
                    <h1 class="page-title"><font color="#35C2D8">请输入买家信息</font></h1>
                    <div class="contact-form-container">
                     <ul class="form-fields">
                      <li class="left">
-                      <label>name<em></em></label>
-                      <input onkeyup="value=value.replace(/[^\u4E00-\u9FA5]/g,'')" type="text"/>
+                      <label>真实姓名<em></em></label>
+                      <input onkeyup="value=value.replace(/[^\u4E00-\u9FA5]/g,'')" type="text" name="name"/>
                     </li>
                     <li class="left">
-                     <label>Telephone</label>
-                     <input type="text" />
+                     <label>联系电话</label>
+                     <input type="text" name="phone">
                     </li>
                     <li class="left">
-                     <label>address</label>
-                     <input type="text" />
+                     <label>收货地址</label>
+                     <input type="text" name="address">
                     </li>
                    </ul>
                  </div>
@@ -152,32 +153,33 @@
                 <tbody>
                 <tr>
                     <th width="130" class="first">商品</th>
-                    <th width="140">商品描述</th>
+                    <th width="140">书名</th>
                     <th width="140">价格</th>
                     <th width="140">卖家昵称</th>
                     <th width="140" class="last">卖家联系电话</th>
                 </tr>
                 <tr class="j-row">
-                    <td class="vtop">
-                        <div class="title-area" title="【好伦哥】精选自助餐1位！免费WiFi！">
-                        <div class="img-wrap">
-                        <a href="" target="_blank"><img src="images/quick_thum_img.png" ></a>
+                    <td class="">
+                        <div class="title-area" title="<?php echo $bid['name']; ?>">
+                        <div class="">
+                        <a href="" target="_blank"><img src="<?php echo $bid['photo']; ?>" style="height:100px;width:100px;"></a>
                         </div>
                     </td>
-                      <td class="font14" align="center"><span>【好伦哥】精选自助餐1位！免费WiFi！</span></td>
-                      <td class="price font14" align="center" style="color:#35C2D8;"><span class="j-sumPrice" >¥55.00</span></td>
-                      <td class="font14" align="center"><span>【好伦哥】精选自助餐1位！免费WiFi！</span></td>
-                      <td class="font14" align="center"><span>【好伦哥】精选自助餐1位！免费WiFi！</span></td>
+                      <td class="font14" align="center"><span><?php echo $bid['name']; ?></span></td>
+                      <td class="price font14" align="center" style="color:#35C2D8;"><span class="j-sumPrice" >￥<?php echo $bid['price']; ?></span></td>
+                      <td class="font14" align="center"><span><?php echo $uid['name']; ?></span></td>
+                      <td class="font14" align="center"><span><?php echo $uid['email']; ?></span></td>
                 </tr>
                 </tbody>
               </table>
-              <div class="final-price-area" style="text-align:right">结算金额：<span class="sum" style="color:#35C2D8;">￥<span class="price" style="color:#35C2D8;">55.00</span></span></div>
+              <div class="final-price-area" style="text-align:right">结算金额：<span class="sum" style="color:#35C2D8;">￥<span class="price" style="color:#35C2D8;"><?php echo $bid['price']; ?></span></span></div>
               <div class="page-button-wrap" style="text-align:right;color:#35C2D8;" >
-              <a href="" class="btn btn-primary" style="background:#35C2D8;">确认订单</a>
+              <button type="submit" class="btn btn-primary" style="background:#35C2D8;">确认并支付</button>
               </div>
               <div style="width: 100%;min-width: 1200px;height: 5px;background: #dbdbdb;margin: 50px 0 20px;"></div>
             </div>
           </div>
+          <form>
         </section>
             <!--Footer Block-->
 <section class="content-wrapper">
