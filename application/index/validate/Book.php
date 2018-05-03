@@ -10,7 +10,7 @@ class Book extends Validate
 	];
 
 	protected $scene = [
-		'add' => ['name','type','photo','introduce','price'],//添加
+		'add' => ['name','type','photo','introduce','price','uid'],//添加
 		'listorder' => ['id','listorder'],//排序
 	];
 }

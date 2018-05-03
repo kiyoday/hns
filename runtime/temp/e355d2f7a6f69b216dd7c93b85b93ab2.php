@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\view\index.html";i:1524489914;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1523938232;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1524326741;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\view\index.html";i:1524550137;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1524553581;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1524326741;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -27,7 +27,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <!-- CSS ================================================== -->
-
+<link rel="stylesheet" type="text/css" href="__STATIC__/admin/css/common.css" />
 <link rel="stylesheet" href="__STATIC__/index/css/style.css">
 <link rel="stylesheet" href="__STATIC__/index/css/colors.css">
 <link rel="stylesheet" href="__STATIC__/index/css/skeleton.css">
@@ -256,3 +256,19 @@
             </section>
 </body>
 </html>
+<script>
+$(document).ready(function(){
+	$("#password").keyup(function(){
+		var password = $("#password").val();
+		if(password.length<5){
+			$("#password").trigger("focus");
+			$('#password').css("border","1px solid red");
+			$("#yzpassword").css("color","red").text("密码最小长度为5");
+			return false;
+		}else{
+			$('#password').css("border","1px solid #ccc");
+			$("#yzpassword").css("color","red").text("");
+		}
+	})
+}
+</script>

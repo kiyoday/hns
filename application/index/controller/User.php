@@ -51,6 +51,7 @@ class User extends Controller
                     $this->error('帐号或密码错误');
                 }else{
                     session('name', $userl['name']);
+                    session('uid', $userl['id']);
                     $this->redirect('index/index');
                 }
             }

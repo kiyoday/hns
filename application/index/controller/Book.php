@@ -20,9 +20,14 @@ class Book extends Controller
     }
     public function save(){
         //dump(input('post.'));die;
+        if(!session('uid')){
+            $this->error('请先登录');
+        }
+        $uid = session('uid');
         if(request()->isPost())
         {
             $data = input('post.');
+            $data['uid'] = $uid;
             if($_FILES['photo']['tmp_name']){
             $file = request()->file('photo');
             $info = $file->validate(['ext'=>'jpg,png,gif,jpeg'])->move(ROOT_PATH . 'public' . DS . 'uploads');
