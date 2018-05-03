@@ -49,10 +49,10 @@ class User extends Controller
             $userl=db('User')->where('email','=',$data['email'])->find();
             }
             if(!$userl){
-                $this->error('帐号或密码错误');
+                $this->error('帐号或密码错误','user/login');
             }else{
                 if($userl['password']!=$data['password']){
-                    $this->error('帐号或密码错误');
+                    $this->error('帐号或密码错误','user/login');
                 }else{
                     session('name', $userl['name']);
                     session('uid', $userl['id']);
@@ -181,7 +181,7 @@ class User extends Controller
     {
         $captcha = new \think\captcha\Captcha();
         if (!$captcha->check($code)) {
-            $this->error('验证码错误');
+            $this->error('验证码错误','user/login');
         } else {
            return true;
         }

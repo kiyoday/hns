@@ -1,0 +1,68 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+{include file="public/head"}
+<body>
+	<div class="mainContainer sixteen container">
+            <!--Header Block-->
+            {include file="public/header"}
+            <!--Banner Block-->
+    <div class="firstly">
+        <table class="table table-goods" cellpadding="0" cellspacing="0">
+            <tbody>
+                <tr>
+                    <th class="first">订单</th>
+                    <th width="140" >订单日期</th>
+                    <th class="last"></th>
+                </tr>
+                {volist name="shop_cart" id="vo"}
+                <tr class="j-row">
+                    <td class="vtop">
+                        <div class="title-area" title="{$vo.name}">
+                        <div class="img-wrap">
+                        <a href="{:url('view/index',['bid'=>$vo.book_id])}" target="_blank"><img src="{$vo.photo}" style="height:70px;width:70px;"></a>
+                        </div>
+                        <div class="title-wrap">
+                        <div class="title">
+                        <a href="{:url('view/index',['bid'=>$vo.book_id])}" class="link">{$vo.name}</a>
+                        </div>
+                        <div class="attrs"></div>
+                        </div>
+                        </div>
+                    </td>
+                    <td class="price font14" ><span class="j-sumPrice" style="color:#35C2D8;">￥{$vo.price}</span></td>
+                    <td class="price font14" style="text-align:right">
+                    <a href="{:url('buy/index',['bid'=>$vo.book_id])}" title="结算" class="colors-btn">确认收货</a>
+                    </td>
+                </tr>
+                {/volist}
+            </tbody>
+            </table>
+              <div style="width: 100%;min-width: 1200px;height: 5px;background: #dbdbdb;margin: 50px 0 20px;"></div>
+    </div>   
+<section class="content-wrapper">
+    <div class="content-container container">
+        
+        <div class="clearfix"></div>
+        <div class="news-letter-container">
+            <div class="free-shipping-block">
+                <h1>ENJOY FREE SHIPPING</h1>
+                <p>on all orders as our holiday gift for you!</p>
+            </div>
+            <div class="news-letter-block">
+                <h2>SIGN UP FOR OUR NEWSLETTER</h2>
+                <input type="text" value="Enter email address" title="" />
+                <input class="submit-btn" type="submit" value="Submit" title="Submit" />
+            </div>
+        </div>  
+    </div>
+</section>
+</div>
+           <!--Footer Block-->  
+           {include file="public/footer"}
+</body>
+</html>
