@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:67:"D:\xampp\htdocs\hns\public/../application/index\view\buy\index.html";i:1523938230;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1524553581;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525343510;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:67:"D:\xampp\htdocs\hns\public/../application/index\view\buy\index.html";i:1525351382;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525346003;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525344386;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -28,6 +28,8 @@
 
 <!-- CSS ================================================== -->
 <link rel="stylesheet" type="text/css" href="__STATIC__/admin/css/common.css" />
+<link rel="stylesheet" href="__STATIC__/index/css/common.css">
+<link rel="stylesheet" href="__STATIC__/index/css/pay.css">
 <link rel="stylesheet" href="__STATIC__/index/css/style.css">
 <link rel="stylesheet" href="__STATIC__/index/css/colors.css">
 <link rel="stylesheet" href="__STATIC__/index/css/skeleton.css">
@@ -53,7 +55,7 @@
     <div class="head-right">
       <ul class="top-nav">
           <li class=""><a href="404_error.html" title="My Account">个人中心</a></li>
-          <li class="my-wishlist"><a href="<?php echo url('buy/index'); ?>" title="My Wishlist">购物车</a></li>
+          <li class="my-wishlist"><a href="<?php echo url('cart/index'); ?>" title="购物车">购物车</a></li>
           <li class="checkout"><a href="404_error.html" title="Checkout">我的订单</a></li>
           <li class="contact-us"><a href="<?php echo url('advice/index'); ?>" title="Contact Us">关于我们</a></li>
           <?php if(\think\Request::instance()->session('name') != ''): ?>
@@ -125,115 +127,63 @@
 
 
                 <!--Content Block-->
-                <div class="firstly">
-        <table class="table table-goods" cellpadding="0" cellspacing="0">
-            <tbody>
+                 <section class="content-wrapper">
+                  <div class="content-container container"> 
+                   <h1 class="page-title"><font color="#35C2D8">请输入买家信息</font></h1>
+                   <div class="contact-form-container">
+                    <ul class="form-fields">
+                     <li class="left">
+                      <label>name<em></em></label>
+                      <input onkeyup="value=value.replace(/[^\u4E00-\u9FA5]/g,'')" type="text"/>
+                    </li>
+                    <li class="left">
+                     <label>Telephone</label>
+                     <input type="text" />
+                    </li>
+                    <li class="left">
+                     <label>address</label>
+                     <input type="text" />
+                    </li>
+                   </ul>
+                 </div>
+                </div>
+             <div class="firstly">
+              <table class="table table-goods" cellpadding="0" cellspacing="0">
+                <tbody>
                 <tr>
-                    <th class="first">商品</th>
-                    <th width="100">单价</th>
-                    <th width="180">数量</th>
-                    <th width="140">优惠</th>
-                    <th width="140" class="last">小计</th>
+                    <th width="130" class="first">商品</th>
+                    <th width="140">商品描述</th>
+                    <th width="140">价格</th>
+                    <th width="140">卖家昵称</th>
+                    <th width="140" class="last">卖家联系电话</th>
                 </tr>
                 <tr class="j-row">
                     <td class="vtop">
                         <div class="title-area" title="【好伦哥】精选自助餐1位！免费WiFi！">
-                         <div class="img-wrap">
-                             <a href="" target="_blank"><img src="images/quick_thum_img.png" ></a>
-                         </div>
-                          <div class="title-wrap">
-                           <div class="title">
-                                    <a href="" class="link">【好伦哥】精选自助餐1位！免费WiFi！</a>
-                           </div>
-                           <div class="attrs"></div>
-                          </div>
-                         </div>
-                    </td>
-                    <td>￥<span class="font14">55.00</span></td>
-                    <td class="j-cell">
-                        <div class="buycount-ctrl" align="center">
-                            <a class="j-ctrl ctrl minus disabled"><span class="horizontal"></span></a>
-                            <input type="text" value="1" maxlength="10" size="5"  text-align="center">
-                            <a class="ctrl j-ctrl plus"><span class="horizontal"></span><span class="vertical"></span></a>
+                        <div class="img-wrap">
+                        <a href="" target="_blank"><img src="images/quick_thum_img.png" ></a>
                         </div>
-                        <span class="err-wrap j-err-wrap"></span>
                     </td>
-                     <td class="j-cellActivity" align="center">-￥<span>1.40</span><br></td>
-                 <td class="price font14" align="center">¥<span class="j-sumPrice">53.60</span></td>
+                      <td class="font14" align="center"><span>【好伦哥】精选自助餐1位！免费WiFi！</span></td>
+                      <td class="price font14" align="center" style="color:#35C2D8;"><span class="j-sumPrice" >¥55.00</span></td>
+                      <td class="font14" align="center"><span>【好伦哥】精选自助餐1位！免费WiFi！</span></td>
+                      <td class="font14" align="center"><span>【好伦哥】精选自助餐1位！免费WiFi！</span></td>
                 </tr>
-                <tr class="j-row">
-                    <td class="vtop">
-                        <div class="title-area" title="【好伦哥】精选自助餐1位！免费WiFi！">
-                         <div class="img-wrap">
-                          <a href="" target="_blank"><img src="images/quick_thum_img.png" ></a>
-                         </div>
-                          <div class="title-wrap">
-                           <div class="title">
-                            <a href="" class="link">【好伦哥】精选自助餐1位！免费WiFi！</a>
-                           </div>
-                           <div class="attrs"></div>
-                          </div>
-                        </div>
-                    </td>
-                    <td>￥<span class="font14">55.00</span></td>
-                    <td class="j-cell">
-                        <div class="buycount-ctrl" align="center">
-                            <a class="j-ctrl ctrl minus disabled"><span class="horizontal"></span></a>
-                            <input type="text" value="1" maxlength="10" size="5"  text-align="center">
-                            <a class="ctrl j-ctrl plus"><span class="horizontal"></span><span class="vertical"></span></a>
-                        </div>
-                            <span class="err-wrap j-err-wrap"></span>
-                    </td>
-                  <td class="j-cellActivity" align="center">-￥<span>1.40</span><br></td>
-                  <td class="price font14" align="center">¥<span class="j-sumPrice">53.60</span></td>
-                </tr>
-               </tbody>
+                </tbody>
               </table>
-              <div class="final-price-area" style="text-align:right">应付总额：<span class="sum">￥<span class="price">53.60</span></span></div>
-              <div class="page-button-wrap" style="text-align:right" >
-              <a href="" class="btn btn-primary" >确认</a>
+              <div class="final-price-area" style="text-align:right">结算金额：<span class="sum" style="color:#35C2D8;">￥<span class="price" style="color:#35C2D8;">55.00</span></span></div>
+              <div class="page-button-wrap" style="text-align:right;color:#35C2D8;" >
+              <a href="" class="btn btn-primary" style="background:#35C2D8;">确认订单</a>
               </div>
               <div style="width: 100%;min-width: 1200px;height: 5px;background: #dbdbdb;margin: 50px 0 20px;"></div>
-    </div>
-    <script>
-        //校验正整数
-        function isNaN(number){
-            var reg = /^[1-9]\d*$/;
-            return reg.test(number);
-        }
-        function inputChange(num){
-            if(!isNaN(num)){
-                $(".buycount-ctrl input").val("1");
-            }
-            else{
-                $(".buycount-ctrl input").val(num);
-                $(".j-sumPrice").text($("td .font14").text() * num - $(".j-cellActivity span").text());
-                $(".sum .price").text($("td .font14").text() * num - $(".j-cellActivity span").text());
-                if(num == 1){
-                    $(".buycount-ctrl a").eq(0).addClass("disabled");
-                }
-                else{
-                    $(".buycount-ctrl a").eq(0).removeClass("disabled");
-                }
-            }
-        }
-
-        $(".buycount-ctrl input").keyup(function(){
-            var num = $(".buycount-ctrl input").val();
-            inputChange(num);
-        });
-        $(".minus").click(function(){
-            var num = $(".buycount-ctrl input").val();
-            num--;
-            inputChange(num);
-        });
-        $(".plus").click(function(){
-            var num = $(".buycount-ctrl input").val();
-            num++;
-            inputChange(num);
-        });
-    </script>
+            </div>
+          </div>
+        </section>
             <!--Footer Block-->
+<section class="content-wrapper">
+
+</section>
+</div>
            <!--Footer Block-->
             <section class="footer-wrapper">
               <footer class="container">
