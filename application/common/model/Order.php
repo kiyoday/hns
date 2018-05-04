@@ -4,13 +4,13 @@ use think\Model;
 
 class Order extends Model
 {	
-	protected $autoWriteTimestamp = 'datetime';
+	protected $autoWriteTimestamp = false;
 	protected $updateTime = false;
 
 	public function add($data){
 		$nowtime = time();
         $dtime = date("Y-m-d H:i:s", $nowtime);
-        $data['ordercreate_time'] = $dtime;
+        $data['ocreate_time'] = $dtime;
 		return $this->save($data);
 	}
 

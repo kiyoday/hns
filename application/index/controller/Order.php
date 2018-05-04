@@ -19,11 +19,11 @@ class Order extends Controller
         $books = $this->obj1->indexgetbook();
         $uid = session('uid');
         $uorders = db('order')->alias('o')->join('user u','o.buyerid = u.id')->join('book b','o.bookid = b.book_id')->paginate(10);
-        dump($uorders);die;
+        //dump($uorders);die;
         return $this->fetch('',[
             'categorys'=>$categorys,
             '$books'=>$books,
-            'orders'=>$uorder,
+            'orders'=>$uorders,
         ]);
     }
 }

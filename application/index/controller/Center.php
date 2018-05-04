@@ -20,7 +20,10 @@ class Center extends Controller
         $categorys = $this->objc->getcategory();
         $shop_cart = session('shop_cart');
         $this->assign('shop_cart', $shop_cart);
+        $uid = session('uid'); 
+        $users = db('user')->where('id',$uid)->find();
         return $this->fetch('',[
+            'user'=> $users ,
             'categorys'=>$categorys,
         ]);
     }

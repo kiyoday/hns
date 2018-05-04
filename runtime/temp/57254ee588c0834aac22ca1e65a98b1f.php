@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:70:"D:\xampp\htdocs\hns\public/../application/index\view\center\index.html";i:1525398769;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525346003;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525400432;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:70:"D:\xampp\htdocs\hns\public/../application/index\view\center\index.html";i:1525417057;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525346003;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525400432;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -163,8 +163,8 @@
                 				<div  class="form-title">请填写下列信息</div>
                 				<ul class="form-fields">
                 					<li class="left">
-                						<label>您的真实姓名<em>*</em></label>
-                						<input id="name" name="name" type="text"></br>
+                						<label>您的真实姓名(用于收取快递)<em>*</em></label>
+                						<input id="name" name="name" type="text" value="<?php echo $user['name']; ?>"></br>
                 					</li>
                                     <div class="clearfix"></div>
                                     <li class="left">
