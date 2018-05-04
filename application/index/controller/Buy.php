@@ -8,6 +8,7 @@ class Buy extends Controller
     {
         $this->objc = model('category');
         $this->obj1 = model('book');
+        $this->objo = model('order');
     }
     
     public function index($bid)
@@ -28,6 +29,31 @@ class Buy extends Controller
     }
 
     public function save($bid){
-        dump(input('post.'));die;
+        $data=input('post.');
+        $bres=db('book')->find($bid);
+        $brres=session('uid');
+        $srres=db('user')->find($bres['uid']);
+        $data = [
+            'buyername'=>$data['name'],
+            'orderphone'=>$data['phone'],
+            'orderaddress'=>$data['address'],
+            'buyerid'=>$brres,
+            'sellerid'=>$bres['uid'],
+            'bookid'=>$bres['book_id'],
+        ];
+        $validate = validate('Order');
+        if(!$validate->scene('add')->check($data)){
+            $this->error($validate->getError());
+        }
+        $res = $this->objo->add($data);
+        if($res){
+            $sessionclean = "shop_cart.$bid";
+            session($sessionclean,null);
+            $this->success('支付成功','cart/index',['$bid' => 0]);
+        }
+        else 
+        {
+            $this->error('支付失败');
+        }
     }
 }

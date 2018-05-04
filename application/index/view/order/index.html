@@ -19,24 +19,24 @@
                     <th width="140" >订单日期</th>
                     <th class="last"></th>
                 </tr>
-                {volist name="shop_cart" id="vo"}
+                {volist name="orders" id="vo"}
                 <tr class="j-row">
                     <td class="vtop">
-                        <div class="title-area" title="{$vo.name}">
+                        <div class="title-area" title="{$vo.order_id}">
                         <div class="img-wrap">
-                        <a href="{:url('view/index',['bid'=>$vo.book_id])}" target="_blank"><img src="{$vo.photo}" style="height:70px;width:70px;"></a>
+                        <a href="{:url('view/index',['bid'=>$vo.order_id])}" target="_blank"><img src="" style="height:70px;width:70px;"></a>
                         </div>
                         <div class="title-wrap">
                         <div class="title">
-                        <a href="{:url('view/index',['bid'=>$vo.book_id])}" class="link">{$vo.name}</a>
+                        <a href="{:url('view/index',['bid'=>$vo.order_id])}" class="link">{$vo.order_id}</a>
                         </div>
                         <div class="attrs"></div>
                         </div>
                         </div>
                     </td>
-                    <td class="price font14" ><span class="j-sumPrice" style="color:#35C2D8;">￥{$vo.price}</span></td>
+                    <td class="price font14" ><span class="j-sumPrice" style="color:#35C2D8;">{$vo.ordercreate_time}</span></td>
                     <td class="price font14" style="text-align:right">
-                    <a href="{:url('buy/index',['bid'=>$vo.book_id])}" title="结算" class="colors-btn">确认收货</a>
+                    <a href="{:url('buy/index',['bid'=>$vo.order_id])}" title="结算" class="colors-btn">确认收货</a>
                     </td>
                 </tr>
                 {/volist}

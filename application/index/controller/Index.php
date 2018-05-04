@@ -36,5 +36,11 @@ class Index extends Controller
     public function cleancart(){
         session('shop_cart', null); 
         $this->success('已清空购物车', 'index/index'); 
-    } 
+    }
+
+    public function delcart($bid){
+        $sessionclean = "shop_cart.$bid";
+        session($sessionclean,null);
+        $this->success('已移出该商品', 'index/index'); 
+    }  
 }

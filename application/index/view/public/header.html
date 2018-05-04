@@ -32,13 +32,13 @@
         <li>
         <div class="img-block"><img src="{$vo.photo}" title="" alt="" /></div>
         <div class="detail-block">
-           <h4><a href="#" title="Htc Mobile 1120">{$vo.name}</a></h4>
+           <h4><a href="{:url('view/index',['bid'=>$vo.book_id])}" title="{$vo.name}">{$vo.name}</a></h4>
            <p>
           <strong>￥{$vo.price}</strong>
            </p>
           </div>
           <div class="edit-delete-block">
-                <a href="#" title="Remove"><img src="__STATIC__/index/images/delete_item_btn.png" alt="删除" title="删除" /></a>
+                <a href="{:url('index/delcart',['bid'=>$vo.book_id])}" title="Remove"><img src="__STATIC__/index/images/delete_item_btn.png" alt="删除" title="删除" /></a>
               </div>
             </li>
         {/volist}

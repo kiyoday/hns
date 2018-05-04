@@ -23,4 +23,5 @@ class View extends Controller
             'books'=>$books,
         ]);
     }
+
 }

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:70:"D:\xampp\htdocs\hns\public/../application/index\view\advice\index.html";i:1523455743;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525346003;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525358791;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:70:"D:\xampp\htdocs\hns\public/../application/index\view\advice\index.html";i:1523455743;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525346003;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525400032;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -90,7 +90,7 @@
            </p>
           </div>
           <div class="edit-delete-block">
-                <a href="#" title="Remove"><img src="__STATIC__/index/images/delete_item_btn.png" alt="删除" title="删除" /></a>
+                <a href="<?php echo url('index/delcart',['bid'=>$vo['book_id']]); ?>" title="Remove"><img src="__STATIC__/index/images/delete_item_btn.png" alt="删除" title="删除" /></a>
               </div>
             </li>
         <?php endforeach; endif; else: echo "" ;endif; ?>

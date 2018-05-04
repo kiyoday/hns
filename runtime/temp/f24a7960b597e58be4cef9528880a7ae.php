@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:69:"D:\xampp\htdocs\hns\public/../application/index\view\order\index.html";i:1525356681;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525346003;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525358791;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:69:"D:\xampp\htdocs\hns\public/../application/index\view\order\index.html";i:1525411222;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525346003;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525400432;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -84,13 +84,13 @@
         <li>
         <div class="img-block"><img src="<?php echo $vo['photo']; ?>" title="" alt="" /></div>
         <div class="detail-block">
-           <h4><a href="#" title="Htc Mobile 1120"><?php echo $vo['name']; ?></a></h4>
+           <h4><a href="<?php echo url('view/index',['bid'=>$vo['book_id']]); ?>" title="<?php echo $vo['name']; ?>"><?php echo $vo['name']; ?></a></h4>
            <p>
           <strong>￥<?php echo $vo['price']; ?></strong>
            </p>
           </div>
           <div class="edit-delete-block">
-                <a href="#" title="Remove"><img src="__STATIC__/index/images/delete_item_btn.png" alt="删除" title="删除" /></a>
+                <a href="<?php echo url('index/delcart',['bid'=>$vo['book_id']]); ?>" title="Remove"><img src="__STATIC__/index/images/delete_item_btn.png" alt="删除" title="删除" /></a>
               </div>
             </li>
         <?php endforeach; endif; else: echo "" ;endif; ?>
@@ -135,24 +135,24 @@
                     <th width="140" >订单日期</th>
                     <th class="last"></th>
                 </tr>
-                <?php if(is_array($shop_cart) || $shop_cart instanceof \think\Collection || $shop_cart instanceof \think\Paginator): $i = 0; $__LIST__ = $shop_cart;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                <?php if(is_array($orders) || $orders instanceof \think\Collection || $orders instanceof \think\Paginator): $i = 0; $__LIST__ = $orders;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                 <tr class="j-row">
                     <td class="vtop">
-                        <div class="title-area" title="<?php echo $vo['name']; ?>">
+                        <div class="title-area" title="<?php echo $vo['order_id']; ?>">
                         <div class="img-wrap">
-                        <a href="<?php echo url('view/index',['bid'=>$vo['book_id']]); ?>" target="_blank"><img src="<?php echo $vo['photo']; ?>" style="height:70px;width:70px;"></a>
+                        <a href="<?php echo url('view/index',['bid'=>$vo['order_id']]); ?>" target="_blank"><img src="" style="height:70px;width:70px;"></a>
                         </div>
                         <div class="title-wrap">
                         <div class="title">
-                        <a href="<?php echo url('view/index',['bid'=>$vo['book_id']]); ?>" class="link"><?php echo $vo['name']; ?></a>
+                        <a href="<?php echo url('view/index',['bid'=>$vo['order_id']]); ?>" class="link"><?php echo $vo['order_id']; ?></a>
                         </div>
                         <div class="attrs"></div>
                         </div>
                         </div>
                     </td>
-                    <td class="price font14" ><span class="j-sumPrice" style="color:#35C2D8;">￥<?php echo $vo['price']; ?></span></td>
+                    <td class="price font14" ><span class="j-sumPrice" style="color:#35C2D8;"><?php echo $vo['create_time']; ?></span></td>
                     <td class="price font14" style="text-align:right">
-                    <a href="<?php echo url('buy/index',['bid'=>$vo['book_id']]); ?>" title="结算" class="colors-btn">确认收货</a>
+                    <a href="<?php echo url('buy/index',['bid'=>$vo['order_id']]); ?>" title="结算" class="colors-btn">确认收货</a>
                     </td>
                 </tr>
                 <?php endforeach; endif; else: echo "" ;endif; ?>

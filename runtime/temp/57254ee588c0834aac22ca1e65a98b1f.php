@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:70:"D:\xampp\htdocs\hns\public/../application/index\view\center\index.html";i:1525360890;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525346003;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525358791;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:70:"D:\xampp\htdocs\hns\public/../application/index\view\center\index.html";i:1525398769;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525346003;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525400432;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -84,13 +84,13 @@
         <li>
         <div class="img-block"><img src="<?php echo $vo['photo']; ?>" title="" alt="" /></div>
         <div class="detail-block">
-           <h4><a href="#" title="Htc Mobile 1120"><?php echo $vo['name']; ?></a></h4>
+           <h4><a href="<?php echo url('view/index',['bid'=>$vo['book_id']]); ?>" title="<?php echo $vo['name']; ?>"><?php echo $vo['name']; ?></a></h4>
            <p>
           <strong>￥<?php echo $vo['price']; ?></strong>
            </p>
           </div>
           <div class="edit-delete-block">
-                <a href="#" title="Remove"><img src="__STATIC__/index/images/delete_item_btn.png" alt="删除" title="删除" /></a>
+                <a href="<?php echo url('index/delcart',['bid'=>$vo['book_id']]); ?>" title="Remove"><img src="__STATIC__/index/images/delete_item_btn.png" alt="删除" title="删除" /></a>
               </div>
             </li>
         <?php endforeach; endif; else: echo "" ;endif; ?>
@@ -156,7 +156,7 @@
                 				</ul>
                 			</div>
                 		</div>
-                        <form action="<?php echo url('advice/save'); ?>" method="post">
+                        <form action="<?php echo url('center/save'); ?>" method="post">
                 		<div  class="col-main">
                 			<h1 class="page-title">请完善您的个人信息</h1>
                 			<div class="contact-form-container">

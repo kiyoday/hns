@@ -28,18 +28,18 @@ class Center extends Controller
     public function save()
     {
     	$data = input('post.');
-    	$validate = validate('Advice');
-        if(!$validate->scene('add')->check($data)){
+    	$validate = validate('User');
+        if(!$validate->scene('update')->check($data)){
         	$this->error($validate->getError());
         }
-        $res = $this->obj->add($data);
-        if($res){
-            $this->success('提交成功','index/index');
+        $uid=session('uid');
+        $editres=db('user')->where('id',$uid)->update($data);
+        if($editres){
+            $this->success('修改成功','center/index');
         }
         else 
         {
             $this->error('提交失败');
         }
-
     }
 }
