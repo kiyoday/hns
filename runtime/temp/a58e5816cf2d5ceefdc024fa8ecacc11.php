@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\cart\index.html";i:1525352001;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525346003;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525417542;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\order\sell.html";i:1525416594;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525346003;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525417542;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -131,28 +131,33 @@
         <table class="table table-goods" cellpadding="0" cellspacing="0">
             <tbody>
                 <tr>
-                    <th class="first">您选择的二手书</th>
-                    <th width="140" >价格</th>
+                    <th width="280">订单</th>
+                    <th width="140" >订单日期</th>
+                    <th width="140" >订单号</th>
+                    <th width="140" >订单状态</th>
                     <th class="last"></th>
                 </tr>
-                <?php if(is_array($shop_cart) || $shop_cart instanceof \think\Collection || $shop_cart instanceof \think\Paginator): $i = 0; $__LIST__ = $shop_cart;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                <?php if(is_array($orders) || $orders instanceof \think\Collection || $orders instanceof \think\Paginator): $i = 0; $__LIST__ = $orders;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                 <tr class="j-row">
                     <td class="vtop">
-                        <div class="title-area" title="<?php echo $vo['name']; ?>">
+                        <div class="title-area" title="<?php echo $vo['order_id']; ?>">
                         <div class="img-wrap">
-                        <a href="<?php echo url('view/index',['bid'=>$vo['book_id']]); ?>" target="_blank"><img src="<?php echo $vo['photo']; ?>" style="height:70px;width:70px;"></a>
+                        <a href="<?php echo url('view/index',['bid'=>$vo['order_id']]); ?>" target="_blank"><img src="<?php echo $vo['photo']; ?>" style="height:70px;width:80px;"></a>
                         </div>
                         <div class="title-wrap">
                         <div class="title">
-                        <a href="<?php echo url('view/index',['bid'=>$vo['book_id']]); ?>" class="link"><?php echo $vo['name']; ?></a>
+                        <a href="<?php echo url('view/index',['bid'=>$vo['order_id']]); ?>" class="link"><?php echo $vo['name']; ?></a>
                         </div>
                         <div class="attrs"></div>
                         </div>
                         </div>
                     </td>
-                    <td class="price font14" ><span class="j-sumPrice" style="color:#35C2D8;">￥<?php echo $vo['price']; ?></span></td>
+                    <td class="price font14" ><span class="j-sumPrice" style="color:#35C2D8;"><?php echo $vo['ocreate_time']; ?></span></td>
+                    <td class="price font14" ><span class="j-sumPrice" style=""><?php echo $vo['trackingnum']; ?></span></td>
+                    <td class="price font14" ><span class="j-sumPrice" style=""><?php echo $vo['trackingnum']; ?></span></td>
                     <td class="price font14" style="text-align:right">
-                    <a href="<?php echo url('buy/index',['bid'=>$vo['book_id']]); ?>" title="结算" class="colors-btn">结算</a>
+                    <a href="<?php echo url('buy/index',['bid'=>$vo['order_id']]); ?>" title="结算" class="colors-btn">订单详情</a>
+                    <a href="<?php echo url('buy/index',['bid'=>$vo['order_id']]); ?>" title="结算" class="colors-btn">确认收货</a>
                     </td>
                 </tr>
                 <?php endforeach; endif; else: echo "" ;endif; ?>
