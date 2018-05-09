@@ -18,10 +18,123 @@ class Book extends Model
 		}
 		return $this->save($data);
 	}
+	
+	public function update1($bid){
+		db('book')->where('book_id',$bid)->update(['status'=>2]);
+		$sql=$this->getLastSql();
+		dump($sql);die;
+	}
 
+	public function getBookByCondition($data=[])
+    {
+		$data['status']=0;//0表示未审核或者审核不通过的书籍
+		$order=[
+			'book_id'=>'desc',
+		];
+		//dump($data);die;
+		
+       $result=$this->where($data)
+			->order($order)
+			->select();
+		//echo $this->getLastSql();exit();
+		return $result;
+    }
+	
+	public function getBookByConditionac($data=[])
+    {
+		$data['status']=1;//1表示审核通过的书
+		$order=[
+			'book_id'=>'desc',
+		];
+       $result=$this->where($data)
+			->order($order)
+			->select();
+		return $result;
+    }
+	
+	public function getBookByConditionad($data=[])
+    {
+		$data['status']=-1;//-1是完成订单的书
+		$order=[
+			'book_id'=>'desc',
+		];
+       $result=$this->where($data)
+			->order($order)
+			->select();
+		return $result;
+    }
+	
+	public function getBookByCategory($type)
+    {
+		$data['type']=$type;//-1是完成订单的书
+		//dump($data);die;
+		$order=[
+			'book_id'=>'desc',
+		];
+       $result=$this->where($data)
+			->order($order)
+			->paginate(4);
+		return $result;
+    }
+	
 	public function getbook()
     {
-        return $this->paginate(5);
+		$data=[
+		    'status'=>0,
+		];
+		$order=[
+			
+		];
+		
+       $result=$this->where($data)
+			->order($order)
+			->paginate(5);
+		//echo $this->getLastSql();exit();
+		
+		return $result;
+    }
+
+
+    public function getBookByser($uid){
+    	$data=[
+		    'uid'=>$uid,
+		];
+		$order=[
+			'status'=>'desc'
+		];
+		
+       $result=$this->where($data)
+			->order($order)
+			->select();
+        return $result;
+    }
+	
+	public function getbook1()
+    {
+		$data=[
+		    'status'=>1,
+		];
+		$order=[
+			
+		];
+		
+        return $this->where($data)
+			->order($order)
+			->paginate(5);
+    }
+	
+	public function getbook2()
+    {
+		$data=[
+		    'status'=>-1,
+		];
+		$order=[
+			
+		];
+		
+        return $this->where($data)
+			->order($order)
+			->paginate(5);
     }
 
     public function getcategory()
@@ -31,7 +144,13 @@ class Book extends Model
 
     public function indexgetbook()
     {
-        return $this->paginate(4);
+        $data['status']=1;//1表示审核通过的书
+		$order=[
+		];
+       $result=$this->where($data)
+			->order($order)
+			->paginate(4);
+		return $result;
     }
 
     public function searchgetbook()
@@ -40,6 +159,11 @@ class Book extends Model
     }
 
     public function indexgetcategory()
+    {
+        return $this->paginate(8);
+    }
+
+    public function getbooksell()
     {
         return $this->paginate(8);
     }

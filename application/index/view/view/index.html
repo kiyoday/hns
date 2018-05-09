@@ -15,7 +15,7 @@
 	<div class="content-container container">
 		<div class="breadcrum-container">
 			<ul>
-				<li><a href="#" title="Home">Home</a></li>
+				<li><a href="{:url('index/index')}" title="Home">首页</a></li>
 				<li>当前商品</li>
 			</ul>
 		</div>
@@ -26,6 +26,7 @@
 					<div class="product-img-box">
 						<p class="product-image-zoom">
 							<img src="{$bid.photo}" style="height:300px;width:300px;" alt="Image" title="Image" />
+						</p>
 					</div>
 					<div class="product-shop">
 						<h3 class="product-name">{$bid.name}</h3>
@@ -33,21 +34,22 @@
                 		    <span class="price">￥{$bid.price}</span>
 							<span class="availability">书籍分类：{$bid.type}</span>
 				        </div>
+				        <div class="model-block">
+							<p>
+								<span style="color:#35C2D8;">发布时间：</span><span>{$bid.create_time} </span>
+							</p>
+							<p>
+								<span style="color:#35C2D8;">卖家：</span><span> {$uid.name}</span>
+							</p>
+							<p>
+								<span style="color:#35C2D8;">联系电话：</span><span>{$uid.phone}</span>
+							</p>
+						</div>
 				        <div class="first-review">
-							<h5>二手书介绍：</h5>
-							<textarea style= "background:transparent;border-style:none; " rows="8" cols="80"> {$bid.introduce}</textarea>
+							<h5 style="color:#35C2D8;">二手书介绍：</h5>
+							<textarea style= "background:transparent;border-style:none; " rows="12" cols="70"> {$bid.introduce}</textarea>
 						</div>
-						<div class="model-block">
-							<p>
-								<span>发布时间：{$bid.create_time} </span>20
-							</p>
-							<p>
-								<span>联系电话： </span>20
-							</p>
-							<p>
-								<span>卖家： </span>HTC
-							</p>
-						</div>
+						
 						<div class="add-to-cart-box">
 							<a class="form-button" href="{:url('index/addcart',['bid'=>$bid.book_id])}" title="Add to Cart"><span>加入购物车</span></a>
 						</div>
@@ -56,33 +58,39 @@
 			</div>
 		</div>
 		<section  class="product-collateral">
-			<h5>评论：</h5>
-			<ul class="tab-block">
-				<li><a href="#pro-review" title="Reviews">Reviews</a></li>
-				<li><a href="#pro-tags" title="Product Tags">Product Tags</a></li>
-				<li class="video-box"><a href="#pro-video" title="Video Box">Video Box</a></li>
-			</ul>
+			<h5 style="color:#35C2D8;">留言板：</h5>
+        	<textarea style= "background:transparent;border-style:none; " rows="2" cols="130"></textarea>
+			{volist name="comment" id="vo"}
             <div id="pro-review" class="pro-detail commonContent">
-				<p>
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
+            
+            <li><span style="align-content: stretch; color:#35C2D8;">{$i}楼-{$vo.name}</span><span>（{$vo.addtime}）:</span></li>
+				<p><span class="">
+					{$vo.text}
+					</span>
 				</p>
 			</div>
-            <div id="pro-tags" class="pro-detail commonContent">
-				<p>
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-				</p>
-			</div>
-            <div id="pro-video" class="pro-detail commonContent">
-				<p>
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
-				</p>
-			</div>
-		</section>
+			<div style="color:#D1D1D1" >——————————————————————————————————————————————————————————————————————————————</div>
+           {/volist}
+         </section>
+         
+         
+		<div class="search-block">
+        <form action="{:url('view/savecomment',['bid'=>$bid.book_id])}" method="get">
+        <span style="float:left;"><h6>我要留言：</h6> </span>
+        <div class="clearfix"></div>
+			<textarea style="float:left;" class="" name="text" type="text" value="" rows="10" cols="130"></textarea>
+         <div class="clearfix"></div>
+         
+          <button style="float:left;" type="submit" class="form-button" title="addcomment">添加留言</button>
+        </form>
+        </div>
+        <div class="clearfix"></div>
+        <div style="color:#D1D1D1" >————————————————————————————————————————————————————————————————————————</div>
+		
 		<div class="clearfix"></div>
+		</div>
+		</section>
 	</div>
-</section>
-</div>
            <!--Footer Block-->  
            {include file="public/footer"}
 </body>

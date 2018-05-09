@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:68:"D:\xampp\htdocs\hns\public/../application/admin\view\book\index.html";i:1523709843;s:71:"D:\xampp\htdocs\hns\public/../application/admin\view\public\header.html";i:1523271222;s:71:"D:\xampp\htdocs\hns\public/../application/admin\view\public\footer.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:68:"D:\xampp\htdocs\hns\public/../application/admin\view\book\index.html";i:1525441044;s:71:"D:\xampp\htdocs\hns\public/../application/admin\view\public\header.html";i:1523271222;s:71:"D:\xampp\htdocs\hns\public/../application/admin\view\public\footer.html";i:1523271222;}*/ ?>
 <!--包含头部文件-->
 <!DOCTYPE HTML>
 <html>
@@ -32,15 +32,18 @@
 </head>
 <body>
 <body>
-<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 会员管理 <span class="c-gray en">&gt;</span> 会员列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 书籍管理 <span class="c-gray en">&gt;</span> 待审书籍列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
 <div class="page-container">
-	<div class="text-c"> 日期范围：
-		<input type="text" onfocus="WdatePicker()" id="datemin" class="input-text Wdate" style="width:120px;">
-		-
-		<input type="text" onfocus="WdatePicker()" id="datemax" class="input-text Wdate" style="width:120px;">
-		<input type="text" class="input-text" style="width:250px" placeholder="输入会员名称、电话、邮箱" id="" name="">
-		<button type="submit" class="btn btn-success radius" id="" name=""><i class="Hui-iconfont">&#xe665;</i> 搜用户</button>
-	</div>
+    <form action="<?php echo url('book/index'); ?>" method="get">
+	    <div class="text-c"> 日期范围：
+		    <input type="text" onfocus="WdatePicker()" id="datemin" name='datemin' class="input-text Wdate" style="width:120px;" value="<?php echo $datemin; ?>">
+		
+		    <input type="text" onfocus="WdatePicker()" id="datemax" name='datemax' class="input-text Wdate" style="width:120px;" value="<?php echo $datemax; ?>">
+		    <input type="text" class="input-text" style="width:250px" placeholder="请输入书名(可以是部分名)" id="condition" name="name" value="<?php echo $name; ?>">
+		    <button type="submit" class="btn btn-success radius" id="" name=""><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
+		
+		</div>
+	</form>
 	<!--<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="datadel()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a href="javascript:;" onclick="member_add('添加用户','member-add.html','','510')" class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加用户</a></span> <span class="r">共有数据：<strong>88</strong> 条</span> </div>-->
 	<div class="mt-20">
 	<table class="table table-border table-bordered table-hover table-bg table-sort">
@@ -55,11 +58,11 @@
 				<th width="250">描述</th>
 				<th width="130">上传时间</th>
 				<th width="70">状态</th>
-				<th width="100">操作</th>
+				<!--<th width="100">操作</th>-->
 			</tr>
 		</thead>
 		<tbody>
-			<?php if(is_array($books) || $books instanceof \think\Collection || $books instanceof \think\Paginator): $i = 0; $__LIST__ = $books;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+			<?php if(is_array($result) || $result instanceof \think\Collection || $result instanceof \think\Paginator): $i = 0; $__LIST__ = $result;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
 			<tr class="text-c">
 				<td><input type="checkbox" value="1" name=""></td>
 				<td><?php echo $vo['book_id']; ?></td>
@@ -67,22 +70,29 @@
 				<td><?php echo $vo['type']; ?></td>
 				<td>
 				<?php if($vo['photo'] != ''): ?>
-						<img src="<?php echo $vo['photo']; ?>" height='110' ">
+						<img src="<?php echo $vo['photo']; ?>" height="110" >
 						<?php else: ?>
 						暂无缩略图
 						<?php endif; ?></td>
 				<td>￥<?php echo $vo['price']; ?></td>
 				<td class="text-l"><?php echo $vo['introduce']; ?></td>
 				<td><?php echo $vo['create_time']; ?></td>
-				<td class="td-status"><span class="label label-success radius">已启用</span></td>
-				<td class="td-manage"><a style="text-decoration:none" onClick="member_stop(this,'10001')" href="javascript:;" title="停用"><i class="Hui-iconfont">&#xe631;</i></a> <a title="编辑" href="javascript:;" onclick="member_edit('编辑','member-add.html','4','','510')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5" onClick="change_password('修改密码','change-password.html','10001','600','270')" href="javascript:;" title="修改密码"><i class="Hui-iconfont">&#xe63f;</i></a> <a title="删除" href="javascript:;" onclick="member_del(this,'1')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+				
+				<td class="td-status"><a href="<?php echo url('book/status',['id'=>$vo['book_id'],'status'=>$vo['status']==1?0:1]); ?>" title="点击以审核通过">
+					<?php if($vo['status'] == '1'): ?>
+					<span class="label label-success radius">审核完成</span>
+					<?php else: ?>
+					<span class="label  label-danger radius" >待审</span>
+					<?php endif; ?>
+		        </a></td>
+				<!--<td class="td-manage"><a style="text-decoration:none" onClick="member_stop(this,'10001')" href="javascript:;" title="停用"><i class="Hui-iconfont">&#xe631;</i></a> <a title="编辑" href="javascript:;" onclick="member_edit('编辑','member-add.html','4','','510')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5" onClick="change_password('修改密码','change-password.html','10001','600','270')" href="javascript:;" title="修改密码"><i class="Hui-iconfont">&#xe63f;</i></a> <a title="删除" href="javascript:;" onclick="member_del(this,'1')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>-->
 			</tr>
 			<?php endforeach; endif; else: echo "" ;endif; ?>
 		</tbody>
 	</table>
 	</div>
 </div>
-<div class="cl pd-5 bg-1 bk-gray mt-20 pagn-1"><?php echo $books->render(); ?></div>
+
 <!--包含头部文件-->
 <script type="text/javascript" src="__STATIC__/admin/hui/lib/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="__STATIC__/admin/js/common.js"></script>

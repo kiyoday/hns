@@ -7,10 +7,19 @@
 			
 			<nav id="Hui-userbar" class="nav navbar-nav navbar-userbar hidden-xs">
 				<ul class="cl">
-					<li>管理员</li>
-					<li class="dropDown dropDown_hover"> <a href="#" class="dropDown_A">{$Request.session.name}<i class="Hui-iconfont">&#xe6d5;</i></a>
+					{if condition="$Request.session.type eq '0'"}
+					<li>超级管理员</li>
+					{else /}
+					{if condition="$Request.session.type eq '1'"}
+					<li>书籍管理员</li>
+					{else /}
+					{if condition="$Request.session.type eq '2'"}
+					<li>意见管理员</li>
+					{/if}
+					{/if}
+					{/if}
+					<li class="dropDown dropDown_hover"> <a href="#" class="dropDown_A">{$Request.session.aname}<i class="Hui-iconfont">&#xe6d5;</i></a>
 						<ul class="dropDown-menu menu radius box-shadow">
-							<li><a href="#">个人信息</a></li>
 							<li><a href="{:url('login/index')}">切换账户</a></li>
 							<li><a href="{:url('login/index')}">退出</a></li>
 						</ul>

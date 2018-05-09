@@ -2,15 +2,17 @@
 namespace app\admin\validate;
 use think\Validate;
 
-class Category extends Validate
+class User extends Validate
 {
 	protected $rule = [
-		['type_name','require|max:10','分类名必须传递|分类名不能超过10个字符'],
+		['name','require|max:50','分类名必须传递|分类名不能超过50个字符'],
+		['id','number'],
+		['status','number|in:0,1','状态必须是数字|状态范围不合法']
 	];
 
 	//场景设置
 	protected $scene = [
-		'add' => ['type_name'],//添加
-		'listorder' => ['id','listorder'],//排序
+		'add' => ['name'],//添加
+		'status' =>['id','status'],
 	];
 }

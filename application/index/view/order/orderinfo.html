@@ -1,0 +1,78 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+{include file="public/head"}
+<body>
+	<div class="mainContainer sixteen container">
+            <!--Header Block-->
+            {include file="public/header"}
+                <!--Content Block-->
+                 <section class="content-wrapper">
+                  <form method="post" action="{:url('order/orderinfo',['bid'=>$bid.book_id])}">
+                  {volist name="user" id="vo"}
+                  <div class="content-container container"> 
+                   <h1 class="page-title"><font color="#35C2D8">订单其他信息</font></h1>
+                   <div class="contact-form-container">
+                    <ul class="form-fields">
+                     <li class="left">
+                      <label>收货人姓名<em></em></label>
+                      <input onkeyup="value=value.replace(/[^\u4E00-\u9FA5]/g,'')" value="{$vo.name}" type="text" name="name"/>
+                    </li>
+                    <li class="left">
+                     <label>联系电话</label>
+                     <input type="text" name="phone" value="{$vo.phone}">
+                    </li>
+                    <li class="left">
+                     <label>收货地址</label>
+                     <input type="text" name="address" value="{$vo.address}">
+                    </li>
+                   </ul>
+                 </div>
+                </div>
+                {/volist}
+             <div class="firstly">
+              <table class="table table-goods" cellpadding="0" cellspacing="0">
+                <tbody>
+                <tr>
+                    <th width="130" class="first">商品</th>
+                    <th width="140">书名</th>
+                    <th width="140">价格</th>
+                    <th width="140">卖家昵称</th>
+                    <th width="140" class="last">卖家联系电话</th>
+                </tr>
+                <tr class="j-row">
+                    <td class="">
+                        <div class="title-area" title="{$bid.name}">
+                        <div class="">
+                        <a href="" target="_blank"><img src="{$bid.photo}" style="height:100px;width:100px;"></a>
+                        </div>
+						</div>
+                    </td>
+                      <td class="font14" align="center"><span>{$bid.name}</span></td>
+                      <td class="price font14" align="center" style="color:#35C2D8;"><span class="j-sumPrice" >￥{$bid.price}</span></td>
+                      <td class="font14" align="center"><span>{$uid.name}</span></td>
+                      <td class="font14" align="center"><span>{$uid.email}</span></td>
+                </tr>
+                </tbody>
+              </table>
+              <div class="final-price-area" style="text-align:right">结算金额：<span class="sum" style="color:#35C2D8;">￥<span class="price" style="color:#35C2D8;">{$bid.price}</span></span></div>
+              <div class="page-button-wrap" style="text-align:right;color:#35C2D8;" >
+              <!--<button type="submit" class="btn btn-primary" style="background:#35C2D8;">确认并支付</button>-->
+              </div>
+              <div style="width: 100%;min-width: 1200px;height: 5px;background: #dbdbdb;margin: 50px 0 20px;"></div>
+            </div>
+          </div>
+          <form>
+        </section>
+            <!--Footer Block-->
+<section class="content-wrapper">
+
+</section>
+</div>
+          {include file="public/footer"}
+</body>
+</html>

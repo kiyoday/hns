@@ -18,30 +18,48 @@
                     <th width="280">订单</th>
                     <th width="140" >订单日期</th>
                     <th width="140" >订单号</th>
-                    <th width="140" >订单状态</th>
-                    <th class="last"></th>
+                    <th width="140" >快递单号</th>
+					<th width="140" >订单状态</th>
+                    <th class="last">操作</th>
                 </tr>
                 {volist name="orders" id="vo"}
                 <tr class="j-row">
                     <td class="vtop">
                         <div class="title-area" title="{$vo.order_id}">
                         <div class="img-wrap">
-                        <a href="{:url('view/index',['bid'=>$vo.order_id])}" target="_blank"><img src="{$vo.photo}" style="height:70px;width:80px;"></a>
+                        <a href="{:url('order/orderinfo',['bid'=>$vo.bookid])}" target="_blank"><img src="{$vo.photo}" style="height:70px;width:80px;"></a>
                         </div>
                         <div class="title-wrap">
                         <div class="title">
-                        <a href="{:url('view/index',['bid'=>$vo.order_id])}" class="link">{$vo.name}</a>
+                        <a href="{:url('view/index',['bid'=>$vo.bookid])}" class="link">{$vo.name}</a>
                         </div>
                         <div class="attrs"></div>
                         </div>
                         </div>
                     </td>
                     <td class="price font14" ><span class="j-sumPrice" style="color:#35C2D8;">{$vo.ocreate_time}</span></td>
-                    <td class="price font14" ><span class="j-sumPrice" style="">{$vo.trackingnum}</span></td>
-                    <td class="price font14" ><span class="j-sumPrice" style="">{$vo.trackingnum}</span></td>
+                    <td class="price font14" ><span class="j-sumPrice" style="">{$vo.order_id}</span></td>
+                    <td class="price font14" ><span class="j-sumPrice" style="">{$vo.expnum}</span></td>
+                    <td class="price font14" >
+                    {if condition="$vo.expnum eq 0"}
+                    <span class="label  label-success radius" >待发货</span>
+                    {else /}
+					{if condition="$vo.orderstatus eq '1'"}
+					<span class="label  label-success radius" >在路上</span>
+					{else /}
+					<span class="label label-success radius">已收货</span>
+					{/if}
+                    {/if}
+                    </td>
                     <td class="price font14" style="text-align:right">
-                    <a href="{:url('buy/index',['bid'=>$vo.order_id])}" title="结算" class="colors-btn">订单详情</a>
-                    <a href="{:url('buy/index',['bid'=>$vo.order_id])}" title="结算" class="colors-btn">确认收货</a>
+                    {if condition="$vo.expnum eq 0"}
+                    <!--<a href="{:url('buy/index',['bid'=>$vo.order_id])}" title="结算" class="colors-btn" style="colot:gray;cursor:pointer;pointer-events:none;">确认收货</a>-->
+                    {else /}
+                    {if condition="$vo.orderstatus eq '1'"}
+                    <a href="{:url('order/goodsConfirm',['bid'=>$vo.bookid])}" title="结算" class="colors-btn" >确认收货</a>
+                    {else /}
+                    {/if}
+                    {/if}
                     </td>
                 </tr>
                 {/volist}

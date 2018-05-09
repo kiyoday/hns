@@ -1,0 +1,77 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+{include file="public/head"}
+<body>
+	<div class="mainContainer sixteen container">
+            <!--Header Block-->
+            {include file="public/header"}
+                <!--Content Block-->
+                 <section class="content-wrapper">
+                  <form method="post" action="{:url('booksell/save',['bid'=>$book.book_id])}">
+                 
+                  <table class="table table-goods" cellpadding="0" cellspacing="0">
+                <tbody>
+                <tr>
+                    <th width="130" class="first">收货人姓名</th>
+                    <th width="140">联系电话</th>
+                    <th width="140">收获地址</th>
+                    <th width="140">快递单号</th>
+                    
+                </tr>
+                <tr class="j-row">
+                      <td class="font14" align="center"><span>{$buyer['name']}</span></td>
+                      <td class="price font14" align="center" style="color:#35C2D8;"><span class="j-sumPrice" >{$buyer['address']}</span></td>
+                      <td class="font14" align="center"><span>{$buyer.address}</span></td>
+					<td class="font14" align="center"><input type="text" name="expnum"></td>
+                </tr>
+                </tbody>
+              </table>
+              
+             <div class="firstly">
+              <table class="table table-goods" cellpadding="0" cellspacing="0">
+                <tbody>
+                <tr>
+                    <th width="130" class="first">商品</th>
+                    <th width="140">书名</th>
+                    <th width="140">价格</th>
+                    <th width="140">卖家昵称</th>
+                    <th width="140" class="last">卖家联系电话</th>
+                </tr>
+                <tr class="j-row">
+                    <td class="">
+                        <div class="title-area" title="{$book.name}">
+                        <div class="">
+                        <a href="" target="_blank"><img src="{$book.photo}" style="height:100px;width:100px;"></a>
+                        </div>
+						</div>
+                    </td>
+                      <td class="font14" align="center"><span>{$book.name}</span></td>
+                      <td class="price font14" align="center" style="color:#35C2D8;"><span class="j-sumPrice" >￥{$book.price}</span></td>
+                      <td class="font14" align="center"><span>{$seller.name}</span></td>
+                      <td class="font14" align="center"><span>{$seller.phone}</span></td>
+                </tr>
+                </tbody>
+              </table>
+				 </form>
+              <div class="final-price-area" style="text-align:right">结算金额：<span class="sum" style="color:#35C2D8;">￥<span class="price" style="color:#35C2D8;">{$book.price}</span></span></div>
+              <div class="page-button-wrap" style="text-align:right;color:#35C2D8;" >
+              <button type="submit" class="btn btn-primary" style="background:#35C2D8;">确认发货</button>
+              </div>
+              <div style="width: 100%;min-width: 1200px;height: 5px;background: #dbdbdb;margin: 50px 0 20px;"></div>
+            </div>
+          </div>
+          <form>
+        </section>
+            <!--Footer Block-->
+<section class="content-wrapper">
+
+</section>
+</div>
+          {include file="public/footer"}
+</body>
+</html>

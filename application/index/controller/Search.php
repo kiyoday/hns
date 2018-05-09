@@ -12,13 +12,20 @@ class Search extends Controller
 	
     public function index()
     {   
+		$data=input('get.');
+		//dump($data);die;
+		$sdata=$result=[];
+		if(!empty($data['name'])){
+			$sdata['name']=['like','%'.$data['name'].'%'];
+		}
         $categorys = $this->objc->getcategory();
-        $books = $this->obj1->indexgetbook();
+        $result= $this->obj1->getBookByConditionac($sdata);
         $shop_cart = session('shop_cart');
         $this->assign('shop_cart', $shop_cart);
         return $this->fetch('',[
             'categorys'=>$categorys,
-            'books'=>$books,
+            'result'=>$result,
+			'name'=>$data['name'],
         ]);
     }
 

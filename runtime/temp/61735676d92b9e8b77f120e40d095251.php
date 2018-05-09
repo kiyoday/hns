@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:69:"D:\xampp\htdocs\hns\public/../application/admin\view\order\index.html";i:1523271222;s:71:"D:\xampp\htdocs\hns\public/../application/admin\view\public\header.html";i:1523271222;s:71:"D:\xampp\htdocs\hns\public/../application/admin\view\public\footer.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:69:"D:\xampp\htdocs\hns\public/../application/admin\view\order\index.html";i:1525590496;s:71:"D:\xampp\htdocs\hns\public/../application/admin\view\public\header.html";i:1523271222;s:71:"D:\xampp\htdocs\hns\public/../application/admin\view\public\footer.html";i:1523271222;}*/ ?>
 <!--包含头部文件-->
 <!DOCTYPE HTML>
 <html>
@@ -34,47 +34,59 @@
 <body>
 <nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 订单管理 <span class="c-gray en">&gt;</span> 订单列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
 <div class="page-container">
-	<div class="text-c"> 日期范围：
-		<input type="text" onfocus="WdatePicker()" id="datemin" class="input-text Wdate" style="width:120px;">
-		-
-		<input type="text" onfocus="WdatePicker()" id="datemax" class="input-text Wdate" style="width:120px;">
-		<input type="text" class="input-text" style="width:250px" placeholder="输入会员名称、电话、邮箱" id="" name="">
-		<button type="submit" class="btn btn-success radius" id="" name=""><i class="Hui-iconfont">&#xe665;</i> 搜用户</button>
-	</div>
+	<form action="<?php echo url('Order/index'); ?>" method="get">
+	    <div class="text-c">
+		    <input type="text" class="input-text" style="width:120px" placeholder="请输入买家姓名" id="buyername" name="buyername" value="<?php echo $buyername; ?>">
+		    <input type="text" class="input-text" style="width:120px" placeholder="请输入买家编号" id="buyerid" name="buyerid" value="<?php echo $buyerid; ?>">
+		    <input type="text" class="input-text" style="width:120px" placeholder="请输入卖家编号" id="sellerid" name="sellerid" value="<?php echo $sellerid; ?>">
+		    <button type="submit" class="btn btn-success radius" id="" name=""><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
+		
+		</div>
+	</form>
 	<!--<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="datadel()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a href="javascript:;" onclick="member_add('添加用户','member-add.html','','510')" class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加用户</a></span> <span class="r">共有数据：<strong>88</strong> 条</span> </div>-->
 	<div class="mt-20">
 	<table class="table table-border table-bordered table-hover table-bg table-sort">
 		<thead>
 			<tr class="text-c">
 				<th width="25"><input type="checkbox" name="" value=""></th>
-				<th width="80">ID</th>
-				<th width="180">订单号</th>
-				<th width="40">商品id</th>
-				<th width="40">用户id</th>
-				<th width="60">用户名</th>
-				<th width="90">数量</th>
-				<th width="150">总价</th>
-				<th width="130">订单时间</th>
+				<th width="40">订单号</th>
+				<th width="100">订单生成时间</th>
+				<th width="40">买家姓名</th>
+				<th width="80">买家手机号</th>
+				<th width="120">买家地址</th>
+				<th width="60">快递单号</th>
+				<th width="60">书籍ID</th>
+				<th width="100">买家编号</th>
+				<th width="100">卖家编号</th>
 				<th width="70">状态</th>
 			</tr>
 		</thead>
 		<tbody>
-		
+		<?php if(is_array($result) || $result instanceof \think\Collection || $result instanceof \think\Paginator): $i = 0; $__LIST__ = $result;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
 			<tr class="text-c">
-				<td><input type="checkbox" value="1" name=""></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td class="td-status"><a></a></td>
-
+				<td><input type="checkbox" value="" name=""></td>
+				<th width="40"><?php echo $vo['order_id']; ?></th>
+				<th width="100"><?php echo $vo['ocreate_time']; ?></th>
+				<th width="40"><?php echo $vo['buyername']; ?></th>
+				<th width="80"><?php echo $vo['orderphone']; ?></th> 
+				<th width="120"><?php echo $vo['orderaddress']; ?></th>
+				<th width="60"><?php echo $vo['expnum']; ?></th>
+				<th width="60"><?php echo $vo['bookid']; ?></th>
+				<th width="100"><?php echo $vo['buyerid']; ?></th>
+				<th width="100"><?php echo $vo['sellerid']; ?></th>
+				<td class="td-status">
+				<?php if($vo['orderstatus'] == '0'): ?>
+					<span class="label label-success radius">未付款</span>
+					<?php else: if($vo['orderstatus'] == '1'): ?>
+					<span class="label  label-success radius" >在路上</span>
+					<?php else: ?>
+					<span class="label label-success radius">已收货</span>
+					<?php endif; endif; ?>
+				
+				</td>
 				
 			</tr>
-			
+			<?php endforeach; endif; else: echo "" ;endif; ?>
 		</tbody>
 	</table>
 	</div>

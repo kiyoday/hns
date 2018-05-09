@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:67:"D:\xampp\htdocs\hns\public/../application/index\view\buy\index.html";i:1525537261;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525696765;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525877626;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1525759508;}*/ ?>
+=======
 <?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:67:"D:\xampp\htdocs\hns\public/../application/index\view\buy\index.html";i:1525397918;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525346003;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525417542;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
+>>>>>>> 4f28880015d34f2a3255070a94b04f91244883e5
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -8,7 +12,7 @@
 <!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Megashop</title>
+<title>开心果二手书网</title>
 
 <!--js-->
 <script src="__STATIC__/index/js/jquery-1.8.2.min.js"></script>
@@ -54,27 +58,42 @@
   <header class="container">
     <div class="head-right">
       <ul class="top-nav">
+<<<<<<< HEAD
+          <li class=""><a href="<?php echo url('center/info'); ?>" title="个人中心">个人中心</a></li>
+          <li class="my-wishlist"><a href="<?php echo url('cart/index'); ?>" title="购物车">购物车</a></li>
+          <li class="checkout"><a href="<?php echo url('order/index'); ?>" title="我的订单">我的订单</a></li>
+          <li class="contact-us"><a href="<?php echo url('advice/index'); ?>" title="关于我们">关于我们</a></li>
+=======
           <li class=""><a href="<?php echo url('center/index'); ?>" title="My Account">个人中心</a></li>
           <li class="my-wishlist"><a href="<?php echo url('cart/index'); ?>" title="购物车">购物车</a></li>
           <li class="checkout"><a href="<?php echo url('order/index'); ?>" title="Checkout">我的订单</a></li>
           <li class="contact-us"><a href="<?php echo url('advice/index'); ?>" title="Contact Us">关于我们</a></li>
+>>>>>>> 4f28880015d34f2a3255070a94b04f91244883e5
           <?php if(\think\Request::instance()->session('name') != ''): ?>
           <li class="log-in"><a href="<?php echo url('user/login'); ?>" title="Log In"><?php echo \think\Request::instance()->session('name'); ?></a></li>
-          <li class="log-in"><a href="<?php echo url('user/logout'); ?>" title="Log out">注销</a></li>
+          <li class="log-in"><a href="<?php echo url('user/logout'); ?>" title="注销">注销</a></li>
           <?php else: ?> 
-          <li class="log-in"><a href="<?php echo url('user/login'); ?>" title="Log In">登录/注册</a></li>
+          <li class="log-in"><a href="<?php echo url('user/login'); ?>" title="登录/注册">登录/注册</a></li>
           <?php endif; ?>
       </ul>
       <ul class="currencyBox">
             <li id="header_currancy" class="currency"> <a class="mainCurrency" href="#">我要卖书</a>
+<<<<<<< HEAD
+          <div id="currancyBox" class="currency_detial"> <a href="<?php echo url('book/index'); ?>">卖书登记</a> <a href="<?php echo url('booksell/index'); ?>">卖书信息</a>
+=======
           <div id="currancyBox" class="currency_detial"> <a href="<?php echo url('book/index'); ?>">卖书登记</a> <a href="#">卖书信息</a>
+>>>>>>> 4f28880015d34f2a3255070a94b04f91244883e5
           </div>
         </li>
       </ul>
       <section class="header-bottom">
         <div class="cart-block">
          <ul>
+<<<<<<< HEAD
+          <li><a href="<?php echo url('Cart/index'); ?>" title="Cart"><img title="Item" alt="Item" src="__STATIC__/index/images/item_icon.png" /></a></li>
+=======
           <li><a href="cart.html" title="Cart"><img title="Item" alt="Item" src="__STATIC__/index/images/item_icon.png" /></a></li>
+>>>>>>> 4f28880015d34f2a3255070a94b04f91244883e5
           <li>购物车</li>
          </ul>
         <div id="minicart" class="remain_cart" style="display: none;">
@@ -104,7 +123,7 @@
       </div>
       <div class="search-block">
         <form action="<?php echo url('search/index'); ?>" method="get">
-          <input name="keywords" type="text" value="" />
+          <input name="name" type="text" value="" />
           <input type="submit" value="Search" title="搜索" />
         </form>
         </div>
@@ -117,7 +136,7 @@
       <ul id="nav">
         <li class="active"><a href="<?php echo url('index/index'); ?>" title="Home">首页</a></li>
         <?php if(is_array($categorys) || $categorys instanceof \think\Collection || $categorys instanceof \think\Paginator): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-        <li class=""><a href="blog.html" title="<?php echo $vo['type_name']; ?>"><?php echo $vo['type_name']; ?></a></li>
+        <li class=""><a href="<?php echo url('Search1/index',['type'=>$vo['type_name']]); ?>" title="<?php echo $vo['type_name']; ?>"><?php echo $vo['type_name']; ?></a></li>
         <?php endforeach; endif; else: echo "" ;endif; ?>
       </ul>
     </nav> 
@@ -129,12 +148,27 @@
                 <!--Content Block-->
                  <section class="content-wrapper">
                   <form method="post" action="<?php echo url('buy/save',['bid'=>$bid['book_id']]); ?>">
+<<<<<<< HEAD
+                  <?php if(is_array($user) || $user instanceof \think\Collection || $user instanceof \think\Paginator): $i = 0; $__LIST__ = $user;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+=======
+>>>>>>> 4f28880015d34f2a3255070a94b04f91244883e5
                   <div class="content-container container"> 
                    <h1 class="page-title"><font color="#35C2D8">请输入买家信息</font></h1>
                    <div class="contact-form-container">
                     <ul class="form-fields">
                      <li class="left">
                       <label>收货人姓名<em></em></label>
+<<<<<<< HEAD
+                      <input onkeyup="value=value.replace(/[^\u4E00-\u9FA5]/g,'')" value="<?php echo $vo['name']; ?>" type="text" name="name"/>
+                    </li>
+                    <li class="left">
+                     <label>联系电话</label>
+                     <input type="text" name="phone" value="<?php echo $vo['phone']; ?>">
+                    </li>
+                    <li class="left">
+                     <label>收货地址</label>
+                     <input type="text" name="address" value="<?php echo $vo['address']; ?>">
+=======
                       <input onkeyup="value=value.replace(/[^\u4E00-\u9FA5]/g,'')" type="text" name="name"/>
                     </li>
                     <li class="left">
@@ -144,10 +178,15 @@
                     <li class="left">
                      <label>收货地址</label>
                      <input type="text" name="address">
+>>>>>>> 4f28880015d34f2a3255070a94b04f91244883e5
                     </li>
                    </ul>
                  </div>
                 </div>
+<<<<<<< HEAD
+                <?php endforeach; endif; else: echo "" ;endif; ?>
+=======
+>>>>>>> 4f28880015d34f2a3255070a94b04f91244883e5
              <div class="firstly">
               <table class="table table-goods" cellpadding="0" cellspacing="0">
                 <tbody>
@@ -164,6 +203,7 @@
                         <div class="">
                         <a href="" target="_blank"><img src="<?php echo $bid['photo']; ?>" style="height:100px;width:100px;"></a>
                         </div>
+						</div>
                     </td>
                       <td class="font14" align="center"><span><?php echo $bid['name']; ?></span></td>
                       <td class="price font14" align="center" style="color:#35C2D8;"><span class="j-sumPrice" >￥<?php echo $bid['price']; ?></span></td>
@@ -209,24 +249,22 @@
                     <li><a href="#" title="Terms & Conditions">Terms & Conditions</a></li>
                   </ul>
                   <ul>
-                    <li class="link-title"><a href="#" title="ABOUTUS">ABOUT US</a></li>
-                    <li class="aboutus-block">Lorem ipsum dolor sit amet,
-                      consectetur adipiscing elit. Vivamus sit
-                      amet ligula lectus, a mollis diam. Nulla
-                      porttitor pulvinar elit... <a href="about_us.html" title="read more">read more</a> </li>
+                    <li class="link-title"><a href="#" title="ABOUTUS">关于我们</a></li>
+                    <li class="aboutus-block">开心果二手书交易平台,
+                      是一个基于ThinkPHP5.0开发的交易平台... <a href="about_us.html" title="read more">更多</a> </li>
                   </ul>
                   <ul class="stay-connected-blcok">
                     <li class="link-title"><a href="#" title="STAY CONNECTED...">STAY CONNECTED...</a></li>
                     <li>
                          <ul class="social-links">
-                            <li><a data-tooltip="Like us on facebook" href="#"><img alt="facebook" src="images/facebook.png"></a></li>
-                            <li><a data-tooltip="Subscribe to RSS feed" href="#"><img alt="RSS" src="images/rss.png"></a></li>
-                            <li><a data-tooltip="Follow us on twitter" href="#"><img alt="twitter" src="images/twitter.png"></a></li>
-                            <li><a data-tooltip="Follow us on Dribbble" href="#"><img alt="dribbble" src="images/dribbble.png"></a></li>
-                            <li><a data-tooltip="Follow us on Youtube" href="#"><img alt="youtube" src="images/youtube.png"></a></li>
-                            <li><a data-tooltip="Follow us on skype" href="#"><img alt="skype" src="images/skype.png"></a></li>
+                            <li><a data-tooltip="Like us on facebook" href="#"><img alt="facebook" src="__STATIC__/index/images/facebook.png"></a></li>
+                            <li><a data-tooltip="Subscribe to RSS feed" href="#"><img alt="RSS" src="__STATIC__/index/images/rss.png"></a></li>
+                            <li><a data-tooltip="Follow us on twitter" href="#"><img alt="twitter" src="__STATIC__/index/images/twitter.png"></a></li>
+                            <li><a data-tooltip="Follow us on Dribbble" href="#"><img alt="dribbble" src="__STATIC__/index/images/dribbble.png"></a></li>
+                            <li><a data-tooltip="Follow us on Youtube" href="#"><img alt="youtube" src="__STATIC__/index/images/youtube.png"></a></li>
+                            <li><a data-tooltip="Follow us on skype" href="#"><img alt="skype" src="__STATIC__/index/images/skype.png"></a></li>
                          </ul>
-                         <div class="payment-block"><img src="images/payment.png" alt="payment"></div>
+                         <div class="payment-block"><img src="__STATIC__/index/images/payment.png" alt="payment"></div>
                     </li>
                   </ul>
                 </div>
@@ -237,7 +275,7 @@
                     <li><a href="about_us.html" title="About">ABOUT</a></li>
                     <li><a href="contact_us.html" title="Contact">CONTACT</a></li>
                   </ul>
-                  <p class="copyright-block">© 2012 Magento Demo Store, All Rights Reserved.Collect from <a href="http://www.cssmoban.com/" title="网站模板" target="_blank">开心果</a></p>
+                  <p class="copyright-block">© 2018 二手书交易平台,  from <a href="http://www.cssmoban.com/" title="开心果" target="_blank">开心果</a></p>
                 </div>
               </footer>
             </section>

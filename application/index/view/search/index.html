@@ -9,8 +9,82 @@
 <body>
 	<div class="mainContainer sixteen container">
             <!--Header Block-->
-            {include file="public/header"}
+           <!-- {include file="public/header"}-->
             <!--Content Block-->
+            <div class="header-wrapper">
+    <header class="container">
+    <div class="head-right">
+      <ul class="top-nav">
+          <li class=""><a href="{:url('center/index')}" title="My Account">个人中心</a></li>
+          <li class="my-wishlist"><a href="{:url('cart/index')}" title="购物车">购物车</a></li>
+          <li class="checkout"><a href="{:url('order/index')}" title="Checkout">我的订单</a></li>
+          <li class="contact-us"><a href="{:url('advice/index')}" title="Contact Us">关于我们</a></li>
+          {if condition="$Request.session.name neq ''"}
+          <li class="log-in"><a href="{:url('user/login')}" title="Log In">{$Request.session.name}</a></li>
+          <li class="log-in"><a href="{:url('user/logout')}" title="Log out">注销</a></li>
+          {else /} 
+          <li class="log-in"><a href="{:url('user/login')}" title="Log In">登录/注册</a></li>
+          {/if}
+      </ul>
+      <ul class="currencyBox">
+            <li id="header_currancy" class="currency"> <a class="mainCurrency" href="#">我要卖书</a>
+          <div id="currancyBox" class="currency_detial"> <a href="{:url('book/index')}">卖书登记</a> <a href="#">卖书信息</a>
+          </div>
+        </li>
+      </ul>
+      <section class="header-bottom">
+        <div class="cart-block">
+         <ul>
+          <li><a href="{:url('Cart/index')}" title="Cart"><img title="Item" alt="Item" src="__STATIC__/index/images/item_icon.png" /></a></li>
+          <li>购物车</li>
+         </ul>
+        <div id="minicart" class="remain_cart" style="display: none;">
+        <p class="empty">购物车预览</p>
+        <ol>
+          {volist name="shop_cart" id="vo"}
+        <li>
+        <div class="img-block"><img src="{$vo.photo}" title="" alt="" /></div>
+        <div class="detail-block">
+           <h4><a href="{:url('view/index',['bid'=>$vo.book_id])}" title="{$vo.name}">{$vo.name}</a></h4>
+           <p>
+          <strong>￥{$vo.price}</strong>
+           </p>
+          </div>
+          <div class="edit-delete-block">
+                <a href="{:url('index/delcart',['bid'=>$vo.book_id])}" title="Remove"><img src="__STATIC__/index/images/delete_item_btn.png" alt="删除" title="删除" /></a>
+              </div>
+            </li>
+        {/volist}
+            <li>
+              <a href="{:url('index/cleancart')}" title="Checkout" class="colors-btn" style="float:left;">清空</a>
+              <a href="{:url('cart/index')}" title="Checkout" class="colors-btn">去结算</a>
+              <div class="clear"></div>
+            </li>
+           </ol>
+        </div>
+      </div>
+      <div class="search-block">
+        <form action="{:url('search/index')}" method="get">
+          <input name="name" type="text" value="{$name}" />
+          <input type="submit" value="Search" title="搜索" />
+        </form>
+        </div>
+      </section>
+    </div>
+    <h1 class="logo"><a href="{:url('index/index')}" title="Logo">
+      <img title="Logo" alt="Logo" src="__STATIC__/index/images/logo.png" />
+      </a></h1>
+    <nav id="smoothmenu1" class="ddsmoothmenu mainMenu">
+      <ul id="nav">
+        <li class="active"><a href="{:url('index/index')}" title="Home">首页</a></li>
+        {volist name="categorys" id="vo"}
+        <li class=""><a href="{:url('Search1/index',['type'=>$vo.type_name])}" title="{$vo.type_name}">{$vo.type_name}</a></li>
+        {/volist}
+      </ul>
+    </nav> 
+  </header>
+</div>
+            
             <section class="content-wrapper">
               <div class="content-container container">
                 <div class="heading-block">
@@ -18,18 +92,22 @@
                 </div>
                 <div class="new-product-block">
                   <ul class="product-grid">
-                    {volist name="books" id="vo"}
+                    {volist name="result" id="vo"}
                     <li>
                       <div class="pro-img" >
-                        <img alt="Freature Product" src="{$vo.photo}" style="height:180px;width:180px;" />
+                        {if condition="$vo.photo eq ''"}
+                        <a href="{:url('view/index',['bid'=>$vo.book_id])}"><img alt="" src="__STATIC__/index/images/default_img.png" style="height:180px;width:180px;"></a>
+                        {else /}
+                        <a href="{:url('view/index',['bid'=>$vo.book_id])}"><img alt="" src="{$vo.photo}" style="height:180px;width:180px;"></a>
+                        {/if}
                       </div>
                       <div class="pro-content">
                         <p>{$vo.name}</p>
                       </div>
                       <div class="pro-price">￥{$vo.price}</div>
                       <div class="pro-btn-block"> 
-                      <a class="add-cart left" href="#" title="Add to Cart">加入购物车</a> 
-                      <a class="add-cart right quickCart inline" href="#quick-view-container" title="Quick View">预览</a> </div>
+                       <a class="add-cart left" href="{:url('index/addcart',['bid'=>$vo.book_id])}" title="Add to Cart">加入购物车</a> 
+                      <a class="add-wishlist right" href="{:url('view/index',['bid'=>$vo.book_id])}" id="{$vo.book_id}" title="预览">预览</a> </div>
                       <div class="pro-link-block"> <a class="add-wishlist left" href="#" title="Add to wishlist"></a> <a class="add-compare right" href="#" title="Add to Compare"></a>
                         <div class="clearfix"></div>
                       </div>

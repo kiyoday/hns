@@ -2,11 +2,11 @@
 {include file="public/header" /}
 <body>
 <div class="page-container">
-	<form class="form form-horizontal form-o2o-add" id="form-o2o-add" method="post" action="">
-		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>分类名称：</label>
+	<form class="form form-horizontal form-o2o-add" id="form-o2o-add" method="post" action="{:url('admin/delete')}">
+	<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>管理员名字：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="{$category.type_name}" placeholder="" id="name" name="type_name">
+				<input type="text" class="input-text" value="" placeholder="" id="name" name="name">
 			</div>
 		</div>
 	<div class="row cl">

@@ -28,10 +28,11 @@ class Login extends Controller
     		if(!$admin){
     			$this->error('用户不存在或密码错误');
     		}else{
-    			if($admin['password']!=$data['password']){
+    			if($admin['password']!=md5($data['password'])){
     				$this->error('用户不存在或密码错误');
     			}else{
-                    session('name', $data['name']);
+                    session('aname', $data['name']);
+                    session('type', $admin['type']);
     				$this->redirect('index/index');
     			}
     		}

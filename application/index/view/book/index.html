@@ -18,12 +18,12 @@
                               <div class="block-title">建议您填写</div>
                                 <ul>
                                     <li class="question-row">
-                                    1.二手书的目录</br>
-                                    1.二手书的目录</br>
-                                    1.二手书的目录</br>
-                                    1.二手书的目录</br>
-                                    1.二手书的目录</br>
-                                    1.二手书的目录</br>
+                                    书名栏可以填写书名，作者，出版社等信息</br>
+                                    描述部分可以填写二手书籍新旧、目录等信息</br>
+                                    </br>
+                                    </br>
+                                    </br>
+                                    </br>
                                     </li>
                                 </ul>
                 			</div>
@@ -35,7 +35,7 @@
                 				<div  class="form-title">请填写下列信息</div>
                 				<ul class="form-fields">
                                     <li class="left">
-                                        <label>书名<em>*</em></label>
+                                        <label>书名<em>*</em> (请尽量详细填写)</label>
                                         <input type="text" name="name">
                                     </li>
                                     <div class="clearfix"></div>
@@ -43,17 +43,17 @@
                                         <label>类型<em>*</em></label>
                                         <select name="type">
                                         {volist name="categorys" id="vo"}
-                                        <option value="volvo">{$vo.type_name}</option>
+                                        <option value="{$vo.type_name}">{$vo.type_name}</option>
                                         {/volist}   
                                         </select>
                                     </li>
                                     <div class="clearfix"></div>
                                     <li>
-                                        <label>图片<em></em></label>
+                                        <label>图片<em>*</em></label>
                                         <input id="photo" placeholder="" name="photo"  type="file">
                                     </li>
                                     <li class="full-row">
-                                        <label>描述<em>*</em></label>
+                                        <label>描述<em></em></label>
                                         <textarea name="introduce"></textarea>
                                     </li>
                                     <li class="left">

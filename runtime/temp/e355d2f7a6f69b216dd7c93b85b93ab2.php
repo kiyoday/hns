@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\view\index.html";i:1525400372;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525346003;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525400432;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\view\index.html";i:1525883364;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525883365;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525884738;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1525881415;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -8,7 +8,7 @@
 <!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Megashop</title>
+<title>开心果二手书网</title>
 
 <!--js-->
 <script src="__STATIC__/index/js/jquery-1.8.2.min.js"></script>
@@ -54,27 +54,26 @@
   <header class="container">
     <div class="head-right">
       <ul class="top-nav">
-          <li class=""><a href="<?php echo url('center/index'); ?>" title="My Account">个人中心</a></li>
+          <li class=""><a href="<?php echo url('center/info'); ?>" title="个人中心">个人中心</a></li>
           <li class="my-wishlist"><a href="<?php echo url('cart/index'); ?>" title="购物车">购物车</a></li>
-          <li class="checkout"><a href="<?php echo url('order/index'); ?>" title="Checkout">我的订单</a></li>
-          <li class="contact-us"><a href="<?php echo url('advice/index'); ?>" title="Contact Us">关于我们</a></li>
+          <li class="checkout"><a href="<?php echo url('order/index'); ?>" title="我的订单">我的订单</a></li>
           <?php if(\think\Request::instance()->session('name') != ''): ?>
           <li class="log-in"><a href="<?php echo url('user/login'); ?>" title="Log In"><?php echo \think\Request::instance()->session('name'); ?></a></li>
-          <li class="log-in"><a href="<?php echo url('user/logout'); ?>" title="Log out">注销</a></li>
+          <li class="log-in"><a href="<?php echo url('user/logout'); ?>" title="注销">注销</a></li>
           <?php else: ?> 
-          <li class="log-in"><a href="<?php echo url('user/login'); ?>" title="Log In">登录/注册</a></li>
+          <li class="log-in"><a href="<?php echo url('user/login'); ?>" title="登录/注册">登录/注册</a></li>
           <?php endif; ?>
       </ul>
       <ul class="currencyBox">
             <li id="header_currancy" class="currency"> <a class="mainCurrency" href="#">我要卖书</a>
-          <div id="currancyBox" class="currency_detial"> <a href="<?php echo url('book/index'); ?>">卖书登记</a> <a href="#">卖书信息</a> <a href="#">提现</a> 
+          <div id="currancyBox" class="currency_detial"> <a href="<?php echo url('book/index'); ?>">卖书登记</a> <a href="<?php echo url('booksell/index'); ?>">卖书信息</a>
           </div>
         </li>
       </ul>
       <section class="header-bottom">
         <div class="cart-block">
          <ul>
-          <li><a href="cart.html" title="Cart"><img title="Item" alt="Item" src="__STATIC__/index/images/item_icon.png" /></a></li>
+          <li><a href="<?php echo url('Cart/index'); ?>" title="Cart"><img title="Item" alt="Item" src="__STATIC__/index/images/item_icon.png" /></a></li>
           <li>购物车</li>
          </ul>
         <div id="minicart" class="remain_cart" style="display: none;">
@@ -104,7 +103,7 @@
       </div>
       <div class="search-block">
         <form action="<?php echo url('search/index'); ?>" method="get">
-          <input name="keywords" type="text" value="" />
+          <input name="name" type="text" value="" />
           <input type="submit" value="Search" title="搜索" />
         </form>
         </div>
@@ -117,7 +116,7 @@
       <ul id="nav">
         <li class="active"><a href="<?php echo url('index/index'); ?>" title="Home">首页</a></li>
         <?php if(is_array($categorys) || $categorys instanceof \think\Collection || $categorys instanceof \think\Paginator): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-        <li class=""><a href="blog.html" title="<?php echo $vo['type_name']; ?>"><?php echo $vo['type_name']; ?></a></li>
+        <li class=""><a href="<?php echo url('Search1/index',['type'=>$vo['type_name']]); ?>" title="<?php echo $vo['type_name']; ?>"><?php echo $vo['type_name']; ?></a></li>
         <?php endforeach; endif; else: echo "" ;endif; ?>
       </ul>
     </nav> 
@@ -131,7 +130,7 @@
 	<div class="content-container container">
 		<div class="breadcrum-container">
 			<ul>
-				<li><a href="#" title="Home">Home</a></li>
+				<li><a href="<?php echo url('index/index'); ?>" title="Home">首页</a></li>
 				<li>当前商品</li>
 			</ul>
 		</div>
@@ -142,6 +141,7 @@
 					<div class="product-img-box">
 						<p class="product-image-zoom">
 							<img src="<?php echo $bid['photo']; ?>" style="height:300px;width:300px;" alt="Image" title="Image" />
+						</p>
 					</div>
 					<div class="product-shop">
 						<h3 class="product-name"><?php echo $bid['name']; ?></h3>
@@ -149,21 +149,22 @@
                 		    <span class="price">￥<?php echo $bid['price']; ?></span>
 							<span class="availability">书籍分类：<?php echo $bid['type']; ?></span>
 				        </div>
+				        <div class="model-block">
+							<p>
+								<span style="color:#35C2D8;">发布时间：</span><span><?php echo $bid['create_time']; ?> </span>
+							</p>
+							<p>
+								<span style="color:#35C2D8;">卖家：</span><span> <?php echo $uid['name']; ?></span>
+							</p>
+							<p>
+								<span style="color:#35C2D8;">联系电话：</span><span><?php echo $uid['phone']; ?></span>
+							</p>
+						</div>
 				        <div class="first-review">
-							<h5>二手书介绍：</h5>
-							<textarea style= "background:transparent;border-style:none; " rows="8" cols="80"> <?php echo $bid['introduce']; ?></textarea>
+							<h5 style="color:#35C2D8;">二手书介绍：</h5>
+							<textarea style= "background:transparent;border-style:none; " rows="12" cols="70"> <?php echo $bid['introduce']; ?></textarea>
 						</div>
-						<div class="model-block">
-							<p>
-								<span>发布时间：<?php echo $bid['create_time']; ?> </span>20
-							</p>
-							<p>
-								<span>联系电话： </span>20
-							</p>
-							<p>
-								<span>卖家： </span>HTC
-							</p>
-						</div>
+						
 						<div class="add-to-cart-box">
 							<a class="form-button" href="<?php echo url('index/addcart',['bid'=>$bid['book_id']]); ?>" title="Add to Cart"><span>加入购物车</span></a>
 						</div>
@@ -172,86 +173,90 @@
 			</div>
 		</div>
 		<section  class="product-collateral">
-			<h5>评论：</h5>
-			<ul class="tab-block">
-				<li><a href="#pro-review" title="Reviews">Reviews</a></li>
-				<li><a href="#pro-tags" title="Product Tags">Product Tags</a></li>
-				<li class="video-box"><a href="#pro-video" title="Video Box">Video Box</a></li>
-			</ul>
+			<h5 style="color:#35C2D8;">留言板：</h5>
+        	<textarea style= "background:transparent;border-style:none; " rows="2" cols="130"></textarea>
+			<?php if(is_array($comment) || $comment instanceof \think\Collection || $comment instanceof \think\Paginator): $i = 0; $__LIST__ = $comment;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
             <div id="pro-review" class="pro-detail commonContent">
-				<p>
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
+            
+            <li><span style="align-content: stretch; color:#35C2D8;"><?php echo $i; ?>楼-<?php echo $vo['name']; ?></span><span>（<?php echo $vo['addtime']; ?>）:</span></li>
+				<p><span class="">
+					<?php echo $vo['text']; ?>
+					</span>
 				</p>
 			</div>
-            <div id="pro-tags" class="pro-detail commonContent">
-				<p>
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-				</p>
-			</div>
-            <div id="pro-video" class="pro-detail commonContent">
-				<p>
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
-				</p>
-			</div>
-		</section>
+			<div style="color:#D1D1D1" >——————————————————————————————————————————————————————————————————————————————</div>
+           <?php endforeach; endif; else: echo "" ;endif; ?>
+         </section>
+         
+         
+		<div class="search-block">
+        <form action="<?php echo url('view/savecomment',['bid'=>$bid['book_id']]); ?>" method="get">
+        <span style="float:left;"><h6>我要留言：</h6> </span>
+        <div class="clearfix"></div>
+			<textarea style="float:left;" class="" name="text" type="text" value="" rows="10" cols="130"></textarea>
+         <div class="clearfix"></div>
+         
+          <button style="float:left;" type="submit" class="form-button" title="addcomment">添加留言</button>
+        </form>
+        </div>
+        <div class="clearfix"></div>
+        <div style="color:#D1D1D1" >————————————————————————————————————————————————————————————————————————</div>
+		
 		<div class="clearfix"></div>
+		</div>
+		</section>
 	</div>
-</section>
-</div>
            <!--Footer Block-->  
             <!--Footer Block-->
             <section class="footer-wrapper">
               <footer class="container">
                 <div class="link-block">
                   <ul>
-                    <li class="link-title"><a href="about_us.html" title="ABOUT US">ABOUT US</a></li>
-                    <li><a href="about_us.html" title="About Us">About Us</a></li>
-                    <li><a href="#" title="Customer Service">Customer Service</a></li>
-                    <li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
+                    <li class="link-title"><a href="#" title="ABOUT US">关于我们</a></li>
+                    <li><a href="#" title="About Us">关于我们</a></li>
+                    <li><a href="#" title="Customer Service">客户服务</a></li>
+                    <li><a href="#" title="Privacy Policy">隐私政策</a></li>
                   </ul>
                   <ul>
-                    <li class="link-title"><a href="#" title="CUSTOMER SERVICES">CUSTOMER SERVICES</a></li>
-                    <li><a href="#" title="Shipping & Returns">Shipping & Returns</a></li>
-                    <li><a href="#" title="Secure Shopping">Secure Shopping</a></li>
-                    <li><a href="contact_us.html" title="Contact Us">Contact Us</a></li>
+                    <li class="link-title"><a href="#" title="CUSTOMER SERVICES">客户服务</a></li>
+                    <li><a href="#" title="Shipping & Returns">购物</a></li>
+                    <li><a href="#" title="Secure Shopping">购物安全</a></li>
+                    <li><a href="#" title="Contact Us">联系我们</a></li>
                   </ul>
                   <ul>
-                    <li class="link-title"><a href="#" title="TERMS & CONDITIONS">TERMS & CONDITIONS</a></li>
-                    <li><a href="#" title="Press Room">Press Room</a></li>
-                    <li><a href="#" title="Help">Help</a></li>
-                    <li><a href="#" title="Terms & Conditions">Terms & Conditions</a></li>
+                    <li class="link-title"><a href="#" title="TERMS & CONDITIONS">加入我们</a></li>
+                    <li><a href="#" title="Press Room">团队介绍</a></li>
+                    <li><a href="#" title="Help">帮助</a></li>
+                    <li><a href="#" title="Terms & Conditions">团队状况</a></li>
                   </ul>
                   <ul>
-                    <li class="link-title"><a href="#" title="ABOUTUS">ABOUT US</a></li>
-                    <li class="aboutus-block">Lorem ipsum dolor sit amet,
-                      consectetur adipiscing elit. Vivamus sit
-                      amet ligula lectus, a mollis diam. Nulla
-                      porttitor pulvinar elit... <a href="about_us.html" title="read more">read more</a> </li>
+                    <li class="link-title"><a href="#" title="ABOUTUS">关于我们</a></li>
+                    <li class="aboutus-block">开心果二手书交易平台,
+                      是一个基于ThinkPHP5.0开发的交易平台... <a href="about_us.html" title="read more">更多</a> </li>
                   </ul>
                   <ul class="stay-connected-blcok">
-                    <li class="link-title"><a href="#" title="STAY CONNECTED...">STAY CONNECTED...</a></li>
+                    <li class="link-title"><a href="#" title="STAY CONNECTED...">分享：</a></li>
                     <li>
                          <ul class="social-links">
-                            <li><a data-tooltip="Like us on facebook" href="#"><img alt="facebook" src="images/facebook.png"></a></li>
-                            <li><a data-tooltip="Subscribe to RSS feed" href="#"><img alt="RSS" src="images/rss.png"></a></li>
-                            <li><a data-tooltip="Follow us on twitter" href="#"><img alt="twitter" src="images/twitter.png"></a></li>
-                            <li><a data-tooltip="Follow us on Dribbble" href="#"><img alt="dribbble" src="images/dribbble.png"></a></li>
-                            <li><a data-tooltip="Follow us on Youtube" href="#"><img alt="youtube" src="images/youtube.png"></a></li>
-                            <li><a data-tooltip="Follow us on skype" href="#"><img alt="skype" src="images/skype.png"></a></li>
+                            <li><a data-tooltip="Like us on facebook" href="#"><img alt="facebook" src="__STATIC__/index/images/facebook.png"></a></li>
+                            <li><a data-tooltip="Subscribe to RSS feed" href="#"><img alt="RSS" src="__STATIC__/index/images/rss.png"></a></li>
+                            <li><a data-tooltip="Follow us on twitter" href="#"><img alt="twitter" src="__STATIC__/index/images/twitter.png"></a></li>
+                            <li><a data-tooltip="Follow us on Dribbble" href="#"><img alt="dribbble" src="__STATIC__/index/images/dribbble.png"></a></li>
+                            <li><a data-tooltip="Follow us on Youtube" href="#"><img alt="youtube" src="__STATIC__/index/images/youtube.png"></a></li>
+                            <li><a data-tooltip="Follow us on skype" href="#"><img alt="skype" src="__STATIC__/index/images/skype.png"></a></li>
                          </ul>
-                         <div class="payment-block"><img src="images/payment.png" alt="payment"></div>
+                         <div class="payment-block"><img src="__STATIC__/index/images/payment.png" alt="payment"></div>
                     </li>
                   </ul>
                 </div>
                 <div class="footer-bottom-block">
                   <ul class="bottom-links">
-                    <li><a href="index-2.html" title="Home">HOME</a></li>
-                    <li><a href="#" title="Pages">PAGES</a></li>
-                    <li><a href="about_us.html" title="About">ABOUT</a></li>
-                    <li><a href="contact_us.html" title="Contact">CONTACT</a></li>
+                    <li><a href="#" title="Home">首页</a></li>
+                    <li><a href="#" title="Pages">页面</a></li>
+                    <li><a href="#" title="About">关于</a></li>
+                    <li><a href="#" title="Contact">联系</a></li>
                   </ul>
-                  <p class="copyright-block">© 2012 Magento Demo Store, All Rights Reserved.Collect from <a href="http://www.cssmoban.com/" title="网站模板" target="_blank">开心果</a></p>
+                  <p class="copyright-block">© 2018 二手书交易平台,  from <a href="#" title="开心果" target="_blank">开心果</a></p>
                 </div>
               </footer>
             </section>

@@ -39,6 +39,7 @@ class Category extends Controller
             }
         }
         $type=db('category')->find($tid);
+		//print_R($type);
         $this->assign('category',$type);
         return $this->fetch();    
     }

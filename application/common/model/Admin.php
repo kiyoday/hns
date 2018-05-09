@@ -12,18 +12,33 @@ class Admin extends Model
 		return $this->save($data);
 	}
 
-	public function addadmin($data){
+	public function addAdmin($data){
+		
+		
 		if(empty($data)|| !is_array($data)){
 			return false;
 		}
+		
+		$data['create_time'] = time();
+		//print_r($data);exit();
+		
 		if($data['password']){
 			$data['password']=md5($data['password']);
 		}
 		return $this->save($data);
 	}
 
-		public function getadmin()
+	public function getadmin()
     {
-        return $this->paginate(10);
+        $data=[
+		    
+		];
+		$order=[
+			
+		];
+		
+        return $this->where($data)
+			->order($order)
+			->paginate(5);
     }
 }

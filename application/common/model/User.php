@@ -15,6 +15,28 @@ class User extends Model
 
 	public function getuser()
     {
-        return $this->paginate(10);
+        $data=[
+		    
+		];
+		$order=[
+			'id'=>'desc',
+		];
+		
+        return $this->where($data)
+			->order($order)
+			->paginate(5);
     }
+	public function getUserByEmail($email){
+		$data['email']=$email;
+		//dump($data);die;
+		$order=[
+		     
+		];
+       $result=$this->where($data)
+			->order($order)
+			->select();
+		//$sql=$this->getLastSql();
+		//print_r($sql);die;
+		return $result;
+	}
 }

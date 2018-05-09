@@ -6,14 +6,31 @@ class Book extends Controller
 {
     public function _initialize()
     {
-        $this->obj = model('book');
+        $this->obj = model('Book');
     }
 
-    public function index()
-    {   
-        $books = $this->obj->getbook();
+    public function index(){ 
+		$data=input('get.');
+		//dump($data);die;
+		$sdata=$result=[];
+		if(!empty($data['datemin']) && !empty($data['datemax']) && strtotime($data['datemax']) > strtotime($data['datemin'])  ){
+			$sdata['create_time']=[
+				['gt',strtotime($data['datemin'])],
+				['lt',strtotime($data['datemax'])],
+			];
+		}
+		if(!empty($data['name'])){
+			$sdata['name']=['like','%'.$data['name'].'%'];
+		}
+		//dump($sdata);die;
+        $result = $this->obj->getBookByCondition($sdata);
+        //dump($result);die;
         return $this->fetch('',[
-            'books'=>$books,
+
+			'result'=>$result,
+			'datemin'=>empty($data['datemin'])? '' : $data['datemin'],
+			'datemax'=>empty($data['datemax'])? '' : $data['datemax'],
+			'name'=>empty($data['name'])? '' : $data['name'],
         ]);
     }
 
@@ -63,7 +80,7 @@ class Book extends Controller
         return $this->fetch();
     }
 
-    public function save()
+    /*public function save()
     {
         //print_r(input('post.'));
         //print_r(request()->post());
@@ -81,7 +98,7 @@ class Book extends Controller
         {
             $this->error('添加失败');
         }
-    }
+    }*/
 
     public function update($data) {
         $res =  $this->obj->save($data, ['id' => intval($data['id'])]);
@@ -91,7 +108,27 @@ class Book extends Controller
             $this->error('更新失败');
         }
     }
-
+     //修改状态
+	public function status($id,$status){
+		
+		//dump($id);die;
+		$data=array(
+		   'id'=>$id,
+			'status'=>$status,
+		);
+		//dump($data);die;
+		$validate=validate('Category');
+		if(!$validate->scene('status')->check($data)){
+        	$this->error($validate->getError());
+        }
+		$res = $this->obj->save(['status'=>$data['status']],['book_id'=>$data['id']]);
+		if($res){
+			$this->success('状态更新成功');
+		}else{
+			$this->error('状态更新失败');
+		}
+		
+	}
     
 
 }

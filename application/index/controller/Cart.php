@@ -12,6 +12,11 @@ class Cart extends Controller
     
     public function index()
     {
+		$username=session('name');
+		$userid=session('uid');
+		if(!$username || !$userid){
+			return redirect(url('user/login'));
+		}else{
         $categorys = $this->objc->getcategory();
         $books = $this->obj1->indexgetbook();
         $shop_cart = session('shop_cart');
@@ -19,7 +24,7 @@ class Cart extends Controller
         return $this->fetch('',[
             'categorys'=>$categorys,
             'books'=>$books,
-        ]);
+        ]);}
     }
 
     

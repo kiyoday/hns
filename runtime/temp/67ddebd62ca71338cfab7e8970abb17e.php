@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:67:"D:\xampp\htdocs\hns\public/../application/admin\view\admin\add.html";i:1525394791;s:71:"D:\xampp\htdocs\hns\public/../application/admin\view\public\header.html";i:1523271222;s:71:"D:\xampp\htdocs\hns\public/../application/admin\view\public\footer.html";i:1523271222;}*/ ?>
+=======
 <?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:67:"D:\xampp\htdocs\hns\public/../application/admin\view\admin\add.html";i:1523271222;s:71:"D:\xampp\htdocs\hns\public/../application/admin\view\public\header.html";i:1523271222;s:71:"D:\xampp\htdocs\hns\public/../application/admin\view\public\footer.html";i:1523271222;}*/ ?>
+>>>>>>> 4f28880015d34f2a3255070a94b04f91244883e5
 <!--包含头部文件-->
 <!DOCTYPE HTML>
 <html>
@@ -32,22 +36,52 @@
 </head>
 <body>
 <div class="page-container">
+<<<<<<< HEAD
+	<form class="form form-horizontal form-o2o-add" id="form-o2o-add" method="post" action="<?php echo url('admin/save'); ?>" >
+=======
 	<form class="form form-horizontal form-o2o-add" id="form-o2o-add" method="post" action="<?php echo url('admin/save'); ?>">
+>>>>>>> 4f28880015d34f2a3255070a94b04f91244883e5
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>管理员名字：</label>
 			<div class="formControls col-xs-8 col-sm-9">
 				<input type="text" class="input-text" value="" placeholder="" id="name" name="name">
 			</div>
 		</div>
+<<<<<<< HEAD
+		
+=======
+>>>>>>> 4f28880015d34f2a3255070a94b04f91244883e5
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>管理员密码：</label>
 			<div class="formControls col-xs-8 col-sm-9">
 				<input type="text" class="input-text" value="" placeholder="" id="password" name="password">
 			</div>
 		</div>
+<<<<<<< HEAD
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>管理员类型：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="" placeholder="" id="type" name="type">
+			</div>
+		</div>
+		
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">备注：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="" placeholder="" id="beizhu" name="beizhu">
+			</div>
+		</div>
+		
+	    <div class="row cl">
+			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+				<button  type="submit" class="btn btn-primary radius" ><i class="Hui-iconfont">&#xe632;</i>添加 </button>
+				
+				<!--<input  type="submit" class="btn btn-primary radius" />-->
+=======
 	<div class="row cl">
 			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
 				<button  type="submit" class="btn btn-primary radius" ><i class="Hui-iconfont">&#xe632;</i> 添加</button>
+>>>>>>> 4f28880015d34f2a3255070a94b04f91244883e5
 				
 				<button onClick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
 			</div>

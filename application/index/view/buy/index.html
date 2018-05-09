@@ -13,25 +13,26 @@
                 <!--Content Block-->
                  <section class="content-wrapper">
                   <form method="post" action="{:url('buy/save',['bid'=>$bid.book_id])}">
+                  {volist name="user" id="vo"}
                   <div class="content-container container"> 
                    <h1 class="page-title"><font color="#35C2D8">请输入买家信息</font></h1>
                    <div class="contact-form-container">
                     <ul class="form-fields">
                      <li class="left">
                       <label>收货人姓名<em></em></label>
-                      <input onkeyup="value=value.replace(/[^\u4E00-\u9FA5]/g,'')" type="text" name="name"/>
+                      <input onkeyup="value=value.replace(/[^\u4E00-\u9FA5]/g,'')" value="{$vo.name}" type="text" name="name"/>
                     </li>
                     <li class="left">
                      <label>联系电话</label>
-                     <input type="text" name="phone">
+                     <input type="text" name="phone" value="{$vo.phone}">
                     </li>
                     <li class="left">
                      <label>收货地址</label>
-                     <input type="text" name="address">
-                    </li>
+                     <input type="text" name="address" value="{$vo.address}">
                    </ul>
                  </div>
                 </div>
+                {/volist}
              <div class="firstly">
               <table class="table table-goods" cellpadding="0" cellspacing="0">
                 <tbody>
@@ -48,6 +49,7 @@
                         <div class="">
                         <a href="" target="_blank"><img src="{$bid.photo}" style="height:100px;width:100px;"></a>
                         </div>
+						</div>
                     </td>
                       <td class="font14" align="center"><span>{$bid.name}</span></td>
                       <td class="price font14" align="center" style="color:#35C2D8;"><span class="j-sumPrice" >￥{$bid.price}</span></td>

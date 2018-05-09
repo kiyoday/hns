@@ -23,12 +23,13 @@ class Admin extends Controller
     }
 
 
-    public function edit($tid)
+    public function edit($id)
     {
-        if(request()->ispost())
+		
+		if(request()->ispost())
         {
             $data=input('post.');
-            $editres=db('admin')->where('id',$tid)->update($data);
+            $editres=db('admin')->where('id',$id)->update($data);
             if($editres)
             {
                 $this->success('修改成功');
@@ -38,18 +39,18 @@ class Admin extends Controller
                 $this->error('修改失败');
             }
         }
-        $type=db('admin')->find($tid);
+        $type=db('admin')->find($id);
+		//print_R($type);exit;
         $this->assign('admin',$type);
-        return $this->fetch();    
+        return $this->fetch();
     }
-
-    public function del($tid)
-    {   
-        if(request()->ispost())
-        {   
-            $data=input('post.');
-            $delres=db('admin')->where('id',$tid)->delete();
-            if($delres)
+        /*$result=db('Admin')->where('id','=',$id)->find();
+        $this->assign('id',$result['id']);
+		return $this->fetch();*/
+	
+	public function delete($id){
+		$delres=db('admin')->where('id',$id)->delete();
+		if($delres)
             {
                 $this->success('删除成功');
             }
@@ -57,11 +58,7 @@ class Admin extends Controller
             {
                 $this->error('删除失败');
             }
-        }
-        $type=db('admin')->find($tid);
-        $this->assign('admin',$type);
-        return $this->fetch();
-    }
+	}
 
     public function save()
     {
@@ -72,8 +69,21 @@ class Admin extends Controller
         if(!$validate->scene('add')->check($data)){
         	$this->error($validate->getError());
         }
+		/*$ceshi=is_string($data['name']);
+		$ceshi1=strcmp('1234',$data['name']);
+		print_r($ceshi1);exit();
+		
+		$result=$this->obj->getAdminByName($data);
+		print_r($result);
+		exit;*/
+		$result=db('Admin')->where('name','=',$data['name'])->find();
+		if($result){
+			$this->error('该用户已经存在');
+		}else{
+			
+		
         //$data 提交给model层
-        $res = $this->obj->add($data);
+        $res = $this->obj->addAdmin($data);
         if($res){
             $this->success('save成功');
         }
@@ -81,15 +91,28 @@ class Admin extends Controller
         {
             $this->error('save失败');
         }
+		}
     }
 
-    public function update($data) {
-        $res =  $this->obj->save($data, ['id' => intval($data['id'])]);
-        if($res) {
+    public function update() {
+		
+		$data = input('post.');
+		//print_r('$data');exit();
+		dump($data);die;
+		$result=db('Admin')->where('id','=',$data['id'])->find();
+		if(!$result){
+			$this->error('不存在这个用户');
+		}else{
+         $validate = validate('admin');
+         if(!$validate->scene('update')->check($data)){
+        	$this->error($validate->getError());
+         }
+         $res =  $this->obj->save($data, ['id' => intval($data['id'])]);
+         if($res) {
             $this->success('更新成功');
-        } else {
+         } else {
             $this->error('更新失败');
-        }
+        }}
     }
 
     

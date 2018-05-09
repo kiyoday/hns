@@ -91,5 +91,31 @@ class User extends Controller
             $this->error('更新失败');
         }
     }
+<<<<<<< HEAD
+	
+	 //修改状态
+	public function status($id,$status){
+		
+		//dump($id);die;
+		$data=array(
+		   'id'=>$id,
+			'status'=>$status,
+		);
+		//dump($data);die;
+		$validate=validate('user');
+		if(!$validate->scene('status')->check($data)){
+        	$this->error($validate->getError());
+        }
+		$res = $this->obj->save(['status'=>$data['status']],['id'=>$data['id']]);
+		if($res){
+			$this->success('状态更新成功');
+		}else{
+			$this->error('状态更新失败');
+		}
+		
+	}
+
+=======
+>>>>>>> 4f28880015d34f2a3255070a94b04f91244883e5
     
 }

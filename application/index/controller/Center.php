@@ -17,6 +17,12 @@ class Center extends Controller
 
     public function index()
     {
+
+		$username=session('name');
+		$userid=session('uid');
+		if(!$username || !$userid){
+			return redirect(url('index/index'));
+		}else{
         $categorys = $this->objc->getcategory();
         $shop_cart = session('shop_cart');
         $this->assign('shop_cart', $shop_cart);
@@ -25,7 +31,44 @@ class Center extends Controller
         return $this->fetch('',[
             'user'=> $users ,
             'categorys'=>$categorys,
-        ]);
+
+        ]);}
+	}
+
+    public function info()
+    {
+        $username=session('name');
+        $userid=session('uid');
+        if(!$username || !$userid){
+            return redirect(url('index/index'));
+        }else{
+        $categorys = $this->objc->getcategory();
+        $shop_cart = session('shop_cart');
+        $this->assign('shop_cart', $shop_cart);
+        $uid = session('uid'); 
+        $users = db('user')->where('id',$uid)->find();
+        return $this->fetch('',[
+            'user'=> $users ,
+            'categorys'=>$categorys,
+        ]);}
+    }
+
+    public function changepwd()
+    {
+        $username=session('name');
+        $userid=session('uid');
+        if(!$username || !$userid){
+            return redirect(url('index/index'));
+        }else{
+        $categorys = $this->objc->getcategory();
+        $shop_cart = session('shop_cart');
+        $this->assign('shop_cart', $shop_cart);
+        $uid = session('uid'); 
+        $users = db('user')->where('id',$uid)->find();
+        return $this->fetch('',[
+            'user'=> $users ,
+            'categorys'=>$categorys,
+        ]);}
     }
 
     public function save()

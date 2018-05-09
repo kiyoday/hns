@@ -9,7 +9,11 @@ class Book extends Controller
         $this->obj1 = model('book');
     }
     public function index()
-    {
+    {   $username=session('name');
+        $userid=session('uid');
+        if(!$username || !$userid){
+            return redirect(url('user/login'));
+        }else{
         $categorys = $this->objc->getcategory();
         $books = $this->obj1->getbook();
         $shop_cart = session('shop_cart');
@@ -19,7 +23,9 @@ class Book extends Controller
             'books'=>$books,
 
         ]);
+        }
     }
+
     public function save(){
         //dump(input('post.'));die;
         if(!session('uid')){
@@ -38,18 +44,18 @@ class Book extends Controller
             $data['photo']= $photo1;  
             }
         }
-            $validate = validate('Book');
-            if(!$validate->scene('add')->check($data)){
-                $this->error($validate->getError());
-            }
-            $res = $this->obj1->add($data);
-            if($res){
-                $this->success('上传成功','index/index');
-            }
-            else 
-            {
-                $this->error('上传失败');
-            }
+        $validate = validate('Book');
+        if(!$validate->scene('add')->check($data)){
+            $this->error($validate->getError());
+        }
+        $res = $this->obj1->add($data);
+        if($res){
+            $this->success('上传成功','index/index');
+        }
+        else 
+        {
+            $this->error('上传失败');
+        }
         }
         return $this->fetch();
     }

@@ -1,0 +1,55 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+{include file="public/head"}
+<body>
+	<div class="mainContainer sixteen container">
+            <!--Header Block-->
+            {include file="public/header"}
+            <!--Banner Block-->
+            <!--Content Block-->
+            <section class="content-wrapper">
+              <div class="content-container container">
+                <div class="heading-block">
+                  <h1>{$type}</h1>
+                </div>
+                <div class="new-product-block">
+                  <ul class="product-grid">
+                    {volist name="books" id="vo"}
+                    <li>
+                      <div class="pro-img" >
+                        {if condition="$vo.photo eq ''"}
+                        <a href="{:url('view/index',['bid'=>$vo.book_id])}"><img alt="" src="__STATIC__/index/images/default_img.png" style="height:180px;width:180px;"></a>
+                        {else /}
+                        <a href="{:url('view/index',['bid'=>$vo.book_id])}"><img alt="" src="{$vo.photo}" style="height:180px;width:180px;"></a>
+                        {/if}
+                      </div>
+                      <div class="pro-content">
+                        <p style="max-width:225px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;" title="{$vo.name}">{$vo.name}</p>
+                      </div>
+                      <div class="pro-price">￥{$vo.price}</div>
+                      <div class="pro-btn-block"> 
+                      <a class="add-cart left" href="{:url('index/addcart',['bid'=>$vo.book_id])}" title="Add to Cart">加入购物车</a> 
+                      <a class="add-wishlist right" href="{:url('view/index',['bid'=>$vo.book_id])}" id="{$vo.book_id}" title="预览">预览</a> </div>
+                      <div class="pro-link-block"> <a class="add-wishlist left" href="#" title="Add to wishlist"></a> <a class="add-compare right" href="#" title="Add to Compare"></a>
+                        <div class="clearfix"></div>
+                      </div>
+                    </li>
+                     {/volist}
+                     
+                  </ul>
+                  <div class="cl pd-5 bg-1 bk-gray mt-20 pagn-1" style="float:center;font-size:20px;">{$books->render()}</div>
+                </div>
+              </div>
+            </section>
+    </div> 
+    <!--Quick view Block  window.onload = function(){-->    
+           <!--Footer Block-->  
+           {include file="public/footer"}
+           
+</body>
+</html>

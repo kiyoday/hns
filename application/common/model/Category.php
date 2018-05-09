@@ -15,6 +15,8 @@ class Category extends Model
 
 	public function getcategory()
     {
-        return $this->paginate(10);
+        return $this->paginate();
+        //分页、显示10个
     }
+
 }

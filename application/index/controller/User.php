@@ -13,6 +13,12 @@ class User extends Controller
 
     public function login()
     {   
+		$username=session('name');
+		$userid=session('uid');
+		if($username && $userid){
+			return redirect(url('index/index'));
+		}else{
+		
         $users = $this->obj->getuser();
         $categorys = $this->objc->getcategory();
         $books = $this->obj1->indexgetbook();
@@ -23,7 +29,7 @@ class User extends Controller
             'categorys'=>$categorys,
             'books'=>$books,
             ]); 
-    }  
+    } } 
 
     public function index()
     {   
@@ -31,7 +37,7 @@ class User extends Controller
         $categorys = $this->objc->getcategory();
         $books = $this->obj1->indexgetbook();
         $shop_cart = session('shop_cart');
-        $this->assign('shop_cart', $shop_cart);
+        $this->assign('shop_cart', $shop_cart);  
         return $this->fetch('',[
             'users'=>$users,
             'categorys'=>$categorys,
@@ -42,7 +48,7 @@ class User extends Controller
     public function logincheck()
     {   
         if(request()->isPost()){
-            $this->check(input('code'));
+            $this->check(input('code')); 
             $data = input('post.');
             if(request()->ispost())
             {
@@ -54,9 +60,16 @@ class User extends Controller
                 if($userl['password']!=$data['password']){
                     $this->error('帐号或密码错误','user/login');
                 }else{
+                if($userl['status']==1){
+                    $this->error('用户被冻结，请联系管理员','user/login');
+                }else{
                     session('name', $userl['name']);
                     session('uid', $userl['id']);
+					session('email',$userl['email']);
+					/*session('name', $userl['name'],'index');
+                    session('uid', $userl['id'],'index');*/
                     $this->redirect('index/index');
+                }
                 }
             }
         }

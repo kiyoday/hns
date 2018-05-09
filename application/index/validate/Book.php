@@ -5,7 +5,9 @@ use think\Validate;
 class Book extends Validate
 {
 	protected $rule = [
-		['name','require','name必须传递'],
+		['name','require','请填写书名信息'],
+		['type','require','请填写书籍类型信息'],
+		['photo','require','请上传图书照片'],
 		['price','number','请输入正确的价格'],
 	];
 

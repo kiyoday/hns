@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:69:"D:\xampp\htdocs\hns\public/../application/admin\view\admin\index.html";i:1523271222;s:71:"D:\xampp\htdocs\hns\public/../application/admin\view\public\header.html";i:1523271222;s:71:"D:\xampp\htdocs\hns\public/../application/admin\view\public\footer.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:69:"D:\xampp\htdocs\hns\public/../application/admin\view\admin\index.html";i:1525409684;s:71:"D:\xampp\htdocs\hns\public/../application/admin\view\public\header.html";i:1523271222;s:71:"D:\xampp\htdocs\hns\public/../application/admin\view\public\footer.html";i:1523271222;}*/ ?>
 <!--包含头部文件-->
 <!DOCTYPE HTML>
 <html>
@@ -42,9 +42,9 @@
 					<th width="40"><input name="" type="checkbox" value=""></th>
 					<th width="80">ID</th>
 					<th width="100">名字</th>
-					<th width="30">类型</th>
+					<th width="30">管理员类型</th>
 					<th width="150">新增时间</th>
-					<th width="60"></th>
+					<th width="150">备注</th>
 					<th width="100">操作</th>
 				</tr>
 			</thead>
@@ -56,8 +56,10 @@
 					<td><?php echo $vo['name']; ?></td>
 					<td class="text-c"><?php echo $vo['type']; ?></td>
 					<td><?php echo $vo['create_time']; ?></td>
-					<td class="td-status"><a href="" title="点击修改状态"></a></td>
-					<td class="td-manage"><a style="text-decoration:none" class="ml-5" onClick="o2o_s_edit()"  href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5" onClick="o2o_s_edit()" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+					<td><?php echo $vo['beizhu']; ?></td>
+					<!--<td class="td-manage"><a style="text-decoration:none" class="ml-5" onClick="o2o_s_edit('编辑管理员','<?php echo url('admin/edit'); ?>','','300')"  href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5" onClick="o2o_del('<?php echo url('admin/delete',['id'=>$vo['id']]); ?>')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>-->
+					
+					<td class="td-manage"><a style="text-decoration:none" class="ml-5" onClick="o2o_s_edit('编辑管理员','<?php echo url('admin/edit',['id'=>$vo['id']]); ?>','','300')"  href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5" onClick="o2o_del('<?php echo url('admin/delete',['id'=>$vo['id']]); ?>')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
 				</tr>
 				<?php endforeach; endif; else: echo "" ;endif; ?>
 			</tbody>

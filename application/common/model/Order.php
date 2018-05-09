@@ -11,6 +11,7 @@ class Order extends Model
 		$nowtime = time();
         $dtime = date("Y-m-d H:i:s", $nowtime);
         $data['ocreate_time'] = $dtime;
+        $data['orderstatus'] = 1;
 		return $this->save($data);
 	}
 
@@ -20,6 +21,34 @@ class Order extends Model
 		}
 		return $this->save($data);
 	}
+
+
+	public function getOrderByCondition($data=[])
+    {
+		$datas=[];
+		$datas=$data;
+		
+		$order=[
+			'order_id'=>'desc',
+		];
+		//dump($data);die;
+		
+       $result=$this->where($datas)
+			->order($order)
+			->select();
+		return $result;
+        
+		/*$data=[
+		    
+		];
+		$order=[
+			'order_id'=>'desc',
+		];
+		
+        return $this->where($data)
+			->order($order)
+			->paginate(5);*/
+    }
 
     public function getorder()
     {

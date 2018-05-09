@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:69:"D:\xampp\htdocs\hns\public/../application/admin\view\index\index.html";i:1523271222;s:71:"D:\xampp\htdocs\hns\public/../application/admin\view\public\header.html";i:1523271222;s:69:"D:\xampp\htdocs\hns\public/../application/admin\view\public\menu.html";i:1523271222;s:71:"D:\xampp\htdocs\hns\public/../application/admin\view\public\footer.html";i:1523271222;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:69:"D:\xampp\htdocs\hns\public/../application/admin\view\index\index.html";i:1525875531;s:71:"D:\xampp\htdocs\hns\public/../application/admin\view\public\header.html";i:1523271222;s:69:"D:\xampp\htdocs\hns\public/../application/admin\view\public\menu.html";i:1525879284;s:71:"D:\xampp\htdocs\hns\public/../application/admin\view\public\footer.html";i:1523271222;}*/ ?>
 ﻿<!--包含头部文件-->
 <!DOCTYPE HTML>
 <html>
@@ -37,10 +37,15 @@
 			
 			<nav id="Hui-userbar" class="nav navbar-nav navbar-userbar hidden-xs">
 				<ul class="cl">
-					<li>管理员</li>
-					<li class="dropDown dropDown_hover"> <a href="#" class="dropDown_A"><?php echo \think\Request::instance()->session('name'); ?><i class="Hui-iconfont">&#xe6d5;</i></a>
+					<?php if(\think\Request::instance()->session('type') == '0'): ?>
+					<li>超级管理员</li>
+					<?php else: if(\think\Request::instance()->session('type') == '1'): ?>
+					<li>书籍管理员</li>
+					<?php else: if(\think\Request::instance()->session('type') == '2'): ?>
+					<li>意见管理员</li>
+					<?php endif; endif; endif; ?>
+					<li class="dropDown dropDown_hover"> <a href="#" class="dropDown_A"><?php echo \think\Request::instance()->session('aname'); ?><i class="Hui-iconfont">&#xe6d5;</i></a>
 						<ul class="dropDown-menu menu radius box-shadow">
-							<li><a href="#">个人信息</a></li>
 							<li><a href="<?php echo url('login/index'); ?>">切换账户</a></li>
 							<li><a href="<?php echo url('login/index'); ?>">退出</a></li>
 						</ul>
@@ -65,11 +70,12 @@
 <aside class="Hui-aside">
 	<input runat="server" id="divScrollValue" type="hidden" value="" />
 	<div class="menu_dropdown bk_2">
+		<?php if(\think\Request::instance()->session('type') == '0'): ?>
 		<dl id="menu-article">
-			<dt><i class="Hui-iconfont">&#xe616;</i> 评论管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dt><i class="Hui-iconfont">&#xe616;</i> 意见管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a _href="<?php echo url('advice/index'); ?>" data-title="评论列表" href="javascript:void(0)">评论列表</a></li>
+					<li><a _href="<?php echo url('advice/index'); ?>" data-title="意见列表" href="javascript:void(0)">意见列表</a></li>
 				</ul>
 			</dd>
 		</dl>
@@ -85,19 +91,9 @@
 			<dt><i class="Hui-iconfont">&#xe620;</i> 书籍管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a _href="<?php echo url('book/index'); ?>" data-title="书籍列表" href="javascript:void(0)">书籍列表</a></li>
-					<li><a _href="<?php echo url('book/delist'); ?>" data-title="审核完成书籍" href="javascript:void(0)">删除的订单</a></li>
-					<li><a _href="<?php echo url('book/delist'); ?>" data-title="审核未通过书籍" href="javascript:void(0)">删除的订单</a></li>
-				</ul>
-			</dd>
-		</dl>
-		<dl id="menu-product">
-			<dt><i class="Hui-iconfont">&#xe620;</i> 推荐位管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
-			<dd>
-				<ul>
-					<li><a _href="" data-title="添加推荐位内容" href="javascript:void(0)">添加推荐位内容</a></li>
-					<li><a _href="" data-title="推荐位列表" href="javascript:void(0)">推荐位列表</a></li>
-					
+					<li><a _href="<?php echo url('book/index'); ?>" data-title="书籍列表" href="javascript:void(0)">待审书籍列表</a></li>
+					<li><a _href="<?php echo url('acbook/index'); ?>" data-title="审核完成书籍" href="javascript:void(0)">审核通过的书</a></li>
+					<li><a _href="<?php echo url('adbook/index'); ?>" data-title="交易完成的书籍" href="javascript:void(0)">完成交易的书</a></li>
 				</ul>
 			</dd>
 		</dl>
@@ -106,12 +102,12 @@
 			<dd>
 				<ul>
 					<li><a _href="<?php echo url('order/index'); ?>" data-title="订单列表" href="javascript:void(0)">订单列表</a></li>
-					<li><a _href="<?php echo url('order/delist'); ?>" data-title="删除的订单" href="javascript:void(0)">删除的订单</a></li>
+					<!--<li><a _href="<?php echo url('order/delist'); ?>" data-title="删除的订单" href="javascript:void(0)">删除的订单</a></li>-->
 					
 				</ul>
 			</dd>
 		</dl>
-				<dl id="menu-member">
+		<dl id="menu-member">
 			<dt><i class="Hui-iconfont">&#xe60d;</i> 用户管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
@@ -126,8 +122,28 @@
 					<li><a _href="<?php echo url('admin/index'); ?>" data-title="会员列表" href="javascript:;">管理员列表</a></li>
 				</ul>
 			</dd>
+		</dl>	
+		<?php else: if(\think\Request::instance()->session('type') == '1'): ?>
+		<dl id="menu-product">
+			<dt><i class="Hui-iconfont">&#xe620;</i> 书籍管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a _href="<?php echo url('book/index'); ?>" data-title="书籍列表" href="javascript:void(0)">待审书籍列表</a></li>
+					<li><a _href="<?php echo url('acbook/index'); ?>" data-title="审核完成书籍" href="javascript:void(0)">审核通过的书</a></li>
+					<li><a _href="<?php echo url('adbook/index'); ?>" data-title="交易完成的书籍" href="javascript:void(0)">完成交易的书</a></li>
+				</ul>
+			</dd>
 		</dl>
-		
+		<?php else: if(\think\Request::instance()->session('type') == '2'): ?>
+		<dl id="menu-article">
+			<dt><i class="Hui-iconfont">&#xe616;</i> 意见管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a _href="<?php echo url('advice/index'); ?>" data-title="意见列表" href="javascript:void(0)">意见列表</a></li>
+				</ul>
+			</dd>
+		</dl>
+	<?php endif; endif; endif; ?>		
 	</div>
 </aside>
 <div class="dislpayArrow hidden-xs"><a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a></div>
