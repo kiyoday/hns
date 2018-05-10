@@ -37,18 +37,22 @@
                   </ul>
                 </div>
                 <div class="feature-block">
+                  
                   <ul id="mix" class="product-grid">
+                    {volist name="bres" id="vo"}
       				      <li>
-                      <div class="pro-img"><img title="Freature Product" alt="Freature Product" src="__STATIC__/index/images/default_img(2).png" style="height:180px;width:180px;" /></div>
+                      <div class="pro-img"><img title="推荐书籍" alt="推荐书籍" src="{$vo.photo}" style="height:180px;width:180px;" /></div>
                       <div class="pro-hover-block">
-                        <h4 class="pro-name"></h4>
+                        <h4 class="pro-name">{$vo.name}</h4>
                         <div class="link-block"> 
                         <!--<a href="{:url('view/index',['bid'=>22])}" class="quickllook inline" title="Quick View">Quick View</a> -->
-                        <a href="{:url('view/index',['bid'=>22])}" class="quickproLink" title="去看一看">Product link</a></div>
-                        <div class="pro-price">￥12.8</div>
+                        <a href="{:url('view/index',['bid'=>$vo.book_id])}" class="quickproLink" title="去看一看">链接</a></div>
+                        <div class="pro-price">￥{$vo.price}</div>
                       </div>
                     </li>
+                    {/volist}
                   </ul>
+                  
                 </div>
                 <div class="heading-block">
                   <h1>当前类别</h1>

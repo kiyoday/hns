@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:69:"D:\xampp\htdocs\hns\public/../application/index\view\index\index.html";i:1525883365;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525883365;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525884738;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1525881415;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:69:"D:\xampp\htdocs\hns\public/../application/index\view\index\index.html";i:1525912543;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525883365;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525884738;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1525881415;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -152,18 +152,22 @@
                   </ul>
                 </div>
                 <div class="feature-block">
+                  
                   <ul id="mix" class="product-grid">
+                    <?php if(is_array($bres) || $bres instanceof \think\Collection || $bres instanceof \think\Paginator): $i = 0; $__LIST__ = $bres;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
       				      <li>
-                      <div class="pro-img"><img title="Freature Product" alt="Freature Product" src="__STATIC__/index/images/default_img(2).png" style="height:180px;width:180px;" /></div>
+                      <div class="pro-img"><img title="推荐书籍" alt="推荐书籍" src="<?php echo $vo['photo']; ?>" style="height:180px;width:180px;" /></div>
                       <div class="pro-hover-block">
-                        <h4 class="pro-name"></h4>
+                        <h4 class="pro-name"><?php echo $vo['name']; ?></h4>
                         <div class="link-block"> 
                         <!--<a href="<?php echo url('view/index',['bid'=>22]); ?>" class="quickllook inline" title="Quick View">Quick View</a> -->
-                        <a href="<?php echo url('view/index',['bid'=>22]); ?>" class="quickproLink" title="去看一看">Product link</a></div>
-                        <div class="pro-price">￥12.8</div>
+                        <a href="<?php echo url('view/index',['bid'=>$vo['book_id']]); ?>" class="quickproLink" title="去看一看">链接</a></div>
+                        <div class="pro-price">￥<?php echo $vo['price']; ?></div>
                       </div>
                     </li>
+                    <?php endforeach; endif; else: echo "" ;endif; ?>
                   </ul>
+                  
                 </div>
                 <div class="heading-block">
                   <h1>当前类别</h1>
