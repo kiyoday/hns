@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\user\login.html";i:1524320818;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525883365;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525884738;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1525881415;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"D:\xampp\htdocs\hns\public/../application/index\view\user\login.html";i:1524320818;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525883365;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525915440;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1525881415;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -57,6 +57,7 @@
           <li class=""><a href="<?php echo url('center/info'); ?>" title="个人中心">个人中心</a></li>
           <li class="my-wishlist"><a href="<?php echo url('cart/index'); ?>" title="购物车">购物车</a></li>
           <li class="checkout"><a href="<?php echo url('order/index'); ?>" title="我的订单">我的订单</a></li>
+          <li class="checkout"><a href="<?php echo url('advice/index'); ?>" title="意见建议">意见建议</a></li>
           <?php if(\think\Request::instance()->session('name') != ''): ?>
           <li class="log-in"><a href="<?php echo url('user/login'); ?>" title="Log In"><?php echo \think\Request::instance()->session('name'); ?></a></li>
           <li class="log-in"><a href="<?php echo url('user/logout'); ?>" title="注销">注销</a></li>

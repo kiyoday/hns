@@ -28,8 +28,13 @@ class Book extends Controller
 
     public function save(){
         //dump(input('post.'));die;
+        $userid = session('uid');
         if(!session('uid')){
             $this->error('请先登录');
+        }
+        $bres=db('user')->where('id',$userid)->find();
+        if(empty($bres['phone'])){
+            $this->error('请先完善个人信息');
         }
         $uid = session('uid');
         if(request()->isPost())

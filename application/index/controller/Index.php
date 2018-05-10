@@ -17,7 +17,7 @@ class Index extends Controller
 		//$books = $this->obj1->getBookByCategory($type);
         $shop_cart = session('shop_cart');
         $this->assign('shop_cart', $shop_cart); 
-        $bres=db('book')->where('status',1)->order('book_id desc')->limit(7)->select(); 
+        $bres=db('book')->where('status',1)->order('book_id desc')->limit(6)->select(); 
         return $this->fetch('',[
             'categorys'=>$categorys,
             'books'=>$books,

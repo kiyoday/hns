@@ -8,7 +8,8 @@ class User extends Validate
 		['name','require|chs','姓名必须填写必须|请填写真实姓名'],
 		['email','email','必须是正确的邮箱格式'],
 		['password','min:6','密码必须在6到16位之间'],
-		['phone','min:10','手机号必须正确'],
+		['phone','require|min:10','默认手机号必须填写|手机号必须正确'],
+		['address','require','默认收货地址必须填写'],
 	];
 
 	protected $scene = [

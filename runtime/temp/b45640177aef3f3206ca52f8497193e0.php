@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:71:"D:\xampp\htdocs\hns\public/../application/index\view\user\register.html";i:1525360630;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525696765;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525877626;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1525881415;}*/ ?>
-=======
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:71:"D:\xampp\htdocs\hns\public/../application/index\view\user\register.html";i:1525360630;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525346003;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525358791;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1523271222;}*/ ?>
->>>>>>> 4f28880015d34f2a3255070a94b04f91244883e5
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:71:"D:\xampp\htdocs\hns\public/../application/index\view\user\register.html";i:1525360630;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525883365;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525915440;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1525881415;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -58,17 +54,10 @@
   <header class="container">
     <div class="head-right">
       <ul class="top-nav">
-<<<<<<< HEAD
           <li class=""><a href="<?php echo url('center/info'); ?>" title="个人中心">个人中心</a></li>
           <li class="my-wishlist"><a href="<?php echo url('cart/index'); ?>" title="购物车">购物车</a></li>
           <li class="checkout"><a href="<?php echo url('order/index'); ?>" title="我的订单">我的订单</a></li>
-          <li class="contact-us"><a href="<?php echo url('advice/index'); ?>" title="关于我们">关于我们</a></li>
-=======
-          <li class=""><a href="<?php echo url('center/index'); ?>" title="My Account">个人中心</a></li>
-          <li class="my-wishlist"><a href="<?php echo url('cart/index'); ?>" title="购物车">购物车</a></li>
-          <li class="checkout"><a href="<?php echo url('order/index'); ?>" title="Checkout">我的订单</a></li>
-          <li class="contact-us"><a href="<?php echo url('advice/index'); ?>" title="Contact Us">关于我们</a></li>
->>>>>>> 4f28880015d34f2a3255070a94b04f91244883e5
+          <li class="checkout"><a href="<?php echo url('advice/index'); ?>" title="意见建议">意见建议</a></li>
           <?php if(\think\Request::instance()->session('name') != ''): ?>
           <li class="log-in"><a href="<?php echo url('user/login'); ?>" title="Log In"><?php echo \think\Request::instance()->session('name'); ?></a></li>
           <li class="log-in"><a href="<?php echo url('user/logout'); ?>" title="注销">注销</a></li>
@@ -85,11 +74,7 @@
       <section class="header-bottom">
         <div class="cart-block">
          <ul>
-<<<<<<< HEAD
           <li><a href="<?php echo url('Cart/index'); ?>" title="Cart"><img title="Item" alt="Item" src="__STATIC__/index/images/item_icon.png" /></a></li>
-=======
-          <li><a href="cart.html" title="Cart"><img title="Item" alt="Item" src="__STATIC__/index/images/item_icon.png" /></a></li>
->>>>>>> 4f28880015d34f2a3255070a94b04f91244883e5
           <li>购物车</li>
          </ul>
         <div id="minicart" class="remain_cart" style="display: none;">
@@ -99,21 +84,13 @@
         <li>
         <div class="img-block"><img src="<?php echo $vo['photo']; ?>" title="" alt="" /></div>
         <div class="detail-block">
-<<<<<<< HEAD
            <h4><a href="<?php echo url('view/index',['bid'=>$vo['book_id']]); ?>" title="<?php echo $vo['name']; ?>"><?php echo $vo['name']; ?></a></h4>
-=======
-           <h4><a href="#" title="Htc Mobile 1120"><?php echo $vo['name']; ?></a></h4>
->>>>>>> 4f28880015d34f2a3255070a94b04f91244883e5
            <p>
           <strong>￥<?php echo $vo['price']; ?></strong>
            </p>
           </div>
           <div class="edit-delete-block">
-<<<<<<< HEAD
                 <a href="<?php echo url('index/delcart',['bid'=>$vo['book_id']]); ?>" title="Remove"><img src="__STATIC__/index/images/delete_item_btn.png" alt="删除" title="删除" /></a>
-=======
-                <a href="#" title="Remove"><img src="__STATIC__/index/images/delete_item_btn.png" alt="删除" title="删除" /></a>
->>>>>>> 4f28880015d34f2a3255070a94b04f91244883e5
               </div>
             </li>
         <?php endforeach; endif; else: echo "" ;endif; ?>

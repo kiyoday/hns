@@ -5,6 +5,7 @@
           <li class=""><a href="{:url('center/info')}" title="个人中心">个人中心</a></li>
           <li class="my-wishlist"><a href="{:url('cart/index')}" title="购物车">购物车</a></li>
           <li class="checkout"><a href="{:url('order/index')}" title="我的订单">我的订单</a></li>
+          <li class="checkout"><a href="{:url('advice/index')}" title="意见建议">意见建议</a></li>
           {if condition="$Request.session.name neq ''"}
           <li class="log-in"><a href="{:url('user/login')}" title="Log In">{$Request.session.name}</a></li>
           <li class="log-in"><a href="{:url('user/logout')}" title="注销">注销</a></li>

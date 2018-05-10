@@ -46,14 +46,18 @@ class View extends Controller
     }
 
     public function savecomment($bid){
+        $username=session('name');
+        $userid=session('uid');
+        if(!$username || !$userid){
+            return redirect(url('index/index'));
+        }else{
         $data=input('get.');//获得评论的文本
         //dump($data);die;
         $validate = validate('comment');
         if(!$validate->scene('add')->check($data)){
             $this->error($validate->getError());
         }
-        
-        
+        }
         $email=session('email');//获取当前登陆的用户的email
         $userres=$this->obju->getUserByEmail($email);//获取当前登陆用户的信息
         //dump($userres[0]['id']);die;//这个是当前登陆用户id
