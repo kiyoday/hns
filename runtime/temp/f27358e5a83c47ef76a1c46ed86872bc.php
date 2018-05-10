@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:75:"D:\xampp\htdocs\hns\public/../application/index\view\booksell\delivery.html";i:1525623947;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525696765;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525877626;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1525759508;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:75:"D:\xampp\htdocs\hns\public/../application/index\view\booksell\delivery.html";i:1525623947;s:69:"D:\xampp\htdocs\hns\public/../application/index\view\public\head.html";i:1525883365;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\header.html";i:1525884738;s:71:"D:\xampp\htdocs\hns\public/../application/index\view\public\footer.html";i:1525881415;}*/ ?>
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -57,7 +57,6 @@
           <li class=""><a href="<?php echo url('center/info'); ?>" title="个人中心">个人中心</a></li>
           <li class="my-wishlist"><a href="<?php echo url('cart/index'); ?>" title="购物车">购物车</a></li>
           <li class="checkout"><a href="<?php echo url('order/index'); ?>" title="我的订单">我的订单</a></li>
-          <li class="contact-us"><a href="<?php echo url('advice/index'); ?>" title="关于我们">关于我们</a></li>
           <?php if(\think\Request::instance()->session('name') != ''): ?>
           <li class="log-in"><a href="<?php echo url('user/login'); ?>" title="Log In"><?php echo \think\Request::instance()->session('name'); ?></a></li>
           <li class="log-in"><a href="<?php echo url('user/logout'); ?>" title="注销">注销</a></li>
@@ -193,22 +192,22 @@
               <footer class="container">
                 <div class="link-block">
                   <ul>
-                    <li class="link-title"><a href="about_us.html" title="ABOUT US">ABOUT US</a></li>
-                    <li><a href="about_us.html" title="About Us">About Us</a></li>
-                    <li><a href="#" title="Customer Service">Customer Service</a></li>
-                    <li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
+                    <li class="link-title"><a href="#" title="ABOUT US">关于我们</a></li>
+                    <li><a href="#" title="About Us">关于我们</a></li>
+                    <li><a href="#" title="Customer Service">客户服务</a></li>
+                    <li><a href="#" title="Privacy Policy">隐私政策</a></li>
                   </ul>
                   <ul>
-                    <li class="link-title"><a href="#" title="CUSTOMER SERVICES">CUSTOMER SERVICES</a></li>
-                    <li><a href="#" title="Shipping & Returns">Shipping & Returns</a></li>
-                    <li><a href="#" title="Secure Shopping">Secure Shopping</a></li>
-                    <li><a href="contact_us.html" title="Contact Us">Contact Us</a></li>
+                    <li class="link-title"><a href="#" title="CUSTOMER SERVICES">客户服务</a></li>
+                    <li><a href="#" title="Shipping & Returns">购物</a></li>
+                    <li><a href="#" title="Secure Shopping">购物安全</a></li>
+                    <li><a href="#" title="Contact Us">联系我们</a></li>
                   </ul>
                   <ul>
-                    <li class="link-title"><a href="#" title="TERMS & CONDITIONS">TERMS & CONDITIONS</a></li>
-                    <li><a href="#" title="Press Room">Press Room</a></li>
-                    <li><a href="#" title="Help">Help</a></li>
-                    <li><a href="#" title="Terms & Conditions">Terms & Conditions</a></li>
+                    <li class="link-title"><a href="#" title="TERMS & CONDITIONS">加入我们</a></li>
+                    <li><a href="#" title="Press Room">团队介绍</a></li>
+                    <li><a href="#" title="Help">帮助</a></li>
+                    <li><a href="#" title="Terms & Conditions">团队状况</a></li>
                   </ul>
                   <ul>
                     <li class="link-title"><a href="#" title="ABOUTUS">关于我们</a></li>
@@ -216,7 +215,7 @@
                       是一个基于ThinkPHP5.0开发的交易平台... <a href="about_us.html" title="read more">更多</a> </li>
                   </ul>
                   <ul class="stay-connected-blcok">
-                    <li class="link-title"><a href="#" title="STAY CONNECTED...">STAY CONNECTED...</a></li>
+                    <li class="link-title"><a href="#" title="STAY CONNECTED...">分享：</a></li>
                     <li>
                          <ul class="social-links">
                             <li><a data-tooltip="Like us on facebook" href="#"><img alt="facebook" src="__STATIC__/index/images/facebook.png"></a></li>
@@ -232,12 +231,12 @@
                 </div>
                 <div class="footer-bottom-block">
                   <ul class="bottom-links">
-                    <li><a href="index-2.html" title="Home">HOME</a></li>
-                    <li><a href="#" title="Pages">PAGES</a></li>
-                    <li><a href="about_us.html" title="About">ABOUT</a></li>
-                    <li><a href="contact_us.html" title="Contact">CONTACT</a></li>
+                    <li><a href="#" title="Home">首页</a></li>
+                    <li><a href="#" title="Pages">页面</a></li>
+                    <li><a href="#" title="About">关于</a></li>
+                    <li><a href="#" title="Contact">联系</a></li>
                   </ul>
-                  <p class="copyright-block">© 2018 二手书交易平台,  from <a href="http://www.cssmoban.com/" title="开心果" target="_blank">开心果</a></p>
+                  <p class="copyright-block">© 2018 二手书交易平台,  from <a href="#" title="开心果" target="_blank">开心果</a></p>
                 </div>
               </footer>
             </section>
